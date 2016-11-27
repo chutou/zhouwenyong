@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>12付款方式</title>
+	<meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width">-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="js/skins/default.css">
+	<script src="js/jquery.js"></script>
+    <script src="js/slides.min.jquery.js"></script>
+    <script src="js/jquery.artDialog.js"></script>
+    <script src="js/main.js"></script>
+    <script language="javascript">
+    	$(function(){
+			$('.indexBanner .slides').slidesjs({width: 640,height: 231,start:1,navigation: true,play: {interval: 5000,auto: true}});
+			$(".share").click(function(){
+				$(".shareCxt").show();
+			});
+			$(".shareCxt").click(function(){
+				$(".shareCxt").hide();
+			})
+		})
+    </script>
+</head>
+<body id="top">
+<div class="containter">
+	<div class="header">
+    	<h1><a href="javascript:;" class="icon icon_close">返回</a><a href="javascript:;" class="icon icon_menu share">&nbsp;</a><span class="text">付款方式</span></h1>
+    </div>
+        
+    <div class="content">
+    	<div class="cp_tit1">请选择付款方式：</div>
+        <div class="cp_fk_listCxt">
+            <div class="cp_fk_list">
+                <p class="font24px color_666">当前可用积分为：<font class="font26px color_green">2500</font></p>
+                <p class="font24px color_999 mt10">比例： 1个积分＝1元人民币</p>
+                <div class="posr"><a href="javascript:;" class="btn">获取积分</a></div>
+                <div class="center mt20"><a class="btn1" href="javascript:;" onClick="succ(this)">使用积分付款</a></div>
+            </div>
+        </div>
+        <div class="cp_fk_list2 mt30">
+        	<div class="center"><a class="btn1"><img src="images/img15.png" /></a></div>
+        </div>        
+    </div>
+    <div class="shareCxt">
+    	<ul class="threeUl2">
+            <li>
+                <a href="javascript:;"><img src="images/img9.png" /></a>
+                <a href="javascript:;">朋友圈</a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="images/img10.png" /></a>
+                <a href="javascript:;">人人网</a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="images/img11.png" /></a>
+                <a href="javascript:;">新浪微博</a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="images/img12.png" /></a>
+                <a href="javascript:;">微信好友</a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="images/img13.png" /></a>
+                <a href="javascript:;">腾讯微博</a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="images/img14.png" /></a>
+                <a href="javascript:;">QQ空间</a>
+            </li>            
+            <div class="clear"></div>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    
+    <div class="footer">
+        <div class="footerUl">
+        	<li class="select"><a class="" href="cpsj.html"><span class="cpsj">&nbsp;</span>产品世界</a></li>
+            <li><a class="" href="gywm.html"><span class="gywm">&nbsp;</span>关于我们</a></li>
+            <li class="last"><a class="" href="user_center.html"><span class="grzx">&nbsp;</span>个人中心</a></li>
+        </div>   
+    </div>
+    
+</div> 
+</body>
+</html>

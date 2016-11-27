@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>02新闻资讯详细</title>
+	<meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width">-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="js/skins/default.css">
+	<script src="js/jquery.js"></script>
+    <script src="js/slides.min.jquery.js"></script>
+    <script src="js/jquery.artDialog.js"></script>
+    <script src="js/main.js"></script>
+    <script language="javascript">
+    	$(function(){
+			$('.newsBanner .slides').slidesjs({width: 640,height: 282,start:1,navigation: true,play: {interval: 5000,auto: true}});
+			$(".share").click(function(e){
+				$(".shareCxt").show();
+				e.stopPropagation();
+			});
+			$(".shareCxt").click(function(e){
+				$(".shareCxt").hide();
+				
+			});
+			
+			$(document).click(function(e){
+				$(".shareCxt").hide();
+				e.stopPropagation();
+			})
+		})
+    </script>
+</head>
+<body id="top">
+<div class="containter">
+	<div class="header">
+    	<h1>
+        	<a href="javascript:;" class="icon icon_close">返回</a><a href="javascript:;" class="icon icon_menu share">&nbsp;</a>
+        	<span class="text">新闻详细</span>
+        </h1>
+    </div>
+    <div class="content">    	
+        <!--新闻列表信息-->
+        <div class="pd20">
+            <div class="newsCxt">
+                <h1><a>亿利资源参与投资的九元航空昨日首航</a></h1>
+                <p class="icon_clock">发表时间：2014-12-03</p>
+                <a class="share">分享</a>
+                
+                <div class="newsCon">
+                	<div class="center mt30">
+                        <img src="images/img41.png" class="imgauto" />
+                    </div>
+                	<p>2014年12月2日，亿利公益基金会第一届理事会第七次会议在北京举行。本次理事会由亿利公益基金会理事长王雅韬主持，基金会副秘书长李勇代表秘书处向全体理事介绍了2014年亿利公益基金会整体运行情况，并就基金会承办2015第五届库布其国际沙漠论坛做了专题报告。经审议，会议通过了《亿利公益基金会第一届理事会第七次会议工作报告》和《关于基金会作为2015第五届库布其国际沙漠论坛承办单位的专题报告》。</p>
+                    <p>与会代表对2014年以来开展的大量工作取得的成绩给予充分肯定，对2015年基金会的工作思路和发展方向表示赞赏。会议一致认为：基金会已经度过了孵化期，应迈向专业化和规范化以及国际化的轨道；特别要加强基金会队伍建设和能力建设以及制度建设，提升亿利公益基金会的品牌影响。亿利公益基金会应在借助库布其国际沙漠论坛的平台，为推动防治荒漠化事业以及其他国家经济社会发展战略实施做出更大的贡献。</p>
+                    <p>亿利公益基金会监事、中央统战部五局副局长戚建美女士；亿利公益基金会理事、亿利资源集团副总裁杜美厚先生；亿利公益基金会理事、大自然保护协会亚太区首席代表张醒生先生；亿利公益基金会理事吴海蔓参加了本次会议；亿利资源集团高管郭维亮作为特邀代表出席了会议。计，仅长春市秸秆产量就有1200</p>
+                </div>
+            </div> 
+            
+        </div>    
+    </div>
+    <div class="shareCxt">
+    	<ul class="threeUl2">
+            <li>
+                <a href="javascript:;"><img src="images/img9.png" /></a>
+                <a href="javascript:;">朋友圈</a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="images/img10.png" /></a>
+                <a href="javascript:;">人人网</a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="images/img11.png" /></a>
+                <a href="javascript:;">新浪微博</a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="images/img12.png" /></a>
+                <a href="javascript:;">微信好友</a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="images/img13.png" /></a>
+                <a href="javascript:;">腾讯微博</a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="images/img14.png" /></a>
+                <a href="javascript:;">QQ空间</a>
+            </li>            
+            <div class="clear"></div>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    
+    <div class="footer">
+        <div class="footerUl">
+        	<li class="select"><a class="" href="cpsj.html"><span class="cpsj">&nbsp;</span>产品世界</a></li>
+            <li><a class="" href="gywm.html"><span class="gywm">&nbsp;</span>关于我们</a></li>
+            <li class="last"><a class="" href="user_center.html"><span class="grzx">&nbsp;</span>个人中心</a></li>
+        </div>   
+    </div>
+    
+</div> 
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>服务项目</title>
+	<meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width">-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/layout.css">
+	<script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/slides.min.jquery.js"></script>
+	<script src="js/jquery.tab.js"></script>
+    <script language="javascript">
+    	$(function(){
+			$("#s1").xslider({
+				unitdisplayed:4,
+				movelength:1,
+				unitlen:130,
+				autoscroll:3000000
+			});	
+			$('.fwBanner .slides').slidesjs({height: 315,start:1,navigation: true,play: {interval: 5000,auto: true}});
+			$("#proTab").tab({dft:0,act: "mouseover",curClass: "current",tabId: "#proTags",tabTag: "li",conId: "#proPanes",conTag: ".pane"});
+			$(".xmhover").hover(function(){
+				$(this).children(".text").show();
+				$(this).children(".img").show();
+				//$(this).children(".pos").hide();
+			},function(){
+				$(this).children(".text").hide();
+				$(this).children(".img").hide();
+				//$(this).children(".pos").show();
+			})
+		})
+    </script>
+</head>
+<body id="top">
+<div class="containter">
+	<!---头部-->
+	<div class="header">
+    	<div class="head">
+        	<a class="logo" href="index.html"><img src="images/logo.png" width="142" height="113" /></a>
+            <ul class="nav">
+            	<li><a href="index.html">首   页</a></li>
+                <li><a href="gypd.html">关于胖丁</a></li>
+                <li><a class="current" href="fwxm.html">服务项目</a></li>
+                <li><a href="alzs.html">案例展示</a></li>
+                <li><a href="hzkh.html">合作客户</a></li>
+                <li><a href="hydt.html">行业动态</a></li>
+                <li class="last"><a href="lxwm.html">联系胖丁</a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!--主体内容-->    
+    <div class="content">
+    	<!--服务项目-->
+        <div class="xmCxt">
+        	<div class="xmItem xmItem1">
+            	<div class="tit5"><span class="text">服务项目</span><span class="eng">Service</span></div>
+                <div class="crmTab" id="proTab">                    
+                     <div class="panes" id="proPanes">
+                     	<div class="pane">
+                        	<div class="text">
+                                <p class="white">企业宣传片如同企业名片,更能直观立体的展示企业发展的现状及未来规划,战略角度是一种重要的宣传手法，富有感染力,用创意影片的形式对企业文化，品牌，产品服务项目内容等进行阐述，从而彰显企业实力,展示企业的良好形象及精神面貌,树立群体对企业的信任和认可</p>
+                                                    
+                            </div>
+                        </div>
+                        <div class="pane">
+                        	<div class="text">
+                                <p class="white">企业宣传片如同企业名神面貌,树立群体对企业的信任和认可</p>
+                                                    
+                            </div>
+                        </div>
+                        <div class="pane">
+                        	<div class="text">
+                                <p class="white">企业宣传片如同企业名片,更能直观立体的展示企业发展的现状及未来规划,战略角度是一种重要的宣传手法，富有感染力,用创意影片的形式对企业文化，品牌，产品服务项目内容等进行阐述，从而彰显企业实力,展示企业的良好形象及精神面貌,树立群体对企业的信任和认可</p>
+                                                    
+                            </div>
+                        </div>
+                        <div class="pane">
+                        	<div class="text">
+                                <p class="white">企业宣传片如同企业名神面貌,树立群体对企业的信任和认可</p>
+                                                    
+                            </div>
+                        </div>
+                        <div class="pane">
+                        	<div class="text">
+                                <p class="white">企业宣传片如同企业名片,更能直观立体的展示企业发展的现状及未来规划,战略角度是一种重要的宣传手法，富有感染力,用创意影片的形式对企业文化，品牌，产品服务项目内容等进行阐述，从而彰显企业实力,展示企业的良好形象及精神面貌,树立群体对企业的信任和认可</p>
+                                                    
+                            </div>
+                        </div>                                               
+                    </div>
+                    <p class="mt10 pl10"><b class="font15px color_l">企业宣传片一般有5种体现方式</b></p>
+                    <div class="crmTit">
+                        <ul class="tags" id="proTags">
+                            <li class="current"><a href="javascript:;"><span>宣传类</span></a></li>
+                            <li class=""><a href="javascript:;"><span>形象类</span></a></li>
+                            <li class=""><a href="javascript:;"><span>专题类</span></a></li>
+                            <li class=""><a href="javascript:;"><span>历史类</span></a></li>
+                            <li class=""><a href="javascript:;"><span>文化类</span></a></li>
+                        </ul>
+                     </div>
+                </div>
+            </div>
+            <div class="xmItem xmItem2 xmhover">
+            	<div class="pos"><a href="##" class="btn">微电影</a></div>
+                <img class="img" src="images/fwxmimg1.png" />
+                <div class="text">                	
+                	<div class="textul">
+                        <a href="##"><img src="images/iconBtn.png" /></a>
+                    </div>
+                </div>
+            </div>            
+            <div class="xmItem xmItem3 xmhover">
+            	<div class="pos"><a href="##" class="btn">企业宣传片</a></div>
+                <img class="img" src="images/fwxmimg2.png" />
+                <div class="text text3">                	
+                	<div class="textul">
+                        <a href="##"><img src="images/iconBtn.png" /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="fwBanner">    	
+                <div class="slides">               	
+                    <div class="slide">
+                    	<div class="xmItem xmItem4 xmhover">
+                            <div class="pos"><a href="##" class="btn">宣传片</a></div>
+                            <img class="img" src="images/fwxmimg3.png" />
+                            <div class="text">                            	
+                                <div class="textul">
+                                    <a href="##"><img src="images/iconBtn.png" /></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="xmItem xmItem2 xmItem5 xmhover">
+                            <div class="pos"><a href="##" class="btn">营销视频</a></div>
+                            <img class="img" src="images/fwxmimg4.png" />
+                            <div class="text">                            	
+                                <div class="textul">
+                                    <a href="##"><img src="images/iconBtn.png" /></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="xmItem xmItem2 xmItem6 xmhover">
+                            <div class="pos"><a href="##" class="btn">产品视频</a></div>
+                            <img class="img" src="images/fwxmimg5.png" /> 
+                            <div class="text">                            	
+                                <div class="textul">
+                                    <a href="##"><img src="images/iconBtn.png" /></a>
+                                </div>
+                            </div>               
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="slide">
+                    	<div class="xmItem xmItem4 xmhover">
+                            <div class="pos"><a href="##" class="btn">宣传片</a></div>
+                            <img class="img" src="images/fwxmimg3.png" />
+                            <div class="text">                            	
+                                <div class="textul">
+                                    <a href="##"><img src="images/iconBtn.png" /></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="xmItem xmItem2 xmItem5 xmhover">
+                            <div class="pos"><a href="##" class="btn">营销视频</a></div>
+                            <img class="img" src="images/fwxmimg4.png" />
+                            <div class="text">                            	
+                                <div class="textul">
+                                    <a href="##"><img src="images/iconBtn.png" /></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="xmItem xmItem2 xmItem6 xmhover">
+                            <div class="pos"><a href="##" class="btn">产品视频</a></div>
+                            <img class="img" src="images/fwxmimg5.png" /> 
+                            <div class="text">                            	
+                                <div class="textul">
+                                    <a href="##"><img src="images/iconBtn.png" /></a>
+                                </div>
+                            </div>               
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <a class="slidesjs-previous slidesjs-navigation" href="javascript:;" title="Previous">Previous</a>
+                    <a class="slidesjs-next slidesjs-navigation" href="javascript:;" title="Next">Next</a>                     
+                </div>
+                
+                
+            </div>            
+        </div>
+        <!--合作伙伴-->
+        <div class="parsent mt30 mb30">
+        	<span class="text">合作伙伴</span>
+            <div class="scrolllist" id="s1">
+                <a class="abtn aleft" href="#left" title="左移"></a>
+                <div class="imglist_w">
+                    <ul class="imglist">
+                        <li><a href="##" title=""><img src="images/img7.png" /></a></li>
+                        <li><a href="##" title=""><img src="images/img8.png" /></a></li>
+                        <li><a href="##" title=""><img src="images/img9.png" /></a></li>
+                        <li><a href="##" title=""><img src="images/img7.png" /></a></li>
+                        <li><a href="##" title=""><img src="images/img8.png" /></a></li>
+                        <li><a href="##" title=""><img src="images/img9.png" /></a></li>
+                        <li><a href="##" title=""><img src="images/img7.png" /></a></li>
+                        <li><a href="##" title=""><img src="images/img8.png" /></a></li>
+                        <li><a href="##" title=""><img src="images/img9.png" /></a></li>
+                        <li><a href="##" title=""><img src="images/img7.png" /></a></li>
+                        <li><a href="##" title=""><img src="images/img8.png" /></a></li>
+                        <li><a href="##" title=""><img src="images/img9.png" /></a></li>				
+                    </ul><!--imglist end-->
+                </div>
+                <a class="abtn aright" href="#right" title="右移"></a>
+            </div>
+        </div>
+    </div>
+    
+    <!--底部-->
+    <div class="footer">
+    	<div class="foot">
+        	<div class="center"><a class="icon_movie" href="##">&nbsp;</a></div>
+            <div class="link">
+            	<a href="##" class="mr20"><img src="images/img10.png" /></a>
+                <a href="##" class="mr20"><img src="images/img11.png" /></a>
+                <a href="##" class="mr20"><img src="images/img12.png" /></a>
+            </div>
+            <ul class="footerUl">
+            	<li><a href="index.html"><span class="eng">Home</span><span class="text">首   页</span></a></li>
+                <li><a href="gypd.html"><span class="eng">About</span><span class="text">关于胖丁</span></a></li>
+                <li><a href="fwxm.html"><span class="eng">Services</span><span class="text">服务项目</span></a></li>
+                <li><a href="alzs.html"><span class="eng">Case</span><span class="text">案例展示</span></a></li>
+                <li><a href="hzkh.html"><span class="eng">Client</span><span class="text">合作客户</span></a></li>
+                <li><a href="hydt.html"><span class="eng">Industry</span><span class="text">行业动态</span></a></li>
+                <li><a href="lxwm.html"><span class="eng">Contact</span><span class="text">联系胖丁</span></a></li>
+            </ul>
+            <p class="copyright">上海胖丁文化传播有限公司    ©沪ICP13007803备</p>
+            <div class="clear"></div>
+        </div>   
+    </div>
+    
+</div> 
+</body>
+</html>

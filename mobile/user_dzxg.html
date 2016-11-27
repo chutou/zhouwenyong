@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>07收货地址修改</title>
+	<meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width">-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="js/skins/default.css">
+	<script src="js/jquery.js"></script>
+    <script src="js/jquery.artDialog.js"></script>
+    <script src="js/main.js"></script>
+    <script language="javascript">
+    	$(function(){
+			$(".share").click(function(e){
+				$(".shareCxt").show();
+				e.stopPropagation();
+			});
+			$(".shareCxt").click(function(e){
+				$(".shareCxt").hide();
+				
+			})
+			$(document).click(function(e){
+				$(".shareCxt").hide();
+				e.stopPropagation();
+			})
+		})
+    </script>
+</head>
+<body id="top">
+<div class="containter">
+	<div class="header">
+    	<h1><a href="javascript:;" class="icon icon_close">返回</a><a href="javascript:;" class="icon icon_menu share">&nbsp;</a><span class="text">收货地址修改</span></h1>
+    </div>
+        
+    <div class="content">
+        <div class="loginCxt bottomline">
+        	<h1 class="font26px mb20">新增收货地址</h1>
+        	<div class="label"><select><option>选择省（直辖市）</option></select></div>
+            <div class="label"><select><option>选择市</option></select></div>
+            <div class="label"><select><option>选择县（区）</option></select></div>
+        	<div class="label"><input type="text" class="input" value="输入具体地址" onfocus="if(value=='输入具体地址') {value=''}" onblur="if(value=='') {value='输入具体地址'}" /></div>
+            <div class="label"><input type="text" class="input" value="收件人姓名" onfocus="if(value=='收件人姓名') {value=''}" onblur="if(value=='') {value='收件人姓名'}" /></div>
+            <div class="label"><input type="text" class="input" value="联系电话" onfocus="if(value=='联系电话') {value=''}" onblur="if(value=='') {value='联系电话'}" /></div>
+            <div class="label center imgauto"><a href="javascript:;"><img src="images/img26.png" /></a></div>
+            <h1 class="font26px mb20">已保存的收货地址</h1>
+            <div class="addRessList">
+            	<p>收件人：杨力（15861735427）</p>
+                <p>地址：上海市青浦区华徐公路888号</p>
+                <div class="posr">
+                	<a href="javascript:;" class="icon icon_xg">修改</a>
+                    <a href="javascript:;" class="icon icon_sc">删除</a>
+                </div>
+            </div>
+            <div class="addRessList">
+            	<p>收件人：李慧敏（18643853424）</p>
+                <p>地址：上海市闸北区共和新路340号3楼307-310室</p>
+                <div class="posr">
+                	<a href="javascript:;" class="icon icon_xg">修改</a>
+                    <a href="javascript:;" class="icon icon_sc">删除</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shareCxt">
+    	<ul class="threeUl2">
+            <li>
+                <a href="javascript:;"><img src="images/img9.png" /></a>
+                <a href="javascript:;">朋友圈</a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="images/img10.png" /></a>
+                <a href="javascript:;">人人网</a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="images/img11.png" /></a>
+                <a href="javascript:;">新浪微博</a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="images/img12.png" /></a>
+                <a href="javascript:;">微信好友</a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="images/img13.png" /></a>
+                <a href="javascript:;">腾讯微博</a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="images/img14.png" /></a>
+                <a href="javascript:;">QQ空间</a>
+            </li>            
+            <div class="clear"></div>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    
+    <div class="footer">
+        <div class="footerUl">
+        	<li class=""><a class="" href="cpsj.html"><span class="cpsj">&nbsp;</span>产品世界</a></li>
+            <li><a class="" href="gywm.html"><span class="gywm">&nbsp;</span>关于我们</a></li>
+            <li class="last select"><a class="" href="user_center.html"><span class="grzx">&nbsp;</span>个人中心</a></li>
+        </div>   
+    </div>
+    
+</div> 
+</body>
+</html>

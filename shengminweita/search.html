@@ -1,0 +1,1682 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9">
+<link rel="stylesheet" type="text/css" href="css/master.css"/>
+<link rel="stylesheet" type="text/css" href="css/index.css"/>
+<link rel="stylesheet" type="text/css" href="css/like.css"/>
+<title>搜索页</title>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.tab.js"></script>
+<script type="text/javascript" src="js/slides.min.jquery.js"></script>
+<script language="javascript">
+	$(function(){
+		$(".menu").hover(function(){
+			$(this).children(".subMenu").show();
+			$(this).children(".subH2").addClass("subH2Cur");
+			$(this).find("h2").addClass("cur")
+		},function(){
+			$(this).children(".subMenu").hide();
+			$(this).children(".subH2").removeClass("subH2Cur");
+			$(this).find("h2").removeClass("cur")
+		})
+		$("div.all").hover(function(){
+			$(this).children(".menuBox").show();
+		},function(){
+			$(this).children(".menuBox").hide();
+		})
+		$(".firstMenu").hover(function(){
+			$(this).children("a.secondA").addClass("current");
+			$(this).children("ul.subNavUl").show();
+		},function(){
+			$(this).children("a.secondA").removeClass("current");
+			$(this).children("ul.subNavUl").hide();
+		})
+		$(".icon_btn").click(function(){
+			if($(this).hasClass("open")){
+				$(this).removeClass("open");
+				$(this).siblings("ul").hide();
+			}else{
+				$(this).addClass("open");
+				$(this).siblings("ul").show();
+			}
+		})
+		$(".ul_list").mouseover(function(){
+			$(this).siblings(".ul_list2").hide();
+			$(this).next(".ul_list2").show();
+			$(this).siblings(".ul_list").show();
+			$(this).hide();
+		})
+		$(".optionaMore").click(function(){
+			$(this).hide();
+			$(this).parents(".optionDivMore").addClass("optionDivMoreOpen");
+			$(this).siblings("a.optionCur").hide();
+			$(this).parents(".optionDivMore").find(".btns").show();
+		})
+		$(".optionDivMore a.reset").click(function(){
+			$(this).parents(".optionDivMore").removeClass("optionDivMoreOpen");
+			$(this).parents(".optionDivMore").find("a.optionCur").show();
+			$(this).parents(".optionDivMore").find(".optionaMore").show();
+			$(this).parent(".btns").hide();
+		})
+		$(".optionSelect a").live("click",function(){
+			$(this).addClass("cur");	
+		})
+		$(".optionSelect a.cur").live("click",function(){
+			$(this).removeClass("cur");	
+		})
+		$(".itemSearchList li").hover(function(){
+			$(this).children(".itemSearchResultCon").addClass("cur");
+		},function(){
+			$(this).children(".itemSearchResultCon").removeClass("cur");
+		})
+		
+	})
+</script>
+<!--[if lte IE 6]>
+<script src="Js/PNG.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix('div, ul, img, li, input , a ,span');
+    </script>
+<![endif]--> 
+</head>
+
+<body>
+<a name="top" id="top" style=""></a>
+<div class="header">
+	<div class="head">
+        <div class="loginBar">
+            <div class="fl"><a class="icon icon_fav">收藏生命维他商城</a></div>
+            <div class="fr">您好，欢迎来生命维他商城！ [<a href="##" class="color_org">请登录</a>]  [免费注册]  ︱  用户中心  ︱  我的订单  ︱  帮助中心  </div>
+            <div class="clear"></div>
+        </div>
+        <div class="topBanner"><img src="images/img1.png" width="1210" height="60" /></div>
+        <div class="headerCenter">
+            <div class="logo"><img src="images/logo.png" width="250" height="90" /></div>
+            <div class="indexGo">
+            	<a class="gobtn" href="##">去购物车结算</a>
+            </div>
+            <div class="searchBox">
+                <div class="s"><input type="text" class="sinput" value="请输入关键字" onfocus="if(value=='请输入关键字') {value=''}" onblur="if(value=='') {value='请输入关键字'}" /><input type="button" class="sbtn" title="搜索" /></div>
+                <div>热门搜索：<a href="##">按摩蜡烛</a> <a href="##">鼻敏清</a> <a href="##">骨迅康</a> <a href="##">活肝康</a></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="mainNav">
+            <div class="all">
+            	<span class="text">全部商品分类</span>
+                <div class="box202 menuBox">
+                    <div class="menu">
+                        <div class="subH2 zhongxiyao">
+                            <h2>中西药品</h2>
+                            <div class="subA">
+                                <a href="##">男科疾病</a><a href="##">妇科疾病</a><a href="##">呼吸道疾病</a><a href="##">风湿科</a><a href="##">皮肤科</a><a href="##">心脑血管</a>
+                            </div>
+                        </div>
+                        <div class="subMenu">
+                            <div class="subMLeft">
+                                <div class="subL fl">
+                                    <h3>男科疾病</h3>
+                                    <div class="subA">
+                                        <a href="##">性功能障碍</a><a href="##">泌尿系统疾病</a><a href="##">前列腺炎</a><a href="##">肾病</a>
+                                    </div>
+                                    <h3>妇科疾病</h3>
+                                    <div class="subA">
+                                        <a href="##">月经不调</a><a href="##">乳腺炎</a><a href="##">孕产期</a><a href="##">更年期</a>
+                                    </div>
+                                    <h3>呼吸道疾病</h3>
+                                    <div class="subA brnone">
+                                        <a href="##">感冒发烧</a><a href="##">咳嗽</a><a href="##">小儿感冒</a><a href="##">哮喘</a>
+                                    </div>
+                                </div>
+                                <div class="subL fr">
+                                    <h3>风湿科</h3>
+                                    <div class="subA">
+                                        <a href="##">癫风</a><a href="##">类风湿关节炎</a><a href="##">颈腰椎病</a><a href="##">跌打损伤</a>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="subMRight">
+                                <h4 class="color_red">按品牌索引</h4>
+                                <div>
+                                    <a href="##">康扬</a> <a href="##">方太</a> <a href="##">泰康</a> <a href="##">日本MIKI</a> <a href="##">鱼跃</a> <a href="##">互邦</a> <a href="##">佛山</a> <a href="##">爱邦</a> <a href="##">常州众和</a> <a href="##">凯洋</a>
+                                </div>
+                                <div class="tar"><a class="color_org"><更多></a></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="subH2 baojianping">
+                            <h2>保健品</h2>
+                            <div class="subA">
+                                <a href="##">中老年健康</a><a href="##">皮肤保养</a><a href="##">儿童保健</a><a href="##">孕婴营养</a><a href="##">男士保健</a><a href="##">热卖营养素</a>
+                            </div>
+                        </div>
+                        <div class="subMenu">
+                            <div class="subMLeft">
+                                <div class="subL fl">
+                                    <h3>男科疾病</h3>
+                                    <div class="subA">
+                                        <a href="##">性功能障碍</a><a href="##">泌尿系统疾病</a><a href="##">前列腺炎</a><a href="##">肾病</a>
+                                    </div>
+                                    <h3>妇科疾病</h3>
+                                    <div class="subA">
+                                        <a href="##">月经不调</a><a href="##">乳腺炎</a><a href="##">孕产期</a><a href="##">更年期</a>
+                                    </div>
+                                    <h3>呼吸道疾病</h3>
+                                    <div class="subA brnone">
+                                        <a href="##">感冒发烧</a><a href="##">咳嗽</a><a href="##">小儿感冒</a><a href="##">哮喘</a>
+                                    </div>
+                                </div>
+                                <div class="subL fr">
+                                    <h3>风湿科</h3>
+                                    <div class="subA">
+                                        <a href="##">癫风</a><a href="##">类风湿关节炎</a><a href="##">颈腰椎病</a><a href="##">跌打损伤</a>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="subMRight">
+                                <h4 class="color_red">按品牌索引</h4>
+                                <div>
+                                    <a href="##">康扬</a> <a href="##">方太</a> <a href="##">泰康</a> <a href="##">日本MIKI</a> <a href="##">鱼跃</a> <a href="##">互邦</a> <a href="##">佛山</a> <a href="##">爱邦</a> <a href="##">常州众和</a> <a href="##">凯洋</a>
+                                </div>
+                                <div class="tar"><a class="color_org"><更多></a></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="subH2 gaiji">
+                            <h2>维生素钙剂</h2>
+                            <div class="subA">
+                                <a href="##">维生素</a><a href="##">孕妇专享</a><a href="##">钙剂</a><a href="##">矿物质</a>
+                            </div>
+                        </div>
+                        <div class="subMenu">
+                            <div class="subMLeft">
+                                <div class="subL fl">
+                                    <h3>男科疾病</h3>
+                                    <div class="subA">
+                                        <a href="##">性功能障碍</a><a href="##">泌尿系统疾病</a><a href="##">前列腺炎</a><a href="##">肾病</a>
+                                    </div>
+                                    <h3>妇科疾病</h3>
+                                    <div class="subA">
+                                        <a href="##">月经不调</a><a href="##">乳腺炎</a><a href="##">孕产期</a><a href="##">更年期</a>
+                                    </div>
+                                    <h3>呼吸道疾病</h3>
+                                    <div class="subA brnone">
+                                        <a href="##">感冒发烧</a><a href="##">咳嗽</a><a href="##">小儿感冒</a><a href="##">哮喘</a>
+                                    </div>
+                                </div>
+                                <div class="subL fr">
+                                    <h3>风湿科</h3>
+                                    <div class="subA">
+                                        <a href="##">癫风</a><a href="##">类风湿关节炎</a><a href="##">颈腰椎病</a><a href="##">跌打损伤</a>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="subMRight">
+                                <h4 class="color_red">按品牌索引</h4>
+                                <div>
+                                    <a href="##">康扬</a> <a href="##">方太</a> <a href="##">泰康</a> <a href="##">日本MIKI</a> <a href="##">鱼跃</a> <a href="##">互邦</a> <a href="##">佛山</a> <a href="##">爱邦</a> <a href="##">常州众和</a> <a href="##">凯洋</a>
+                                </div>
+                                <div class="tar"><a class="color_org"><更多></a></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="subH2 guixi">
+                            <h2>参茸贵细</h2>
+                            <div class="subA">
+                                <a href="##">参类产品</a><a href="##">中药饮片</a><a href="##">贵细滋补品</a>
+                            </div>
+                        </div>
+                        <div class="subMenu">
+                            <div class="subMLeft">
+                                <div class="subL fl">
+                                    <h3>男科疾病</h3>
+                                    <div class="subA">
+                                        <a href="##">性功能障碍</a><a href="##">泌尿系统疾病</a><a href="##">前列腺炎</a><a href="##">肾病</a>
+                                    </div>
+                                    <h3>妇科疾病</h3>
+                                    <div class="subA">
+                                        <a href="##">月经不调</a><a href="##">乳腺炎</a><a href="##">孕产期</a><a href="##">更年期</a>
+                                    </div>
+                                    <h3>呼吸道疾病</h3>
+                                    <div class="subA brnone">
+                                        <a href="##">感冒发烧</a><a href="##">咳嗽</a><a href="##">小儿感冒</a><a href="##">哮喘</a>
+                                    </div>
+                                </div>
+                                <div class="subL fr">
+                                    <h3>风湿科</h3>
+                                    <div class="subA">
+                                        <a href="##">癫风</a><a href="##">类风湿关节炎</a><a href="##">颈腰椎病</a><a href="##">跌打损伤</a>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="subMRight">
+                                <h4 class="color_red">按品牌索引</h4>
+                                <div>
+                                    <a href="##">康扬</a> <a href="##">方太</a> <a href="##">泰康</a> <a href="##">日本MIKI</a> <a href="##">鱼跃</a> <a href="##">互邦</a> <a href="##">佛山</a> <a href="##">爱邦</a> <a href="##">常州众和</a> <a href="##">凯洋</a>
+                                </div>
+                                <div class="tar"><a class="color_org"><更多></a></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="subH2 riyongping">
+                            <h2>日用品</h2>
+                            <div class="subA">
+                                <a href="##">沐浴洗发</a><a href="##">化妆品</a><a href="##">婴幼儿用品</a><a href="##">季节性用品</a>
+                            </div>
+                        </div>
+                        <div class="subMenu">
+                            <div class="subMLeft">
+                                <div class="subL fl">
+                                    <h3>男科疾病</h3>
+                                    <div class="subA">
+                                        <a href="##">性功能障碍</a><a href="##">泌尿系统疾病</a><a href="##">前列腺炎</a><a href="##">肾病</a>
+                                    </div>
+                                    <h3>妇科疾病</h3>
+                                    <div class="subA">
+                                        <a href="##">月经不调</a><a href="##">乳腺炎</a><a href="##">孕产期</a><a href="##">更年期</a>
+                                    </div>
+                                    <h3>呼吸道疾病</h3>
+                                    <div class="subA brnone">
+                                        <a href="##">感冒发烧</a><a href="##">咳嗽</a><a href="##">小儿感冒</a><a href="##">哮喘</a>
+                                    </div>
+                                </div>
+                                <div class="subL fr">
+                                    <h3>风湿科</h3>
+                                    <div class="subA">
+                                        <a href="##">癫风</a><a href="##">类风湿关节炎</a><a href="##">颈腰椎病</a><a href="##">跌打损伤</a>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="subMRight">
+                                <h4 class="color_red">按品牌索引</h4>
+                                <div>
+                                    <a href="##">康扬</a> <a href="##">方太</a> <a href="##">泰康</a> <a href="##">日本MIKI</a> <a href="##">鱼跃</a> <a href="##">互邦</a> <a href="##">佛山</a> <a href="##">爱邦</a> <a href="##">常州众和</a> <a href="##">凯洋</a>
+                                </div>
+                                <div class="tar"><a class="color_org"><更多></a></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <li class="firstMenu"><a class="current" href="index.html">首页</a></li>
+            <li class="firstMenu">
+            	<a href="item.html" class="secondA">常见病</a>
+                <ul class="subNavUl"><li><a href="##">换季感冒</a></li><li><a href="##">乙肝</a></li><li><a href="##">皮炎癣症</a></li><li><a href="##">鼻炎</a></li><li><a href="##">风湿骨病</a></li><li><a href="##">高血压</a></li><li><a href="##">缺钙</a></li><li><a href="##">痤疮</a></li><li><a href="##">失眠</a></li></ul>
+            </li>
+            <li class="firstMenu">
+            	<a href="item.html" class="secondA">重大疾病</a>
+                <ul class="subNavUl">
+                  <li><a href="##">肺癌</a></li>
+                  <li><a href="##">帕金森</a></li>
+                  <li><a href="##">牛皮癣</a></li>
+                  <li><a href="##">抑郁症</a></li>
+                  <li><a href="##">中风偏瘫</a></li>
+                  <li><a href="##">尖锐湿疣</a></li>
+                  <li><a href="##">万全力太</a></li>
+                  <li><a href="##">博路定</a></li>
+                  <li><a href="##">老年性痴呆</a></li>
+                </ul>
+            </li>
+            <li class="firstMenu">
+            	<a href="item.html" class="secondA">女性</a>
+                <ul class="subNavUl">
+                  <li><a href="##">药物祛痘</a></li>
+                  <li><a href="##">孕妇营养</a></li>
+                  <li><a href="##">大姨妈</a></li>
+                  <li><a href="##">造人计划</a></li>
+                  <li><a href="##">大眼秘密</a></li>
+                  <li><a href="##">情趣用具</a></li>
+                  <li><a href="##">夏季美容</a></li>
+                  <li><a href="##">祛疤神器</a></li>
+                  <li><a href="##">避孕那些事</a></li>
+                </ul>
+            </li>
+            <li class="firstMenu">
+            	<a href="item.html" class="secondA">男性</a>
+                <ul class="subNavUl">
+                  <li><a href="##">汇仁肾宝</a></li>
+                  <li><a href="##">秘鲁玛卡</a></li>
+                  <li><a href="##">滚床单必备</a></li>
+                  <li><a href="##">早泄神药</a></li>
+                  <li><a href="##">性功能障碍</a></li>
+                  <li><a href="##">高端白领体检</a></li>
+                  <li><a href="##">痿哥好伴侣</a></li>
+                </ul>
+            </li>
+            <li class="firstMenu">
+            	<a href="item.html" class="secondA">老人</a>
+                <ul class="subNavUl">
+                  <li><a href="##">辅助降三高</a></li>
+                  <li><a href="##">中老年体检</a></li>
+                  <li><a href="##">改善体质</a></li>
+                </ul>
+            </li>
+            <li class="firstMenu">
+            	<a href="item.html" class="secondA">儿童</a>
+                <ul class="subNavUl">
+                  <li><a href="##">小儿难养</a></li>
+                  <li><a href="##">小儿肠胃</a></li>
+                  <li><a href="##">小儿感冒</a></li>
+                  <li><a href="##">婴儿奶粉</a></li>
+                  <li><a href="##">儿童保健</a></li>
+                  <li><a href="##">宝宝纸尿裤</a></li>
+                  <li><a href="##">小儿多动症</a></li>
+                </ul>
+            </li>
+            <li class="firstMenu">
+            	<a href="tuan.html" class="">团购<span class="icon_hot">&nbsp;</span></a>
+            </li>
+            <li class="firstMenu">
+            	<a href="wenyao.html" class="secondA">问医问药</a>
+                <ul class="subNavUl">
+                  <li><a href="##">问医问药</a></li>
+                  <li><a href="##">健康百科</a></li>
+                  <li><a href="##">健康论坛</a></li>
+        		  <li><a href="##">健康资讯</a></li>
+                  <li><a href="##">疾病症状库</a></li>
+                </ul>
+            </li>     
+        </div>
+    </div>
+</div>
+
+<div class="main">
+	<!--左侧-->
+	<div class="aleft">
+    	<!--目录列表-->
+        <div class="itemChoose">
+            <h2>分类筛选</h2>
+            <div class="itemChooseBox">
+                <h3 class="no_bd_b">
+                    <a class="icon_btn open" href="javascript:void(0);"></a>
+                    <a cid="953710" title="" href="javascript:void(0);">中西药品<span>(32662)</span></a>
+                </h3>
+                <ul class="show" style="display: block;">                    
+                    <li class="child">                            
+                        <a class="icon_btn" href="javascript:void(0);"></a>
+                        <a cid="953783" href="javascript:void(0);" title="">滋补调养<span>(2897)</span></a>
+                        <ul class="">	
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="956104" href="javascript:void(0);" title="">安神助眠<span>(1648)</span></a>
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="953784" href="javascript:void(0);" title="">
+                                    补肾
+                                    <span>(699)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="953785" href="javascript:void(0);" title="">
+                                    补血补气
+                                    <span>(489)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="953787" href="javascript:void(0);" title="">
+                                    减肥瘦身
+                                    <span>(37)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="956125" href="javascript:void(0);" title="">
+                                    增强抵抗力
+                                    <span>(24)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="child">
+                        <a class="icon_btn" href="javascript:void(0);"></a>
+                        <a cid="965178" href="javascript:void(0);" title="">
+                            呼吸道疾病
+                            <span>(26)</span>
+                        </a>
+                        <ul>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965184" href="javascript:void(0);" title="">
+                                    感冒发烧
+                                    <span>(1807)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965185" href="javascript:void(0);" title="">
+                                    上火
+                                    <span>(1438)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>                            
+                                <a cid="965181" title="" href="javascript:void(0);" class="current">
+                                    咳嗽
+                                    <span>(969)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965179" href="javascript:void(0);" title="">
+                                    哮喘
+                                    <span>(466)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="969596" href="javascript:void(0);" title="">
+                                    小儿感冒
+                                    <span>(99)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="971542" href="javascript:void(0);" title="">
+                                    支气管炎
+                                    <span>(18)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="971543" href="javascript:void(0);" title="">
+                                    慢性阻塞性肺疾病
+                                    <span>(10)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="child">
+                        <a class="icon_btn" href="javascript:void(0);"></a>
+                        <a cid="965141" href="javascript:void(0);" title="">
+                            男科疾病
+                            <span>(868)</span>
+                        </a>
+                        <ul class="">
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965143" href="javascript:void(0);" title="">
+                                    性功能障碍
+                                    <span>(53)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965142" href="javascript:void(0);" title="">
+                                    前列腺炎
+                                    <span>(53)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965144" href="javascript:void(0);" title="">
+                                    泌尿系统疾病
+                                    <span>(13)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>                            
+                                <a cid="965145" href="javascript:void(0);" title="">
+                                    肾病
+                                    <span>(323)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="971286" href="javascript:void(0);" title="">
+                                    男性不育症
+                                    <span>(16)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="child">
+                        <a class="icon_btn" href="javascript:void(0);"></a>
+                        <a cid="965163" href="javascript:void(0);" title="">
+                            妇科疾病
+                            <span>(1948)</span>
+                        </a>
+                        <ul class="">
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="969615" href="javascript:void(0);" title="">
+                                    乳腺炎
+                                    <span>(24)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="969616" href="javascript:void(0);" title="">
+                                    更年期
+                                    <span>(306)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965166" href="javascript:void(0);" title="">
+                                    月经不调
+                                    <span>(353)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965165" href="javascript:void(0);" title="">
+                                    妇科炎症
+                                    <span>(1218)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965164" href="javascript:void(0);" title="">
+                                    避孕
+                                    <span>(15)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="969935" href="javascript:void(0);" title="">
+                                    孕产期
+                                    <span>(32)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>                    
+                        </ul>
+                    </li>
+                    <li class="child">
+                        <a class="icon_btn" href="javascript:void(0);"></a>
+                        <a cid="965171" href="javascript:void(0);" title="">
+                            风湿骨科
+                            <span>(1789)</span>
+                        </a>
+                        <ul class="">
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965174" href="javascript:void(0);" title="">
+                                    疼痛用药
+                                    <span>(338)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="971322" href="javascript:void(0);" title="">
+                                    类风湿
+                                    <span>(315)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965175" href="javascript:void(0);" title="">
+                                    骨质疏松
+                                    <span>(208)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965172" href="javascript:void(0);" title="">
+                                    风湿骨痛
+                                    <span>(197)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="971354" href="javascript:void(0);" title="">
+                                    器官移植
+                                    <span>(53)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965176" href="javascript:void(0);" title="">
+                                    痛风
+                                    <span>(39)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>                    
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>   
+                                <a cid="971272" href="javascript:void(0);" title="">
+                                    颈腰椎病
+                                    <span>(25)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="971323" href="javascript:void(0);" title="">
+                                    骨质增生
+                                    <span>(23)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>                    
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965177" href="javascript:void(0);" title="">
+                                    关节炎
+                                    <span>(14)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>                            
+                                <a cid="965173" href="javascript:void(0);" title="">
+                                    跌打损伤
+                                    <span>(4)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>                    
+                        </ul>
+                    </li>
+                    <li class="child">                
+                        <a class="icon_btn" href="javascript:void(0);"></a>
+                        <a cid="965155" href="javascript:void(0);" title="">
+                            皮肤病
+                            <span>(1889)</span>
+                        </a>
+                        <ul class="">
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>                            
+                                <a cid="965156" href="javascript:void(0);" title="">
+                                    皮炎癣症
+                                    <span>(725)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965158" href="javascript:void(0);" title="">
+                                    白癜风
+                                    <span>(506)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965159" href="javascript:void(0);" title="">
+                                    烧烫创伤
+                                    <span>(377)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965161" href="javascript:void(0);" title="">
+                                    过敏
+                                    <span>(82)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="971317" href="javascript:void(0);" title="">
+                                    系统性红斑狼疮
+                                    <span>(46)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="971295" href="javascript:void(0);" title="">
+                                    痤疮（青春痘）
+                                    <span>(39)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>                            
+                                <a cid="971350" href="javascript:void(0);" title="">
+                                    皮肤其他类
+                                    <span>(32)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="971281" href="javascript:void(0);" title="">
+                                    脱发
+                                    <span>(26)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="971318" href="javascript:void(0);" title="">
+                                    尖锐湿疣
+                                    <span>(23)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="971306" href="javascript:void(0);" title="">
+                                    疱疹
+                                    <span>(13)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="971312" href="javascript:void(0);" title="">
+                                    黄褐斑
+                                    <span>(9)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="971352" href="javascript:void(0);" title="">
+                                    荨麻疹
+                                    <span>(6)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="971350" href="javascript:void(0);" title="">
+                                    皮肤其他类
+                                    <span>(3)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="971297" href="javascript:void(0);" title="">
+                                    银屑病（牛皮癣）
+                                    <span>(2)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965160" href="javascript:void(0);" title="">
+                                    蚊虫叮咬
+                                    <span>(2)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965158" href="javascript:void(0);" title="">
+                                    白癜风
+                                    <span>(1)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="child">
+                        <a class="icon_btn" href="javascript:void(0);"></a>
+                        <a cid="965193" href="javascript:void(0);" title="">
+                            五官科疾病
+                            <span>(21)</span>
+                        </a>
+                        <ul class="">
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965202" href="javascript:void(0);" title="">
+                                    咽喉炎
+                                    <span>(864)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965194" href="javascript:void(0);" title="">
+                                    眼部炎症
+                                    <span>(438)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965200" href="javascript:void(0);" title="">
+                                    鼻炎
+                                    <span>(252)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965203" href="javascript:void(0);" title="">
+                                    眩晕
+                                    <span>(214)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965195" href="javascript:void(0);" title="">
+                                    眼干眼涩
+                                    <span>(40)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965196" href="javascript:void(0);" title="">
+                                    白内障
+                                    <span>(25)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="971346" href="javascript:void(0);" title="">
+                                    视网膜病变
+                                    <span>(11)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965199" href="javascript:void(0);" title="">
+                                    耳聋耳鸣
+                                    <span>(10)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965198" href="javascript:void(0);" title="">
+                                    青光眼
+                                    <span>(10)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="971349" href="javascript:void(0);" title="">
+                                    近视弱视
+                                    <span>(4)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="971348" href="javascript:void(0);" title="">
+                                    葡萄膜炎
+                                    <span>(4)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="971345" href="javascript:void(0);" title="">
+                                    黄斑变性
+                                    <span>(2)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="971347" href="javascript:void(0);" title="">
+                                    玻璃体混浊
+                                    <span>(1)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="child">
+                        <a class="icon_btn" href="javascript:void(0);"></a>
+                        <a cid="965147" href="javascript:void(0);" title="">
+                            消化系统疾病
+                            <span>(2650)</span>
+                        </a>
+                        <ul class="">
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="971524" href="javascript:void(0);" title="">
+                                    胃炎
+                                    <span>(106)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="971488" href="javascript:void(0);" title="">
+                                    便秘
+                                    <span>(31)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="969595" href="javascript:void(0);" title="">
+                                    小儿肠胃病
+                                    <span>(4807)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965151" href="javascript:void(0);" title="">
+                                    胃肠溃疡
+                                    <span>(701)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965152" href="javascript:void(0);" title="">
+                                    腹泻
+                                    <span>(643)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965150" href="javascript:void(0);" title="">
+                                    消化不良
+                                    <span>(333)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="971356" href="javascript:void(0);" title="">
+                                    消化系统其他类
+                                    <span>(271)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="969595" href="javascript:void(0);" title="">
+                                    小儿肠胃病
+                                    <span>(47)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965153" href="javascript:void(0);" title="">
+                                    痔疮
+                                    <span>(9)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965154" href="javascript:void(0);" title="">
+                                    蛔虫病
+                                    <span>(8)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>                    
+                        </ul>
+                    </li>
+                    <li class="child">
+                        <a class="icon_btn" href="javascript:void(0);"></a>
+                        <a cid="965171" href="javascript:void(0);" title="">
+                            心脑血管
+                            <span>(1789)</span>
+                        </a>
+                        <ul class="">
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965174" href="javascript:void(0);" title="">
+                                    疼痛用药
+                                    <span>(338)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="971322" href="javascript:void(0);" title="">
+                                    类风湿
+                                    <span>(315)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965175" href="javascript:void(0);" title="">
+                                    骨质疏松
+                                    <span>(208)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965172" href="javascript:void(0);" title="">
+                                    风湿骨痛
+                                    <span>(197)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="971354" href="javascript:void(0);" title="">
+                                    器官移植
+                                    <span>(53)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965176" href="javascript:void(0);" title="">
+                                    痛风
+                                    <span>(39)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>                    
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>   
+                                <a cid="971272" href="javascript:void(0);" title="">
+                                    颈腰椎病
+                                    <span>(25)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="971323" href="javascript:void(0);" title="">
+                                    骨质增生
+                                    <span>(23)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>                    
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965177" href="javascript:void(0);" title="">
+                                    关节炎
+                                    <span>(14)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>                            
+                                <a cid="965173" href="javascript:void(0);" title="">
+                                    跌打损伤
+                                    <span>(4)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>                    
+                        </ul>
+                    </li>
+                    <li class="child">                
+                        <a class="icon_btn" href="javascript:void(0);"></a>
+                        <a cid="965155" href="javascript:void(0);" title="">
+                            肿瘤科
+                            <span>(1889)</span>
+                        </a>
+                        <ul class="">
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>                            
+                                <a cid="965156" href="javascript:void(0);" title="">
+                                    皮炎癣症
+                                    <span>(725)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965158" href="javascript:void(0);" title="">
+                                    白癜风
+                                    <span>(506)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965159" href="javascript:void(0);" title="">
+                                    烧烫创伤
+                                    <span>(377)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965161" href="javascript:void(0);" title="">
+                                    过敏
+                                    <span>(82)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="971317" href="javascript:void(0);" title="">
+                                    系统性红斑狼疮
+                                    <span>(46)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="971295" href="javascript:void(0);" title="">
+                                    痤疮（青春痘）
+                                    <span>(39)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>                            
+                                <a cid="971350" href="javascript:void(0);" title="">
+                                    皮肤其他类
+                                    <span>(32)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="971281" href="javascript:void(0);" title="">
+                                    脱发
+                                    <span>(26)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="971318" href="javascript:void(0);" title="">
+                                    尖锐湿疣
+                                    <span>(23)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="971306" href="javascript:void(0);" title="">
+                                    疱疹
+                                    <span>(13)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="971312" href="javascript:void(0);" title="">
+                                    黄褐斑
+                                    <span>(9)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="971352" href="javascript:void(0);" title="">
+                                    荨麻疹
+                                    <span>(6)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="971350" href="javascript:void(0);" title="">
+                                    皮肤其他类
+                                    <span>(3)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="971297" href="javascript:void(0);" title="">
+                                    银屑病（牛皮癣）
+                                    <span>(2)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965160" href="javascript:void(0);" title="">
+                                    蚊虫叮咬
+                                    <span>(2)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965158" href="javascript:void(0);" title="">
+                                    白癜风
+                                    <span>(1)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="child">
+                        <a class="icon_btn" href="javascript:void(0);"></a>
+                        <a cid="965147" href="javascript:void(0);" title="">
+                            肝病科
+                            <span>(2650)</span>
+                        </a>
+                        <ul class="">
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="971524" href="javascript:void(0);" title="">
+                                    胃炎
+                                    <span>(106)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="971488" href="javascript:void(0);" title="">
+                                    便秘
+                                    <span>(31)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="969595" href="javascript:void(0);" title="">
+                                    小儿肠胃病
+                                    <span>(4807)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965151" href="javascript:void(0);" title="">
+                                    胃肠溃疡
+                                    <span>(701)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965152" href="javascript:void(0);" title="">
+                                    腹泻
+                                    <span>(643)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965150" href="javascript:void(0);" title="">
+                                    消化不良
+                                    <span>(333)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="971356" href="javascript:void(0);" title="">
+                                    消化系统其他类
+                                    <span>(271)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="969595" href="javascript:void(0);" title="">
+                                    小儿肠胃病
+                                    <span>(47)</span>
+                                </a>                            
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965153" href="javascript:void(0);" title="">
+                                    痔疮
+                                    <span>(9)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>
+                            <li class="">
+                                <a class="icon_btn" href="javascript:void(0);"></a>
+                                <a cid="965154" href="javascript:void(0);" title="">
+                                    蛔虫病
+                                    <span>(8)</span>
+                                </a>
+                                <ul class=""></ul>
+                            </li>                    
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--一周销量排行-->
+        <div class="xiaoliang">
+			<h3>一周销量排行榜</h3>
+            <div class="left_goodslist">                
+                
+                <ul class="ul_list" style="display:none;">
+                    <img src="images/top1.gif" class="l_t">
+                	<a href="##"><img class="img1" alt="金奥力牌大豆异黄酮维E软胶囊" src="images/img51.jpg"></a>
+                    <div class="text">
+                    	<p class="name"><a title="金奥力牌大豆异黄酮维E软胶囊" href="##">金奥力牌大豆异黄...</a></p>
+                    	<div class="blank5"></div>
+                    	<font class="f1">125.80</font> 
+                    	<font style="text-decoration:line-through; font-size:10px;">148.00</font>
+                    </div>
+                </ul>
+                <ul class="ul_list2" style="display:block;">
+                	<img src="images/top1.gif" class="l_t2">
+                	<li class="goodsimg"><a href="##"><img class="B_blue" alt="金奥力牌大豆异黄酮维E软胶囊" src="images/img51.jpg"></a></li>
+                	<div class="blank5"></div>
+                    <li style="height:20px; line-height:20px; overflow:hidden;">
+                        <a title="金奥力牌大豆异黄酮维E软胶囊" href="##">金奥力牌大豆异黄...</a>
+                    </li>
+                    <div class="blank5"></div>
+                    <li>
+                        <font class="f1">0.00</font>
+                        <font style="text-decoration:line-through; font-size:10px;">148.00</font>
+                    </li>
+                </ul>
+                <ul class="ul_list">
+                    <img src="images/top2.gif" class="l_t">
+                	<a href="##"><img class="img1" alt="金奥力牌大豆异黄酮维E软胶囊" src="images/img52.jpg"></a>
+                    <div class="text">
+                    	<p class="name"><a title="金奥力牌大豆异黄酮维E软胶囊" href="##">金奥力牌大豆异黄...</a></p>
+                    	<div class="blank5"></div>
+                    	<font class="f1">125.80</font> 
+                    	<font style="text-decoration:line-through; font-size:10px;">148.00</font>
+                    </div>
+                </ul>
+                <ul class="ul_list2">
+                	<img src="images/top2.gif" class="l_t2">
+                	<li class="goodsimg"><a href="##"><img class="B_blue" alt="金奥力牌大豆异黄酮维E软胶囊" src="images/img52.jpg"></a></li>
+                	<div class="blank5"></div>
+                    <li style="height:20px; line-height:20px; overflow:hidden;">
+                        <a title="金奥力牌大豆异黄酮维E软胶囊" href="##">金奥力牌大豆异黄...</a>
+                    </li>
+                    <div class="blank5"></div>
+                    <li>
+                        <font class="f1">0.00</font>
+                        <font style="text-decoration:line-through; font-size:10px;">148.00</font>
+                    </li>
+                </ul>
+                <ul class="ul_list">
+                    <img src="images/top3.gif" class="l_t">
+                	<a href="##"><img class="img1" alt="金奥力牌大豆异黄酮维E软胶囊" src="images/img53.jpg"></a>
+                    <div class="text">
+                    	<p class="name"><a title="金奥力牌大豆异黄酮维E软胶囊" href="##">金奥力牌大豆异黄...</a></p>
+                    	<div class="blank5"></div>
+                    	<font class="f1">125.80</font> 
+                    	<font style="text-decoration:line-through; font-size:10px;">148.00</font>
+                    </div>
+                </ul>
+                <ul class="ul_list2">
+                	<img src="images/top3.gif" class="l_t2">
+                	<li class="goodsimg"><a href="##"><img class="B_blue" alt="金奥力牌大豆异黄酮维E软胶囊" src="images/img53.jpg"></a></li>
+                	<div class="blank5"></div>
+                    <li style="height:20px; line-height:20px; overflow:hidden;">
+                        <a title="金奥力牌大豆异黄酮维E软胶囊" href="##">金奥力牌大豆异黄...</a>
+                    </li>
+                    <div class="blank5"></div>
+                    <li>
+                        <font class="f1">0.00</font>
+                        <font style="text-decoration:line-through; font-size:10px;">148.00</font>
+                    </li>
+                </ul>
+                <ul class="ul_list">
+                    <img src="images/top4.gif" class="l_t">
+                	<a href="##"><img class="img1" alt="金奥力牌大豆异黄酮维E软胶囊" src="images/img54.jpg"></a>
+                    <div class="text">
+                    	<p class="name"><a title="金奥力牌大豆异黄酮维E软胶囊" href="##">金奥力牌大豆异黄...</a></p>
+                    	<div class="blank5"></div>
+                    	<font class="f1">125.80</font> 
+                    	<font style="text-decoration:line-through; font-size:10px;">148.00</font>
+                    </div>
+                </ul>
+                <ul class="ul_list2">
+                	<img src="images/top4.gif" class="l_t2">
+                	<li class="goodsimg"><a href="##"><img class="B_blue" alt="金奥力牌大豆异黄酮维E软胶囊" src="images/img54.jpg"></a></li>
+                	<div class="blank5"></div>
+                    <li style="height:20px; line-height:20px; overflow:hidden;">
+                        <a title="金奥力牌大豆异黄酮维E软胶囊" href="##">金奥力牌大豆异黄...</a>
+                    </li>
+                    <div class="blank5"></div>
+                    <li>
+                        <font class="f1">0.00</font>
+                        <font style="text-decoration:line-through; font-size:10px;">148.00</font>
+                    </li>
+                </ul>
+                <ul class="ul_list">
+                    <img src="images/top5.gif" class="l_t">
+                	<a href="##"><img class="img1" alt="西洋参片" src="images/img55.jpg"></a>
+                    <div class="text">
+                    	<p class="name"><a title="西洋参片" href="##">西洋参片</a></p>
+                    	<div class="blank5"></div>
+                    	<font class="f1">125.80</font> 
+                    	<font style="text-decoration:line-through; font-size:10px;">148.00</font>
+                    </div>
+                </ul>
+                <ul class="ul_list2">
+                	<img src="images/top5.gif" class="l_t2">
+                	<li class="goodsimg"><a href="##"><img class="B_blue" alt="西洋参片" src="images/img55.jpg"></a></li>
+                	<div class="blank5"></div>
+                    <li style="height:20px; line-height:20px; overflow:hidden;">
+                        <a title="西洋参片E软胶囊" href="##">西洋参片</a>
+                    </li>
+                    <div class="blank5"></div>
+                    <li>
+                        <font class="f1">0.00</font>
+                        <font style="text-decoration:line-through; font-size:10px;">148.00</font>
+                    </li>
+                </ul>            
+            </div>
+		</div>
+    </div>
+    <!--右侧-->
+    <div class="aright">
+    	<div class="navgitor">
+        	<a href="##">全部结果</a> > <span>" 贵州百灵 咳速停胶囊 "</span>
+        </div>
+        
+        <!--搜索条件-->
+        <div class="rankOp clearfix mt10">
+            <ul class="rank clearfix">
+                <li class="down"><a sortid="11" href="##"><span>综合</span></a></li>
+                <li class="up"><a sortid="21" href="##l"><span>销量</span></a></li>
+                <li class="default"><a sortid="31" href="##"><span>好评</span></a></li>                
+                <li class="default"><a sortid="41" href="##"><span>最新</span></a></li>
+                <li class="defaultPrice"><a sortid="51" href="##"><span>价格</span></a></li>                
+                <li class="price_range">
+                    <div>
+                        <p><input type="text" value="" class="price_range_input" maxlength="8" />-<input type="text" value="" maxlength="8" class="price_range_input" /></p>
+                        <p class="price_range_btn">
+                            <button>确定</button>
+                            <cite onclick="clearPriceRange();">清除</cite>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="select">
+                <li class="rank_select">
+                    <input type="checkbox" name="filter">
+                    <label for="filter_1"> 包邮 </label>
+                </li>
+            </ul>
+            <ul class="page clearfix">
+                <li class="pageNum">
+                	<span>1</span>/31
+                </li>
+                <li>
+                	<a class="prev prevNo" url="0" href="javascript:void(0);"></a>
+                    <a class="next" pagenum="2" href="##"></a>
+                </li>
+        	</ul>
+		</div>
+        
+        <!--搜索结果-->
+        <div class="search_table">
+        	<div class="itemSearchResult clearfix fashionList">
+                <ul class="itemSearchList" id="itemSearchList">
+                    <li>
+                        <div class="itemSearchResultCon">
+                            <a class="product_pic pro_img" target="_blank" href="detail.html"> 
+                                <img width="205" height="188" src="images/img60.jpg" title="贵州百灵 咳速停胶囊 24粒">
+                                <span class="tag_video none"></span>
+                            </a>
+                            <p class="price">  
+                                <span>会员价:￥10.4</span>
+                                <del>¥12.0</del>
+                            </p>
+                            <p class="promo_info">&nbsp;</p>
+                            <a class="title" href="detail.html" target="_blank" title="贵州百灵 咳速停胶囊 24粒">贵州百灵 咳速停胶囊 24粒  润肺止咳、补气养阴，用于感冒咳嗽、咽干</a>
+                            <!--评论-->	
+                            <p class="comment">评论<a class="comment"href="javascript:void(0);">11条</a></p>
+                            <div class="buyInfo">
+                                <button class="buy">加入购物车</button> <button class="fav">加入收藏夹</button>
+                            </div> 
+                            <u class="bg_border"></u>
+                        </div>
+                    </li>                   
+                    
+                </ul>
+            </div>
+            <div class="turnPageBottom" style="display: block;">
+                <span class="page_cur">1</span>                 
+                <span class="pageOp">共1页</span>                
+                <span class="pageOp go">到第 <input type="text" id="jumpto">页<button onclick="redirecttopage();" id="jumptopage">确定</button></span> 
+    		</div>
+            <div class="clear"></div>
+        </div>
+        <!--猜您喜欢-->
+        <div class="bfd_sr_out">
+            <div class="bfd_ls_title">
+                <div clas="bfd_dt_1_t"><span class="bfd_recTitle">猜您喜欢</span></div>
+                <div style="margin-top:-32px;" class="bfd_logo_d"><a class="bfd_img_logo" target="_blank"></a></div>
+            </div>
+        	<div class="bfd_ls_rst">
+            	<ul id="bfd_show_ar_sr">
+                	<li class="bfd_dt_li1">
+                    	<p><a target="_blank" title="贵州百灵 咳速停胶囊 24粒" href="##"><img class="bfd_dt_pic1" target="_blank" alt="贵州百灵 咳速停胶囊 24粒" src="images/img56.jpg"></a></p>
+                        <p class="name"><a class="bfd_ls_a_t" target="_blank" title="贵州百灵 咳速停胶囊 24粒" href="##"><em></em>贵州百灵 咳速停胶囊 24粒</a></p>
+                        <p class="price"><span class="bfd_ls_price">¥10.40</span><span class="bfd_ls_del">¥11.0</span></p>
+                    </li>
+                    <li class="bfd_dt_li1">
+                    	<p><a target="_blank" title="贵州百灵 复方一枝黄花喷雾剂 15ml" href="##"><img class="bfd_dt_pic1" target="_blank" alt="贵州百灵 复方一枝黄花喷雾剂 15ml" src="images/img57.jpg"></a></p>
+                        <p class="name"><a class="bfd_ls_a_t" target="_blank" title="贵州百灵 复方一枝黄花喷雾剂 15ml" href="##"><em></em>贵州百灵 复方一枝黄花喷雾剂 15ml</a></p>
+                        <p class="price"><span class="bfd_ls_price">¥14.00</span><span class="bfd_ls_del">¥18.0</span></p>
+                    </li>
+                    <li class="bfd_dt_li1">
+                    	<p><a target="_blank" title="百灵百灵 金感胶囊 0.45g*12s*2板" href="##"><img class="bfd_dt_pic1" target="_blank" alt="百灵百灵 金感胶囊 0.45g*12s*2板" src="images/img58.jpg"></a></p>
+                        <p class="name"><a class="bfd_ls_a_t" target="_blank" title="百灵百灵 金感胶囊 0.45g*12s*2板" href="##"><em></em>百灵百灵 金感胶囊 0.45g*12s*2板</a></p>
+                        <p class="price"><span class="bfd_ls_price">¥12.80</span><span class="bfd_ls_del">¥13.9</span></p>
+                    </li>
+                    <li class="bfd_dt_li1">
+                    	<p><a target="_blank" title="百灵 骨力胶囊  0.3g*24粒" href="##"><img class="bfd_dt_pic1" target="_blank" alt="百灵 骨力胶囊  0.3g*24粒" src="images/img59.jpg"></a></p>
+                        <p class="name"><a class="bfd_ls_a_t" target="_blank" title="百灵 骨力胶囊  0.3g*24粒" href="##"><em></em>百灵 骨力胶囊  0.3g*24粒</a></p>
+                        <p class="price"><span class="bfd_ls_price">¥45.00</span><span class="bfd_ls_del">¥54.0</span></p>
+                    </li>
+                    <li class="bfd_dt_li1">
+                        <p><a target="_blank" title="湿毒清胶囊" href="##"><img class="bfd_dt_pic1" target="_blank" alt="湿毒清胶囊" src="images/img60.jpg"></a></p>
+                        <p class="name"><a class="bfd_ls_a_t" target="_blank" title="湿毒清胶囊" href="##"><em></em>湿毒清胶囊</a></p>
+                        <p class="price"><span class="bfd_ls_price">¥31.50</span><span class="bfd_ls_del">¥37.8</span></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="footer">
+	<div class="foot">
+    	<div class="about">
+            <div class="xl icon_zheng">
+            	<h1>正品保障</h1>
+                <h2>确保所有产品都是原装正品</h2>
+            </div>
+            <div class="xl icon_ba">
+            	<h1>8天无条件退换货</h1>
+                <h2>买的放心,用的放心</h2>
+            </div>
+            <div class="xl icon_bao">
+            	<h1>精美包装</h1>
+                <h2>统一的包装呵护商品</h2>
+            </div>
+            <div class="xl icon_piao">
+            	<h1>正规发票</h1>
+                <h2>机打发票,附箱送达</h2>
+            </div>
+        </div>
+        <div class="mt10">
+            <div class="aBox">
+                <span class="icon_a1" href="##">购物指南</span>
+                <a href="##">怎样购物</a>
+                <a href="##">优惠券介绍</a>
+                <a href="##">订单状态说明</a>
+            </div>
+            <div class="aBox">
+                <span class="icon_a2">支付帮助</span>
+                <a href="##">发票说明</a>
+                <a href="##">在线支付</a>
+            </div>
+            <div class="aBox">
+                <span class="icon_a3">配送方式</span>
+                <a href="##">申通速递</a>
+                <a href="##">顺风快递</a>
+                <a href="##">邮政EMS</a>
+            </div>
+            <div class="aBox">
+                <span class="icon_a4">服务条款</span>
+                <a href="##">售后服务政策</a>
+                <a href="##">售后特色服务</a>
+                <a href="##">退换货说明</a>
+                <a href="##">服务时效承诺</a>
+                <a href="##">联系客服</a>
+            </div>            
+            <div class="aBox">
+                <span class="icon_a5">关于生命维他</span>
+                <a href="##">生命维他简介</a>
+                <a href="##">生命维他公告</a>
+                <a href="##">招闲纳士</a>
+            </div>
+            <div class="aBox">
+                <span class="icon_a4">联系方式</span>
+                <a href="##">邮箱:serivice@qq.com</a>
+                <a href="##">电话:400-9999-9999</a>
+            </div>
+            <div class="aBox aBoxNone">
+                <span class="icon_a4">手机生命维他</span>
+                <p>轻松购物,顺利到家</p>
+                <div>
+                	<img src="images/img3.png" class="fl mr10" />
+                	<p><img src="images/icon_app.png" /></p>
+                    <p class="mt5"><img src="images/icon_android.png" /></p>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="pt10 center">
+            生命维他(德国)有限责任公司 版权所有 Copyright @ 1998-2006SIMPLY VITA,ALL Rights Reserved
+        </div>
+    </div>
+</div>
+</body>
+</html>

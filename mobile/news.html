@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>01新闻资讯</title>
+	<meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width">-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="js/skins/default.css">
+	<script src="js/jquery.js"></script>
+    <script src="js/slides.min.jquery.js"></script>
+    <script src="js/jquery.artDialog.js"></script>
+    <script src="js/main.js"></script>
+    <script language="javascript">
+    	$(function(){
+			$('.newsBanner .slides').slidesjs({width: 640,height: 282,start:1,navigation: true,play: {interval: 5000,auto: true}});
+			$(".share").click(function(e){
+				$(".shareCxt").show();
+				e.stopPropagation();
+			});
+			$(".shareCxt").click(function(e){
+				$(".shareCxt").hide();
+				
+			});
+			
+			$(document).click(function(e){
+				$(".shareCxt").hide();
+				e.stopPropagation();
+			})
+		})
+    </script>
+</head>
+<body id="top">
+<div class="containter">
+	<div class="header">
+    	<h1>
+        	<a href="javascript:;" class="icon icon_close">返回</a><a href="javascript:;" class="icon icon_menu share">&nbsp;</a>
+        	<span class="text">新闻资讯</span>
+        </h1>
+    </div>
+    <div class="content">
+    	<div class="newsUl">
+        	<li class="select"><a class="" href="javascript:;">最新资讯</a></li>
+            <li><a class="" href="javascript:;">技术信息</a></li>
+            <li><a class="" href="javascript:;">产品信息</a></li>
+            <li class="last"><a class="" href="javascript:;">合作信息</a></li>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+    	<!--新闻图片-->
+    	<div class="newsBanner">    	
+            <div class="slides">               	
+                <div class="slide">
+                    <a href="javascript:;"><img src="images/img40.png"/></a>
+                    <div class="caption">
+                    	亿利公益基金理事第七次会议举行
+                    </div>
+                </div>
+                <div class="slide">
+                    <a href="javascript:;"><img src="images/img40.png"/></a>
+                    <div class="caption">
+                    	亿利公益基金理事第七次会议举行
+                    </div>
+                </div> 
+                <div class="slide">
+                    <a href="javascript:;"><img src="images/img40.png"/></a>
+                    <div class="caption">
+                    	亿利公益基金理事第七次会议举行
+                    </div>
+                </div>
+                <div class="slide">
+                    <a href="javascript:;"><img src="images/img40.png"/></a>
+                    <div class="caption">
+                    	亿利公益基金理事第七次会议举行
+                    </div>
+                </div>        
+            </div>
+    	</div>
+        <!--新闻列表信息-->
+        <div class="pd20">
+            <div class="newsItem">
+                <h1><a href="newsDetail.html">亿利资源参与投资的九元航空昨日首航</a></h1>
+                <p class="text">12月2日上午10时，九元航空首航仪式在广州举行。广东省委常委、常务副省长徐少华，九元航空有限公司总裁、新闻发言人纪广平，以及投资方……</p>
+                <p class="icon_clock">发表时间：2014-12-03</p>
+            </div> 
+            <div class="newsItem">
+                <h1><a href="newsDetail.html">上海庙奶牛养殖场冬季护沙工程全面完成</a></h1>
+                <p class="text">鄂托克前旗上海庙地处毛乌素沙漠边缘，每逢冬、春时节狂风肆虐、黄沙飞舞。为了有效保护上海庙现代农牧循环产业示范区有机绿色牛羊养殖项目……</p>
+                <p class="icon_clock">发表时间：2014-12-03</p>
+            </div> 
+            <div class="newsItem">
+                <h1><a href="newsDetail.html">亿利资源参与投资的九元航空昨日首航</a></h1>
+                <p class="text">12月2日上午10时，九元航空首航仪式在广州举行。广东省委常委、常务副省长徐少华，九元航空有限公司总裁、新闻发言人纪广平，以及投资方……</p>
+                <p class="icon_clock">发表时间：2014-12-03</p>
+            </div> 
+            <div class="newsItem">
+                <h1><a href="newsDetail.html">上海庙奶牛养殖场冬季护沙工程全面完成</a></h1>
+                <p class="text">鄂托克前旗上海庙地处毛乌素沙漠边缘，每逢冬、春时节狂风肆虐、黄沙飞舞。为了有效保护上海庙现代农牧循环产业示范区有机绿色牛羊养殖项目……</p>
+                <p class="icon_clock">发表时间：2014-12-03</p>
+            </div> 
+            <div class="newsItem">
+                <h1><a href="newsDetail.html">亿利资源参与投资的九元航空昨日首航</a></h1>
+                <p class="text">12月2日上午10时，九元航空首航仪式在广州举行。广东省委常委、常务副省长徐少华，九元航空有限公司总裁、新闻发言人纪广平，以及投资方……</p>
+                <p class="icon_clock">发表时间：2014-12-03</p>
+            </div> 
+            <div class="newsItem">
+                <h1><a href="newsDetail.html">上海庙奶牛养殖场冬季护沙工程全面完成</a></h1>
+                <p class="text">鄂托克前旗上海庙地处毛乌素沙漠边缘，每逢冬、春时节狂风肆虐、黄沙飞舞。为了有效保护上海庙现代农牧循环产业示范区有机绿色牛羊养殖项目……</p>
+                <p class="icon_clock">发表时间：2014-12-03</p>
+            </div>
+            <div class="center">
+            	<a href="##" class="icon_load">向下加载更多</a>
+            </div> 
+        </div>    
+    </div>
+    <div class="shareCxt">
+    	<ul class="threeUl2">
+            <li>
+                <a href="javascript:;"><img src="images/img9.png" /></a>
+                <a href="javascript:;">朋友圈</a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="images/img10.png" /></a>
+                <a href="javascript:;">人人网</a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="images/img11.png" /></a>
+                <a href="javascript:;">新浪微博</a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="images/img12.png" /></a>
+                <a href="javascript:;">微信好友</a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="images/img13.png" /></a>
+                <a href="javascript:;">腾讯微博</a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="images/img14.png" /></a>
+                <a href="javascript:;">QQ空间</a>
+            </li>            
+            <div class="clear"></div>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    
+    <div class="footer">
+        <div class="footerUl">
+        	<li class="select"><a class="" href="cpsj.html"><span class="cpsj">&nbsp;</span>产品世界</a></li>
+            <li><a class="" href="gywm.html"><span class="gywm">&nbsp;</span>关于我们</a></li>
+            <li class="last"><a class="" href="user_center.html"><span class="grzx">&nbsp;</span>个人中心</a></li>
+        </div>   
+    </div>
+    
+</div> 
+</body>
+</html>

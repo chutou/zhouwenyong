@@ -1,0 +1,739 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9">
+<link rel="stylesheet" type="text/css" href="css/master.css"/>
+<link rel="stylesheet" type="text/css" href="css/user.css"/>
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
+<title>用户中心</title>
+<script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="../js/jquery.tab.js"></script>
+<script type="text/javascript" src="../js/slides.min.jquery.js"></script>
+<script language="javascript">
+	$(function(){
+		$(".menu").hover(function(){
+			$(this).children(".subMenu").show();
+			$(this).children(".subH2").addClass("subH2Cur");
+			$(this).find("h2").addClass("cur")
+		},function(){
+			$(this).children(".subMenu").hide();
+			$(this).children(".subH2").removeClass("subH2Cur");
+			$(this).find("h2").removeClass("cur")
+		})
+		$("div.all").hover(function(){
+			$(this).children(".menuBox").show();
+		},function(){
+			$(this).children(".menuBox").hide();
+		})
+		$(".firstMenu").hover(function(){
+			$(this).children("a.secondA").addClass("current");
+			$(this).children("ul.subNavUl").show();
+		},function(){
+			$(this).children("a.secondA").removeClass("current");
+			$(this).children("ul.subNavUl").hide();
+		})
+		$(".searchTab").tab({curClass: "current",act: "mouseover",tabId: ".tags",tabTag: "li",conId: ".panes",conTag: ".pane"});
+		
+	})
+</script>
+<!--[if lte IE 6]>
+<script src="Js/PNG.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix('div, ul, img, li, input , a ,span');
+    </script>
+<![endif]--> 
+</head>
+
+<body>
+<a name="top" id="top" style=""></a>
+
+<body>
+<div class="header">
+	<div class="head">
+        <div class="loginBar">
+            <div class="fl"><a class="icon icon_fav">收藏生命维他商城</a></div>
+            <div class="fr">您好，欢迎来生命维他商城！ [<a href="##" class="color_org">请登录</a>]  [免费注册]  ︱  用户中心  ︱  我的订单  ︱  帮助中心  </div>
+            <div class="clear"></div>
+        </div>
+        <div class="topBanner"><img src="../images/img1.png" width="1210" height="60" /></div>
+        <div class="headerCenter">
+            <div class="logo"><img src="../images/logo.png" width="250" height="90" /></div>
+            <div class="indexGo">
+            	<a class="gobtn" href="##">去购物车结算</a>
+            </div>
+            <div class="searchBox">
+                <div class="s"><input type="text" class="sinput" value="请输入关键字" onfocus="if(value=='请输入关键字') {value=''}" onblur="if(value=='') {value='请输入关键字'}" /><input type="button" class="sbtn" title="搜索" /></div>
+                <div>热门搜索：<a href="##">按摩蜡烛</a> <a href="##">鼻敏清</a> <a href="##">骨迅康</a> <a href="##">活肝康</a></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="mainNav">
+            <div class="all">
+            	<span class="text">全部商品分类</span>
+                <div class="box202 menuBox">
+                    <div class="menu">
+                        <div class="subH2 zhongxiyao">
+                            <h2>中西药品</h2>
+                            <div class="subA">
+                                <a href="##">男科疾病</a><a href="##">妇科疾病</a><a href="##">呼吸道疾病</a><a href="##">风湿科</a><a href="##">皮肤科</a><a href="##">心脑血管</a>
+                            </div>
+                        </div>
+                        <div class="subMenu">
+                            <div class="subMLeft">
+                                <div class="subL fl">
+                                    <h3>男科疾病</h3>
+                                    <div class="subA">
+                                        <a href="##">性功能障碍</a><a href="##">泌尿系统疾病</a><a href="##">前列腺炎</a><a href="##">肾病</a>
+                                    </div>
+                                    <h3>妇科疾病</h3>
+                                    <div class="subA">
+                                        <a href="##">月经不调</a><a href="##">乳腺炎</a><a href="##">孕产期</a><a href="##">更年期</a>
+                                    </div>
+                                    <h3>呼吸道疾病</h3>
+                                    <div class="subA brnone">
+                                        <a href="##">感冒发烧</a><a href="##">咳嗽</a><a href="##">小儿感冒</a><a href="##">哮喘</a>
+                                    </div>
+                                </div>
+                                <div class="subL fr">
+                                    <h3>风湿科</h3>
+                                    <div class="subA">
+                                        <a href="##">癫风</a><a href="##">类风湿关节炎</a><a href="##">颈腰椎病</a><a href="##">跌打损伤</a>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="subMRight">
+                                <h4 class="color_red">按品牌索引</h4>
+                                <div>
+                                    <a href="##">康扬</a> <a href="##">方太</a> <a href="##">泰康</a> <a href="##">日本MIKI</a> <a href="##">鱼跃</a> <a href="##">互邦</a> <a href="##">佛山</a> <a href="##">爱邦</a> <a href="##">常州众和</a> <a href="##">凯洋</a>
+                                </div>
+                                <div class="tar"><a class="color_org"><更多></a></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="subH2 baojianping">
+                            <h2>保健品</h2>
+                            <div class="subA">
+                                <a href="##">中老年健康</a><a href="##">皮肤保养</a><a href="##">儿童保健</a><a href="##">孕婴营养</a><a href="##">男士保健</a><a href="##">热卖营养素</a>
+                            </div>
+                        </div>
+                        <div class="subMenu">
+                            <div class="subMLeft">
+                                <div class="subL fl">
+                                    <h3>男科疾病</h3>
+                                    <div class="subA">
+                                        <a href="##">性功能障碍</a><a href="##">泌尿系统疾病</a><a href="##">前列腺炎</a><a href="##">肾病</a>
+                                    </div>
+                                    <h3>妇科疾病</h3>
+                                    <div class="subA">
+                                        <a href="##">月经不调</a><a href="##">乳腺炎</a><a href="##">孕产期</a><a href="##">更年期</a>
+                                    </div>
+                                    <h3>呼吸道疾病</h3>
+                                    <div class="subA brnone">
+                                        <a href="##">感冒发烧</a><a href="##">咳嗽</a><a href="##">小儿感冒</a><a href="##">哮喘</a>
+                                    </div>
+                                </div>
+                                <div class="subL fr">
+                                    <h3>风湿科</h3>
+                                    <div class="subA">
+                                        <a href="##">癫风</a><a href="##">类风湿关节炎</a><a href="##">颈腰椎病</a><a href="##">跌打损伤</a>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="subMRight">
+                                <h4 class="color_red">按品牌索引</h4>
+                                <div>
+                                    <a href="##">康扬</a> <a href="##">方太</a> <a href="##">泰康</a> <a href="##">日本MIKI</a> <a href="##">鱼跃</a> <a href="##">互邦</a> <a href="##">佛山</a> <a href="##">爱邦</a> <a href="##">常州众和</a> <a href="##">凯洋</a>
+                                </div>
+                                <div class="tar"><a class="color_org"><更多></a></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="subH2 gaiji">
+                            <h2>维生素钙剂</h2>
+                            <div class="subA">
+                                <a href="##">维生素</a><a href="##">孕妇专享</a><a href="##">钙剂</a><a href="##">矿物质</a>
+                            </div>
+                        </div>
+                        <div class="subMenu">
+                            <div class="subMLeft">
+                                <div class="subL fl">
+                                    <h3>男科疾病</h3>
+                                    <div class="subA">
+                                        <a href="##">性功能障碍</a><a href="##">泌尿系统疾病</a><a href="##">前列腺炎</a><a href="##">肾病</a>
+                                    </div>
+                                    <h3>妇科疾病</h3>
+                                    <div class="subA">
+                                        <a href="##">月经不调</a><a href="##">乳腺炎</a><a href="##">孕产期</a><a href="##">更年期</a>
+                                    </div>
+                                    <h3>呼吸道疾病</h3>
+                                    <div class="subA brnone">
+                                        <a href="##">感冒发烧</a><a href="##">咳嗽</a><a href="##">小儿感冒</a><a href="##">哮喘</a>
+                                    </div>
+                                </div>
+                                <div class="subL fr">
+                                    <h3>风湿科</h3>
+                                    <div class="subA">
+                                        <a href="##">癫风</a><a href="##">类风湿关节炎</a><a href="##">颈腰椎病</a><a href="##">跌打损伤</a>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="subMRight">
+                                <h4 class="color_red">按品牌索引</h4>
+                                <div>
+                                    <a href="##">康扬</a> <a href="##">方太</a> <a href="##">泰康</a> <a href="##">日本MIKI</a> <a href="##">鱼跃</a> <a href="##">互邦</a> <a href="##">佛山</a> <a href="##">爱邦</a> <a href="##">常州众和</a> <a href="##">凯洋</a>
+                                </div>
+                                <div class="tar"><a class="color_org"><更多></a></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="subH2 guixi">
+                            <h2>参茸贵细</h2>
+                            <div class="subA">
+                                <a href="##">参类产品</a><a href="##">中药饮片</a><a href="##">贵细滋补品</a>
+                            </div>
+                        </div>
+                        <div class="subMenu">
+                            <div class="subMLeft">
+                                <div class="subL fl">
+                                    <h3>男科疾病</h3>
+                                    <div class="subA">
+                                        <a href="##">性功能障碍</a><a href="##">泌尿系统疾病</a><a href="##">前列腺炎</a><a href="##">肾病</a>
+                                    </div>
+                                    <h3>妇科疾病</h3>
+                                    <div class="subA">
+                                        <a href="##">月经不调</a><a href="##">乳腺炎</a><a href="##">孕产期</a><a href="##">更年期</a>
+                                    </div>
+                                    <h3>呼吸道疾病</h3>
+                                    <div class="subA brnone">
+                                        <a href="##">感冒发烧</a><a href="##">咳嗽</a><a href="##">小儿感冒</a><a href="##">哮喘</a>
+                                    </div>
+                                </div>
+                                <div class="subL fr">
+                                    <h3>风湿科</h3>
+                                    <div class="subA">
+                                        <a href="##">癫风</a><a href="##">类风湿关节炎</a><a href="##">颈腰椎病</a><a href="##">跌打损伤</a>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="subMRight">
+                                <h4 class="color_red">按品牌索引</h4>
+                                <div>
+                                    <a href="##">康扬</a> <a href="##">方太</a> <a href="##">泰康</a> <a href="##">日本MIKI</a> <a href="##">鱼跃</a> <a href="##">互邦</a> <a href="##">佛山</a> <a href="##">爱邦</a> <a href="##">常州众和</a> <a href="##">凯洋</a>
+                                </div>
+                                <div class="tar"><a class="color_org"><更多></a></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="subH2 riyongping">
+                            <h2>日用品</h2>
+                            <div class="subA">
+                                <a href="##">沐浴洗发</a><a href="##">化妆品</a><a href="##">婴幼儿用品</a><a href="##">季节性用品</a>
+                            </div>
+                        </div>
+                        <div class="subMenu">
+                            <div class="subMLeft">
+                                <div class="subL fl">
+                                    <h3>男科疾病</h3>
+                                    <div class="subA">
+                                        <a href="##">性功能障碍</a><a href="##">泌尿系统疾病</a><a href="##">前列腺炎</a><a href="##">肾病</a>
+                                    </div>
+                                    <h3>妇科疾病</h3>
+                                    <div class="subA">
+                                        <a href="##">月经不调</a><a href="##">乳腺炎</a><a href="##">孕产期</a><a href="##">更年期</a>
+                                    </div>
+                                    <h3>呼吸道疾病</h3>
+                                    <div class="subA brnone">
+                                        <a href="##">感冒发烧</a><a href="##">咳嗽</a><a href="##">小儿感冒</a><a href="##">哮喘</a>
+                                    </div>
+                                </div>
+                                <div class="subL fr">
+                                    <h3>风湿科</h3>
+                                    <div class="subA">
+                                        <a href="##">癫风</a><a href="##">类风湿关节炎</a><a href="##">颈腰椎病</a><a href="##">跌打损伤</a>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="subMRight">
+                                <h4 class="color_red">按品牌索引</h4>
+                                <div>
+                                    <a href="##">康扬</a> <a href="##">方太</a> <a href="##">泰康</a> <a href="##">日本MIKI</a> <a href="##">鱼跃</a> <a href="##">互邦</a> <a href="##">佛山</a> <a href="##">爱邦</a> <a href="##">常州众和</a> <a href="##">凯洋</a>
+                                </div>
+                                <div class="tar"><a class="color_org"><更多></a></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <li class="firstMenu"><a class="current" href="index.html">首页</a></li>
+            <li class="firstMenu">
+            	<a href="item.html" class="secondA">常见病</a>
+                <ul class="subNavUl"><li><a href="##">换季感冒</a></li><li><a href="##">乙肝</a></li><li><a href="##">皮炎癣症</a></li><li><a href="##">鼻炎</a></li><li><a href="##">风湿骨病</a></li><li><a href="##">高血压</a></li><li><a href="##">缺钙</a></li><li><a href="##">痤疮</a></li><li><a href="##">失眠</a></li></ul>
+            </li>
+            <li class="firstMenu">
+            	<a href="item.html" class="secondA">重大疾病</a>
+                <ul class="subNavUl">
+                  <li><a href="##">肺癌</a></li>
+                  <li><a href="##">帕金森</a></li>
+                  <li><a href="##">牛皮癣</a></li>
+                  <li><a href="##">抑郁症</a></li>
+                  <li><a href="##">中风偏瘫</a></li>
+                  <li><a href="##">尖锐湿疣</a></li>
+                  <li><a href="##">万全力太</a></li>
+                  <li><a href="##">博路定</a></li>
+                  <li><a href="##">老年性痴呆</a></li>
+                </ul>
+            </li>
+            <li class="firstMenu">
+            	<a href="item.html" class="secondA">女性</a>
+                <ul class="subNavUl">
+                  <li><a href="##">药物祛痘</a></li>
+                  <li><a href="##">孕妇营养</a></li>
+                  <li><a href="##">大姨妈</a></li>
+                  <li><a href="##">造人计划</a></li>
+                  <li><a href="##">大眼秘密</a></li>
+                  <li><a href="##">情趣用具</a></li>
+                  <li><a href="##">夏季美容</a></li>
+                  <li><a href="##">祛疤神器</a></li>
+                  <li><a href="##">避孕那些事</a></li>
+                </ul>
+            </li>
+            <li class="firstMenu">
+            	<a href="item.html" class="secondA">男性</a>
+                <ul class="subNavUl">
+                  <li><a href="##">汇仁肾宝</a></li>
+                  <li><a href="##">秘鲁玛卡</a></li>
+                  <li><a href="##">滚床单必备</a></li>
+                  <li><a href="##">早泄神药</a></li>
+                  <li><a href="##">性功能障碍</a></li>
+                  <li><a href="##">高端白领体检</a></li>
+                  <li><a href="##">痿哥好伴侣</a></li>
+                </ul>
+            </li>
+            <li class="firstMenu">
+            	<a href="item.html" class="secondA">老人</a>
+                <ul class="subNavUl">
+                  <li><a href="##">辅助降三高</a></li>
+                  <li><a href="##">中老年体检</a></li>
+                  <li><a href="##">改善体质</a></li>
+                </ul>
+            </li>
+            <li class="firstMenu">
+            	<a href="item.html" class="secondA">儿童</a>
+                <ul class="subNavUl">
+                  <li><a href="##">小儿难养</a></li>
+                  <li><a href="##">小儿肠胃</a></li>
+                  <li><a href="##">小儿感冒</a></li>
+                  <li><a href="##">婴儿奶粉</a></li>
+                  <li><a href="##">儿童保健</a></li>
+                  <li><a href="##">宝宝纸尿裤</a></li>
+                  <li><a href="##">小儿多动症</a></li>
+                </ul>
+            </li>
+            <li class="firstMenu">
+            	<a href="tuan.html" class="">团购<span class="icon_hot">&nbsp;</span></a>
+            </li>
+            <li class="firstMenu">
+            	<a href="wenyao.html" class="secondA">问医问药</a>
+                <ul class="subNavUl">
+                  <li><a href="##">问医问药</a></li>
+                  <li><a href="##">健康百科</a></li>
+                  <li><a href="##">健康论坛</a></li>
+        		  <li><a href="##">健康资讯</a></li>
+                  <li><a href="##">疾病症状库</a></li>
+                </ul>
+            </li>     
+        </div>
+    </div>
+</div>
+<div class="main">
+	<div class="navigtion"><a href="index.html">首页</a> &gt; <a href="##">用户中心</a></div>
+    <div class="aleft">
+    	<!--目录列表-->
+        <div class="box_1">
+            <div class="userCenterBox">
+                <div class="userMenu">                
+                	<h3><a href="user.html">会员中心</a></h3>                
+                    <div id="cate">
+                    	<h1 onclick="tab(0)"><span>订单中心</span><img src="../images/user_up.gif"></h1>
+                        <ul style="display: block;">
+                        	<a href="wddd.html">我的订单</a>
+                        	<a href="shdz.html">收货地址</a>                        
+                        	<a href="xqdj.html">需求登记</a>
+                        </ul>
+                    	<div style="clear:both"></div>
+                    	<h1 onclick="tab(1)"><span>会员中心</span><img src="../images/user_up.gif"></h1>
+                        <ul style="display:block">                        
+                            <a href="yhxx.html" class="select">用户信息</a>                        
+                            <a href="wdsc.html">我的收藏</a>                        
+                            <a href="wdly.html">我的留言</a>
+                            <a href="wdbq.html">我的标签</a>                        
+                            <a href="wdtj.html">我的推荐</a>
+                            <a href="wdpl.html">我的评论</a>
+                        </ul>
+                    	<div style="clear:both"></div>
+                    	<h1 onclick="tab(2)"><span>账户中心</span><img src="../images/user_up.gif"></h1>
+                        <ul style="display:block;">
+                            <a href="wdhb.html">我的红包</a>
+                            <a href="wdtg.html">我的团购</a>
+                            <a href="gzbg.html"> 跟踪包裹</a>
+                            <a href="zjgl.html"> 资金管理</a>
+                            <a href="jfdh.html">积分兑换</a>                        
+                        </ul>
+                    </div>
+                </div>
+				<script type="text/javascript">
+                    obj_h4 = document.getElementById("cate").getElementsByTagName("h4")
+                    obj_ul = document.getElementById("cate").getElementsByTagName("ul")
+                    obj_img = document.getElementById("cate").getElementsByTagName("img")
+                    function tab(id){ 
+                        if(obj_ul.item(id).style.display == "block"){
+                            obj_ul.item(id).style.display = "none"
+                            obj_img.item(id).src = "../images/user_down.gif"
+                            return false;
+                        }else(obj_ul.item(id).style.display == "none")
+                        {
+                            obj_ul.item(id).style.display = "block"
+                            obj_img.item(id).src = "../images/user_up.gif"
+                        }
+                    }
+                </script>      
+        	</div>
+    	</div>
+    </div>
+    <div class="adminRight">
+        
+        <div class="">
+        	<div class="tab">
+                <div class="tit">
+                    <ul class="tags">
+                        <li class=""><a><span>基本信息</span></a></li>
+                        <li class=""><a><span>详细信息</span></a></li>
+                        <li class=""><a><span>商家信息</span></a></li>
+                        <li class=""><a><span>设置签名</span></a></li>
+                        <li class=""><a><span>设置头像</span></a></li>
+                        <li class="current"><a><span>修改密码</span></a></li>
+                    </ul>
+              </div>
+              	 <div class="panes">
+                 	<div class="alert_info">
+                        完善以下资料可以为您带来更高关注度,帮你找到更多好朋友!
+                        <a class="close">&nbsp;</a>
+                    </div>
+                    <div class="pane" style="display:none;">
+                    	<div class="infoItem">
+                        	<span class="w150">您的会员身份:</span> 用户
+                        </div>
+                        <div class="infoItem">
+                        	<span class="w150">用户登录名:</span> 123123haw <span class="icon_tixin">用户注册成功后不能修改!</span>
+                        </div>
+                        <div class="infoItem">
+                        	<span class="w150">联系电话:</span> 13675890987 <input type="radio" checked="checked" name="dh" /> 手机 <input type="radio" name="dh" /> 固定电话  <a class="color_org" href="##">[更改电话]</a> <span class="icon_tixin">更改手机号码需重新获取手机验证码来校验!</span>
+                        </div>
+                        <div class="infoItem">
+                        	<span class="w150">Email:</span> jei@qq.com  <a class="color_org" href="##">[修改绑定邮箱]</a>
+                        </div>
+                        <div class="infoItem">
+                        	<span class="w150">所在地:</span><select><option>请选择省份</option></select> <font class="color_999">请选择所在的省份</font>
+                        </div>
+                        <div class="infoItem">
+                        	<span class="w150">&nbsp;</span><select><option>请选择城市</option></select> <font class="color_999">请选择所在的城市</font>
+                        </div>
+                        <div class="infoItem">
+                        	<span class="w150">所在行业</span><select><option>请选择行业</option></select> <font class="color_999">请选择所在的行业</font>
+                        </div>
+                        
+                        <div class="center mt50"><a class="btnSubmit" id="submit"><span>填好了,提交了</span></a></div>
+                        <div class="center"><span class="alert_success">保存成功</span></div>
+                  	</div>
+                    <div class="pane" style="display:none">
+                    	<div class="infoItem">
+                        	<span class="w150">真实姓名:</span><input type="text" class="input" size="50" /> <font class="red">*</font>
+                        </div>
+                        <div class="infoItem">
+                        	<span class="w150">QQ:</span><input type="text" class="input" size="20" /> 
+                        </div>
+                        <div class="infoItem">
+                        	<span class="w150">MSN:</span><input type="text" class="input" size="20" /> 
+                        </div>
+                        <div class="infoItem">
+                        	<span class="w150">所在单位名称:</span><input type="text" class="input" size="50" /> <font class="red">*</font>
+                        </div>
+                        <div class="infoItem">
+                        	<span class="w150">单位地址:</span><select><option>浙江</option></select> <select><option>杭州</option></select> <select><option>西湖区</option></select> <input type="text" class="input" size="40" /> 
+                        </div>
+                        <div class="infoItem">
+                        	<span class="w150">邮政编码:</span><input type="text" class="input" size="20" /> 
+                        </div>
+                        <div class="infoItem">
+                        	<span class="w150">职位:</span><input type="text" class="input" size="20" /> 
+                        </div>
+                        <div class="infoItem">
+                        	<span class="w150">办公电话:</span><input type="text" class="input" size="20" /> 
+                        </div>
+                        <div class="infoItem">
+                        	<span class="w150">单位传真:</span><input type="text" class="input" size="20" /> <font class="red">*</font>
+                        </div>
+                        <div class="infoItem">
+                        	<span class="w150">单位类型:</span><select><option>企业单位</option></select> <font class="red">*</font> 请选择企业的类型 
+                        </div>
+                        <div class="infoItem" style="border:none;">
+                        	<span class="w150 fl">可能感兴趣的商品:</span><div class="fl"><textarea style="width:200px; height:60px;" class="textarea"></textarea></div><div class="clear"></div> 
+                        </div>
+                        <div class="infoItem" style="border:none;">
+                        	<span class="w150">&nbsp;</span>商品名称之间请用“;”隔开。
+                        </div>
+                        <div class="center mt50"><a class="btnSubmit" id="submit"><span>填好了,提交了</span></a></div>
+                        <div class="center"><span class="alert_success">保存成功</span></div>
+                    </div> 
+                    <div class="pane" style="display:none;">
+                    	
+                        <div class="infoItem">
+                        	<span class="w150">公司名称:</span><input type="text" class="input" size="20" /> <font class="red">*</font>
+                        </div>
+                        <div class="infoItem">
+                        	<span class="w150">公司地址:</span><input type="text" class="input" size="30" /> 
+                        </div>
+                        <div class="infoItem">
+                        	<span class="w150">邮政编码:</span><input type="text" class="input" size="20" /> 
+                        </div>
+                        <div class="infoItem">
+                        	<span class="w150">办公电话:</span><input type="text" class="input" size="20" />
+                        </div>
+                        <div class="infoItem">
+                        	<span class="w150">公司传真:</span><input type="text" class="input" size="20" /> <font class="red">*</font>
+                        </div>
+                        <div class="infoItem">
+                        	<span class="w150">公司类型:</span><select><option>企业单位</option></select> <font class="red">*</font> 请选择企业的类型
+                        </div>
+                        <div class="infoItem">
+                        	<span class="w150 fl">主营产品:</span><div class="fl"><textarea style="width:600px; height:80px" class="textarea"></textarea><br /><span>限定字数为150字</span></div>
+                            <div class="clear"></div>
+                        </div>
+                        
+                        <div class="infoItem">
+                        	<span class="w150">加入供应商库:</span><input type="checkbox" /> 仪器/配件 <input type="checkbox" /> 化玻/试剂 <input type="checkbox" /> 家具/图书
+                        </div>
+                        <div class="infoItem">
+                        	<span class="w150">经营区域:</span><input type="checkbox" /> 全国 <input type="checkbox" /> 其他 <input type="text" size="20" class="input" /> <a class="color_lan" href="##">[区域选择]</a>
+                        </div>
+                        <div class="infoItem">
+                        	<span class="w150 fl">公司简介:</span><div class="fl"><textarea style="width:600px; height:80px" class="textarea"></textarea></div><div class="clear"></div>
+                        </div>
+                        <div class="infoItem">
+                        	<span class="w150">联系人:</span><input type="text" class="input" size="20" />
+                        </div>
+                        <div class="infoItem">
+                        	<span class="w150">联系电话:</span><input type="text" class="input" size="20" /> 手机号码: <input type="text" class="input" size="20" /> 手机或办公电话必填一个 
+                        </div>
+                        <div class="infoItem">
+                        	<span class="w150">联系人职位:</span><input type="text" class="input" size="20" />
+                        </div>
+                        <div class="infoItem">
+                        	<span class="w150">联系人QQ:</span><input type="text" class="input" size="20" />
+                        </div>
+                        <div class="infoItem">
+                        	<span class="w150">联系人MSN:</span><input type="text" class="input" size="20" />
+                        </div>
+                        <div class="center mt50"><a class="btnSubmit" id="submit"><span>填好了,提交了</span></a></div>
+                        <div class="center"><span class="alert_success">保存成功</span></div>
+                               	
+                    </div> 
+                    <div class="pane" style="display:none;">                    	
+                        <h2 class="qianmin mt10">设置签名：</h2>
+                        <div class="posRetive">
+                        	<span class="sjx"></span>
+                        	<textarea class="qmtextarea">在此输入一句话的签名信息！字数空置在30个字内。</textarea>
+                        </div>
+                        <div class="historyBox">
+                        	<div class="historyTit">
+                            	历史签名信息
+                                <div class="posRight"><a class="btnSubmit"><span>填好了,提交了</span></a></div>
+                            </div>
+                            <div class="hItem">
+                            	<span class="sjx">01</span>
+                            	<p class="text">雪佛兰变形记乐风再现光芒雪佛兰变形记乐风再现光芒雪佛兰变形记乐风再现光芒雪佛兰变形记乐风再现光芒</p>                                <p class="time">发布时间：2012-12-12 12:12:12</p>
+                                <a class="color_lan del" href="##">删除</a>
+                                <a class="yinhao">&nbsp;</a>
+                            </div>
+                            <div class="hItem">
+                            	<span class="sjx">02</span>
+                            	<p class="text">雪佛兰变形记乐风再现光芒雪佛兰变形记乐风再现光芒雪佛兰变形记乐风再现光芒雪佛兰变形记乐风再现光芒</p>                                <p class="time">发布时间：2012-12-12 12:12:12</p>
+                                <a class="color_lan del" href="##">删除</a>
+                                <a class="yinhao">&nbsp;</a>
+                            </div>
+                            <div class="hItem">
+                            	<span class="sjx">03</span>
+                            	<p class="text">雪佛兰变形记乐风再现光芒雪佛兰变形记乐风再现光芒雪佛兰变形记乐风再现光芒雪佛兰变形记乐风再现光芒</p>                                <p class="time">发布时间：2012-12-12 12:12:12</p>
+                                <a class="color_lan del" href="##">删除</a>
+                                <a class="yinhao">&nbsp;</a>
+                            </div>
+                            <div class="hItem">
+                            	<span class="sjx">04</span>
+                            	<p class="text">雪佛兰变形记乐风再现光芒雪佛兰变形记乐风再现光芒雪佛兰变形记乐风再现光芒雪佛兰变形记乐风再现光芒</p>                                <p class="time">发布时间：2012-12-12 12:12:12</p>
+                                <a class="color_lan del" href="##">删除</a>
+                                <a class="yinhao">&nbsp;</a>
+                            </div>
+                        </div>
+                        
+                    	<div class="br bk_f3 pl10 pr10 pt5 mt10">
+                            <span class="fl"></span>
+                            <span class="fr">
+                                <div class="page">
+                                    <span class="cur no1">1</span>
+                                    <a href="javascript:;" class="no1">2</a>
+                                    <a href="javascript:;" class="no1">3</a>
+                                    <a href="javascript:;" class="no1">4</a>
+                                    <a href="javascript:;" class="no1">5</a>
+                                    <a href="javascript:;" class="no1">···</a>
+                                    <a href="javascript:;" class="next">&nbsp;</a>
+                                    <span class="text">到第 <input type="text" size="4" class="input"> <input type="button" value="确定" class="btn"> 页</span>
+                                </div>
+                            </span>
+                            <div class="clear"></div>
+                        </div>
+                    </div> 
+                    <div class="pane" style="display:none;">
+                    	<div class="pt10"><a class="inlineBlock"><img src="images/photo_img1.gif" /></a> <a class="inlineBlock"><img src="images/photo_img2.gif" /></a> <a class="inlineBlock"><img src="images/photo_img3.gif" /></a></div>
+                        <p>仅支持JPG,GIF,PNG图片文件,大小文件小于5M</p>
+                        <div class="fl">
+                        	<p><img src="images/photo_img4.gif" class="br" /></p>
+                            <p class="mt10"><a href="##"><img src="images/photo_img8.gif" /></a></p>
+                        </div>
+                        <div class="fl" style="width:264px; margin-left:50px;">
+                        	<p>你上传的头像会自动生成三种尺寸,<br /> 请注意中小尺寸的头像是否清晰!</p>
+                            <div class="fl" style="width:162px;"><img class="br" src="images/photo_img5.gif" /><span class="block">大尺寸头像,160*160像素</span></div>
+                            <div class="fr">
+                            <div class="" style="width:62px;"><img class="br" src="images/photo_img6.gif" /><span class="block">中尺寸头像<br />60*60像素</span></div>
+                            <div class="" style="width:62px;"><img class="br" src="images/photo_img7.gif" /><span class="block">小尺寸头像<br />30*30像素</span></div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        
+                    </div> 
+                    <div class="pane">
+                    	<div class="box600 fl">
+                            <div><font class="red">重要提示:每天互联网都会有大量用户账号存在着严重被资的风险,如果你正在使用与其他网站相同的密码,建议你尽快修改!</font></div>
+                            <div class="infoItem" style="border:none">
+                                <span class="w150">当前密码:</span><input type="password" class="input" size="20" />
+                            </div>
+                            <div class="infoItem" style="border:none">
+                                <span class="w150">新密码:</span><input type="password" class="input" size="20" /> 
+                            </div>
+                            <div class="infoItem" style="border:none">
+                                <span class="w150">&nbsp;</span> 安全强度
+                            </div>
+                            <div class="infoItem" style="border:none">
+                                <span class="w150">确认密码:</span><input type="password" class="input" size="20" /> 
+                            </div>
+                            
+                            <div class="center mt50"><a class="btnSubmit" id="submit"><span>填好了,提交了</span></a></div>
+                            <div class="center"><span class="alert_success">保存成功</span></div>	
+                        </div>
+                        <div class="box200 fr">
+                        	<p class="font14 color_333"><b>常见安全问题</b></p>
+                            <p class="pt5">1、<a class="color_lan">忘记密码怎么办?</a></p>
+                            <p class="pt5">2、<a class="color_lan">怎么样的密码更安全?</a></p>
+                            <p class="pt5">3、<a class="color_lan">如何防止账号被盗?</a></p>
+                            <p class="pt5">4、<a class="color_lan">修改密码次数过多,<br />不能再修改怎么办?</a></p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>                      
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="clear"></div>
+</div>
+
+<div class="footer">
+	<div class="foot">
+    	<div class="about">
+            <div class="xl icon_zheng">
+            	<h1>正品保障</h1>
+                <h2>确保所有产品都是原装正品</h2>
+            </div>
+            <div class="xl icon_ba">
+            	<h1>8天无条件退换货</h1>
+                <h2>买的放心,用的放心</h2>
+            </div>
+            <div class="xl icon_bao">
+            	<h1>精美包装</h1>
+                <h2>统一的包装呵护商品</h2>
+            </div>
+            <div class="xl icon_piao">
+            	<h1>正规发票</h1>
+                <h2>机打发票,附箱送达</h2>
+            </div>
+        </div>
+        <div class="mt10">
+            <div class="aBox">
+                <span class="icon_a1" href="##">购物指南</span>
+                <a href="##">怎样购物</a>
+                <a href="##">优惠券介绍</a>
+                <a href="##">订单状态说明</a>
+            </div>
+            <div class="aBox">
+                <span class="icon_a2">支付帮助</span>
+                <a href="##">发票说明</a>
+                <a href="##">在线支付</a>
+            </div>
+            <div class="aBox">
+                <span class="icon_a3">配送方式</span>
+                <a href="##">申通速递</a>
+                <a href="##">顺风快递</a>
+                <a href="##">邮政EMS</a>
+            </div>
+            <div class="aBox">
+                <span class="icon_a4">服务条款</span>
+                <a href="##">售后服务政策</a>
+                <a href="##">售后特色服务</a>
+                <a href="##">退换货说明</a>
+                <a href="##">服务时效承诺</a>
+                <a href="##">联系客服</a>
+            </div>            
+            <div class="aBox">
+                <span class="icon_a5">关于生命维他</span>
+                <a href="##">生命维他简介</a>
+                <a href="##">生命维他公告</a>
+                <a href="##">招闲纳士</a>
+            </div>
+            <div class="aBox">
+                <span class="icon_a4">联系方式</span>
+                <a href="##">邮箱:serivice@qq.com</a>
+                <a href="##">电话:400-9999-9999</a>
+            </div>
+            <div class="aBox aBoxNone">
+                <span class="icon_a4">手机生命维他</span>
+                <p>轻松购物,顺利到家</p>
+                <div>
+                	<img src="../images/img3.png" class="fl mr10" />
+                	<p><img src="../images/icon_app.png" /></p>
+                    <p class="mt5"><img src="../images/icon_android.png" /></p>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="pt10 center">
+            生命维他(德国)有限责任公司 版权所有 Copyright @ 1998-2006SIMPLY VITA,ALL Rights Reserved
+        </div>
+    </div>
+</div>
+</body>
+</html>

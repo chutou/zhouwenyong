@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* 重置样式 */
+* {-moz-box-sizing: border-box;}
+html {-webkit-text-size-adjust: none; /* 禁用iPhone中Safari的字号自动调整 */}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {margin:0;padding:0;}
+body,button,input,select,textarea {font:100% 'Microsoft Yahei',arial,sans-serif;}
+table {border-collapse:collapse;border-spacing:0;}
+th {text-align:inherit;}
+fieldset,img {border:none;}
+iframe {display:block;}
+abbr,acronym {border:none;font-variant:normal;}
+del {text-decoration:line-through;}
+address,caption,cite,code,dfn,em,th,var {font-style:normal;font-weight:500;}
+ol,ul {list-style:none;}
+caption,th {text-align:left;}
+body,h1,h2,h3,h4,h5,h6 {font-size-adjust: 0.5;}
+q:before,q:after {content:'';}
+sub,sup {font-size:75%;line-height:0;position:relative;vertical-align:baseline;}
+sup {top:-0.5em;}
+sub {bottom:-0.25em;}
+ins,a {color:#666;text-decoration:none;}
+a:hover {text-decoration:underline;}
+a:focus,*:focus {outline:none;}
+.clearfix:before,.clearfix:after {content:"";display:table;}
+.clearfix:after {clear:both;overflow:hidden;}
+.clearfix {zoom:1;}
+.clear {clear:both;display:block;font-size:0;height:0;line-height:0;overflow:hidden;}
+.hide {display:none;}
+.block {display:block;}
+.fl,.fr {display:inline;}
+.fl { float:left;}
+.fr {float:right;}
+.oh {overflow:hidden;}
+input,input:focus,input:active{user-select: text;}
+
+/* 设置HTML5元素为块 */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+
+/* 设置图片视频等自适应调整 */
+img {width: 100%;height: auto;width: auto9; /* ie8 */ -ms-interpolation-mode:bicubic;}
+.video embed, .video object, .video iframe {width: 100%;height: auto;}

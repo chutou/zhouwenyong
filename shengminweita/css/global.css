@@ -1,0 +1,252 @@
+@charset "utf-8";
+/* CSS Document */
+/* CSS Document */
+/*@charset "gb2312";*/
+/**
+ * ============================================================================
+ * 版权所有: cn-lab
+ * 网站地址: cn-lab
+ * ----------------------------------------------------------------------------
+ * $codex 1. id和class命名采用该版块的英文单词或组合命名，并第一个单词小写，第二个单词首个字母大写，如:thinkCss（最新产品/think+Css)
+ * $codex 2. CSS样式表各区块用注释说明
+ * $codex 3. 尽量使用英文命名原则
+ * $codex 4. 尽量不加中杠和下划线
+ * $codex 5. 尽量不缩写，除非一看就明白的单词
+ * $Author: zhouwenyong 
+ * $mailto: <32173844@qq.com>
+ * $hack :ie 6 _  \ ie7 *+ \  ie6,ie7 *  \  ie7,firefox !important
+*/
+
+/**
+ +------------------------------------------------------------------------------
+ * 网站样式重写
+ +------------------------------------------------------------------------------
+ * @comefrom  zhouwenyong
+ * @subpackage  zhouwenyong
+ +------------------------------------------------------------------------------
+ */body{ color:#666666; padding:0px; margin:0px; font-family:Microsoft YaHei,"宋体"; font-size:12px;}
+ * {} * a:link{}
+a{outline:none; text-decoration:none; color:#666666; cursor:pointer;} a:hover{ text-decoration:underline; color:#264ea5;}
+html{/*zoom:1;*/ line-height:22px;}html *{outline:0;/*zoom:1;*/} html button::-moz-focus-inner{border-color:transparent!important;} 
+body{overflow-x: hidden; font-size:12px;} body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,figure,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;} table{/*border-collapse:collapse;border-spacing:0;*/} fieldset,a img{border:0;} address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:normal;} li{list-style:none;} caption,th{text-align:left;} h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;} q:before,q:after{content:'';}
+.tar{ text-align:right;}
+.color_blue{ color:#264EA5;}
+.text-unline{ text-decoration:underline;}
+.text-line{ text-decoration:line-through}
+
+/**
+ +------------------------------------------------------------------------------
+ * Public Class
+ +------------------------------------------------------------------------------
+ * @subpackage  RBAC
+ +------------------------------------------------------------------------------
+ */
+.clearfix:after {content:"."; display:block; height:0; clear:both; visibility:hidden; }.clearfix {display:block;}.clear{ clear:both; line-height:0px; height:0px; overflow:hidden;}/* 清除浮动*/
+.colwrapper { overflow:hidden; zoom:1 /*for ie*/; margin:5px auto; }/* 高度自适应 */ 
+.strong{ font-weight: bold;} .left{} .right{} .center{text-align:center;}
+.show{ display:block; visibility:visible;}.hide{ display: none; visibility:hidden;}
+.block{ display:block;} .inline{ display:inline;} .inlineBlock{ display:inline-block;}
+.transparent{filter:alpha(opacity=50); -moz-opacity:0.5;/** Firefox 3.5即将原生支持opacity属性，所以本条属性只在Firefox3以下版本有效 ***/ -khtml-opacity: 0.5; opacity: 0.5; } .break{ word-wrap:break-word;overflow:hidden; /*word-break:break-all;*/}
+.pt5{ padding-top:5px;}.pd1{ padding:1px; background:#fff;}.pd5{ padding:5px;}
+.pl10{ padding-left:10px;}.pr10{ padding-right:10px;}.pt10{ padding-top:10px;}.pb10{ padding-bottom:10px;}.pd10{ padding:10px;}.mt10{ margin-top:10px;}.ml10{ margin-left:10px;}.pd15{padding:15px;}.mg10{ margin:10px;}.mb50{ margin-bottom:50px;}.mb10{ margin-bottom:10px;} .mtb5{margin:5px 0 5px 0;}
+.pt8{ padding-top:8px;}.lh28{ line-height:28px;}.mt5{ margin-top:5px;}.mt20{ margin-top:20px;}
+.br{ border:1px solid #ddd;}
+.br_blue{ border:1px solid #b4cee7;}
+.br_blue2{ border-top:2px solid #264EA5;}
+.br_blue3{ border:1px solid #5377c5;}
+.brbm{ border-bottom:1px solid #cccccc; cursor:pointer;}.brtb{ border-top:1px solid #e7e7e7;}.brbd{border-bottom:1px dotted #e0e0e0;}/*底部线条*/.mt30{ margin-top:30px;} .mt50{ margin-top:50px;} .mr10{ margin-right:10px;} .ml5{ margin-left:5px;} .fl{float:left;}.fr{float:right;}.txde{ text-decoration:underline;}
+
+/**
+ +------------------------------------------------------------------------------
+ * FCK 兼容解决方案
+ +------------------------------------------------------------------------------
+ * @subpackage  RBAC
+ +------------------------------------------------------------------------------
+ */
+em{ font-style:normal !important;} strike{ text-decoration:line-through !important;} strong{ font-weight:bold !important;} u{ text-decoration:underline !important;}.text-though{text-decoration:line-through;}
+
+/**
+ +------------------------------------------------------------------------------
+ * 表单样式
+ +------------------------------------------------------------------------------
+ * @subpackage  RBAC
+ +------------------------------------------------------------------------------
+ */
+
+/**
+ +------------------------------------------------------------------------------
+ * 网站整体颜色总汇
+ +------------------------------------------------------------------------------
+ * @codex  颜色:使用颜色的名称或者16进制代码,如 
+ * @subpackage  RBAC
+ +------------------------------------------------------------------------------
+ */
+.ff8600,.ff86aa a{ color:#ff8600;}
+.color_lan{ color:#264EA5;}
+.color_lan2{ color:#004393;}
+.color_5d{ color:#003e90;}
+.color_777{ color:#757575;}
+.color_5df{ color:#389a69;}
+.color_999{ color:#999}
+.color_333{ color:#333;}
+.color_l{ color:#66a008;}
+.color_org{ color:#ff6600;}
+.color_f60{ color:#ff6600;}
+
+/**
+ +------------------------------------------------------------------------------
+ * 网站整字体大小
+ +------------------------------------------------------------------------------
+ * @codex   字体大小,直接使用"font+字体大小"作为名称,如
+ * @package  ORG
+ * @subpackage  RBAC
+ +------------------------------------------------------------------------------
+ */
+.font12px{ font-size:12px;}
+.font14px{ font-size:14px;}
+.font16px{ font-size:16px;}
+.font18px{ font-size:18px;}
+.font24px{ font-size:24px;}
+.font9pt{ font-size:9pt;}
+.black{ color:#000;}
+.red{ color:#ff0000;}
+.c00{ color:#cc0000;}
+.white{ color:#fff;}
+
+/*
+*背景
+*/
+.bk_f5{ background:#f5f5f5;}
+.bk_f3{ background:#f3f3f3;}
+.bk_lan{ background:#f7fafc;}
+
+
+/**
+ +------------------------------------------------------------------------------
+ * 网站整布局命名规范
+ +------------------------------------------------------------------------------
+ * @codex   id和class命名采用该版块的英文单词或组合命名 如:newRelease
+ * @package  ORG
+ * @subpackage  RBAC
+ +------------------------------------------------------------------------------
+ */
+.dropdown {/*outline:none;display:inline-block;*display:inline;*/ float:left}
+.dropdown h4{cursor:default; text-indent:0px; margin:0; padding:0;}
+.dropdown * {-moz-user-select:none;}
+.dropdown h4.over {}
+.dropdown div {display:block; /*fix bug*/}
+.dropdown ul{position:absolute;display:none;margin:0;padding:0;float:left;clear:both;}
+.dropdown ul li{text-indent:5px;margin:0;padding:0;list-style:none;display:block;cursor:default;}
+.dropdown ul li.over{}
+.dropselectbox {display:inline;}
+/* write you style here */
+.dropselectbox {background:#d3dffa; float:left; margin:0px 0px 0px 0px;}
+.dropdown h4{height:26px; line-height:26px; width:77px; font:12px/28px Arial, Helvetica, sans-serif; /*border:solid 1px #ededed;*/background:url(images/bg.gif) no-repeat 54px -312px; padding:0px 0px 0px 10px}
+.dropdown h4.over{border-color:#ededed; background:url(images/bg.gif) no-repeat 72px -283px;}
+.dropdown h4.current{border-color:#ededed;}
+.dropdown ul{border:1px solid #5377c5; background:#FFF;}
+.dropdown ul li{background:#FFF;height:24px;font:400 12px/24px Arial, Helvetica, sans-serif;}
+.dropdown ul li.over{background:#5377c5; color:#FFF; display:inline-block; width:100%;}
+/*头部样式*/
+body{ background:url(images/bg.gif) repeat-x 0px -632px; }
+.header{ position:relative; z-index:100; background:url(images/headerBg2.png) repeat-x 0px 0px;}
+.arcHeader{position:relative; z-index:100; background:url(images/headerBg.png) repeat-x 0px 0px;}
+.head{ width:990px; margin:0px auto;}
+.loginBar{ height:22px; line-height:22px; padding:3px 0px 4px 0px; position:relative; z-index:3; _overflow:hidden;}
+.loginBar .icon_fav{ background:url(images/icon.png) no-repeat 0px -10px; padding-left:20px;}
+.headerCenter{ height:91px; _overflow:hidden;}
+.logo{ padding:0px 0px 0px 0px; text-align:left; float:left;}
+.searchBox{ float:right; padding:20px 0px 0px 0px; width:500px;}
+.searchBox .s{ background:url(images/searchBar.png) no-repeat 0px 0px; height:36px;}
+.searchBox .s .sinput{ width:395px; height:28px; line-height:28px; border:0px solid #fff; margin:3px 0px 0px 3px; padding:0px 10px; float:left;}
+.searchBox .s .sbtn{ width:80px; height:30px; background:none; cursor:pointer; border:0px solid #fff; float:left;}
+.indexGo{ float:right; height:36px; width:131px; margin-left:20px; padding:20px 0px 0px 0px;}
+.indexGo .gobtn{ background:url(images/buyBg.png) no-repeat 0px 0px; line-height:33px; display:block; padding-left:35px;}
+.mainNav{ font-family:Microsoft YaHei; height:40px; clear:both;}
+
+.mainNav li a{ padding:0px 22px; display:inline-block; height:40px; font-size:16px; line-height:40px; color:#fff;}
+.mainNav li a:hover{ background:#264ea5; text-decoration:none; color:#fff;}
+.mainNav .all a{ background:none; line-height:22px; height:22px;}
+.mainNav .all{ float:left;width:202px; position:relative;}
+.mainNav .menuBoxPos{ position:absolute; top:40px; left:0px; z-index:999; display:none;}
+.mainNav .all span.text{ text-align:center; display:inline-block; width:202px; font-size:18px; height:40px; line-height:40px; padding:0px; background:#2261b7 url(images/icon.png) no-repeat 98% -64px; color:#fff;}
+.mainNav a.all{ text-align:center; display:inline-block; width:202px; font-size:18px; height:40px; padding:0px; background:#2261b7 url(images/icon.png) no-repeat 98% -64px;}
+.mainNav a.current{ background:#264ea5;}
+.mainNav li.firstMenu{ float:left; position:relative;}
+.mainNav li.firstMenu a.secondA{ background:url(images/icon.png) no-repeat 98% -24px;}
+.mainNav li.firstMenu span.icon_hot{ background:url(images/icon.png) no-repeat 98% -96px; width:32px; height:32px; display:inline-block; position:absolute; top:-18px; left:50px;}
+.subNavUl{ display:none; position:absolute; z-index:88; top:40px; width:100px; background:#fff; height:auto; padding:0px 0px; border:1px solid #dddddd; }
+.newsNavUl{}
+.subNavUl li{}
+.subNavUl li a{ display:block; height:26px; padding:3px 15px 3px 15px; font-size:14px; line-height:26px; color:#000; overflow:hidden;}
+.subNavUl li a:hover{ background:#f3f3f3; text-decoration:none; color:#000;}
+/*子菜单*/
+.menuBox{ background:#fff; /*border:1px solid #577ac6;*/position:absolute; top:40px; left:0px; z-index:114; display:none;}
+.menu{ }
+
+.subH2{ position:relative; z-index:116;padding:4px 10px;border:1px solid #f1f1f1; border-bottom:1px solid #ddd; border-top:1px solid #fff}
+.zhongxiyao{ background:url(images/menuImgBg1.png) no-repeat right 10px;}
+.baojianping{ background:url(images/menuImgBg2.png) no-repeat right 10px;}
+.gaiji{ background:url(images/menuImgBg3.png) no-repeat right 10px;}
+.guixi{ background:url(images/menuImgBg4.png) no-repeat right 10px;}
+.riyongping{ background:url(images/menuImgBg4.png) no-repeat right 10px;}
+.subH2last{border-bottom:1px solid #f1f1f1;}
+.subH2Cur{border:1px solid #d0d0d0; border-right:1px solid #fff; background-color:#eef4fd; width:182px;_width:181px;}
+.menu h2{ font-weight:bold; color:#4b3331; font-size:14px;}
+.menu h2.cur{ font-weight:bold; color:#264EA5;}
+.menu .subA{ color:#000;}
+.menu .subA a{ color:#000; width:68px; display:inline-block;word-break:break-all; font-size:12px; color:#828282;}
+.menu .subMenu{ display:none; position:absolute; top:0px; left:202px;_left:201px; width: 650px; height:423px; padding:0px 20px; background:#fff; border:1px solid #d0d0d0; z-index:115;}
+.menu .subMenu .subMLeft{ width:400px; float:left;}
+.menu .subMenu .subMRight{ float:right; width:200px;}
+.menu .subMenu .subMRight h4{ color:#c60101; padding:10px 0px 0px 0px;}
+.menu .subMenu .subMLeft .subL{ width:180px;}
+.menu .subMenu h3{ color:#000000; font-weight:bold; padding:10px 0px 5px 0px; border-bottom:2px solid #000; font-size:14px;}
+.menu .subMenu .subA{ border-bottom:1px dotted #000; padding:10px 0px 10px 0px; height:66px;}
+.menu .subMenu .brnone{ border-bottom:none;}
+.menu .subMenu .subA a{ padding:0px; display:inline-block; width:90px;}
+
+/*主体样式*/
+.main{ margin:0px auto; width:990px; clear:both; position:relative;}
+/*关于我们*/
+.aBox{ width:120px; float:left; padding:10px 0px 10px 10px;}
+.aBoxNone{ width:180px; background:url(images/indexLine2.png) repeat-y 0px 0px; float:right;}
+.aBox a{ display:block; padding:0px 0px 0px 0px; font-size:12px; color:#908f8f;}
+.aBox span{ display:inline-block; font-size:14px; font-family:Microsoft YaHei}
+/*底部样式*/
+.footer{background:#fff url(images/footerBg.png) repeat-x 0px 0px; margin-top:10px;}
+.footer .foot{ margin:0px auto 0px auto; width:990px;}
+.footer  .about{ background:#ececec; padding:10px 0px; background:url(images/indexFooterBg.png) repeat-x left bottom; height:42px;}
+.footer .about .xl{ padding:0px 0px 0px 40px; float:left; width:180px; margin-left:20px;}
+.footer .about .xl h1{ font-size:14px; color:#0368ce;}
+.footer .about .xl h2{}
+.icon_zheng{ background:url(images/icon_zheng.png) no-repeat 0px center;}
+.icon_ba{ background:url(images/icon_ba.png) no-repeat 0px center;}
+.icon_bao{ background:url(images/icon_bao.png) no-repeat 0px center;}
+.icon_piao{ background:url(images/icon_piao.png) no-repeat 0px center;}
+
+.footer a{}
+a.qq1{ padding:0px 0px 0px 30px; background:url(images/btn.gif) no-repeat -95px -40px; display:inline-block;}
+a.qq2{ padding:0px 0px 0px 30px; background:url(images/btn.gif) no-repeat -95px -65px; display:inline-block;}
+
+.navgitor{ margin-top:10px; line-height:22px; font-family:"宋体"; background:url(images/search_sprite.png) no-repeat -385px 5px; padding-left:10px;}
+.navgitor a{ padding:0px 10px;}
+.navgitor a.select{ color:#2261b7;}
+
+/*分页*/
+.turnPageBottom {float: right;padding: 10px 0;line-height: 14px;}
+.turnPageBottom a, .turnPageBottom span {float: left;margin-left: 5px;padding: 5px 8px;border: 1px solid #ccc;}
+.turnPageBottom .page_break {padding: 5px;}
+.turnPageBottom a:hover, .turnPageBottom .page_cur {border: 1px solid #407bcc;background: #d1e4fe;color: #407bcc;}
+.turnPageBottom .page_cur {font-weight: bold;}
+.turnPageBottom a:hover {background: #fff;}
+.turnPageBottom .page_break {border: none;}
+.turnPageBottom .page_start, .turnPageBottom .page_prev, .turnPageBottom .page_next, .turnPageBottom .page_end {padding: 5px 8px 5px 15px;background: url(images/search_sprite.png) no-repeat -145px -316px;}
+.turnPageBottom .page_next, .turnPageBottom .page_end {padding: 5px 15px 5px 5px;background-position: -269px -316px;}
+.turnPageBottom .page_end {background-position: -214px -316px;}
+.turnPageBottom .page_next:hover, .turnPageBottom .page_prev:hover {background: #fef9f9 url(images/search_sprite.png) no-repeat -269px -316px;}
+.turnPageBottom .page_prev, .turnPageBottom .page_prev:hover {background-position: -200px -316px;}
+.turnPageBottom span.pageOp {margin: 0;border: none;}
+.turnPageBottom span.pageOp.go {padding: 2px 1px 0 0;_padding-top: 1px;line-height: 20px;}
+.turnPageBottom span.pageOp input {width: 22px;height: 14px;margin: 0 4px;padding: 2px;border: 1px solid #dbdbdb;vertical-align: middle;}
+.turnPageBottom span.pageOp button {width: 40px;height: 22px;margin: -2px 0 0 2px;border: none;background: url(images/search_sprite.png) 0 -80px;color: #33;vertical-align: middle;cursor: pointer; padding:0px 0px;}

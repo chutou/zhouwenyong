@@ -1,0 +1,576 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9">
+<link rel="stylesheet" type="text/css" href="css/master.css"/>
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
+<title>后台--物流</title>
+<script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="../js/jquery.tab.js"></script>
+<script type="text/javascript" src="../js/jquery.select.js"></script>
+<script language="javascript">
+	$(function(){
+		$(".searchTab").tab({curClass: "current",act: "mouseover",tabId: ".tags",tabTag: "li",conId: ".panes",conTag: ".pane"});
+		$(".select").sSelect();
+		$(".shop").hover(function(){
+			$(this).children(".shopShow").show();
+			$(this).children(".shopText").addClass("shopTitCur");
+		},function(){
+			$(this).children(".shopShow").hide();
+			$(this).children(".shopText").removeClass("shopTitCur");
+		})
+		$(".myhome").hover(function(){
+			$(this).children(".shopShow").show();
+			$(this).children(".shopTit").addClass("shopTitCur");
+		},function(){
+			$(this).children(".shopShow").hide();
+			$(this).children(".shopTit").removeClass("shopTitCur");
+		})
+		$(".menu").hover(function(){
+			$(this).children(".subMenu").show();
+			$(this).children(".subH2").addClass("subH2Cur");
+			$(this).find("h2").addClass("cur")
+		},function(){
+			$(this).children(".subMenu").hide();
+			$(this).children(".subH2").removeClass("subH2Cur");
+			$(this).find("h2").removeClass("cur")
+		})
+		$("div.all").hover(function(){
+			$(this).children(".menuBoxPos").show();
+		},function(){
+			$(this).children(".menuBoxPos").hide();
+		})
+		var ck;
+        $(".title").toggle(function () {
+            //ck = $(".title").attr("id");
+            //$(".title[id!=" + cr + "]").css({ "background-color": "#5377c5" });
+            //$(this).next().slideToggle("fast").end().siblings(".title").next().slideUp();
+			$(this).next(".content").hide();
+			$(this).addClass("title2")
+        },function(){
+			//$(this).next().slideToggle("fast").end().siblings(".title").next().slideUp();
+			$(this).next(".content").show();
+			$(this).removeClass("title2")
+		});
+		$("a.close").click(function(){
+			$(this).parents(".alert_info").hide();
+		})
+		$("#submit").click(function(){
+			$(".alert_success").show();
+		})
+		$("#newModel").click(function(){$(".mobanNew").show();$(this).hide();})
+		$("#fanhui").click(function(){$(".mobanNew").hide();$("#newModel").show();})
+		$("#newYunfei").click(function(){
+			$(".yunfeimoban").show();
+			$(".yunfeiBox").hide();
+		})
+		$(".yunfeiBtn").click(function(){
+			$(".yunfeimoban").hide();
+			$(".yunfeiBox").show();
+		})
+	})
+</script>
+</head>
+
+<body>
+<div class="header">
+	<div class="loginBar">
+    	<div class="fl">您好,欢迎光临莱百商城! <a class="line" href="##">登录</a> <a class="line" href="##">注册</a> <a class="pl10" href="##">忘记密码?</a></div>
+        <div class="fr">
+        	<div class="shop">
+            	<div class="shopText"><span class="icon1">购物车</span>(<b class="color_lan">2</b>)</div>
+            	<div class="shopShow">
+                	<div class="tit">最新加入的商品</div>
+                    <div class="shopItem">
+                    	<a class="shopImg"><img src="../images/upload/img8.jpg" width="60" height="60" /></a>
+                        <a class="shopTit">商品名称SHA-A水浴恒温振荡器</a>
+                        <span class="shopSize">规格型号</span>
+                        <span class="shopAdd">厂家产地</span>
+                        <span class="shopNum">￥2099.00<font>X1</font></span>
+                        <a class="del">删除</a>
+                    </div>
+                    <div class="shopItem bk_f5">
+                    	<a class="shopImg"><img src="../images/upload/img8.jpg" width="60" height="60" /></a>
+                        <a class="shopTit">商品名称SHA-A水浴恒温振荡器</a>
+                        <span class="shopSize">规格型号</span>
+                        <span class="shopAdd">厂家产地</span>
+                        <span class="shopNum">￥2099.00<font>X1</font></span>
+                        <a class="del">删除</a>
+                    </div>
+                    <div class="bk_f3 tar pd10">
+                    	<p>共 <b class="c00">2</b> 件商品,共计 <b class="c00 font16px">￥4198</b></p>
+                        <p><a class="topBtn1">去购物车确认</a></p>
+                    </div>
+                </div>
+            </div>
+            <span class="line2 fl">&nbsp;</span>
+            <div class="myhome">
+            	<div class="shopTit">我的莱百</div>
+            	<div class="shopShow">
+                	<div class="tit"><span class="fl">您好,请登录</span><a class="fr topBtn2">登录莱百</a></div>
+                    <div class="shopItem">
+                    	<div class="fl shopItemLeft">
+                            <a class="color_blue" href="##">站内信息 ></a>
+                            <a class="color_blue" href="##">站内广播 ></a>
+                            <a class="color_blue" href="##">我的贴子 ></a>
+                        </div>
+                        <div class="fl shopItemRight">
+                            <a class="color_blue" href="##">出售订单 ></a>
+                            <a class="color_blue" href="##">采购订单 ></a>
+                            <a class="color_blue" href="##">我的关注 ></a>
+                        </div>	
+                        <div class="clear"></div>
+                    </div>
+                    <div class="bk_f3 pd10">
+                    	<p>最近浏览的商品</p>
+                        <div>
+                        	<a class="inlineBlock br" href="##"><img src="../images/upload/img8.jpg" width="60" height="60" /></a>
+                            <a class="inlineBlock br" href="##"><img src="../images/upload/img8.jpg" width="60" height="60" /></a>
+                            <a class="inlineBlock br" href="##"><img src="../images/upload/img8.jpg" width="60" height="60" /></a>
+                            <a class="inlineBlock br" href="##"><img src="../images/upload/img8.jpg" width="60" height="60" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="fl">
+            	<span class="line"></span> <a class="line" href="##">莱百学院</a><a class="line" href="##">莱百服务</a><a class="line" href="##">设为首页</a><a class="pl10" href="##">加入收藏</a>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="headerCenter">
+        <div class="logo"><img src="../images/logo.jpg" /></div>
+        <div class="cityBox">
+            <h1>中国实验室</h1>
+            <div class="city"><strong>杭州站</strong> | <span class="changeCity">更改城市</span></div>
+        </div>
+        <div class="searchBox">
+            <div class="searchTab">
+                <div class="tit">
+                    <ul class="tags">
+                        <li><a>商品</a></li>
+                        <li><a>商家</a></li>
+                        <li><a>用户</a></li>
+                        <li><a>资讯</a></li>
+                    </ul>
+                 </div>
+                <div class="panes">
+                    <div class="pane">
+                        <input type="text" class="input" /><select id="select1" class="select"><option>不限地区</option></select><input class="searchBtn" type="button" value="搜 索" />
+                    </div>
+                    <div class="pane">
+                        <input type="text" class="input2" /><input class="searchBtn" type="button" value="搜 索" />           	
+                    </div>
+                    <div class="pane">
+                        <input type="text" class="input2" /><input class="searchBtn" type="button" value="搜 索" />            	
+                    </div>
+                    <div class="pane">
+                        <input type="text" class="input2" /><input class="searchBtn" type="button" value="搜 索" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="mainNav">
+    	<div class="all">
+        	<span class="text">全部商品分类</span>
+            <div class="menuBoxPos">
+                <div class="box208 menuBox">
+                    <div class="menu">
+                        <div class="subH2">
+                            <h2>仪器/配件/耗材</h2>
+                            <div class="subA">
+                                <a href="##">通用</a><a href="##">物理特性</a><a href="##">行业专用</a><a href="##">配件</a><a href="##">耗材</a>
+                            </div>
+                        </div>
+                        <div class="subMenu">
+                            <h3>仪器/配件/耗材</h3>
+                            <div class="subA">
+                                <a href="##">通用</a> | <a href="##">物理特性</a> | <a href="##">行业专用</a> | <a href="##">配件</a> | <a href="##">耗材</a> | <a href="##">通用</a> | <a href="##">物理特性</a> | <a href="##">行业专用</a> | <a href="##">配件</a> | <a href="##">耗材</a> | <a href="##">通用</a> | <a href="##">物理特性</a> | <a href="##">行业专用</a> | <a href="##">配件</a> | <a href="##">耗材</a>
+                            </div>
+                            <h3>仪器/配件/耗材</h3>
+                            <div class="subA">
+                                <a href="##">通用</a> | <a href="##">物理特性</a> | <a href="##">行业专用</a> | <a href="##">配件</a> | <a href="##">耗材</a> | <a href="##">通用</a> | <a href="##">物理特性</a> | <a href="##">行业专用</a> | <a href="##">配件</a> | <a href="##">耗材</a> | <a href="##">通用</a> | <a href="##">物理特性</a> | <a href="##">行业专用</a> | <a href="##">配件</a> | <a href="##">耗材</a>
+                            </div>
+                            <h3>仪器/配件/耗材</h3>
+                            <div class="subA brnone">
+                                <a href="##">通用</a> | <a href="##">物理特性</a> | <a href="##">行业专用</a> | <a href="##">配件</a> | <a href="##">耗材</a> | <a href="##">通用</a> | <a href="##">物理特性</a> | <a href="##">行业专用</a> | <a href="##">配件</a> | <a href="##">耗材</a> | <a href="##">通用</a> | <a href="##">物理特性</a> | <a href="##">行业专用</a> | <a href="##">配件</a> | <a href="##">耗材</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="subH2">
+                            <h2>化玻/试剂/标准品</h2>
+                            <div class="subA">
+                                <a href="##">通用</a><a href="##">物理特性</a><a href="##">行业专用</a><a href="##">配件</a><a href="##">耗材</a>
+                            </div>
+                        </div>
+                        <div class="subMenu">
+                            <h3>仪器/配件/耗材</h3>
+                            <div class="subA">
+                                <a href="##">通用</a> | <a href="##">物理特性</a> | <a href="##">行业专用</a> | <a href="##">配件</a> | <a href="##">耗材</a> | <a href="##">通用</a> | <a href="##">物理特性</a> | <a href="##">行业专用</a> | <a href="##">配件</a> | <a href="##">耗材</a> | <a href="##">通用</a> | <a href="##">物理特性</a> | <a href="##">行业专用</a> | <a href="##">配件</a> | <a href="##">耗材</a>
+                            </div>
+                            <h3>仪器/配件/耗材</h3>
+                            <div class="subA">
+                                <a href="##">通用</a> | <a href="##">物理特性</a> | <a href="##">行业专用</a> | <a href="##">配件</a> | <a href="##">耗材</a> | <a href="##">通用</a> | <a href="##">物理特性</a> | <a href="##">行业专用</a> | <a href="##">配件</a> | <a href="##">耗材</a> | <a href="##">通用</a> | <a href="##">物理特性</a> | <a href="##">行业专用</a> | <a href="##">配件</a> | <a href="##">耗材</a>
+                            </div>
+                            <h3>仪器/配件/耗材</h3>
+                            <div class="subA brnone">
+                                <a href="##">通用</a> | <a href="##">物理特性</a> | <a href="##">行业专用</a> | <a href="##">配件</a> | <a href="##">耗材</a> | <a href="##">通用</a> | <a href="##">物理特性</a> | <a href="##">行业专用</a> | <a href="##">配件</a> | <a href="##">耗材</a> | <a href="##">通用</a> | <a href="##">物理特性</a> | <a href="##">行业专用</a> | <a href="##">配件</a> | <a href="##">耗材</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="subH2 subH2last">
+                            <h2>实验室家具/图书</h2>
+                            <div class="subA">
+                                <a href="##">通用</a><a href="##">物理特性</a><a href="##">行业专用</a><a href="##">配件</a><a href="##">耗材</a>
+                            </div>
+                        </div>
+                        <div class="subMenu">
+                            <h3>仪器/配件/耗材</h3>
+                            <div class="subA">
+                                <a href="##">通用</a> | <a href="##">物理特性</a> | <a href="##">行业专用</a> | <a href="##">配件</a> | <a href="##">耗材</a> | <a href="##">通用</a> | <a href="##">物理特性</a> | <a href="##">行业专用</a> | <a href="##">配件</a> | <a href="##">耗材</a> | <a href="##">通用</a> | <a href="##">物理特性</a> | <a href="##">行业专用</a> | <a href="##">配件</a> | <a href="##">耗材</a>
+                            </div>
+                            <h3>仪器/配件/耗材</h3>
+                            <div class="subA">
+                                <a href="##">通用</a> | <a href="##">物理特性</a> | <a href="##">行业专用</a> | <a href="##">配件</a> | <a href="##">耗材</a> | <a href="##">通用</a> | <a href="##">物理特性</a> | <a href="##">行业专用</a> | <a href="##">配件</a> | <a href="##">耗材</a> | <a href="##">通用</a> | <a href="##">物理特性</a> | <a href="##">行业专用</a> | <a href="##">配件</a> | <a href="##">耗材</a>
+                            </div>
+                            <h3>仪器/配件/耗材</h3>
+                            <div class="subA brnone">
+                                <a href="##">通用</a> | <a href="##">物理特性</a> | <a href="##">行业专用</a> | <a href="##">配件</a> | <a href="##">耗材</a> | <a href="##">通用</a> | <a href="##">物理特性</a> | <a href="##">行业专用</a> | <a href="##">配件</a> | <a href="##">耗材</a> | <a href="##">通用</a> | <a href="##">物理特性</a> | <a href="##">行业专用</a> | <a href="##">配件</a> | <a href="##">耗材</a>
+                            </div>
+                        </div>
+                    </div>
+            	</div>
+            </div>
+        </div>
+        <a class="current" href="../index.html">首 页</a><a href="##">仪器/配件</a><a href="##">化玻/试剂</a><a href="##">家具/图书</a><a href="##">二手货</a><a href="##">技术服务</a><a href="##">招标竟购</a><a href="##">方案/标准</a><a href="##">新闻资讯</a><a href="##">论 坛</a> 
+        <div class="clear"></div>       
+    </div>
+</div>
+<div class="main">
+	<div class="navation"><a class="color_lan" href="##">我的莱百后台</a> > 个人资料管理</div>
+	<div class="adminLeft br_blue">
+        <div class="menu">
+            <div class="title_ora">我的空间</div>
+            <div class="title" id="basic">我是卖家</div>
+            <div class="content">
+                <ul>
+                    <li class="icon icon14">我的商品</li>
+                    <li>
+                    <ul class="grade">
+                        <li><a href="#">发布商品</a></li>
+                        <li><a href="#">管理商品</a></li>
+                    </ul>
+                    </li>
+                    <li class="icon icon15">交易管理</li>
+                    <li>
+                    <ul class="grade">
+                        <li><a href="#">出售订单</a></li>
+                        <li><a href="#">历史记录</a></li>
+                        <li><a href="#">评价管理</a></li>
+                    </ul>
+                    </li>
+                    <li class="icon icon16">商铺管理</li>
+                    <li>
+                    <ul class="grade">
+                        <li><a href="#">查看我的商铺</a></li>
+                        <li><a href="#">商铺皮肤</a></li>
+                        <li><a href="#">商铺模板</a></li>
+                    </ul>
+                    </li>
+                    <li class="icon icon19"><a href="/iv/admin/basic_link.aspx">分公司管理</a></li>
+                    <li class="icon icon17"><a href="/iv/admin/basic_tag.aspx">员工管理</a></li>
+                    <li class="icon icon18">模板管理</li>
+                    <li>
+                    <ul class="grade">
+                        <li><a href="#">合同模板</a></li>
+                        <li><a href="#">报价单模板</a></li>
+                        <li><a href="#">物流模板</a></li>
+                    </ul>
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="title" id="my">我是买家</div>
+            <div class="content">
+                <ul>
+                    <li class="icon icon1"><a href="/my_productadd.aspx">交易管理</a></li>
+                    <li class="icon icon21"><a href="/iv/admin/my_product.aspx">收货地址管理</a></li>
+                </ul>
+            </div>
+        
+            <div class="title">资讯管理</div>
+            <div id="product" class="content">
+                <ul>
+                    <li class="icon icon2"><a href="javascript:function()">站内短信（5）</a></li>
+                    <li class="icon icon3"><a href="javascript:function()">站内广播（2）</a></li>
+                    <li class="icon icon4"><a href="javascript:function()">二手货市场</a></li>
+                    <li class="icon icon5"><a href="javascript:function()">技术服务</a></li>
+                    <li class="icon icon6"><a href="javascript:function()">人才频道</a></li>
+                    <li class="icon icon7"><a href="javascript:function()">方案/标准/法规</a></li>
+                    <li class="icon icon8"><a href="javascript:function()">新闻资讯</a></li>
+                    <li class="icon icon20"><a href="javascript:function()">我的定制</a></li>
+                </ul>
+            </div>
+            <div class="title">帐户管理</div>
+            <div id="te04" class="content">
+                <ul class="sslist">
+                    <li class="icon icon9"><a href="javascript:function()">帐户金额</a></li>
+                    <li class="icon icon10"><a href="javascript:function()">会员积分</a></li>
+                    <li class="icon icon11"><a href="javascript:function()">我的资料</a></li>
+                </ul>
+            </div>
+            <div class="title">营销方案</div>
+            <div id="Div3" class="content">
+                <ul class="sslist">
+                    <li class="icon icon12"><a href="javascript:function()">商机推广</a></li>
+                </ul>
+            </div>  
+        </div>
+	</div>
+    <div class="adminRight">
+        <div class="adminpagenav">当前位置: <a class="color_333">我的莱百</a> > <a class="color_333">我是卖家</a> > <a class="color_333">模板管理</a> > <a class="color_333">物流模板</a> </div>
+        <div class="mt10">
+        	<div class="tab">
+                <div class="tit">
+                    <ul class="tags">
+                        <li class=""><a><span>地址库</span></a></li>
+                        <li class=""><a><span>默认物流公司</span></a></li>
+                        <li class=""><a><span>运单模板设置</span></a></li>
+                        <li class=""><a><span>运费模板</span></a></li>
+                        <li class="current"><a><span>运费/时效查看器</span></a></li>
+                        <li class=""><a><span>物流跟踪信息</span></a></li>
+                    </ul>
+                 </div>
+              	 <div class="panes">
+                    <div class="pane"  style="display:none">
+                    	<div class="pt10"><span class="w150"><b class="color_org">添加新地址:</b></span> 电话号码,手机号码选填一项,备注和公司名称为可选项,其余为必填项</div>
+                        <div class="pt10"><span class="w150">联系人:</span> <input type="text" class="input" size="20" />  <font class="red">*</font></div>
+                        <div class="pt10"><span class="w150">所在地区:</span> <select><option>浙江省</option></select>  <select><option>杭州市</option></select>  <select><option>余杭区</option></select>  <font class="red">*</font></div>
+                        <div class="pt10"><span class="w150">联系人:</span> <textarea class="textarea" style="width:200px;">不需要重复填写省/市/区,可输入拼音获取提示</textarea>  <font class="red">*</font></div>
+                        <div class="pt10"><span class="w150">联系人:</span> <input type="text" class="input" size="20" />  <font class="red">*</font></div>
+                        <div class="pt10"><span class="w150">邮政编码:</span> <input type="text" class="input" size="20" />  <font class="red">*</font></div>
+                        <div class="pt10"><span class="w150">电话号码:</span> <input type="text" class="input" size="4" /> - <input type="text" class="input" size="8" /> - <input type="text" class="input" size="6" /> 区号-电话号码-分机号</div>
+                        <div class="pt10"><span class="w150">手机号码:</span> <input type="text" class="input" size="20" /> </div>
+                        <div class="pt10"><span class="w150">公司名称:</span> <input type="text" class="input" size="20" /> </div>
+                        <div class="pt10"><span class="w150">备注:</span> <textarea class="textarea" style="width:200px;"></textarea></div>                       
+                        <div class="pt10"><span class="w150">&nbsp;</span> <a class="btnSubmit" id="submit"><span>保存设置</span></a></div>
+                        <div class="pt10">
+                        <span class="w150">&nbsp;</span> 
+                        <span class="alert_info2">
+                            用来保存自己的发货,退货地址,您最多可以添加20条地址
+                            <a class="close">&nbsp;</a>
+                        </span>
+                        </div>
+                  	</div>
+                    <div class="pane" style="display:none;">
+                    	 <p><span class="alert_info2">用来保存自己的发货,退货地址,您最多可以添加20条地址</span></p>
+                         <div class="mt10">
+                         	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="adminTable">
+                              <tr>
+                                <th width="100">物流服务</th>
+                                <th>物流公司</th>
+                              </tr>
+                              <tr>
+                                <td class="center">在线下单</td>
+                                <td><span class="w120"><input type="checkbox" name="xd" /> 联昊通</span> <span class="w120"><input type="checkbox" name="xd" /> 全峰快递</span> <span class="w120"><input type="checkbox" name="xd" /> 四川快捷</span>  <span class="w120"><input type="checkbox" name="xd" /> 全一快递</span>  <span class="w120"><input type="checkbox" name="xd" /> 城市100</span> <span class="w120"><input type="checkbox" name="xd" /> 联昊通</span> <span class="w120"><input type="checkbox" name="xd" /> 全峰快递</span> <span class="w120"><input type="checkbox" name="xd" /> 四川快捷</span>  <span class="w120"><input type="checkbox" name="xd" /> 全一快递</span>  <span class="w120"><input type="checkbox" name="xd" /> 城市100</span> <span class="w120"><input type="checkbox" name="xd" /> 联昊通</span> <span class="w120"><input type="checkbox" name="xd" /> 全峰快递</span> <span class="w120"><input type="checkbox" name="xd" /> 四川快捷</span>  <span class="w120"><input type="checkbox" name="xd" /> 全一快递</span>  <span class="w120"><input type="checkbox" name="xd" /> 城市100</span> <span class="w120"><input type="checkbox" name="xd" /> 联昊通</span> <span class="w120"><input type="checkbox" name="xd" /> 全峰快递</span> <span class="w120"><input type="checkbox" name="xd" /> 四川快捷</span>  <span class="w120"><input type="checkbox" name="xd" /> 全一快递</span>  <span class="w120"><input type="checkbox" name="xd" /> 城市100</span> <span class="w120"><input type="checkbox" name="xd" /> 联昊通</span> <span class="w120"><input type="checkbox" name="xd" /> 全峰快递</span> <span class="w120"><input type="checkbox" name="xd" /> 四川快捷</span>  <span class="w120"><input type="checkbox" name="xd" /> 全一快递</span>  <span class="w120"><input type="checkbox" name="xd" /> 城市100</span></td>
+                              </tr>
+                              <tr>
+                                <td class="center">自己联系物流</td>
+                                <td><span class="w120"><input type="checkbox" name="wl" /> EMS</span> <span class="w120"><input type="checkbox" name="wl" /> 全峰快递</span> <span class="w120"><input type="checkbox" name="wl" /> 四川快捷</span>  <span class="w120"><input type="checkbox" name="wl" /> 全一快递</span>  <span class="w120"><input type="checkbox" name="wl" /> 城市100</span> <span class="w120"><input type="checkbox" name="wl" /> EMS</span> <span class="w120"><input type="checkbox" name="wl" /> 全峰快递</span> <span class="w120"><input type="checkbox" name="wl" /> 四川快捷</span>  <span class="w120"><input type="checkbox" name="wl" /> 全一快递</span>  <span class="w120"><input type="checkbox" name="wl" /> 城市100</span> <span class="w120"><input type="checkbox" name="wl" /> EMS</span> <span class="w120"><input type="checkbox" name="wl" /> 全峰快递</span> <span class="w120"><input type="checkbox" name="wl" /> 四川快捷</span>  <span class="w120"><input type="checkbox" name="wl" /> 全一快递</span>  <span class="w120"><input type="checkbox" name="wl" /> 城市100</span> <span class="w120"><input type="checkbox" name="wl" /> EMS</span> <span class="w120"><input type="checkbox" name="wl" /> 全峰快递</span> <span class="w120"><input type="checkbox" name="wl" /> 四川快捷</span>  <span class="w120"><input type="checkbox" name="wl" /> 全一快递</span>  <span class="w120"><input type="checkbox" name="wl" /> 城市100</span></td>
+                              </tr>
+                            </table>
+                         </div>
+                        
+                    	
+                        <div class="center mt50"><a class="btnSubmit" id="submit"><span>保存设置</span></a></div>
+                    </div> 
+                    <div class="pane" style="display:none;">
+                    	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="adminTable">
+                          <tr>
+                            <th>运单模板名称</th>
+                            <th>快递公司</th>
+                            <th>是否默认</th>
+                            <th>操作</th>
+                          </tr>
+                          <tr>
+                            <td colspan="4" class="bk_f5"><a class="blueBtn" id="newModel"><span>新建模板</span></a></td>
+                          </tr>
+                        </table>
+                        <div class="mobanNew">
+                        	<div class="bk_lan pd5 mt10"><span class="pl10 pr10"> 新建模板</span> <a class="color_lan" id="fanhui">返回模板列表</a></div>
+                            <div class="pt10"><span class="w150">选择模板:</span> <select><option>请选择系统模板</option></select></div>
+                            <div class="pt10"><span class="w150">模板名称:</span> <input type="text" class="input" size="20" /></div>
+                            <div class="pt10"><span class="w150">快递公司:</span> <select><option>全峰快递</option></select></div>
+                            <div class="pt10"><span class="w150">运单图片:</span> <input type="file"  /> <input type="button" value="上传" /></div>
+                            <div class="pt10"><span class="w150">模板尺寸:</span> <select><option>自定义尺寸</option></select> 宽: <input type="text" class="input" size="5"  /> mm  高: <input type="text" class="input" size="5"  /> mm  <input type="button" value="重设高度" /></div>
+                            <div class="pt10">
+                            	<span class="w150 fl">选择打印项:</span>
+                                <div class="fl box600">
+                                <span class="w100"><input type="checkbox" /> 订单编号</span> <span class="w100"><input type="checkbox" /> 发件人姓名</span> <span class="w100"><input type="checkbox" /> 发件人电话</span> <span class="w100"><input type="checkbox" /> 备注</span> <span class="w100"><input type="checkbox" /> 发件人公司</span> <span class="w100"><input type="checkbox" /> 发件人地址</span> <span class="w100"><input type="checkbox" /> 发件人邮编</span> <span class="w100"><input type="checkbox" /> 发件人姓名</span> <span class="w100"><input type="checkbox" /> 收件人电话</span> <span class="w100"><input type="checkbox" /> 收件人地址</span> <span class="w100"><input type="checkbox" /> 收件人邮编</span> <span class="w100"><input type="checkbox" /> 代收金额</span> <span class="w120"><input type="checkbox" /> 货到付款物流编号</span> 
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="adminTable">
+                              <tr>
+                                <th><span class="fl pl10">打印偏移较正</span></th>
+                              </tr>
+                              <tr>
+                                <td><img src="images/img80.gif" /></td>
+                              </tr>
+                            </table>
+							<div class="center mt50"><a class="btnSubmit" id="submit"><span>保存设置</span></a></div>
+                        </div>
+
+                    </div> 
+                    <div class="pane" style="display:none;"> 
+                        <p><span class="alert_info2">您还没有创建任何模板,点击以下按钮创建!</span></p> 
+                        <div class="yunfeiBox">
+                            <div class="pt10">
+                                <a class="blueBtn" id="newYunfei"><span>新增运费模板</span></a>
+                                <a class="fr color_lan" href="##">使用帮助</a>
+                                <div class="clear"></div>
+                            </div> 
+                            <div class="pt10"><b class="font18px">参考范例:</b> (以下模板仅供参考)</div>  
+                            <div class="pt10">您可以按照宝贝的<font class="red">数量</font>设置模板,一般适用于比较轻的宝贝.</div>
+                            <div class="pt10">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="adminTable">
+                                  <tr>
+                                    <th colspan="6">小物件模板副本</th>
+                                  </tr>
+                                  <tr>
+                                    <td class="center">运送方式</td>
+                                    <td class="center">运送到</td>
+                                    <td class="center">首件(个)</td>
+                                    <td class="center">运费(元)</td>
+                                    <td class="center">续件(个)</td>
+                                    <td class="center">运费(元)</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="center">快递公司</td>
+                                    <td class="center">上海,江苏,浙江</td>
+                                    <td class="center">999.00</td>
+                                    <td class="center">999.00</td>
+                                    <td class="center">999.00</td>
+                                    <td class="center">999.00</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="center">快递公司</td>
+                                    <td class="center">上海,江苏,浙江</td>
+                                    <td class="center">999.00</td>
+                                    <td class="center">999.00</td>
+                                    <td class="center">999.00</td>
+                                    <td class="center">999.00</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="center">快递公司</td>
+                                    <td class="center">上海,江苏,浙江</td>
+                                    <td class="center">999.00</td>
+                                    <td class="center">999.00</td>
+                                    <td class="center">999.00</td>
+                                    <td class="center">999.00</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="center">快递公司</td>
+                                    <td class="center">上海,江苏,浙江</td>
+                                    <td class="center">999.00</td>
+                                    <td class="center">999.00</td>
+                                    <td class="center">999.00</td>
+                                    <td class="center">999.00</td>
+                                  </tr>
+                                </table>
+    
+                            </div>
+                        </div>          	
+                        <div class="yunfeimoban">
+                        	<div class="font14px pt10"><b>新增运费模板</b></div>
+                            <div class="pt10"><span class="w150">模板名称</span> <input type="text" class="input" size="50"  /></div>
+                            <div class="pt10"><span class="w150">宝贝地址</span> <select><option>请选择...</option></select> 省 <select><option>请选择...</option></select> 市 <select><option>请选择...</option></select> 区</div>
+                            <div class="pt10"><span class="w150">计价方式</span> <input type="radio" name="fs" /> 按件数 <input type="radio" name="fs" /> 按重量 <input type="radio" name="fs" /> 按体积</div>
+                            <div class="pt10">
+                            	<span class="w150 fl">运送方式</span>
+                            	<div class="box600 fl">
+                                	<p>除指定地区外,其余地区的运费均采用"默认运费".</p>
+                                	<p><input type="checkbox" /> EMS</p> 
+                                    <p><input type="checkbox" /> 快递</p> 
+                                    <p><input type="checkbox" /> 平邮</p>    
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="center"><input type="button" value="保存并返回" class="yunfeiBtn" /> <input type="button" value="取消" class="yunfeiBtn" /></div>
+                        </div>
+                        
+                    </div> 
+                    <div class="pane">
+                    	<div class="pt10"><b class="font14px">合作物流公司 运费/时效查看器</b></div>  
+                        <div class="pt10">
+                        	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="adminTable">
+                              <tr>
+                                <th class="lanTh" width="100">物流服务</th>
+                                <td><select><option>货到付款</option></select></td>
+                              </tr>
+                              <tr>
+                                <th class="lanTh" >计费方式</th>
+                                <td><input type="radio" name="jffs" /> 自动计算快递费 <input type="radio" name="jffs" /> 手动计算快递费</td>
+                              </tr>
+                              <tr>
+                                <th class="lanTh" ><font class="red">*</font>起始地</th>
+                                <td><select><option>请选择</option></select> <select><option>请选择</option></select></td>
+                              </tr>
+                              <tr>
+                                <th class="lanTh" ><font class="red">*</font>目的地</th>
+                                <td><select><option>请选择</option></select> <select><option>请选择</option></select></td>
+                              </tr>
+                              <tr>
+                                <th class="lanTh" >宝贝重量</th>
+                                <td><input type="text" class="input" size="20" /> (kg)</td>
+                              </tr>
+                              <tr>
+                                <th class="lanTh" >体积</th>
+                                <td><input type="text" class="input" size="20" value="长*宽*高" /> (cm)</td>
+                              </tr>
+                              <tr>
+                                <th class="lanTh" ><font class="red">*</font>货值</th>
+                                <td><input type="text" class="input" size="20" /> (元)</td>
+                              </tr>
+                            </table>
+                            <div class="pt10"><span class="w100">&nbsp;</span> <a id="submit" class="btnSubmit"><span>查看</span></a></div>
+							<div class="pt10">温馨提醒: 1.商品重量与体积只填写一个就可以,如果不确定可以填写两个.您查出来的价格可能有一元的误差,这个是计算服务补正逻辑造成的.如果查出来的价格高于您物流公司的协议价格,你网上下单时仍然可以按照你的协议的物流价来付费.<b>2.上述"时效"数据是根据物流公司过去一周的平均送货速度计算机得出!</b></div>
+                        </div>     	
+                    </div> 
+                    <div class="pane" style="display:none;">
+                    	<div class="pt10"><span class="w150">订单编号:</span> <input type="text" class="input" size="20" /> <input type="button" value="搜索" /></div>       	
+                    </div>          
+                                
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+<div class="footer">
+	<div class="about">
+    	<a href="##">关于莱百商城</a> | <a href="##">广告服务</a> | <a href="##">会员服务</a> | <a href="##">媒体报道</a> | <a href="##">营销方案</a> | <a href="##">成功案例</a> | <a href="##">招聘服务</a> | <a href="##">加入我们</a> | <a href="##">网站地图</a> | <a href="##">在线帮助</a> | <a href="##">联系我们</a>
+    </div>
+    <div class="pt10"><img src="../images/img35.jpg" /></div>
+    <div class="pt10">
+    	<span>销售热线 : 0571-81020286 <a class="qq1" href="##">QQ留言</a></span>
+        <span>在线客服 : 0571-87858618 <a href="##" class="qq2">QQ交谈</a></span>
+        <span>展会合作/友情链接 : 0571-87858617 <a href="##" class="qq1"> QQ留言</a></span>
+    </div>
+    <div class="pt10">
+    	<span>网站服务咨询 : 0571-87858619 <a href="##" class="qq1">QQ留言</a></span>
+        <span>投诉热线 : 0571-87858616 87858619</span>
+    </div>
+    <div class="pt10">
+    	杭州格图科技有限公司版权所有 , 本公司保留所有权利 <br /> 浙ICP备: 08990101号
+    </div>
+</div>
+</body>
+</html>

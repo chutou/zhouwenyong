@@ -1,0 +1,17 @@
+/* CSS Document */
+.box_1{border:1px solid #ddd; background-color:#fff;}
+.box_1 .userCenterBox { height:100%;}
+.box_1 .userCenterBox .userMenu h3{ background:url(images/user_h3.gif) repeat-x; border:1px solid #fa4759; height:30px; line-height:30px; color:#FFF; font-family:"微软雅黑"; font-weight:bold; padding-left:10px; text-align:left; font-size:14px;}
+.box_1 .userCenterBox .userMenu h3 a{ color:#FFFFFF}
+.box_1 .userCenterBox .userMenu h1{ height:29px; line-height:29px; cursor:pointer; background:url(images/user_h1.gif) repeat-x; font-size:12px; font-weight:bold;   }
+.box_1 .userCenterBox .userMenu h1 span{ float:left; padding-left:10px;}
+.box_1 .userCenterBox .userMenu h1 img{ float:right; padding:5px; }
+.box_1 .userCenterBox .userMenu ul { padding:6px 0; *padding-bottom:0px;}
+.box_1 .userCenterBox .userMenu ul a{ display:block; height:24px; line-height:24px; padding-left:20px;}
+.box_1 .userCenterBox .userMenu a.select{ color:#f54803}
+
+
+.boxCenterList{ padding:10px;}
+.notice{margin:5px 0; border:1px solid #f7dd98;padding:10px 20px; background:#fffad5 url(images/note.gif) no-repeat 5px center;}
+.noticeLeft{ width:48%;}
+.noticeLeft h5{background-color: #f6f6f6;color: #dd0000;font-size: 14px;height: 32px;line-height: 32px; padding-left:15px; font-weight:bold;}

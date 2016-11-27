@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>01专业服务</title>
+	<meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width">-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="js/skins/default.css">
+	<script src="js/jquery.js"></script>
+    <script src="js/slides.min.jquery.js"></script>
+    <script src="js/jquery.artDialog.js"></script>
+    <script src="js/main.js"></script>
+    <script language="javascript">
+    	$(function(){
+			//$('.newsBanner .slides').slidesjs({width: 640,height: 282,start:1,navigation: true,play: {interval: 5000,auto: true}});
+			$(".share").click(function(e){
+				$(".shareCxt").show();
+				e.stopPropagation();
+			});
+			$(".shareCxt").click(function(e){
+				$(".shareCxt").hide();
+				
+			});
+			
+			$(document).click(function(e){
+				$(".shareCxt").hide();
+				e.stopPropagation();
+			})
+		})
+    </script>
+</head>
+<body id="top">
+<div class="containter">
+	<div class="header">
+    	<h1>
+        	<a href="javascript:;" class="icon icon_close">返回</a><a href="javascript:;" class="icon icon_menu share">&nbsp;</a>
+        	<span class="text">专业服务</span>
+        </h1>
+    </div>
+    <div class="content">
+    	<div class="pd20">
+        	<div class="svCxt">
+            	<h1>我们的服务介绍</h1>
+                <a href="serviceForm.html" class="blueBtn">提交服务需求</a>
+            </div>
+            <!--新闻图片-->
+            <div class="svBanner">    	
+                <div class="slides">               	
+                    <div class="slide">
+                        <a href="javascript:;"><img src="images/img42.png"/></a>
+                        <div class="caption">
+                            企业的愿景是“引领沙漠绿色经济，开拓人类生存空间”；核心价值观是“厚道、共赢、领导力，为客户创造更多的绿色服务”。亿利资源是一家致力于从沙漠到城市生态环境修复的国家重点企业。
+                        </div>
+                    </div>        
+                </div>
+            </div>
+            <!--新闻列表信息-->
+            <div class="spanimgCxt">
+            	<a href="##" class="spanimg"><img src="images/img44.png" /><span class="text">生态修复</span></a>
+                <a href="##" class="spanimg"><img src="images/img45.png" /><span class="text">金融产业</span></a>
+                <a href="##" class="spanimg"><img src="images/img46.png" /><span class="text">生态未来社区</span></a>
+                <a href="##" class="spanimg"><img src="images/img47.png" /><span class="text">清洁能源</span></a>
+                <div class="clear"></div>
+                <p class="color_green font24px mt30">一、生态修复</p>
+                <p class="color_666 lh32 font18px">耐寒旱、盐碱种质资源 林、草、药材复合生态修复、沙漠生态产品</p>
+                <p class="color_green font24px mt30">二、金融产业</p>
+                <p class="color_666 lh32 font18px">信托保险、财务公司、航空投资、文化产业</p>
+                <p class="color_green font24px mt30">三、生态未来社区</p>
+                <p class="color_666 lh32 font18px">生态修复、生态旅游、生态文化、生态地产</p>
+                <p class="color_green font24px mt30">四、清洁能源</p>
+                <p class="color_666 lh32 font18px">煤炭清洁利用天然气、太阳能、分布式能源</p>
+            </div>
+        </div>        
+    </div>
+    <div class="shareCxt">
+    	<ul class="threeUl2">
+            <li>
+                <a href="javascript:;"><img src="images/img9.png" /></a>
+                <a href="javascript:;">朋友圈</a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="images/img10.png" /></a>
+                <a href="javascript:;">人人网</a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="images/img11.png" /></a>
+                <a href="javascript:;">新浪微博</a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="images/img12.png" /></a>
+                <a href="javascript:;">微信好友</a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="images/img13.png" /></a>
+                <a href="javascript:;">腾讯微博</a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="images/img14.png" /></a>
+                <a href="javascript:;">QQ空间</a>
+            </li>            
+            <div class="clear"></div>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    
+    <div class="footer">
+        <div class="footerUl">
+        	<li class="select"><a class="" href="cpsj.html"><span class="cpsj">&nbsp;</span>产品世界</a></li>
+            <li><a class="" href="gywm.html"><span class="gywm">&nbsp;</span>关于我们</a></li>
+            <li class="last"><a class="" href="user_center.html"><span class="grzx">&nbsp;</span>个人中心</a></li>
+        </div>   
+    </div>
+    
+</div> 
+</body>
+</html>

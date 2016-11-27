@@ -1,0 +1,539 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9">
+<link rel="stylesheet" type="text/css" href="css/global.css"/>
+<link rel="stylesheet" type="text/css" href="css/arctice.css"/>
+<title>问医问药详细页</title>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script language="javascript">
+	$(function(){
+		$(".menu").hover(function(){
+			$(this).children(".subMenu").show();
+			$(this).children(".subH2").addClass("subH2Cur");
+			$(this).find("h2").addClass("cur")
+		},function(){
+			$(this).children(".subMenu").hide();
+			$(this).children(".subH2").removeClass("subH2Cur");
+			$(this).find("h2").removeClass("cur")
+		})
+		$("div.all").hover(function(){
+			$(this).children(".menuBox").show();
+		},function(){
+			$(this).children(".menuBox").hide();
+		})
+		$(".firstMenu").hover(function(){
+			$(this).children("a.secondA").addClass("current");
+			$(this).children("ul.subNavUl").show();
+		},function(){
+			$(this).children("a.secondA").removeClass("current");
+			$(this).children("ul.subNavUl").hide();
+		})
+		$(".hot_drug li").mouseover(function(){
+			$(this).siblings("li.hover").removeClass("hover").addClass("cur");
+			$(this).removeClass().addClass("hover");
+		})
+	})
+</script>
+<!--[if lte IE 6]>
+<script src="Js/PNG.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix('div, ul, img, li, input , a ,span');
+    </script>
+<![endif]--> 
+</head>
+
+<body>
+<a name="top" id="top" style=""></a>
+<div class="header arcHeader">
+	<div class="head">
+        <div class="loginBar">
+            <div class="fl"><a class="icon icon_fav">收藏生命维他商城</a></div>
+            <div class="fr">您好，欢迎来生命维他商城！ [<a href="##" class="color_org">请登录</a>]  [免费注册]  ︱  用户中心  ︱  我的订单  ︱  帮助中心  </div>
+            <div class="clear"></div>
+        </div>
+        <div class="topBanner"><img src="images/img1.png" width="990" height="60" /></div>
+        <div class="headerCenter">
+            <div class="logo"><img src="images/logo.png" width="250" height="90" /></div>
+            <div class="indexGo">
+            	<a class="gobtn" href="##">去购物车结算</a>
+            </div>
+            <div class="searchBox">
+                <div class="s"><input type="text" class="sinput" value="请输入关键字" onfocus="if(value=='请输入关键字') {value=''}" onblur="if(value=='') {value='请输入关键字'}" /><input type="button" class="sbtn" title="搜索" /></div>
+                <div>热门搜索：<a href="##">按摩蜡烛</a> <a href="##">鼻敏清</a> <a href="##">骨迅康</a> <a href="##">活肝康</a></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="mainNav">
+            <div class="all">
+            	<span class="text">全部商品分类</span>
+                <div class="box202 menuBox">
+                    <div class="menu">
+                        <div class="subH2 zhongxiyao">
+                            <h2>中西药品</h2>
+                            <div class="subA">
+                                <a href="##">男科疾病</a><a href="##">妇科疾病</a><a href="##">呼吸道疾病</a><a href="##">风湿科</a><a href="##">皮肤科</a><a href="##">心脑血管</a>
+                            </div>
+                        </div>
+                        <div class="subMenu">
+                            <div class="subMLeft">
+                                <div class="subL fl">
+                                    <h3>男科疾病</h3>
+                                    <div class="subA">
+                                        <a href="##">性功能障碍</a><a href="##">泌尿系统疾病</a><a href="##">前列腺炎</a><a href="##">肾病</a>
+                                    </div>
+                                    <h3>妇科疾病</h3>
+                                    <div class="subA">
+                                        <a href="##">月经不调</a><a href="##">乳腺炎</a><a href="##">孕产期</a><a href="##">更年期</a>
+                                    </div>
+                                    <h3>呼吸道疾病</h3>
+                                    <div class="subA brnone">
+                                        <a href="##">感冒发烧</a><a href="##">咳嗽</a><a href="##">小儿感冒</a><a href="##">哮喘</a>
+                                    </div>
+                                </div>
+                                <div class="subL fr">
+                                    <h3>风湿科</h3>
+                                    <div class="subA">
+                                        <a href="##">癫风</a><a href="##">类风湿关节炎</a><a href="##">颈腰椎病</a><a href="##">跌打损伤</a>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="subMRight">
+                                <h4 class="color_red">按品牌索引</h4>
+                                <div>
+                                    <a href="##">康扬</a> <a href="##">方太</a> <a href="##">泰康</a> <a href="##">日本MIKI</a> <a href="##">鱼跃</a> <a href="##">互邦</a> <a href="##">佛山</a> <a href="##">爱邦</a> <a href="##">常州众和</a> <a href="##">凯洋</a>
+                                </div>
+                                <div class="tar"><a class="color_org"><更多></a></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="subH2 baojianping">
+                            <h2>保健品</h2>
+                            <div class="subA">
+                                <a href="##">中老年健康</a><a href="##">皮肤保养</a><a href="##">儿童保健</a><a href="##">孕婴营养</a><a href="##">男士保健</a><a href="##">热卖营养素</a>
+                            </div>
+                        </div>
+                        <div class="subMenu">
+                            <div class="subMLeft">
+                                <div class="subL fl">
+                                    <h3>男科疾病</h3>
+                                    <div class="subA">
+                                        <a href="##">性功能障碍</a><a href="##">泌尿系统疾病</a><a href="##">前列腺炎</a><a href="##">肾病</a>
+                                    </div>
+                                    <h3>妇科疾病</h3>
+                                    <div class="subA">
+                                        <a href="##">月经不调</a><a href="##">乳腺炎</a><a href="##">孕产期</a><a href="##">更年期</a>
+                                    </div>
+                                    <h3>呼吸道疾病</h3>
+                                    <div class="subA brnone">
+                                        <a href="##">感冒发烧</a><a href="##">咳嗽</a><a href="##">小儿感冒</a><a href="##">哮喘</a>
+                                    </div>
+                                </div>
+                                <div class="subL fr">
+                                    <h3>风湿科</h3>
+                                    <div class="subA">
+                                        <a href="##">癫风</a><a href="##">类风湿关节炎</a><a href="##">颈腰椎病</a><a href="##">跌打损伤</a>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="subMRight">
+                                <h4 class="color_red">按品牌索引</h4>
+                                <div>
+                                    <a href="##">康扬</a> <a href="##">方太</a> <a href="##">泰康</a> <a href="##">日本MIKI</a> <a href="##">鱼跃</a> <a href="##">互邦</a> <a href="##">佛山</a> <a href="##">爱邦</a> <a href="##">常州众和</a> <a href="##">凯洋</a>
+                                </div>
+                                <div class="tar"><a class="color_org"><更多></a></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="subH2 gaiji">
+                            <h2>维生素钙剂</h2>
+                            <div class="subA">
+                                <a href="##">维生素</a><a href="##">孕妇专享</a><a href="##">钙剂</a><a href="##">矿物质</a>
+                            </div>
+                        </div>
+                        <div class="subMenu">
+                            <div class="subMLeft">
+                                <div class="subL fl">
+                                    <h3>男科疾病</h3>
+                                    <div class="subA">
+                                        <a href="##">性功能障碍</a><a href="##">泌尿系统疾病</a><a href="##">前列腺炎</a><a href="##">肾病</a>
+                                    </div>
+                                    <h3>妇科疾病</h3>
+                                    <div class="subA">
+                                        <a href="##">月经不调</a><a href="##">乳腺炎</a><a href="##">孕产期</a><a href="##">更年期</a>
+                                    </div>
+                                    <h3>呼吸道疾病</h3>
+                                    <div class="subA brnone">
+                                        <a href="##">感冒发烧</a><a href="##">咳嗽</a><a href="##">小儿感冒</a><a href="##">哮喘</a>
+                                    </div>
+                                </div>
+                                <div class="subL fr">
+                                    <h3>风湿科</h3>
+                                    <div class="subA">
+                                        <a href="##">癫风</a><a href="##">类风湿关节炎</a><a href="##">颈腰椎病</a><a href="##">跌打损伤</a>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="subMRight">
+                                <h4 class="color_red">按品牌索引</h4>
+                                <div>
+                                    <a href="##">康扬</a> <a href="##">方太</a> <a href="##">泰康</a> <a href="##">日本MIKI</a> <a href="##">鱼跃</a> <a href="##">互邦</a> <a href="##">佛山</a> <a href="##">爱邦</a> <a href="##">常州众和</a> <a href="##">凯洋</a>
+                                </div>
+                                <div class="tar"><a class="color_org"><更多></a></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="subH2 guixi">
+                            <h2>参茸贵细</h2>
+                            <div class="subA">
+                                <a href="##">参类产品</a><a href="##">中药饮片</a><a href="##">贵细滋补品</a>
+                            </div>
+                        </div>
+                        <div class="subMenu">
+                            <div class="subMLeft">
+                                <div class="subL fl">
+                                    <h3>男科疾病</h3>
+                                    <div class="subA">
+                                        <a href="##">性功能障碍</a><a href="##">泌尿系统疾病</a><a href="##">前列腺炎</a><a href="##">肾病</a>
+                                    </div>
+                                    <h3>妇科疾病</h3>
+                                    <div class="subA">
+                                        <a href="##">月经不调</a><a href="##">乳腺炎</a><a href="##">孕产期</a><a href="##">更年期</a>
+                                    </div>
+                                    <h3>呼吸道疾病</h3>
+                                    <div class="subA brnone">
+                                        <a href="##">感冒发烧</a><a href="##">咳嗽</a><a href="##">小儿感冒</a><a href="##">哮喘</a>
+                                    </div>
+                                </div>
+                                <div class="subL fr">
+                                    <h3>风湿科</h3>
+                                    <div class="subA">
+                                        <a href="##">癫风</a><a href="##">类风湿关节炎</a><a href="##">颈腰椎病</a><a href="##">跌打损伤</a>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="subMRight">
+                                <h4 class="color_red">按品牌索引</h4>
+                                <div>
+                                    <a href="##">康扬</a> <a href="##">方太</a> <a href="##">泰康</a> <a href="##">日本MIKI</a> <a href="##">鱼跃</a> <a href="##">互邦</a> <a href="##">佛山</a> <a href="##">爱邦</a> <a href="##">常州众和</a> <a href="##">凯洋</a>
+                                </div>
+                                <div class="tar"><a class="color_org"><更多></a></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="subH2 riyongping">
+                            <h2>日用品</h2>
+                            <div class="subA">
+                                <a href="##">沐浴洗发</a><a href="##">化妆品</a><a href="##">婴幼儿用品</a><a href="##">季节性用品</a>
+                            </div>
+                        </div>
+                        <div class="subMenu">
+                            <div class="subMLeft">
+                                <div class="subL fl">
+                                    <h3>男科疾病</h3>
+                                    <div class="subA">
+                                        <a href="##">性功能障碍</a><a href="##">泌尿系统疾病</a><a href="##">前列腺炎</a><a href="##">肾病</a>
+                                    </div>
+                                    <h3>妇科疾病</h3>
+                                    <div class="subA">
+                                        <a href="##">月经不调</a><a href="##">乳腺炎</a><a href="##">孕产期</a><a href="##">更年期</a>
+                                    </div>
+                                    <h3>呼吸道疾病</h3>
+                                    <div class="subA brnone">
+                                        <a href="##">感冒发烧</a><a href="##">咳嗽</a><a href="##">小儿感冒</a><a href="##">哮喘</a>
+                                    </div>
+                                </div>
+                                <div class="subL fr">
+                                    <h3>风湿科</h3>
+                                    <div class="subA">
+                                        <a href="##">癫风</a><a href="##">类风湿关节炎</a><a href="##">颈腰椎病</a><a href="##">跌打损伤</a>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="subMRight">
+                                <h4 class="color_red">按品牌索引</h4>
+                                <div>
+                                    <a href="##">康扬</a> <a href="##">方太</a> <a href="##">泰康</a> <a href="##">日本MIKI</a> <a href="##">鱼跃</a> <a href="##">互邦</a> <a href="##">佛山</a> <a href="##">爱邦</a> <a href="##">常州众和</a> <a href="##">凯洋</a>
+                                </div>
+                                <div class="tar"><a class="color_org"><更多></a></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <li class="firstMenu"><a class="current" href="index.html">首页</a></li>
+            <li class="firstMenu">
+            	<a href="item.html" class="secondA">常见病</a>
+                <ul class="subNavUl"><li><a href="##">换季感冒</a></li><li><a href="##">乙肝</a></li><li><a href="##">皮炎癣症</a></li><li><a href="##">鼻炎</a></li><li><a href="##">风湿骨病</a></li><li><a href="##">高血压</a></li><li><a href="##">缺钙</a></li><li><a href="##">痤疮</a></li><li><a href="##">失眠</a></li></ul>
+            </li>
+            <li class="firstMenu">
+            	<a href="item.html" class="secondA">重大疾病</a>
+                <ul class="subNavUl">
+                  <li><a href="##">肺癌</a></li>
+                  <li><a href="##">帕金森</a></li>
+                  <li><a href="##">牛皮癣</a></li>
+                  <li><a href="##">抑郁症</a></li>
+                  <li><a href="##">中风偏瘫</a></li>
+                  <li><a href="##">尖锐湿疣</a></li>
+                  <li><a href="##">万全力太</a></li>
+                  <li><a href="##">博路定</a></li>
+                  <li><a href="##">老年性痴呆</a></li>
+                </ul>
+            </li>
+            <li class="firstMenu">
+            	<a href="item.html" class="secondA">女性</a>
+                <ul class="subNavUl">
+                  <li><a href="##">药物祛痘</a></li>
+                  <li><a href="##">孕妇营养</a></li>
+                  <li><a href="##">大姨妈</a></li>
+                  <li><a href="##">造人计划</a></li>
+                  <li><a href="##">大眼秘密</a></li>
+                  <li><a href="##">情趣用具</a></li>
+                  <li><a href="##">夏季美容</a></li>
+                  <li><a href="##">祛疤神器</a></li>
+                  <li><a href="##">避孕那些事</a></li>
+                </ul>
+            </li>
+            <li class="firstMenu">
+            	<a href="item.html" class="secondA">男性</a>
+                <ul class="subNavUl">
+                  <li><a href="##">汇仁肾宝</a></li>
+                  <li><a href="##">秘鲁玛卡</a></li>
+                  <li><a href="##">滚床单必备</a></li>
+                  <li><a href="##">早泄神药</a></li>
+                  <li><a href="##">性功能障碍</a></li>
+                  <li><a href="##">高端白领体检</a></li>
+                  <li><a href="##">痿哥好伴侣</a></li>
+                </ul>
+            </li>
+            <li class="firstMenu">
+            	<a href="item.html" class="secondA">老人</a>
+                <ul class="subNavUl">
+                  <li><a href="##">辅助降三高</a></li>
+                  <li><a href="##">中老年体检</a></li>
+                  <li><a href="##">改善体质</a></li>
+                </ul>
+            </li>
+            <li class="firstMenu">
+            	<a href="item.html" class="secondA">儿童</a>
+                <ul class="subNavUl">
+                  <li><a href="##">小儿难养</a></li>
+                  <li><a href="##">小儿肠胃</a></li>
+                  <li><a href="##">小儿感冒</a></li>
+                  <li><a href="##">婴儿奶粉</a></li>
+                  <li><a href="##">儿童保健</a></li>
+                  <li><a href="##">宝宝纸尿裤</a></li>
+                  <li><a href="##">小儿多动症</a></li>
+                </ul>
+            </li>
+            <li class="firstMenu">
+            	<a href="tuan.html" class="">团购<span class="icon_hot">&nbsp;</span></a>
+            </li>
+            <li class="firstMenu">
+            	<a href="wenyao.html" class="secondA">问医问药</a>
+                <ul class="subNavUl">
+                  <li><a href="##">问医问药</a></li>
+                  <li><a href="##">健康百科</a></li>
+                  <li><a href="##">健康论坛</a></li>
+        		  <li><a href="##">健康资讯</a></li>
+                  <li><a href="##">疾病症状库</a></li>
+                </ul>
+            </li>     
+        </div>
+    </div>
+</div>
+
+<div class="main arcmain">
+	<div class="navgitor">
+        <span class="pl10">您所在的位置:</span> <a href="##">首页</a> > <a href="##">问医问药</a> > <span>孕妇感冒吃什么</span>
+    </div>
+    <!--左侧-->
+    <div class="con_left baike_detail_con_left">
+    	<div class="article">
+        	<div class="article_title_area">
+            	<h1>孕妇感冒吃什么</h1>
+                <p style="padding-left: 156px;">关键词：<a href="##">感冒吃什么</a>,<a href="##">感冒</a>,<a href="##">疾病症状</a></p>
+                <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone"></a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq"></a><a title="分享到人人网" href="#" class="bds_renren" data-cmd="renren"></a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+            </div>
+            <div class="article_content">
+                <p>感康成分之一有咖啡因，咖啡因是一个中枢神经系统兴奋剂，也是一个新陈代谢的刺激剂。咖啡因既被作为饮品，也被作为药品，其作用都是提神及解除疲劳。那么孕妇<a href="##" class="color_blue">感冒</a>吃什么好?吃感康管用么?</p>
+                <p style="text-align:center;"><img alt="孕妇感冒吃什么" src="images/litpic_14113479612971.jpg"></p>
+                <p>孕妇怀孕其间，抗病能力下降，极易患<a href="##" class="color_blue">感冒</a>。孕妇患了感冒服药治疗又怕影响胎儿，下面介绍几种不用吃药打针就能治疗感冒的办法：</p>
+                <p>1.感冒初起喉头痒痛时，立即用浓盐水每隔10分钟漱口及咽喉1次，10余次即可见效。</p>
+                <p>2.喝鸡汤可减轻感冒时鼻塞、流涕等症状，而且对清除呼吸道病毒有较好的效果。经常喝鸡汤可增强人体的自然抵抗能力，预防感冒的发生。</p>
+                <p>3.用一把金属匙子放在开水里加温后(以不烫伤手为度)放在手掌表面“治感冒穴”上按摩，如果某处感觉异常，则在该处加强按摩。热按摩片刻后，再用一把泡在冷水里的匙子刺激该处。轻感冒或咳嗽者，按上述方法刺激5&mdash;10次即可。手掌的治感冒穴位于左手掌大拇指和食指之间(近虎口处)以及右手大拇指第二关节以下部分的掌面。</p>
+                <p>以上就是壹药网药师为您介绍的孕妇感冒吃什么好，壹药网药师提示您：面对疾病，不必惊慌、烦恼，同时注意保持乐观情绪，树立战胜疾病信心，定期体检，在日常生活中学会合理、科学地自我调护，就可以达到很好的治疗与预防的目的。</p>
+            </div>
+        </div>
+    </div>
+    <!--右侧-->
+    <div class="con_right">
+    	<div class="f_r mb10">
+        	<div class="rbox">
+            	<div class="mb10">
+                	<div class="con_list">
+                    	<div class="r_tab">
+                        	<h2><span class="cur">用药推荐</span></h2>
+                        </div>
+                        <ul class="hot_art hot_drug">
+                        	<li class="cur">
+                            	<div class="pic"><a href="##" target="_blank"><img src="images/120_120.jpg" alt="*晁氏 感冒清热颗粒 10袋"></a></div>
+                                <div class="title"><i>1</i><a href="##" target="_blank" class="hotyaolink">感冒清热颗粒</a></div>
+                                <strong class="price_now"><span>药网价：</span>￥10</strong>
+                                <span class="m_price">市场价：<del>￥12</del></span>
+                            </li>
+                            <li class="cur">
+                            	<div class="pic"><a href="##" target="_blank"><img src="images/120_120.jpg" alt="复方感冒灵片 100片"></a></div>
+                                <div class="title"><i>2</i><a href="##" target="_blank" class="hotyaolink">复方感冒灵片</a></div>
+                                <strong class="price_now"><span>药网价：</span>￥2.5</strong>
+                                <span class="m_price">市场价：<del>￥3</del></span>
+                            </li>
+                            <li class="cur">
+                            	<div class="pic"><a href="##" target="_blank"><img src="images/120_120.jpg" alt="*双效 感冒灵胶囊 0.5g*10粒"></a></div>
+                                <div class="title"><i>3</i><a href="##" target="_blank" class="hotyaolink">感冒灵胶囊</a></div>
+                                <strong class="price_now"><span>药网价：</span>￥13.5</strong>
+                                <span class="m_price">市场价：<del>￥16.2</del></span>
+                            </li>
+                            <li class="cur">
+                            	<div class="pic"><a href="##" target="_blank"><img src="images/120_120.jpg" alt="明仁 四季感冒片 0.38g*24片"></a></div>
+                                <div class="title"><i>4</i><a href="##" target="_blank" class="hotyaolink">明仁 四季感冒片</a></div>
+                                <strong class="price_now"><span>药网价：</span>￥16.8</strong>
+                                <span class="m_price">市场价：<del>￥16.8</del></span>
+                            </li>
+                            <li class="hover">
+                            	<div class="pic"><a href="##"><img src="images/120_120.jpg" alt="千金 小儿感冒颗粒 12g*6袋*2盒"></a></div>
+                                <div class="title"><i>5</i><a href="##" target="_blank" class="hotyaolink">小儿感冒颗粒</a></div>
+                                <strong class="price_now"><span>药网价：</span>￥18.6</strong>
+                                <span class="m_price">市场价：<del>￥22.3</del></span>
+                            </li>       
+                        </ul>       
+                    </div>  
+                </div>
+            	<div class="r_tab"><h2><span class="cur">最新文章</span></h2></div>
+                <ul class="hot_art">
+                	<li class="cur"><i>1</i><a href="##">金戈 枸橼酸西地那非片的有效期是多久？</a></li>
+                    <li class="cur"><i>2</i><a href="/jkbk/1177075.html">怎么预防盐酸舍曲林片的不良反应？</a></li>
+                    <li class="cur"><i>3</i><a href="/jkbk/1177074.html">丽科杰治疗尖锐湿疣有什么副作用？</a></li>
+                    <li><i>4</i><a href="/jkbk/1177073.html">盐酸达泊西汀片是勃起功能障碍用药吗？</a></li>
+                    <li><i>5</i><a href="/jkbk/1177072.html">非那雄胺片怎样服用效果好？</a></li>
+                    <li><i>6</i><a href="/jkbk/1177071.html">西地那非片怎样正确使用？</a></li>
+                    <li><i>7</i><a href="/jkbk/1177070.html">普瑞巴林胶囊饮食禁忌有哪些？</a></li>
+                    <li><i>8</i><a href="/jkbk/1177069.html">代丁自行停药会有副作用吗？</a></li>
+                    <li><i>9</i><a href="/jkbk/1177068.html">五大因素可以导致肺癌的发生</a></li>
+                    <li><i>10</i><a href="/jkbk/1177067.html">与肺癌有关的两大职业因素</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="f_r mb10">
+        	<div class="rbox">
+            	<div class="r_tab"><h2><span class="cur">热门文章</span></h2></div>
+                <ul class="hot_art">
+                	<li class="cur"><i>1</i><a href="##">金戈 枸橼酸西地那非片的有效期是多久？</a></li>
+                    <li class="cur"><i>2</i><a href="/jkbk/1177075.html">怎么预防盐酸舍曲林片的不良反应？</a></li>
+                    <li class="cur"><i>3</i><a href="/jkbk/1177074.html">丽科杰治疗尖锐湿疣有什么副作用？</a></li>
+                    <li><i>4</i><a href="/jkbk/1177073.html">盐酸达泊西汀片是勃起功能障碍用药吗？</a></li>
+                    <li><i>5</i><a href="/jkbk/1177072.html">非那雄胺片怎样服用效果好？</a></li>
+                    <li><i>6</i><a href="/jkbk/1177071.html">西地那非片怎样正确使用？</a></li>
+                    <li><i>7</i><a href="/jkbk/1177070.html">普瑞巴林胶囊饮食禁忌有哪些？</a></li>
+                    <li><i>8</i><a href="/jkbk/1177069.html">代丁自行停药会有副作用吗？</a></li>
+                    <li><i>9</i><a href="/jkbk/1177068.html">五大因素可以导致肺癌的发生</a></li>
+                    <li><i>10</i><a href="/jkbk/1177067.html">与肺癌有关的两大职业因素</a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="footer">
+	<div class="foot">
+    	<div class="about">
+            <div class="xl icon_zheng">
+            	<h1>正品保障</h1>
+                <h2>确保所有产品都是原装正品</h2>
+            </div>
+            <div class="xl icon_ba">
+            	<h1>8天无条件退换货</h1>
+                <h2>买的放心,用的放心</h2>
+            </div>
+            <div class="xl icon_bao">
+            	<h1>精美包装</h1>
+                <h2>统一的包装呵护商品</h2>
+            </div>
+            <div class="xl icon_piao">
+            	<h1>正规发票</h1>
+                <h2>机打发票,附箱送达</h2>
+            </div>
+        </div>
+        <div class="mt10">
+            <div class="aBox">
+                <span class="icon_a1" href="##">购物指南</span>
+                <a href="##">怎样购物</a>
+                <a href="##">优惠券介绍</a>
+                <a href="##">订单状态说明</a>
+            </div>
+            <div class="aBox">
+                <span class="icon_a2">支付帮助</span>
+                <a href="##">发票说明</a>
+                <a href="##">在线支付</a>
+            </div>
+            <div class="aBox">
+                <span class="icon_a3">配送方式</span>
+                <a href="##">申通速递</a>
+                <a href="##">顺风快递</a>
+                <a href="##">邮政EMS</a>
+            </div>
+            <div class="aBox">
+                <span class="icon_a4">服务条款</span>
+                <a href="##">售后服务政策</a>
+                <a href="##">售后特色服务</a>
+                <a href="##">退换货说明</a>
+                <a href="##">服务时效承诺</a>
+                <a href="##">联系客服</a>
+            </div>            
+            <div class="aBox">
+                <span class="icon_a5">关于生命维他</span>
+                <a href="##">生命维他简介</a>
+                <a href="##">生命维他公告</a>
+                <a href="##">招闲纳士</a>
+            </div>
+            <div class="aBox">
+                <span class="icon_a4">联系方式</span>
+                <a href="##">邮箱:serivice@qq.com</a>
+                <a href="##">电话:400-9999-9999</a>
+            </div>
+            <div class="aBox aBoxNone">
+                <span class="icon_a4">手机生命维他</span>
+                <p>轻松购物,顺利到家</p>
+                <div>
+                	<img src="images/img3.png" class="fl mr10" />
+                	<p><img src="images/icon_app.png" /></p>
+                    <p class="mt5"><img src="images/icon_android.png" /></p>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="pt10 center">
+            生命维他(德国)有限责任公司 版权所有 Copyright @ 1998-2006SIMPLY VITA,ALL Rights Reserved
+        </div>
+    </div>
+</div>
+</body>
+</html>

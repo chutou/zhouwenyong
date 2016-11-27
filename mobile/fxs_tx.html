@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>02积分提现</title>
+	<meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width">-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="js/skins/default.css">
+	<script src="js/jquery.js"></script>
+    <script src="js/jquery.artDialog.js"></script>
+    <script src="js/main.js"></script>
+    <script language="javascript">
+    	$(function(){
+			$(".share").click(function(e){
+				$(".shareCxt").show();
+				e.stopPropagation();
+			});
+			$(".shareCxt").click(function(e){
+				$(".shareCxt").hide();
+				
+			})
+			$(document).click(function(e){
+				$(".shareCxt").hide();
+				e.stopPropagation();
+			})
+		})
+    </script>
+</head>
+<body id="top">
+<div class="containter">
+	<div class="header">
+    	<h1><a href="javascript:;" class="icon icon_close">返回</a><a href="javascript:;" class="icon icon_menu share">&nbsp;</a><span class="text">我的积分</span></h1>
+    </div>
+        
+    <div class="content">
+    	<div class="cp_fk_listCxt bk_fff">
+            <div class="cp_fk_list">
+                <p class="font26px">现有积分：<span class="color_org">2500</span></p>
+            	<p class="color_999">比例：1个积分＝1元人民币</p>
+                <div class="posr"><a href="fxs_hqjf.html" class="btn">获取积分</a></div>
+            </div>
+        </div>
+        <div class="bottomline brtb mt30">
+        	<div class="font26px"><span class="color_333">提现金额</span> <input type="text" class="tinput" value="请输入您需要提现的金额" onfocus="if(value=='请输入您需要提现的金额') {value=''}" onblur="if(value=='') {value='请输入您需要提现的金额'}" /></div>
+        </div>
+        <div class="mt30 pd20">
+        	<a href="javascript:;" class="yellowBtn" onClick="tixian(this)"><span class="icon_gou">&nbsp;</span>确认提现</a>
+        </div>
+    </div>
+    <div class="shareCxt">
+    	<ul class="threeUl2">
+            <li>
+                <a href="javascript:;"><img src="images/img9.png" /></a>
+                <a href="javascript:;">朋友圈</a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="images/img10.png" /></a>
+                <a href="javascript:;">人人网</a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="images/img11.png" /></a>
+                <a href="javascript:;">新浪微博</a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="images/img12.png" /></a>
+                <a href="javascript:;">微信好友</a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="images/img13.png" /></a>
+                <a href="javascript:;">腾讯微博</a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="images/img14.png" /></a>
+                <a href="javascript:;">QQ空间</a>
+            </li>            
+            <div class="clear"></div>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    
+    <div class="footer">
+        <div class="footerUl">
+        	<li class=""><a class="" href="cpsj.html"><span class="cpsj">&nbsp;</span>产品世界</a></li>
+            <li><a class="" href="gywm.html"><span class="gywm">&nbsp;</span>关于我们</a></li>
+            <li class="last select"><a class="" href="user_center.html"><span class="grzx">&nbsp;</span>个人中心</a></li>
+        </div>   
+    </div>
+    
+</div> 
+</body>
+</html>

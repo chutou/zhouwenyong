@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>首页</title>
+	<meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width">-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/layout.css">
+	<script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/slides.min.jquery.js"></script>
+    <script src="js/slider.js"></script>
+    <script language="javascript">
+    	$(function(){
+			$('.indexBanner .slides').slidesjs({width: 850,height: 432,start:1,navigation: true,play: {interval: 5000,auto: true}});			
+			$("#s1").xslider({
+				unitdisplayed:4,
+				movelength:1,
+				unitlen:130,
+				autoscroll:3000000
+			});	
+		})
+    </script>
+</head>
+<body id="top">
+<div class="containter">
+	<!---头部-->
+	<div class="header">
+    	<div class="head">
+        	<a class="logo" href="index.html"><img src="images/logo.png" width="142" height="113" /></a>
+            <ul class="nav">
+            	<li><a class="current" href="index.html">首   页</a></li>
+                <li><a href="gypd.html">关于胖丁</a></li>
+                <li><a href="fwxm.html">服务项目</a></li>
+                <li><a href="alzs.html">案例展示</a></li>
+                <li><a href="hzkh.html">合作客户</a></li>
+                <li><a href="hydt.html">行业动态</a></li>
+                <li class="last"><a href="lxwm.html">联系胖丁</a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!--主体内容-->    
+    <div class="content">
+    	<div class="indexLeft">
+        	<a href="gypd.html"><img src="images/img1.png" /></a><a href="fwxm.html"><img src="images/img2.png" /></a><a href="alzs.html"><img src="images/img3.png" /></a><a href="qszr.html"><img src="images/img4.png" /></a>
+        </div>
+        <div class="indexRight">
+        	<!--五图切换-->
+        	<div class="indexBanner">    	
+                <div class="slides">               	
+                    <div class="slide">
+                        <a href="javascript:;"><img src="images/img6.png"/></a>
+                    </div>
+                    <div class="slide">
+                        <a href="javascript:;"><img src="images/img6.png"/></a>
+                    </div> 
+                    <div class="slide">
+                        <a href="javascript:;"><img src="images/img6.png"/></a>
+                    </div>
+                    <div class="slide">
+                        <a href="javascript:;"><img src="images/img6.png"/></a>
+                    </div>            
+                </div>
+            </div>
+            <!--胖丁动态-->
+            <div class="mt30">
+            	<div class="box600 fl">
+            		<div class="tit1"><a class="text" href="hydt.html">胖丁动态</a><a href="hydt.html" class="more">more</a></div>
+                    <div class="titCxt1">
+                        <ul class="dtUl">
+                            <li><span class="tag">新闻</span><a href="##">感恩儿童安全座椅携手感恩儿童安全座椅携手感恩儿童安全座椅携手......</a></li>
+                            <li><span class="tag">新闻</span><a href="##">感恩安全座椅闪电发货感恩儿童安全座椅携手感恩儿童安全座椅携手......</a></li>
+                            <li><span class="tag">新闻</span><a href="##">感恩携手京东环塔爱心公益行感恩儿童安全座椅携手感恩儿童安全座椅携手</a></li>
+                            <li><span class="tag">新闻</span><a href="##">双十一“感恩制造”创儿感恩儿童安全座椅携手感恩儿童安全座椅携手....</a></li>
+                            <li><span class="tag">新闻</span><a href="##">双十一“感恩制造”创儿感恩儿童安全座椅携手感恩儿童安全座椅携手....</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box220 fr">
+                	<a href="lxwm.html"><img src="images/img5.png" /></a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    	<!--合作伙伴-->
+        <div class="parsent mt20 mb20">
+        	<span class="text">合作伙伴</span>
+            <div class="scrolllist" id="s1">
+                <a class="abtn aleft" href="#left" title="左移"></a>
+                <div class="imglist_w">
+                    <ul class="imglist">
+                        <li><a href="##" title=""><img src="images/img7.png" /></a></li>
+                        <li><a href="##" title=""><img src="images/img8.png" /></a></li>
+                        <li><a href="##" title=""><img src="images/img9.png" /></a></li>
+                        <li><a href="##" title=""><img src="images/img7.png" /></a></li>
+                        <li><a href="##" title=""><img src="images/img8.png" /></a></li>
+                        <li><a href="##" title=""><img src="images/img9.png" /></a></li>
+                        <li><a href="##" title=""><img src="images/img7.png" /></a></li>
+                        <li><a href="##" title=""><img src="images/img8.png" /></a></li>
+                        <li><a href="##" title=""><img src="images/img9.png" /></a></li>
+                        <li><a href="##" title=""><img src="images/img7.png" /></a></li>
+                        <li><a href="##" title=""><img src="images/img8.png" /></a></li>
+                        <li><a href="##" title=""><img src="images/img9.png" /></a></li>				
+                    </ul><!--imglist end-->
+                </div>
+                <a class="abtn aright" href="#right" title="右移"></a>
+            </div>
+        </div>
+    </div>
+    
+    <!--底部-->
+    <div class="footer">
+    	<div class="foot">
+        	<div class="center"><a class="icon_movie" href="##">&nbsp;</a></div>
+            <div class="link">
+            	<a href="##" class="mr20"><img src="images/img10.png" /></a>
+                <a href="##" class="mr20"><img src="images/img11.png" /></a>
+                <a href="##" class="mr20"><img src="images/img12.png" /></a>
+            </div>
+            <ul class="footerUl">
+            	<li><a href="index.html"><span class="eng">Home</span><span class="text">首   页</span></a></li>
+                <li><a href="gypd.html"><span class="eng">About</span><span class="text">关于胖丁</span></a></li>
+                <li><a href="fwxm.html"><span class="eng">Services</span><span class="text">服务项目</span></a></li>
+                <li><a href="alzs.html"><span class="eng">Case</span><span class="text">案例展示</span></a></li>
+                <li><a href="hzkh.html"><span class="eng">Client</span><span class="text">合作客户</span></a></li>
+                <li><a href="hydt.html"><span class="eng">Industry</span><span class="text">行业动态</span></a></li>
+                <li><a href="lxwm.html"><span class="eng">Contact</span><span class="text">联系胖丁</span></a></li>
+            </ul>
+            <p class="copyright">上海胖丁文化传播有限公司    ©沪ICP13007803备</p>
+            <div class="clear"></div>
+        </div>   
+    </div>
+</div> 
+</body>
+</html>

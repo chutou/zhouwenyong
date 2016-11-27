@@ -1,0 +1,320 @@
+/**
+ +------------------------------------------------------------------------------
+ * 网站样式重写
+ +------------------------------------------------------------------------------
+ * @comefrom  zhouwenyong
+ * @subpackage  zhouwenyong
+ +------------------------------------------------------------------------------
+ */
+ body{ color:#666; padding:0px; margin:0px; font-family:"Microsoft YaHei","Microsoft YaHei Light","SimSun"; font-size:12px;}
+ * {} * a:link{} img{ display:block;}
+a{outline:none; text-decoration:none; color:#333; cursor:pointer;}
+a:hover{ text-decoration:none; color:#333;}
+html{/*zoom:1;*/ line-height:24px;}html *{outline:0;/*zoom:1;*/} html button::-moz-focus-inner{border-color:transparent!important;} 
+body{ overflow-x:hidden;} body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;} table{/*border-collapse:collapse;border-spacing:0;*/} fieldset,a img{border:0;} address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:normal;} li{list-style:none;} caption,th{text-align:left;} h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;} q:before,q:after{content:'';}
+.tar{ text-align:right;}
+.color_blue{ color:#5d9cec;}
+.text-unline{ text-decoration:underline;}
+.overflow{ overflow:hidden;}
+
+/**
+ +------------------------------------------------------------------------------
+ * Public Class
+ +------------------------------------------------------------------------------
+ * @subpackage  RBAC
+ +------------------------------------------------------------------------------
+ */
+.clearfix:after {content:"."; display:block; height:0; clear:both; visibility:hidden; }.clearfix {display:block;}.clear{ clear:both; height:0px; font-size:0px; line-height:0px; overflow:hidden;}/* 清除浮动*/
+.colwrapper { overflow:hidden; zoom:1 /*for ie*/; margin:5px auto; }/* 高度自适应 */ 
+.strong{ font-weight: bold;} .left{ float: left;} .right{ float: right; text-align:right;} .center{ margin:0 auto; text-align:center;}
+.show{ display:block; visibility:visible;}.hide{ display: none; visibility:hidden;}
+.block{ display:block;} .inline{ display:inline;}.inline-block{ display:inline-block;}.h100{ height:100%;}
+.transparent{filter:alpha(opacity=50); -moz-opacity:0.5;/** Firefox 3.5即将原生支持opacity属性，所以本条属性只在Firefox3以下版本有效 ***/ -khtml-opacity: 0.5; opacity: 0.5; } .break{ word-wrap:break-word;overflow:hidden; /*word-break:break-all;*/}
+.pt5{ padding-top:5px;}.pb5{ padding-bottom:5px;}
+.pl10{ padding-left:10px;}.pr10{ padding-right:10px;}.pt10{ padding-top:10px;}.pb10{ padding-bottom:10px;}.pd10{ padding:10px;}.pl20{ padding-left:17px}.pr20{ padding-right:17px;}.pt20{ padding-top:17px;}.pb20{ padding-bottom:17px;}.mt10{ margin-top:10px;}.ml10{ margin-left:10px;}
+.pt8{ padding-top:8px;}.lh28{ line-height:28px;}.lh36{ line-height:36px;}.lh32{ line-height:32px;}.lh48{ line-height:48px;}
+.bd_1{ border:1px solid #eeeeee; height:100%;}
+.pd1{ padding:1px; background:#fff;}
+.pd5{ padding:5px;}.pd20{ padding:20px 17px;}.pt15{ padding-top:15px;}
+.brbm{ border-bottom:1px solid #dcdcdc; cursor:pointer;}.brtb{ border-top:1px solid #d7d7d7;}.brbd{border-bottom:1px dotted #dcdcdc;}/*底部线条*/.mt30{ margin-top:30px;} .mt50{ margin-top:50px;}.fl{float:left;}.fr{float:right;}.txde{ text-decoration:underline;} .ti2m{ text-indent:2em;}
+.mt20{ margin-top:20px;}.mb20{ margin-bottom:20px;}.ml20{ margin-left:20px;}.mr20{margin-right:20px}.mb30{ margin-bottom:30px;}.mg20{margin:20px;}.mb5{margin-bottom:5px;}.mb10{ margin-bottom:10px;}.mr10{ margin-right:10px;}.mr5{ margin-right:5px;}.ml5{ margin-left:5px;}.mt36{ margin-top:36px;}.mb36{ margin-bottom:36px;}
+
+/**
+ +------------------------------------------------------------------------------
+ * FCK 兼容解决方案
+ +------------------------------------------------------------------------------
+ * @subpackage  RBAC
+ +------------------------------------------------------------------------------
+ */
+em{ font-style:italic !important;} strike{ text-decoration:line-through !important;} strong{ font-weight:bold !important;} u{ text-decoration:underline !important;}.strike{ text-decoration:line-through}
+
+/**
+ +------------------------------------------------------------------------------
+ * 表单样式
+ +------------------------------------------------------------------------------
+ * @subpackage  RBAC
+ +------------------------------------------------------------------------------
+ */
+
+/**
+ +------------------------------------------------------------------------------
+ * 网站整体颜色总汇
+ +------------------------------------------------------------------------------
+ * @codex  颜色:使用颜色的名称或者16进制代码,如 
+ * @subpackage  RBAC
+ +------------------------------------------------------------------------------
+ */
+.ff8600,.ff86aa a{ color:#ff8600;}
+.color_h{ color:#ef398b;}
+.color_5d{ color:#0067ff;}
+.color_7d{ color:#727171;}
+.color_5df{ color:#389a69;}
+.color_333{ color:#333}
+.color_666{ color:#666}
+.color_999{ color:#999}
+.color_l{ color:#025384}
+.c999 {color: #999999;}
+a.red{ color:#cf2003;} .red{ color:#cf2003;}
+.white{ color:#fff;}
+.color_green{ color:#0b842c;}
+.color_org{ color:#ff7200;}
+
+/**
+ +------------------------------------------------------------------------------
+ * 网站整字体大小
+ +------------------------------------------------------------------------------
+ * @codex   字体大小,直接使用"font+字体大小"作为名称,如
+ * @package  ORG
+ * @subpackage  RBAC
+ +------------------------------------------------------------------------------
+ */
+.font12px{ font-size:12px;}
+.font14px{ font-size:14px;}
+.font15px{ font-size:15px;}
+.font16px{ font-size:16px;}
+.font18px{ font-size:18px;}
+.font24px{ font-size:24px;}
+.font26px{ font-size:26px;}
+.font28px{ font-size:28px;}
+.font20px{ font-size:20px;}
+.font32px{ font-size:32px;}
+.font9pt{ font-size:9pt;}
+.black{ color:#000;}
+/**
+ +------------------------------------------------------------------------------
+ * 网站背景
+ +------------------------------------------------------------------------------
+ * @codex   字体大小,直接使用bk+颜色值"作为名称,如
+ * @package  ORG
+ * @subpackage  RBAC
+ +------------------------------------------------------------------------------
+ */
+.bk_d4{ background:#d4d4d4;}
+.bk_fff{ background:#fff; height:100%;}
+.br2{ border:1px solid #1282c1;}
+.bk_h{ background:#feecdc;}
+.bk_c{ background:#eccdfe}
+.bk_f9{ background:#f9f9f9;}
+.bk_fe{ background:#fefefe;}
+/**边框***/
+.brts{ border-top:1px solid #e0e0e0;}.brls{ border-left:1px solid #e0e0e0;}.brrs{ border-right:1px solid #e0e0e0;}.brbs{ border-bottom:1px solid #e0e0e0;}.brsa{ border:1px solid #e0e0e0;}
+/*框架大小*/
+.box600{ width:600px;}
+.box220{ width:220px;}
+
+body{ background:url(images/bodyBg.jpg) no-repeat center top;}
+.containter{width:100%; margin:0px auto; height:100%; padding:0px 0px 0px 0px;}
+.icon{ background-image:url(images/icon.png); background-repeat:no-repeat;}
+.header{ background:url(images/headerBg.png) repeat-x 0px 0px; height:174px;width:100%; border-top:4px solid #009eff;}
+.header .head{ width:1100px; margin:0px auto;}
+.head .logo{ float:left;}
+.head .nav{ float:right; line-height:60px; height:60px;}
+.head .nav li{ float:left;}
+.head .nav li a{ width:84px; text-align:center; display:block; height:60px; font-size:14px; color:#fff; background:url(images/headerUlLiBg.png) no-repeat right center; line-height:60px;}
+.head .nav li.last a{ background:none;}
+.head .nav li a.current,.head .nav li a:hover{ background-color:#ffc721; color:#17110f; text-shadow:1px 1px 1px #fff;}
+
+.banner{}
+.content{ width:1100px; margin:0px auto;}
+.footer{  width:100%; background:url(images/footerBg.png) repeat 0px 0px; min-height:162px;}
+.footer2{ background:#130d0c;}
+.footer .foot{ width:1100px; margin:0px auto; padding:10px;}
+.icon_movie{ background:url(images/icon_movie.png) no-repeat 0px 0px; display:inline-block; width:27px; height:20px;}
+.link{ padding:10px 0px; text-align:center; border-bottom:2px dashed #656161; margin-bottom:10px;}
+.link a img{ display:inline-block;}
+.footerUl{ float:left; background:none;}
+.footerUl li{ float:left;}
+.footerUl li a{ padding:0px 20px; display:inline-block; background:url(images/headerUlLiBg.png) no-repeat right 0px;}
+.footerUl li a .eng{ font-size:10px; color:#5e5b5b; display:block;}
+.footerUl li a .text{ font-size:14px; display:block; color:#fff;}
+.copyright{ margin-top:22px; float:right; color:#fcf9f9;}
+/*
+*首页 index.html
+*/
+.indexLeft{ width:220px; float:left;}
+.indexLeft a{ display:block; overflow:hidden; float:left;}
+.indexRight{ width:850px; float:right;}
+.indexBanner {position:relative;overflow:hidden; z-index:100; margin:0px 0px 0px 0px; padding:0px;}
+.indexBanner .slides {position:relative;}
+.indexBanner .slides_container {overflow:hidden;}
+.indexBanner .slides_container{}
+.indexBanner img{ width:100%; border-radius:5px;}
+.indexBanner .slides_container .slide{ display:block; text-align:left;}
+.indexBanner .caption{ position:absolute; bottom:0px; height:42px; width:100%; left:0px; background:url(images/opk_black.png) repeat-x 0px 0px; font-size:20px; text-align:center; color:#fff; line-height:42px;}
+.indexBanner .slidesjs-pagination {position:absolute; bottom:10px; right:10px; z-index:99;}
+.indexBanner .slidesjs-pagination li {float:left;margin:0 5px;list-style:none;}
+.indexBanner .slidesjs-pagination li a {display:block;width:16px;height:16px; line-height:16px;padding-top:0px;float:left; text-align:center;overflow:hidden; background:#fff; text-indent:-400px; border-radius:8px;}
+.indexBanner .slidesjs-pagination li a.active,.indexBanner .slidesjs-pagination li a:hover.active {background:#ffc721;}
+.indexBanner .slidesjs-pagination li a:hover { background:#ffc721;}
+.tit1{ position:relative; background:#ffc721; height:50px; line-height:50px; border-radius:5px 5px 0px 0px; color:#fff;}
+.tit1 .text{ font-size:20px; padding:0px 0px 0px 50px; background:url(images/icon_dt.png) no-repeat 10px center; color:#fff; display:inline-block;}
+.tit1 .more{ position:absolute; top:0px; right:10px; color:#fff; display:inline-block;}
+.titCxt1{ padding:10px 20px; background:#fff; height:183px; overflow:hidden; border-radius:0px 0px 5px 5px;}
+.dtUl{}
+.dtUl li{ margin:5px 0px 10px 0px; height:22px;}
+.dtUl li .tag{ display:inline-block; padding:0px 20px; color:#fff; background:#ffc721; border-radius:10px; font-size:13px; margin-right:20px; float:left;}
+.dtUl li a{ display:block; font-size:13px; width:460px; float:left; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.parsent{ background:#130d0c; padding:10px 0px 10px 150px; border-radius:5px; height:32px; position:relative;}
+.parsent .text{ background:url(images/icon_fb.png) no-repeat 0px center; display:inline-block; position:absolute; top:15px; left:10px; font-size:20px; color:#fff; padding:0px 0px 0px 40px;}
+.scrolllist a.aleft{float:left; background:url(images/icon_left.png) no-repeat 0px 0px; height:32px; width:32px; display:inline-block; margin:5px 0px 0px 0px;}
+.scrolllist a.aright{float:right; background:url(images/icon_right.png) no-repeat 0px 0px; height:32px; width:32px; display:inline-block; margin:5px 0px 0px 0px;}
+.scrolllist{height:101px;margin:0 0px;}
+.scrolllist .imglist_w{width:780px;height:32px; margin-left:50px;overflow:hidden;float:left;position:relative;/*必要元素*/}
+.scrolllist .imglist_w ul{width:20000px;position:absolute;left:10px;top:0px;}
+.scrolllist .imglist_w li{ width:120px; height:32px;float:left;padding:0 10px 0px 0px;}
+.scrolllist .imglist_w li img{padding:0px; width:116px; height:32px;}
+.scrolllist .imglist_w li a{color:#3366cc;text-decoration:none;float:left;}
+.scrolllist .imglist_w li a:hover img{filter:alpha(opacity=86);-moz-opacity:0.86;opacity:0.86;}
+.scrolllist .imglist_w li p{height:48px;line-height:24px;overflow:hidden;float:left;}
+
+/*
+*关于胖丁 gypd.html
+*/
+.tit2{ position:relative; background:#ffc721; height:50px; line-height:50px; border-radius:5px 5px 0px 0px; color:#fff;}
+.tit2 .text{ font-size:18px; padding:0px 0px 0px 20px; color:#0b91e5; display:inline-block;}
+.tit2 .posr{ position:absolute; top:0px; right:10px;}
+.navig{ color:#0b91e5;}
+.navig a{ color:#fff;}
+.titCxt2{ padding:30px 30px; background:#1380c4; overflow:hidden; border-radius:0px 0px 5px 5px;}
+.aboutLeft{ width:600px; float:left; margin-right:30px; border-right:1px dashed #fff; padding:0px 30px 0px 0px; color:#fff;}
+.aboutLeft p{ text-indent:2em; line-height:24px;}
+.aboutRight{ float:right;}
+.titCxt3{ background:#130d0c; padding:20px; border-radius:5px;}
+.titCxt3 .lxLeft{ float:left; margin-top:20px;}
+.lxLeft p{ color:#fff;}
+.lxLeft p img{ display:inline-block; vertical-align:top; }
+.lxRight{ float:right;}
+.lxRight .spanimg{ width:106px; height:130px; float:left; margin-left:20px;}
+.lxRight .spanimg span{ text-align:center; color:#969696; display:block;}
+/*
+*行业动态 hydt.html
+*/
+.mb100{ margin-bottom:100px;}
+.hyUl{}
+.hyUl li{ padding:15px 0px 15px 140px; position:relative; _height:60px; color:#fff; border-bottom:1px dashed #fff;}
+.hyUl li h1{ color:#004977; font-size:16px; float:left; height:24px; overflow:hidden;}
+.hyUl li h1 a{ color:#004977;}
+.hyUl li p{ display:block; clear:both;}
+.hyUl li .img{ position:absolute; top:15px; left:5px; border:1px solid #d3c5b2;}
+.hyUl li .img img{ width:120px; height:80px; display:inline-block;}
+.hyUl li .date{ position:absolute; top:15px; right:0px; font-size:16px; color:#004977;}
+/*
+*行业动态详细 hyDetail.html
+*/
+.hyCxt{ padding:0px 0px;}
+.hyCxt .bigTit{ font-size:18px; line-height:30px; text-align:center; color:#232323; font-weight:bold;}
+.hyCxt .smallTit{ font-size:12px; color:#bebebe; text-align:center;}
+.hyCxt .t{ color:#2b2b2b; font-size:14px; font-weight:bold; margin-top:20px;}
+
+.page{}
+.page a{ display:inline-block; padding:0px 10px; border-radius:3px; border:1px solid #c0a99c; background:#fff; margin-right:5px;}
+.page a.current,.page a:hover{ background:#1fa3f3; border:1px solid #0081db; color:#fff;}
+
+/*
+*合作客户 hzkh.html
+*/
+.khUl{ padding:0px 0px 0px 20px;}
+.khUl li{ float:left; width:130px; height:62px; margin:0px 0px 10px 10px;}
+.khUl li a{ border-radius:3px;}
+.khUl li a img{ width:128px; height:60px; border:1px solid #dbdbdb;}
+/*
+*联系胖丁 lxwm.html
+*/
+.titCxt4{ padding:0px 0px; background:#fff; overflow:hidden; border-radius:0px 0px 5px 5px; border:1px solid #7e7e7e; border-top:none;}
+/*
+*服务项目 fwxm.html
+*/
+.xmCxt{}
+.xmItem{ margin-bottom:30px;}
+.xmItem1{ width:265px; border-radius:5px; float:left;}
+.tit5{ position:relative; background:#ffc721; height:35px; line-height:35px; border-radius:5px 5px 0px 0px; color:#fff;}
+.tit5 .text{ font-size:18px; padding:0px 0px 0px 20px; color:#ffffff; display:inline-block;}
+.titCxt5{ padding:10px 20px; background:#009eff; overflow:hidden; border-radius:0px 0px 5px 5px; height:256px;}
+.xmItem2{ width:245px; height:291px; padding:10px 10px; border-radius:5px; background:#e84d3d; float:left; margin-left:30px; position:relative;}
+.xmItem2 .pos{ position:absolute; top:132px; left:0px; text-align:center; width:100%; z-index:1;}
+.xmItem2 .btn{ font-size:18px; border:1px solid #fff; display:inline-block; width:125px; height:44px; line-height:44px; color:#fff; border-radius:3px; z-index:1;}
+.xmItem2 .text{ position:relative; z-index:99; display:none;}
+.xmItem3{ width:493px; height:291px; padding:10px 10px; border-radius:5px; background:#442f4c url(images/img30.png) no-repeat 0px 0px; float:right; position:relative;}
+.xmItem3 .pos{ position:absolute; top:132px; left:0px; text-align:center; width:100%; z-index:1;}
+.xmItem3 .btn{ font-size:18px; border:1px solid #fff; display:inline-block; width:125px; height:44px; line-height:44px; color:#fff; border-radius:3px; z-index:1;}
+.xmItem3 .btn2{ font-size:18px; width:46px; height:46px; line-height:46px; z-index:1; background:url(images/iconBtn.png) no-repeat 0px 0px; display:inline-block;}
+.xmItem3 .text{ position:relative; z-index:99; display:none;}
+.xmItem4{ width:493px; height:291px; padding:10px 10px; border-radius:5px; background:#5a9fe3; float:left; position:relative;}
+.xmItem5{ width:245px; height:291px; padding:10px 10px; border-radius:5px; background:#385f34; float:left; margin-left:30px; position:relative;}
+.xmItem6{ width:245px; height:291px; padding:10px 10px; border-radius:5px; background:#f27910; float:right; margin-left:0px; position:relative;}
+
+.crmTab{ background:#009eff; border-radius:0px 0px 5px 5px; height:276px;}
+.crmTit{height: 27px; position:relative; padding:5px 0px 0px 0px; background:url(images/tab_titlebg.gif) repeat-x 0px 5px;}
+.crmTit ul.tags{ margin:0px 0px 0px 0px; padding:0px 10px 0px 10px;}
+.crmTit ul.tags li{ float:left; padding:0px 0px;text-align:left; margin:0px 5px 0px 0px;}
+.crmTit ul.tags li a{ background: none; border-radius:20px; height:30px; line-height:15px; color:#fff; width:30px; padding:5px 5px; text-align:center; font-size:12px; border:1px solid #fff; display:inline-block;}
+.crmTit ul.tags li a:hover{ background:#0079c9;}
+.crmTit ul.tags li a span{}
+.crmTit ul.tags li.current{}
+.crmTit ul.tags li.current a{}
+.crmTit ul.tags li.current a span{}
+.crmTab .panes{ padding:0px 10px; height:172px; overflow:hidden;}
+.crmTab .pane{ display:none;}
+
+/*
+*案例展示 alzs.html
+*/
+.alBanner {position:relative;z-index:100; margin:0px 0px 0px 0px; padding:0px;}
+.alBanner .slides {position:relative;}
+.alBanner .slides_container {overflow:hidden;}
+.alBanner .slides_container{}
+.alBanner img{ border-radius:8px;}
+.alBanner .slides_container .slide{ display:block; text-align:left;}
+/*.alBanner .caption{ position:absolute; bottom:0px; height:42px; width:100%; left:0px; background:url(images/opk_black.png) repeat-x 0px 0px; font-size:20px; text-align:center; color:#fff; line-height:42px;}*/
+.alBanner .slidesjs-pagination {position:absolute; bottom:10px; left:49%; z-index:99;}
+.alBanner .slidesjs-pagination li {float:left;margin:0 5px;list-style:none;}
+.alBanner .slidesjs-pagination li a {display:block;width:17px;height:17px; line-height:17px;padding-top:0px;float:left; text-align:center;overflow:hidden; background:url(images/iconDot.png) no-repeat 2px 2px; text-indent:-400px; border-radius:8px;}
+.alBanner .slidesjs-pagination li a.active,.indexBanner .slidesjs-pagination li a:hover.active {background:url(images/iconDot.png) no-repeat -17px 0px;}
+.alBanner .slidesjs-pagination li a:hover { background:url(images/iconDot.png) no-repeat -17px 0px;}
+.alBanner .slidesjs-previous{ background:url(images/icon_left2.png) no-repeat 0px 0px; width:38px; height:98px; position:absolute; top:275px; left:-58px; display:inline-block; z-index:9999; overflow:hidden; text-indent:-1000px;}
+.alBanner .slidesjs-next{ background:url(images/icon_right2.png) no-repeat 0px 0px; width:38px; height:98px; position:absolute; top:275px; right:-58px; display:inline-block; z-index:9999; overflow:hidden; text-indent:-1000px;}
+.alItem{ position:relative; width:352px; height:310px; border-radius:8px; margin-bottom:30px; overflow:hidden;}
+.alItem2{ width:718px; height:310px;}
+.alItem3{width:352px; height:140px;}
+.alItem .caption{ position:absolute; bottom:0px; left:0px; width:100%; height:55px; background:url(images/black.png) repeat-x 0px 0px; text-align:right; color:#fff; padding:10px 0px; border-radius:8px;}
+.alItem .caption p{ padding:0px 10px;}
+.alItem .caption p a{ color:#fff; font-weight:bold;}
+.alItem .caption .t{ font-size:15px;}
+/*
+*案例展示详情 alDetail.html
+*/
+.titCxt6{ width:1100px; background:#130d0c; border-radius:0px 0px 5px 5px;}
+.scrolllist2 a.aleft{float:left; background:url(images/icon_left3.png) no-repeat 0px center; height:123px; width:38px; display:inline-block; margin:5px 0px 0px 0px;}
+.scrolllist2 a.aright{float:right; background:url(images/icon_right3.png) no-repeat 0px center; height:123px; width:38px; display:inline-block; margin:5px 0px 0px 0px;}
+.scrolllist2{height:123px;margin:0 0px; padding:20px;}
+.scrolllist2 .imglist_w{width:912px;height:123px; margin-left:50px;overflow:hidden;float:left;position:relative;/*必要元素*/}
+.scrolllist2 .imglist_w ul{width:20000px;position:absolute;left:10px;top:0px;}
+.scrolllist2 .imglist_w li{ width:208px; height:123px;float:left;padding:0 0px 0px 0px; margin-right:20px;}
+.scrolllist2 .imglist_w li img{padding:0px; width:208px; height:123px;}
+.scrolllist2 .imglist_w li a{color:#3366cc;text-decoration:none;float:left; display:inline-block; position:relative;}
+.scrolllist2 .imglist_w li a .caption{ background:url(images/black.png) repeat 0px 0px; text-align:right; position:absolute; bottom:0px; left:0px; width:100%; color:#fff; font-weight:bold; font-size:12px;}
+.scrolllist2 .imglist_w li a:hover img{filter:alpha(opacity=86);-moz-opacity:0.86;opacity:0.86;}
+.scrolllist2 .imglist_w li p{height:48px;line-height:24px;overflow:hidden;float:left;}
+
+body a:hover{ color:#ffc721;}
+

@@ -1,0 +1,236 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>产品世界</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0;" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="js/skins/default.css">
+	<script src="js/jquery.js"></script>
+    <script src="js/jquery.artDialog.js"></script>
+    <script src="js/main.js"></script>
+    <script language="javascript">
+    	$(function(){
+			$(".share").click(function(e){
+				$(".shareCxt").show();
+				e.stopPropagation();
+			});
+			$(".shareCxt").click(function(e){
+				$(".shareCxt").hide();
+				
+			});
+			$("#qbfl").click(function(e){
+				$("#flCxt").show();
+				$("#pxCxt").hide();
+				$(this).parents("li").siblings("li").removeClass("current");
+				$(this).parent("li").addClass("current");
+				e.stopPropagation();
+			})
+			$("#zhpx").click(function(e){
+				$("#pxCxt").show();
+				$("#flCxt").hide();
+				$(this).parents("li").siblings("li").removeClass("current");
+				$(this).parent("li").addClass("current");
+				e.stopPropagation();
+			})
+			$(".pxDl dd").click(function(){
+				$(this).siblings("dd").removeClass("current");
+				$(this).addClass("current");
+				$("#pxtext").text($(this).text())
+				
+			})
+			/*$(".flDl dd").hover(function(){
+				$(this).addClass("current");
+				$(this).next(".flCxt").show();
+			},function(){
+				$(this).removeClass("current");
+				$(this).next(".flCxt").hide();
+			})*/
+			$(".flDl dd").click(function(){
+				$(this).siblings("dd").removeClass("current");
+				$(this).parents(".flDl").find(".flCxt").hide();
+				$(this).addClass("current");
+				$(this).next(".flCxt").show();
+				e.stopPropagation();
+			})
+			$("#flCxt").mouseleave(function(){
+				$(this).hide();
+			})
+			$(document).click(function(e){
+				$(".shareCxt").hide();
+				$("#pxCxt").hide();
+				//$("#flCxt").hide();
+				e.stopPropagation();
+			})
+		})
+    </script>
+</head>
+<body id="top">
+<div class="containter">
+	<div class="header">
+    	<h1>
+        	<a href="javascript:;" class="icon icon_close">返回</a><a href="javascript:;" class="icon icon_menu share">&nbsp;</a>
+        	<div>
+            	<input type="text" class="headInput" value="产品世界，输入产品名称、分类" onfocus="if(value=='产品世界，输入产品名称、分类') {value=''}" onblur="if(value=='') {value='产品世界，输入产品名称、分类'}" /><input type="button" class="headBtn" />
+            </div>
+        </h1>
+    </div>
+    
+    
+        
+    <div class="content">
+    	<ul class="nav">
+        	<li class="fi"><a href="javascript:;" id="qbfl"><span class="icon icon_fl">&nbsp;</span>全部分类<span class="icon icon_jt">&nbsp;</span></a></li>
+            <div class="pos" id="flCxt">
+                <dl class="flDl">
+                    <dd>
+                    	<a class="first" href="javascript:;"><span class="icon icon_xian">&nbsp;</span>最新产品</a>                    	
+                    </dd>
+                    <div class="flCxt"></div>
+                    <dd class="current"><a href="javascript:;"><span class="icon icon_xian">&nbsp;</span>食品</a></dd>
+                    <div class="flCxt" style="display:block;">
+                        <h2>食品</h2>
+                        <ul class="flA">
+                            <li><a class="current" href="javascript:;">坚果</a></li>
+                            <li><a href="javascript:;">饼干</a></li>
+                            <li><a href="javascript:;">糕点</a></li>
+                            <li><a href="javascript:;">巧克力</a></li>
+                            <li><a href="javascript:;">糖果</a></li>
+                            <li><a href="javascript:;">肉干肉脯</a></li>
+                            <li><a href="javascript:;">枣类</a></li>
+                            <li><a href="javascript:;">葡萄干</a></li>
+                            <li><a href="javascript:;">方便面</a></li>
+                            <li><a href="javascript:;">膨化食品</a></li>
+                            <li><a href="javascript:;">大闸蟹</a></li>
+                            <li><a href="javascript:;">海参</a></li>
+                            <li><a href="javascript:;">新鲜水果</a></li>
+                            <li><a href="javascript:;">白酒</a></li>
+                            <li><a href="javascript:;">葡萄酒</a></li>
+                            <li><a href="javascript:;">南北干货</a></li>
+                            <li><a href="javascript:;">咖啡</a></li>
+                            <li><a href="javascript:;">牛奶</a></li>
+                            <li><a href="javascript:;">花草茶</a></li>
+                            <li><a href="javascript:;">普洱</a></li>
+                            <li><a href="javascript:;">乌龙茶</a></li>
+                            <li><a href="javascript:;">红茶</a></li>
+                            <li><a href="javascript:;">维生素</a></li>
+                            <li><a href="javascript:;">蜂蜜</a></li>
+                            <li><a href="javascript:;">枸杞</a></li>
+                            <li><a href="javascript:;">阿胶</a></li>
+                        </ul>
+                        </div>
+                    <dd><a href="javascript:;"><span class="icon icon_xian">&nbsp;</span>家纺</a></dd>
+                    <div class="flCxt"></div>
+                    <dd><a href="javascript:;"><span class="icon icon_xian">&nbsp;</span>化妆品</a></dd>
+                    <div class="flCxt"></div>
+                    <dd><a href="javascript:;"><span class="icon icon_xian">&nbsp;</span>服装鞋帽</a></dd>
+                    <div class="flCxt"></div>
+                    <dd><a href="javascript:;"><span class="icon icon_xian">&nbsp;</span>3C数码</a></dd>
+                    <div class="flCxt"></div>
+                </dl>
+            </div>
+            <li class="fi">
+            	<a href="javascript:;" id="zhpx"><span class="icon icon_px">&nbsp;</span><span id="pxtext">综合排序</span><span class="icon icon_jt">&nbsp;</span></a>            	
+            </li>
+            <div class="pos" id="pxCxt">
+                <dl class="pxDl">
+                    <dd><a href="javascript:;"><span class="icon icon_xian">&nbsp;</span>综合排序</a></dd>
+                    <dd><a href="javascript:;"><span class="icon icon_di">&nbsp;</span>价格从低到高</a></dd>
+                    <dd><a href="javascript:;"><span class="icon icon_gao">&nbsp;</span>价格从高到低</a></dd>
+                    <dd><a href="javascript:;"><span class="icon icon_xian">&nbsp;</span>按销量</a></dd>
+                </dl>
+            </div>
+            <li class="fi"><a href="javascript:;" class="last"><span class="icon icon_sx">&nbsp;</span>快捷筛选<span class="icon icon_jt">&nbsp;</span></a></li>
+            <div class="clear"></div>
+        </ul>
+        <div class="clear"></div>
+        <!--产品排序-->
+    	<ul class="cpUl">
+        	<li class="fl">
+            	<p><a href="cpxq.html"><img src="images/img16.png" /></a></p>
+                <p class="text"><a href="cpxq.html">东北大米 — 长粒香大米</a></p>
+                <p class="text1">净含量：10kg</p>
+                <div class=""><span class="price">¥65</span><span class="icon icon_sc">2147人已收藏</span></div>
+            </li>
+            <li class="fr">
+            	<p><a href="cpxq.html"><img src="images/img16.png" /></a></p>
+                <p class="text"><a href="cpxq.html">东北大米 — 长粒香大米</a></p>
+                <p class="text1">净含量：10kg</p>
+                <div class=""><span class="price">¥65</span><span class="icon icon_sc">2147人已收藏</span></div>
+            </li>
+            <li class="fl">
+            	<p><a href="cpxq.html"><img src="images/img16.png" /></a></p>
+                <p class="text"><a href="cpxq.html">东北大米 — 长粒香大米</a></p>
+                <p class="text1">净含量：10kg</p>
+                <div class=""><span class="price">¥65</span><span class="icon icon_sc">2147人已收藏</span></div>
+            </li>
+            <li class="fr">
+            	<p><a href="cpxq.html"><img src="images/img16.png" /></a></p>
+                <p class="text"><a href="cpxq.html">东北大米 — 长粒香大米</a></p>
+                <p class="text1">净含量：10kg</p>
+                <div class=""><span class="price">¥65</span><span class="icon icon_sc">2147人已收藏</span></div>
+            </li>
+            <li class="fl">
+            	<p><a href="cpxq.html"><img src="images/img16.png" /></a></p>
+                <p class="text"><a href="cpxq.html">东北大米 — 长粒香大米</a></p>
+                <p class="text1">净含量：10kg</p>
+                <div class=""><span class="price">¥65</span><span class="icon icon_sc">2147人已收藏</span></div>
+            </li>
+            <li class="fr">
+            	<p><a href="cpxq.html"><img src="images/img16.png" /></a></p>
+                <p class="text"><a href="cpxq.html">东北大米 — 长粒香大米</a></p>
+                <p class="text1">净含量：10kg</p>
+                <div class=""><span class="price">¥65</span><span class="icon icon_sc">2147人已收藏</span></div>
+            </li>
+            <div class="clear"></div>
+        </ul>
+        <div class="clear"></div>
+        
+        
+        
+    </div>
+    <div class="shareCxt">
+    	<ul class="threeUl2">
+            <li>
+                <a href="javascript:;"><img src="images/img9.png" /></a>
+                <a href="javascript:;">朋友圈</a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="images/img10.png" /></a>
+                <a href="javascript:;">人人网</a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="images/img11.png" /></a>
+                <a href="javascript:;">新浪微博</a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="images/img12.png" /></a>
+                <a href="javascript:;">微信好友</a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="images/img13.png" /></a>
+                <a href="javascript:;">腾讯微博</a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="images/img14.png" /></a>
+                <a href="javascript:;">QQ空间</a>
+            </li>            
+            <div class="clear"></div>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    
+    <div class="footer">
+        <div class="footerUl">
+        	<li class="select"><a class="" href="cpsj.html"><span class="cpsj">&nbsp;</span>产品世界</a></li>
+            <li><a class="" href="gywm.html"><span class="gywm">&nbsp;</span>关于我们</a></li>
+            <li class="last"><a class="" href="user_center.html"><span class="grzx">&nbsp;</span>个人中心</a></li>
+        </div>   
+    </div>
+    
+</div> 
+</body>
+</html>

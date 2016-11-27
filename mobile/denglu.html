@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>登录</title>
+	<meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width">-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="js/skins/default.css">
+	<script src="js/jquery.js"></script>
+    <script src="js/jquery.artDialog.js"></script>
+    <script src="js/main.js"></script>
+    <script language="javascript">
+    	$(function(){
+			$(".share").click(function(e){
+				$(".shareCxt").show();
+				e.stopPropagation();
+			});
+			$(".shareCxt").click(function(e){
+				$(".shareCxt").hide();
+				
+			})
+			$(document).click(function(e){
+				$(".shareCxt").hide();
+				e.stopPropagation();
+			})
+		})
+    </script>
+</head>
+<body id="top">
+<div class="containter">
+	<div class="header">
+    	<h1><a href="javascript:;" class="icon icon_close">返回</a><a href="javascript:;" class="icon icon_menu share">&nbsp;</a><span class="text">登录</span></h1>
+    </div>
+        
+    <div class="content">
+    	<div class="loginInfo">
+        	欢迎来到亿利资源微网站登录界面，登录后您可以享受更多的优惠及服务，如果您还没有帐号，请点击下面的“<a href="zhuce.html" class="color_green">立即注册</a>”按钮，进行新账户注册。
+        </div>
+        <div class="loginCxt">
+        	<div class="label">
+            	<h1>用户名<span class="color_org">*</span></h1>
+            	<input type="text" class="input" value="输入手机号或用户名" onfocus="if(value=='输入手机号或用户名') {value=''}" onblur="if(value=='') {value='输入手机号或用户名'}" />
+            </div>
+            <div class="label">
+            	<h1>密码<span class="color_org">*</span></h1>
+            	<input type="password" title="输入登录密码" class="input" value="输入登录密码" onfocus="if(value=='输入登录密码') {value=''}" onblur="if(value=='') {value='输入登录密码'}" />
+                <div class="tar mt10 font26px"><a href="javascript:;">忘记密码？</a></div>
+            </div>
+            <div class="label center imgauto"><a href="javascript:;" class="yellowBtn">登录</a></div>
+            <div class="label center font26px">还没有帐号？<a href="zhuce.html" class="color_green"> 立即注册</a></div>
+            <div class="label center imgauto"><a href="javascript:;" title="微信帐号登录"><img src="images/img28.png" /></a></div>
+            
+        </div>
+        
+    </div>
+    <div class="shareCxt">
+    	<ul class="threeUl2">
+            <li>
+                <a href="javascript:;"><img src="images/img9.png" /></a>
+                <a href="javascript:;">朋友圈</a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="images/img10.png" /></a>
+                <a href="javascript:;">人人网</a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="images/img11.png" /></a>
+                <a href="javascript:;">新浪微博</a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="images/img12.png" /></a>
+                <a href="javascript:;">微信好友</a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="images/img13.png" /></a>
+                <a href="javascript:;">腾讯微博</a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="images/img14.png" /></a>
+                <a href="javascript:;">QQ空间</a>
+            </li>            
+            <div class="clear"></div>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    
+    <div class="footer">
+        <div class="footerUl">
+        	<li><a class="" href="cpsj.html"><span class="cpsj">&nbsp;</span>产品世界</a></li>
+            <li><a class="" href="gywm.html"><span class="gywm">&nbsp;</span>关于我们</a></li>
+            <li class="last select"><a class="" href="user_center.html"><span class="grzx">&nbsp;</span>个人中心</a></li>
+        </div>   
+    </div>
+    
+</div> 
+</body>
+</html>
