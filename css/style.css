@@ -657,7 +657,9 @@ footer {
   img {
     width: 100%;
   }
-
+  .qrcode img {
+    width: auto;
+  }
   #about,
   #gallery,
   #contact {
@@ -680,12 +682,13 @@ footer {
   width: 0;
   height: 0;
   line-height: 0px;
-  border-width: 0 15px 15px;
+  border-width: 0 15px 16px;
   border-style: solid dashed dashed dashed;
   border-left-color: transparent;
   border-right-color: transparent;
   top: -15px;
-  right: 45%;}
+  right: 45%;
+}
 
 
 
