@@ -667,6 +667,25 @@ footer {
 
 }
 
+.qrcode {
+  display: inline-block;
+  background-color: #fff;
+  padding: 8px;
+  position: relative;
+  margin-top: 20px;
+}
+.qrcode .arrow {
+  position:absolute;
+  color: #FFFFFF;
+  width: 0;
+  height: 0;
+  line-height: 0px;
+  border-width: 0 15px 15px;
+  border-style: solid dashed dashed dashed;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  top: -15px;
+  right: 45%;}
 
 
 
