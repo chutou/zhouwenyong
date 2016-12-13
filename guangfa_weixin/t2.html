@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>答题2</title>
+	<meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width">-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+	<script src="js/jquery.js"></script>
+    <script language="javascript">
+    	$(function(){
+			$(".option a").click(function(){
+				$(".tiku").hide();
+				if($(this).hasClass("select")){
+					$(".suc").show();
+				}else{
+					$(".err").show();
+				}
+			})
+		})
+    </script>
+</head>
+<body id="top">
+<div class="containter">        
+    <div class="content">
+    	<!--题库信息-->
+        <div class="tiku">
+        	<div class="tLabel">
+            	<span class="text">2.</span>
+                <p>今天路上走大运，捡了好几张票据，哪张票据能去银行承兑？</p>
+            </div>
+            <div class="option option24 mt30">
+            	<a class="opa" href="javascript:;"><span class="text">A.</span>被小狗咬去一角的汇票</a>
+                <a class="opa" href="javascript:;"><span class="text">B.</span>汇票票面收款人一栏填对方外号</a>
+                <a class="opa" href="javascript:;"><span class="text">C.</span>为哄女友开心，伪造的60万银票</a>
+                <a class="opa select" href="javascript:;"><span class="text">D.</span>以上全部不能</a>
+            </div>
+            <div class="pic pic2">
+                <span class="text">还剩 5 题</span>
+            </div>
+        </div>
+        <!--回答正确-->
+        <div class="err">
+        	<div class="iconErr">哎呀,一不小心答错了,别着急,<br />票爷给您解释下：</div>
+            <h1 class="t">答案是D。</h1>
+            <p class="t">如果有这些问题：1、票据存在瑕疵；2、票据票面要素不全；3、伪造、变造的票据，承兑银行绝对不会承兑给你的，记住哦。</p>
+            <a class="btn" href="t3.html">&nbsp;</a>
+        </div>
+        <!--回答错误-->
+        <div class="suc">
+        	<div class="iconSuc">啧啧啧，您怎么这么聪明呢？<br />我都被您的机智给折服了！</div>
+            <h1 class="t">容我再啰嗦几句：</h1>
+            <p class="t">如果有这些问题：1、票据存在瑕疵；2、票据票面要素不全；3、伪造、变造的票据，承兑银行绝对不会承兑给你的，记住哦。</p>
+            <a class="btn" href="t3.html">&nbsp;</a>
+        </div>
+        
+                
+    </div>  
+</div> 
+</body>
+</html>

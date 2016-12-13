@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>答题7</title>
+	<meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width">-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+	<script src="js/jquery.js"></script>
+    <script language="javascript">
+    	$(function(){
+			$(".option a").click(function(){
+				$(".tiku").hide();
+				if($(this).hasClass("select")){
+					$(".suc").show();
+				}else{
+					$(".err").show();
+				}
+			})
+		})
+    </script>
+</head>
+<body id="top">
+<div class="containter">        
+    <div class="content">
+    	<!--题库信息-->
+        <div class="tiku">
+        	<div class="tLabel">
+            	<span class="text">7.</span>
+                <p>去哪里才能购买到安全的票据产品，是扫描这个电线杆上二维码吗？</p>
+            </div>
+            <div class="option option23 mt30">
+            	<a class="opa" href="javascript:;"><span class="text">A.</span>不是,工作日鸡鸣前到银行排队认购</a>
+                <a class="opa" href="javascript:;"><span class="text">B.</span>是的,别扫错了,旁边那个是男科医院</a>
+                <a class="opa select" href="javascript:;"><span class="text">C.</span>不是,你要上广发基金钱袋子APP购买</a>
+                <a class="opa" href="javascript:;"><span class="text">D.</span>不是,去网络下单,江浙沪包邮哦</a>
+            </div>
+            <div class="pic pic7">
+                <span class="text"></span>
+            </div>
+        </div>
+        <!--回答正确-->
+        <div class="err">
+        	<div class="iconErr">哎呀,一不小心答错了,别着急,<br />票爷给您解释下：</div>
+            <h1 class="t">答案是C。</h1>
+            <p class="t">广发基金老客户可直接使用钱袋子APP购买票据产品，如果钱袋子账户余额不足的，可以先充值钱袋子，再购买。新客户需要先注册成为广发基金客户，充值钱袋子后购买。</p>
+            <a class="btn" href="tel.html">&nbsp;</a>
+        </div>
+        <!--回答错误-->
+        <div class="suc">
+        	<div class="iconSuc">啧啧啧，您怎么这么聪明呢？<br />我都被您的机智给折服了！</div>
+            <h1 class="t">容我再啰嗦几句：</h1>
+            <p class="t">广发基金老客户可直接使用钱袋子APP购买票据产品，如果钱袋子账户余额不足的，可以先充值钱袋子，再购买。新客户需要先注册成为广发基金客户，充值钱袋子后购买。</p>
+            <a class="btn" href="tel.html">&nbsp;</a>
+        </div>
+        
+                
+    </div>  
+</div> 
+</body>
+</html>

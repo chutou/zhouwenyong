@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>答题5</title>
+	<meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width">-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+	<script src="js/jquery.js"></script>
+    <script language="javascript">
+    	$(function(){
+			$(".option a").click(function(){
+				$(".tiku").hide();
+				if($(this).hasClass("select")){
+					$(".suc").show();
+				}else{
+					$(".err").show();
+				}
+			})
+		})
+    </script>
+</head>
+<body id="top">
+<div class="containter">        
+    <div class="content">
+    	<!--题库信息-->
+        <div class="tiku">
+        	<div class="tLabel">
+            	<span class="text">5.</span>
+                <p>我昨天在搜片子的时候，正好看到网上有说票据产品违约。这是怎么回事？</p>
+            </div>
+            <div class="option mt30">
+            	<a class="opa" href="javascript:;"><span class="text">A.</span>网页有病毒</a>
+                <a class="opa" href="javascript:;"><span class="text">B.</span>票据是在路上捡的</a>
+                <a class="opa select" href="javascript:;"><span class="text">C.</span>平台操作不规范</a>
+                <a class="opa" href="javascript:;"><span class="text">D.</span>票据本身有瑕疵</a>
+            </div>
+            <div class="pic pic5">
+                <span class="text">还剩 2 题</span>
+            </div>
+        </div>
+        <!--回答正确-->
+        <div class="err">
+        	<div class="iconErr">哎呀,一不小心答错了,别着急,<br />票爷给您解释下：</div>
+            <h1 class="t">答案是C。</h1>
+            <p class="t">网上出现票据违约多数是因为平台操作不规范引起的，例如存在假标、假托管、平台监守自盗、二次融资等情况，导致违约等。选择正规、有实力的金融机构，是降低票据理财风险的关键。</p>
+            <a class="btn" href="t6.html">&nbsp;</a>
+        </div>
+        <!--回答错误-->
+        <div class="suc">
+        	<div class="iconSuc">啧啧啧，您怎么这么聪明呢？<br />我都被您的机智给折服了！</div>
+            <h1 class="t">容我再啰嗦几句：</h1>
+            <p class="t">网上出现票据违约多数是因为平台操作不规范引起的，例如存在假标、假托管、平台监守自盗、二次融资等情况，导致违约等。选择正规、有实力的金融机构，是降低票据理财风险的关键。</p>
+            <a class="btn" href="t6.html">&nbsp;</a>
+        </div>
+        
+                
+    </div>  
+</div> 
+</body>
+</html>

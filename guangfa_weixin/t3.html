@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>答题3</title>
+	<meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width">-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+	<script src="js/jquery.js"></script>
+    <script language="javascript">
+    	$(function(){
+			$(".option a").click(function(){
+				$(".tiku").hide();
+				if($(this).hasClass("select")){
+					$(".suc").show();
+				}else{
+					$(".err").show();
+				}
+			})
+		})
+    </script>
+</head>
+<body id="top">
+<div class="containter">        
+    <div class="content">
+    	<!--题库信息-->
+        <div class="tiku">
+        	<div class="tLabel">
+            	<span class="text">3.</span>
+                <p>我长得像本拉登，我拿着票据，银行会给我承兑么？</p>
+            </div>
+            <div class="option mt30">
+            	<a class="opa" href="javascript:;"><span class="text">A.</span>不会,你不是存款超500万的土豪</a>
+                <a class="opa" href="javascript:;"><span class="text">B.</span>不会,你不是银行VIP客户</a>
+                <a class="opa select" href="javascript:;"><span class="text">C.</span>会,不管土豪还是屌丝,都都可以兑现</a>
+                <a class="opa" href="javascript:;"><span class="text">D.</span>两年连续购物消费超10万</a>
+            </div>
+            <div class="pic pic3">
+                <span class="text">还剩 4 题</span>
+            </div>
+        </div>
+        <!--回答正确-->
+        <div class="err">
+        	<div class="iconErr">哎呀,一不小心答错了,别着急,<br />票爷给您解释下：</div>
+            <h1 class="t">答案是C。</h1>
+            <p class="t">《票据法》第十九条规定：汇票是出票人签发的，委托付款人在指定日期无条件支付确定的金额给收款人或者持票人的票据，那么，你懂得~</p>
+            <a class="btn" href="t4.html">&nbsp;</a>
+        </div>
+        <!--回答错误-->
+        <div class="suc">
+        	<div class="iconSuc">啧啧啧，您怎么这么聪明呢？<br />我都被您的机智给折服了！</div>
+            <h1 class="t">容我再啰嗦几句：</h1>
+            <p class="t">《票据法》第十九条规定：汇票是出票人签发的，委托付款人在指定日期无条件支付确定的金额给收款人或者持票人的票据，那么，你懂得~</p>
+            <a class="btn" href="t4.html">&nbsp;</a>
+        </div>
+        
+                
+    </div>  
+</div> 
+</body>
+</html>

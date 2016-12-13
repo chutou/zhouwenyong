@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>答题1</title>
+	<meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width">-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+	<script src="js/jquery.js"></script>
+    <script language="javascript">
+    	$(function(){
+			$(".option a").click(function(){
+				$(".tiku").hide();
+				if($(this).hasClass("select")){
+					$(".suc").show();
+				}else{
+					$(".err").show();
+				}
+			})
+		})
+    </script>
+</head>
+<body id="top">
+<div class="containter">        
+    <div class="content">
+    	<!--题库信息-->
+        <div class="tiku">
+        	<div class="tLabel">
+            	<span class="text">1.</span>
+                <p>大家叫我票爷，我专倒电影票、火车票、飞机票。你说，理财市场的票据到底是神马票？</p>
+            </div>
+            <div class="option mt30">
+            	<a class="opa" href="javascript:;"><span class="text">A.</span>发票和收据</a>
+                <a class="opa" href="javascript:;"><span class="text">B.</span>车票和机票</a>
+                <a class="opa select" href="javascript:;"><span class="text">C.</span>汇票</a>
+                <a class="opa" href="javascript:;"><span class="text">D.</span>股票</a>
+            </div>
+            <div class="pic pic1">
+                <span class="text">还剩 6 题</span>
+            </div>
+        </div>
+        <!--回答正确-->
+        <div class="err">
+        	<div class="iconErr">哎呀,一不小心答错了,别着急,<br />票爷给您解释下：</div>
+            <h1 class="t">答案是C。</h1>
+            <p class="t">汇票，是由出票人签发的，要求付款人在见票时或在一定期限内，向收款人或持票人无条件支付一定款项的票据。一般分为银行承兑汇票(简称银票）和商业承兑汇票（简称商票）。银票的风险和收益率都会低于商票。</p>
+            <a class="btn" href="t2.html">&nbsp;</a>
+        </div>
+        <!--回答错误-->
+        <div class="suc">
+        	<div class="iconSuc">啧啧啧，您怎么这么聪明呢？<br />我都被您的机智给折服了！</div>
+            <h1 class="t">容我再啰嗦几句：</h1>
+            <p class="t">汇票，是由出票人签发的，要求付款人在见票时或在一定期限内，向收款人或持票人无条件支付一定款项的票据。一般分为银行承兑汇票(简称银票）和商业承兑汇票（简称商票）。银票的风险和收益率都会低于商票。</p>
+            <a class="btn" href="t2.html">&nbsp;</a>
+        </div>
+        
+                
+    </div>  
+</div> 
+</body>
+</html>

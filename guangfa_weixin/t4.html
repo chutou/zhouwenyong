@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>答题4</title>
+	<meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width">-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+	<script src="js/jquery.js"></script>
+    <script language="javascript">
+    	$(function(){
+			$(".option a").click(function(){
+				$(".tiku").hide();
+				if($(this).hasClass("select")){
+					$(".suc").show();
+				}else{
+					$(".err").show();
+				}
+			})
+		})
+    </script>
+</head>
+<body id="top">
+<div class="containter">        
+    <div class="content">
+    	<!--题库信息-->
+        <div class="tiku">
+        	<div class="tLabel">
+            	<span class="text">4.</span>
+                <p>今天老婆给我1块零花钱，我可以买票据吗？</p>
+            </div>
+            <div class="option mt30">
+            	<a class="opa select" href="javascript:;"><span class="text">A.</span>1元就可以</a>
+                <a class="opa" href="javascript:;"><span class="text">B.</span>乖，下次找老婆要一张红色的毛爷爷再来</a>
+                <a class="opa" href="javascript:;"><span class="text">C.</span>万元户是起点</a>
+                <a class="opa" href="javascript:;"><span class="text">D.</span>100万起购，屌丝买不到</a>
+            </div>
+            <div class="pic pic4">
+                <span class="text">还剩 3 题</span>
+            </div>
+        </div>
+        <!--回答正确-->
+        <div class="err">
+        	<div class="iconErr">哎呀,一不小心答错了,别着急,<br />票爷给您解释下：</div>
+            <h1 class="t">答案是A。</h1>
+            <p class="t">现在市场上票据产品最低1元起购，下单金额必须是1元的整数倍，最高下单金额不能超过产品的剩余募资额度。</p>
+            <a class="btn" href="t5.html">&nbsp;</a>
+        </div>
+        <!--回答错误-->
+        <div class="suc">
+        	<div class="iconSuc">啧啧啧，您怎么这么聪明呢？<br />我都被您的机智给折服了！</div>
+            <h1 class="t">容我再啰嗦几句：</h1>
+            <p class="t">现在市场上票据产品最低1元起购，下单金额必须是1元的整数倍，最高下单金额不能超过产品的剩余募资额度。</p>
+            <a class="btn" href="t5.html">&nbsp;</a>
+        </div>
+        
+                
+    </div>  
+</div> 
+</body>
+</html>

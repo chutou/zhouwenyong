@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>答题6</title>
+	<meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width">-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+	<script src="js/jquery.js"></script>
+    <script language="javascript">
+    	$(function(){
+			$(".option a").click(function(){
+				$(".tiku").hide();
+				if($(this).hasClass("select")){
+					$(".suc").show();
+				}else{
+					$(".err").show();
+				}
+			})
+		})
+    </script>
+</head>
+<body id="top">
+<div class="containter">        
+    <div class="content">
+    	<!--题库信息-->
+        <div class="tiku">
+        	<div class="tLabel">
+            	<span class="text">6.</span>
+                <p>我刚刚从火星来到地球，请告诉我以下哪项产品我可以安全使用？</p>
+            </div>
+            <div class="option mt30">
+            	<a class="opa select" href="javascript:;"><span class="text">A.</span>银行承兑汇票</a>
+                <a class="opa" href="javascript:;"><span class="text">B.</span>地沟油的食品</a>
+                <a class="opa" href="javascript:;"><span class="text">C.</span>马航的飞机</a>
+                <a class="opa" href="javascript:;"><span class="text">D.</span>破了洞的杜蕾斯</a>
+            </div>
+            <div class="pic pic6">
+                <span class="text">还剩 1 题</span>
+            </div>
+        </div>
+        <!--回答正确-->
+        <div class="err">
+        	<div class="iconErr">哎呀,一不小心答错了,别着急,<br />票爷给您解释下：</div>
+            <h1 class="t">答案是A。</h1>
+            <p class="t">银行承兑汇票是由银行信用背书，票据到期后，银行必须无条件兑付该票据金额给予该票据的所有人，所以票据产品的风险是比较低的。</p>
+            <a class="btn" href="t7.html">&nbsp;</a>
+        </div>
+        <!--回答错误-->
+        <div class="suc">
+        	<div class="iconSuc">啧啧啧，您怎么这么聪明呢？<br />我都被您的机智给折服了！</div>
+            <h1 class="t">容我再啰嗦几句：</h1>
+            <p class="t">银行承兑汇票是由银行信用背书，票据到期后，银行必须无条件兑付该票据金额给予该票据的所有人，所以票据产品的风险是比较低的。</p>
+            <a class="btn" href="t7.html">&nbsp;</a>
+        </div>
+        
+                
+    </div>  
+</div> 
+</body>
+</html>
