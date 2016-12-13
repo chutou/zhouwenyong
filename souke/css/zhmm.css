@@ -1,0 +1,265 @@
+/*@charset "gb2312";*/
+/**
+ * ============================================================================
+ * 版权所有: shehongzhijia
+ * 网站地址: shehongzhijia
+ * ----------------------------------------------------------------------------
+ * $codex 1. id和class命名采用该版块的英文单词或组合命名，并第一个单词小写，第二个单词首个字母大写，如:thinkCss（最新产品/think+Css)
+ * $codex 2. CSS样式表各区块用注释说明
+ * $codex 3. 尽量使用英文命名原则
+ * $codex 4. 尽量不加中杠和下划线
+ * $codex 5. 尽量不缩写，除非一看就明白的单词
+ * $Author: tomcat 
+ * $mailto: <32173844@qq.com>
+ * $hack :ie 6 _  \ ie7 *+ \  ie6,ie7 *  \  ie7,firefox !important
+*/
+
+/**
+ +------------------------------------------------------------------------------
+ * 网站样式重写
+ +------------------------------------------------------------------------------
+ * @comefrom  zhouwenyong
+ * @subpackage  zhouwenyong
+ +------------------------------------------------------------------------------
+ */body{ color:#1a1a1a; padding:0px; margin:0px; font-family:"宋体","Microsoft YaHei"; font-size:12px;}
+ * {} * a:link{}
+a{outline:none; text-decoration:none; color:#000; cursor:pointer;} a:hover{ text-decoration:none; color:#e20002;}
+html{/*zoom:1;*/ line-height:22px;}html *{outline:0;/*zoom:1;*/} html button::-moz-focus-inner{border-color:transparent!important;} 
+body{overflow-x: hidden; font-size:12px;} body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;} table{/*border-collapse:collapse;border-spacing:0;*/} fieldset,a img{border:0;} address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:normal;} li{list-style:none;} caption,th{text-align:left;} h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;} q:before,q:after{content:'';}
+.tar{ text-align:right;}
+.text-unline{ text-decoration:underline;}
+
+/**
+ +------------------------------------------------------------------------------
+ * Public Class
+ +------------------------------------------------------------------------------
+ * @subpackage  RBAC
+ +------------------------------------------------------------------------------
+ */
+.clearfix:after {content:"."; display:block; height:0; clear:both; visibility:hidden; }.clearfix {display:block;}.clear{ clear:both; height:0px; font-size:0px; line-height:0px; overflow:hidden;}/* 清除浮动*/
+.colwrapper { overflow:hidden; zoom:1 /*for ie*/; margin:5px auto; }/* 高度自适应 */ 
+.strong{ font-weight: bold;} .left{ text-align:left} .right{text-align:right;} .center{ margin:0 auto; text-align:center;}
+.show{ display:block; visibility:visible;}.hide{ display: none; visibility:hidden;}
+.block{ display:block;} .inline{ display:inline;}.inline-block{ display:inline-block;}.h100{ height:100%;}
+.transparent{filter:alpha(opacity=50); -moz-opacity:0.5;/** Firefox 3.5即将原生支持opacity属性，所以本条属性只在Firefox3以下版本有效 ***/ -khtml-opacity: 0.5; opacity: 0.5; } .break{ word-wrap:break-word;overflow:hidden; /*word-break:break-all;*/}
+.pt5{ padding-top:5px;}.pb5{ padding-bottom:5px;}
+.pl10{ padding-left:10px;}.pr10{ padding-right:10px;}.pt10{ padding-top:10px;}.pb10{ padding-bottom:10px;}.pd10{ padding:10px;}.pl20{ padding-left:20px}.pr20{ padding-right:20px;}.pt20{ padding-top:20px;}.pb20{ padding-bottom:20px;}.mt10{ margin-top:10px;}.ml10{ margin-left:10px;}
+.pt8{ padding-top:8px;}.lh28{ line-height:28px;}.lh36{ line-height:36px;}.lh32{ line-height:32px;}
+.bd_1{ border:1px solid #eeeeee; height:100%;}
+.pd1{ padding:1px; background:#fff;}
+.pd5{ padding:5px;}.pd20{ padding:20px;}
+.brbm{ border-bottom:1px solid #ffeaea; cursor:pointer;}.brtb{ border-top:2px solid #ccc;}.brbd{border-bottom:1px dotted #dcdcdc;}/*底部线条*/.mt30{ margin-top:30px;} .mt50{ margin-top:50px;}.mt5{ margin-top:5px;}.fl{float:left;}.fr{float:right;}.txde{ text-decoration:underline;} .ti2m{ text-indent:2em;}.auto{ margin:0px auto;}
+.mt20{ margin-top:20px;}.mb20{ margin-bottom:20px;}.ml20{ margin-left:20px;}.mr20{margin-right:20px}.mb30{ margin-bottom:30px;}.mg20{margin:20px;}.mb5{margin-bottom:5px;}.mb10{ margin-bottom:10px;}.mr10{ margin-right:10px;}.mr5{ margin-right:5px;}.ml5{ margin-left:5px;}
+
+/**
+ +------------------------------------------------------------------------------
+ * FCK 兼容解决方案
+ +------------------------------------------------------------------------------
+ * @subpackage  RBAC
+ +------------------------------------------------------------------------------
+ */
+em{ font-style:italic !important;} strike{ text-decoration:line-through !important;} strong{ font-weight:bold !important;} u{ text-decoration:underline !important;}
+
+/**
+ +------------------------------------------------------------------------------
+ * 表单样式
+ +------------------------------------------------------------------------------
+ * @subpackage  RBAC
+ +------------------------------------------------------------------------------
+ */
+
+/**
+ +------------------------------------------------------------------------------
+ * 网站整体颜色总汇
+ +------------------------------------------------------------------------------
+ * @codex  颜色:使用颜色的名称或者16进制代码,如 
+ * @subpackage  RBAC
+ +------------------------------------------------------------------------------
+ */
+.ff8600,.ff86aa a{ color:#ff8600;}
+.color_28a{ color:#28a9a0;}
+.color_333{ color:#333}
+.color_666{ color:#666}
+.color_777{ color:#747474;}
+.color_999{ color:#999}
+.color_red{ color:#d6000c}
+.color_blue{ color:#2172bf;}
+.color_org{ color:#ffa02b;}
+.color_lan{ color:#4a99ed;}
+.msyh{ font-family:"微软雅黑", "times New Roman"}
+/**
+ +------------------------------------------------------------------------------
+ * 网站整字体大小
+ +------------------------------------------------------------------------------
+ * @codex   字体大小,直接使用"font+字体大小"作为名称,如
+ * @package  ORG
+ * @subpackage  RBAC
+ +------------------------------------------------------------------------------
+ */
+.font12px{ font-size:12px;}
+.font14px{ font-size:14px;}
+.font15px{ font-size:15px;}
+.font16px{ font-size:16px;}
+.font18px{ font-size:18px;}
+.font24px{ font-size:24px;}
+.font9pt{ font-size:9pt;}
+.black{ color:#000;}
+/**
+ +------------------------------------------------------------------------------
+ * 网站背景
+ +------------------------------------------------------------------------------
+ * @codex   字体大小,直接使用bk+颜色值"作为名称,如
+ * @package  ORG
+ * @subpackage  RBAC
+ +------------------------------------------------------------------------------
+ */
+.bk_d4{ background:#d4d4d4;}
+.bk_fff{ background:#fff; height:100%;}
+.br2{ border:2px solid #ddd;}
+.bk_h{ background:#feecdc;}
+.bk_c{ background:#eccdfe}
+.bk_fb{ background:#fbfbfb;}
+.bk_fe{ background:#fefefe;}
+/**边框***/
+.brts{ border-top:1px solid #d7d6d7;}.brls{ border-left:1px solid #d7d6d7;}.brrs{ border-right:1px solid #d7d6d7;}.brbs{ border-bottom:1px solid #d7d6d7;}.brsa{ border:1px solid #d7d6d7;}
+
+/**
+ +------------------------------------------------------------------------------
+ * 网站整布局命名规范
+ +------------------------------------------------------------------------------
+ * @codex   id和class命名采用该版块的英文单词或组合命名 如:newRelease
+ * @package  ORG
+ * @subpackage  RBAC
+ +------------------------------------------------------------------------------
+ */
+ 
+ 
+/*页面外围控制整体布局宽度*/
+html{}
+body{ _background-image:url(about:blank); /* for IE6 */ _background-attachment:fixed; /*必须*/ background:#fff;}
+.wrapper{}
+
+/* 网站外围阴影 */
+.shardow{}
+
+/* 容器盒子 */
+.container{ width:1000px ; height:100%;margin:0 auto; padding:0 ; background:#fff;}
+.box210{ width:210px;}
+.box528{ width:528px;}
+.box238{ width:238px;}
+.box755{ width:755px;}
+
+
+
+/* 网站头部 */
+.header{ position:relative; z-index:99; background:url(images/headerBg.png) repeat-x 0px 0px;}
+.head{ width:1000px;margin:0px auto; padding:0px 0px 0px 0px; border-bottom:2px solid #3480d0;}
+.head2{ width:1000px;margin:0px auto; padding:0px 0px 0px 0px;}
+.headBanner{ height:31px; line-height:31px; vertical-align:middle; padding:0px 0px 0px 0px; clear:both; overflow:hidden;}
+.headBanner a{ display:inline-block;}
+.userInfo a{ margin-left:10px;}
+a.icon_qq{ background:url(images/icon_qq.png) no-repeat 0px center; width:120px;}
+a.icon_sina{ background:url(images/icon_sina.png) no-repeat 0px center; width:102px;}
+.headBanner .scroll{ display:inline-block; width:330px;}
+.logo{margin:17px 0px 5px 0px;}
+.logo a{}
+
+/*底部样式*/
+.foot{ background:#f0f0f0; border-top:1px solid #c2c2c2; margin:10px 0px 0px 0px;}
+.footer{width:980px;padding:0px 0px 30px 0px;position:relative; margin:0px auto 0px; color:#b0b0b0;}
+.footer .about{ text-align:center; border-bottom:1px dotted #b0b0b0;}
+.footer .about a{ line-height:32px; height:32px; padding:0px 50px 0px 50px; font-size:14px; color:#818181;}
+.footer p{text-align:center; margin-top:5px; line-height:22px;}
+
+/*
+*找回密码 
+*/
+/**/
+.main{ margin:0px auto; width:1000px; height:100%; overflow:hidden;}
+
+/*
+*forget_passwd.html 忘记密码
+*/
+.infoBox3{padding:0px 30px 20px 30px;background:#fff; min-height:400px;}
+.flowsteps{width:800px;height:48px;margin:0 auto 40px;*zoom:1;}
+.flowsteps ol{margin:0;padding:0;position:relative;overflow:hidden;*zoom:1;}
+.flowsteps li{float:left;display:inline;height:60px;font-size:14px;line-height:23px;color:#8b8b8b;font-family:"Microsoft YaHei","宋体";list-style:none;background:url(images/forget_bg1.png) repeat-x 0 13px;}
+.flowsteps .num3 li{width:50%;}
+.flowsteps .num4 li,.flowsteps .num4 .last{width:33.3%;}
+.flowsteps .num5 li,.flowsteps .num5 .last{width:24.9%;}
+.flowsteps .num6 li,.flowsteps .num6 .last{width:19.9%;}
+.flowsteps .last{width:auto!important;position:absolute;right:0;background:#FFF;}
+.flowsteps span{float:left;width:auto;}
+.flowsteps .last span{width:36px;}
+.flowsteps .first span{*width:0;*white-space:nowrap;}
+.flowsteps em{position:relative;left:-50%;display:block;text-align:center; font-style:normal !important; font-weight:bold; color:#666;}
+.flowsteps li i{position:relative;left:-17px;display:block;width:34px;height:36px;line-height:36px;color:#FFF;text-align:center;font-size:16px;font-style:normal;font-weight:bold;background:url(images/forget_bg2.png) no-repeat 50% 50%;}
+.flowsteps .first i{width:100%;margin:0 auto;}
+.flowsteps .first i{*width:34px;}
+.flowsteps .first i,.flowsteps .first em,.flowsteps .last i,.flowsteps .last em{left:0;}
+.flowsteps .last i{margin:0 auto;background:url(images/forget_bg2.png) no-repeat 50% 50%;}
+.flowsteps .lastcurrent i{margin:0 auto;text-indent:-9999em;background:url(images/forget_bg7.png) no-repeat 50% 50%;}
+.flowsteps a{color:#5185B6;text-decoration:underline;}
+.flowsteps .done{background-image:url(images/forget_bg4.png);}
+.flowsteps .done span i{background-image:url(images/forget_bg5.png);}
+.flowsteps .current,.flowsteps .current span{color:#0269FD;}
+.flowsteps .current span i{background-image:url(images/forget_bg5.png);}
+
+.forgetBox{ padding:0px 120px 0px 120px; margin:0px auto;}
+.forgetBox2{ width:300px; margin:0px auto;}
+.forgetBox span.label{ width:110px; padding-right:10px; display:inline-block; text-align:right; color:#666;font-weight:bold;}
+.forgetBox span.inputspan{ width:200px; padding-right:10px; display:inline-block;}
+.regBtn{ background:url(images/btn_blue4.png) no-repeat 0px 0px; height:33px; width:124px; text-align:center; display:inline-block; color:#fff; text-shadow:1px 1px 1px #1c78d6; font-size:14px; line-height:34px; border:none; font-weight:bold;}
+.freeBtn{ background:url(images/freeBtn.png) no-repeat 0px 0px; height:30px; width:136px; text-align:center; display:inline-block; color:#fff; text-shadow:1px 1px 1px #1c78d6; font-size:14px; line-height:34px; border:none; font-weight:bold;}
+.zhuyeBtn{ background:url(images/zhuyeBtn.png) no-repeat 0px 0px; height:41px; width:121px; text-align:center; display:inline-block; color:#fff; text-shadow:1px 1px 1px #1c78d6; font-size:14px; line-height:34px; border:none; font-weight:bold;}
+
+.regBtnSmall{ background:url(images/regBtnSmall.png) no-repeat 0px 0px; height:39px; width:60px; text-align:center; display:inline-block; color:#fff; text-shadow:1px 1px 1px #1c78d6; font-size:14px; line-height:34px; border:none;}
+.regBtnSmall:hover{background:url(images/regBtnHoverSmall.png) no-repeat 0px 0px; text-shadow:1px 1px 1px #a71400;}
+.regBtnSmallDisable{ background:url(images/regBtnDisableSmall.png) no-repeat 0px 0px; height:39px; width:100px; text-align:center; display:inline-block; color:#aaa; font-size:14px; line-height:34px;}
+.fotgettext{ width: 300px; }
+.input{ border:1px solid #ccc; height:24px; color:#999; padding:0px 10px;}
+
+.for_tit{ font-size:16px; font-weight:bold; padding:20px 0px 10px 0px; margin:0px 0px 20px 0px; color:#666;}
+.mmTit{ color:#ff9c00; font-size:18px; font-weight:bold; font-family:"微软雅黑", "times New Roman"}
+
+/*
+*注册页面
+*/
+
+.step{ background:#e0e0e0; height:46px;}
+.step li{ float:left; width:333px; line-height:46px; font-family:"微软雅黑", "times New Roman"; font-size:18px; position:relative; text-indent:30px;}
+.step li a{ color:#666666; display:block;}
+.step li.current a{ background:#4a99ed; color:#fff;}
+.step li span.jt_first{ background:url(images/jt_first.png) no-repeat 0px 0px; display:inline-block; height:46px; width:41px; position:absolute; top:0px; right:-20px; z-index:9;}
+.step li span.jt_last{ background:url(images/jt_last.png) no-repeat 0px 0px; display:inline-block; height:46px; width:41px; position:absolute; top:0px; right:-20px; z-index:9;}
+.step li span.jt_center{ background:url(images/jt_center.png) no-repeat 0px 0px; display:inline-block; height:46px; width:41px; position:absolute; top:0px; right:-20px; z-index:9;}
+
+.zhuceBox{ padding:40px 0px; min-height:400px;}
+.zcLeft{ float:left;}
+.zcLeft .label{ position:relative; _height:24px; padding:20px 0px 0px 103px;}
+.zcLeft .label .text{ position:absolute; top:20px; left:10px; width:93px; color:#666;text-align:right}
+
+.input4{ height:25px; width:180px; border:1px solid #ccc;}
+.btn_blue5{ background:url(images/btn_blue5.png) no-repeat 0px 0px; height:33px; line-height:33px; color:#fff; text-align:center; width:134px; display:inline-block; font-size:14px; font-family:"微软雅黑", "times New Roman"; font-weight:bold; border:none; text-shadow:1px 1px 1px #000;}
+.qidu{ background:#3480d0; width:60px; border-right:1px solid #fff; height:12px; display:inline-block; text-align:center; color:#fff; line-height:12px;}
+.qidu2{ background:#92c7ff;width:60px; border-right:1px solid #fff; height:12px; display:inline-block; text-align:center; color:#fff; line-height:12px;}
+
+.zcRight{float:right; width:343px; height:233px; border:1px solid #cccccc; background:#fbfbfb; margin:20px 20px 0px 0px}
+.zcRight p.t{ color:#c70000; font-weight:bold; font-size:14px; padding:10px 0px 0px 0px;}
+
+/*登录*/
+.xgzlBox{ border:1px solid #dedede; padding:50px; border-top:none;}
+.xgTab{ padding:0px 0px 0px 20px; background:url(images/xgLine.png) repeat-x 0px bottom; height:35px; line-height:35px;}
+.xgTab a{ display:inline-block; height:35px; line-height:35px; padding:0px 0px; font-weight:bold; width:73px; text-align:center; color:#000;}
+.xgTab a.select{ background:url(images/xgLine2.png) no-repeat 0px bottom; color:#1f6adf;}
+.xgBox{ padding:66px 0px 60px 0px;}
+.xgLeft{ float:left;}
+.xgRight{ width:364px; border-left:1px solid #dedede; padding-left:60px; float:right;}
+.xgRight p.t{ color:#c70000; font-weight:bold; font-size:14px; padding:10px 0px 0px 0px;}
+.xgLeft .label{ position:relative; _height:24px; padding:15px 0px 0px 93px;}
+.xgLeft .label .text{ position:absolute; top:15px; left:10px; width:73px; font-weight:bold; text-align:right}
+
+.input4{ height:22px; width:180px; border:1px solid #ccc;}
+.btn_blue3{ background:url(images/btn_blue3.png) no-repeat 0px 0px; height:33px; line-height:33px; color:#fff; text-align:center; width:187px; display:inline-block; font-size:14px; font-family:"微软雅黑", "times New Roman"; font-weight:bold; border:none; text-shadow:1px 1px 1px #004b76;}
+a.icon_qq2{ background:url(images/icon_qq2.png) no-repeat 0px center; padding-left:20px; display:inline-block}
+a.icon_sina2{ background:url(images/icon_sina2.png) no-repeat 0px center; padding-left:20px; display:inline-block}

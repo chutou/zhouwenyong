@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--<meta http-equiv="X-UA-Compatible" content="IE=7" />-->
+<title>资讯中心</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/jjzx.css">
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script language="javascript">
+	$(function(){
+		$(".dropdown p").click(function(){
+			var ul = $(this).siblings("ul");
+			if(ul.css("display")=="none"){
+				ul.slideDown("fast");
+			}else{
+				ul.slideUp("fast");
+			}
+		});
+		$(".dropdown ul li a").click(function(){
+			var txt = $(this).text();
+			$(this).parents(".dropdown").find("span.value").text(txt);
+			$(".dropdown ul").hide();
+		});
+	})
+</script>
+<!--[if lte IE 6]>
+<script src="Js/PNG.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix('div, ul, img, li, input , a ,span');
+    </script>
+<![endif]--> 
+</head>
+
+<body class="">
+	<!--头部信息-->
+    <div class="header">
+    	<div class="head">
+        	<div class="headBanner">
+            	<span class="fr"><a href="##">登录</a> |  <a href="##">注册</a>  <a href="##">加入收藏</a>  |  <a href="##">设为首页</a>  |  <a href="##">帮助</a></span>
+            </div>
+        	<div class="logo"><a href="##"><img src="images/logo.jpg" width="207" height="78" /></a></div>
+            <div class="headNav">
+                <div class="navCenter">
+                    <li class="select"><a href="index.html"><span>HOME</span>首页</a></li>
+                    <li><a href="zxzx.html"><span>INFORMATION</span>资讯中心</a></li>
+                    <li><a href="skzx.html"><span>SEARCHING</span>搜课中心</a></li>
+                    <li><a href="jjzx.html"><span>TUTORING</span>家教中心</a></li>
+                    <li><a href="xxzx.html"><span>LEARNING</span>学习中心</a></li>
+                    <li class="last"><a href="hyzx.html"><span>MEMBER</span>会员中心</a></li>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    
+    <div class="main">
+    	<!--网站导航-->
+    	<div class="nav">
+        	<div class="navCen navCen2">
+            	<div class="dropdown fl">
+                    <p><span class="value">新闻</span></p>
+                    <ul>
+                        <li><a href="javascript:;" rel="1">新闻</a></li>
+                        <li><a href="javascript:;" rel="2">资讯</a></li>
+                    </ul>
+                </div>
+                <input type="text" class="fainput" /> <input type="button" class="fabtn" title="搜索" />
+            </div>
+            
+            <div class="tit5 mt30">查找课程</div>
+            <div class="dh2">
+            	<p><a href="##" class="color_red font14px">早教</a>|<a href="##" class="color_red font14px">小升初</a>|<a href="##">初中同步</a>|<a href="##">高中同步</a>|<a href="##">留学</a>|<a href="##" class="color_red font14px">中高考</a>|<a href="##" class="color_red font14px">英语移民</a>|<a href="##">国际高中</a>|<a href="##">美术</a>|<a href="##">书法</a></p>
+                <p><a href="##">情商</a>|<a href="##">音乐</a>|<a href="##">体育</a>|<a href="##">夏令营</a>|<a href="##" class="color_red">舞蹈</a>|<a href="##">棋类</a>|<a href="##">托管</a>|<a href="##">考研</a>|<a href="##">成人教育</a>|<a href="##" class="color_red font14px">一对一</a><a href="##">more ></a></p>
+            </div>
+        </div>
+        
+    	<div class="mt10"><img src="images/img48.jpg" /></div>
+    	<div class="mt10"><img src="images/img49.jpg" /></div>
+        <!--左侧-->
+        <div class="box175 fl mt20">
+            <div class="tit10">搜课程栏目</div>
+            <div class="titCxt10">
+                <p class="icon_dot4"><a href="##">早教</a> | <a href="##">小升初 </a></p> 
+                <p class="icon_dot4"><a href="##">初中同步</a> | <a href="##">高中同步 </a></p>
+                <p class="icon_dot4"><a href="##">国际高中</a> | <a href="##">留学 </a></p>
+                <p class="icon_dot4"><a href="##">美术</a> | <a href="##">书法 </a></p>
+                <p class="icon_dot4"><a href="##">情商</a> | <a href="##">音乐 </a></p>
+                <p class="icon_dot4"><a href="##">体育</a> | <a href="##">舞蹈 </a></p>
+                <p class="icon_dot4"><a href="##">棋类</a> | <a href="##">托管 </a></p>
+                <p class="icon_dot4"><a href="##">移民</a> | <a href="##">夏令营 </a></p>
+                <p class="icon_dot4"><a href="##">考研</a> | <a href="##">一对一 </a></p>
+            </div>
+            <div class="tit7 mt20"><span class="text">最新品牌入驻</span></div>
+            <div class="brsa" style="margin-top:-11px;">
+                <div class="sBox3">
+                    <ul class="sUl">
+                        <li><p><img width="85" height="60" src="images/img46.jpg"></p><p class="c"><a href="##">耶鲁大学</a></p></li>
+                        <li><p><img width="85" height="60" src="images/img47.jpg"></p><p class="c"><a href="##">哈佛大学</a></p></li>
+                        <li><p><img width="85" height="60" src="images/img46.jpg"></p><p class="c"><a href="##">耶鲁大学</a></p></li>
+                        <li><p><img width="85" height="60" src="images/img47.jpg"></p><p class="c"><a href="##">哈佛大学</a></p></li>
+                        <li><p><img width="85" height="60" src="images/img46.jpg"></p><p class="c"><a href="##">耶鲁大学</a></p></li>
+                        <li><p><img width="85" height="60" src="images/img47.jpg"></p><p class="c"><a href="##">哈佛大学</a></p></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div> 
+            </div>
+        </div>
+        <!--右侧-->
+        <div class="box790 fr mt20">
+        	<div class="jjnav jjnav2">
+                <div class="tit1">资讯中心导航</div>
+                <div class="cxt"><a href="##" class="select">今日关注</a><a href="##">专题</a><a href="##">与校长对话</a><a href="##">小升初</a><a href="##">中考</a><a href="##">高考留学</a><a href="##">教育新闻</a><a href="##">校园新闻</a><a href="##">招生开班</a></div>
+            </div>
+            <div class="">
+            	<div class="box255 fl">
+            		<div class="tit7 mt10"><span class="text">今日关注</span><a class="more_red">more ></a></div>
+                    <div class="cxt7">
+                    	<div class="gzItem">
+                        	<p><a href="##"><b class="font14px color_org">初中期末考试辅导课程推荐......</b></a></p>
+                            <p class="pt5"><img src="images/img80.jpg" class="fl mr10" /> 初中期末考试辅导课程推荐，欢迎各位家长前来关注最新推荐考试课程.....</p>
+                            <div class="clear"></div>
+                            <div class="mt10">
+                                <p class="prev"><a href="##"><span class="color_org">【初升高】</span>新高一：别说我的柔情你永远...</a><span class="pos">8/25</span></p>
+                                <p class="prev"><a href="##"><span class="color_org">【初升高】</span>暑假A计划——玩转英语学习..</a><span class="pos">8/25</span></p>
+                                <p class="prev"><a href="##"><span class="color_org">【初升高】</span>英语学习 so easy...</a><span class="pos">8/25</span></p>
+                                <p><a href="##">【中学教育】那些和培训班有关的事儿...</a></p>
+                                <p><a href="##">【作文】讲一个自己觉得好听的故事...</a></p>
+                                <p><a href="##">【中考英语】另辟蹊径直通“单选世界”...</a></p>
+                                <p><a href="##">【英语】暑假A计划——玩转英语学习...</a></p>
+                                <p><a href="##">【中学英语】英语学习 so easy...</a></p>
+                            </div>
+                            <div class="mt15"><img src="images/img81.jpg" /></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box240 fl ml20">
+            		<div class="tit7 mt10"><span class="text">专 题</span><a class="more_red">more ></a></div>
+                    <div class="cxt7">
+                    	<p><img src="images/img82.jpg" /></p>
+                        <p class="font14px pt10">事件回顾 导火索:5月3日，昆明市盘龙区东华小学.....<a href="##" class="text-unline">详细</a></p>
+                    	<div class="mt10">
+                        	<img src="images/img83.jpg" class="fl mr10" />
+                        	<p><a href="##"><b class="font14px">【小升初】2013中考长城</b></a></p>
+                            <p class="">Part1 中考--小升初博弈6月份的高考，尖子生...</p>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="mt10">
+                        	<img src="images/img84.jpg" class="fl mr10" />
+                        	<p><a href="##"><b class="font14px">【小升初】2013中考长城</b></a></p>
+                            <p class="">Part1 中考--小升初博弈6月份的高考，尖子生...</p>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box255 fr">
+            		<div class="tit7 mt10"><span class="text">与校长对话</span><a class="more_red">more ></a></div>
+                    <div class="cxt7">
+                    	<div class="gzItem">
+                        	<p><a href="##"><b class="font14px color_org">高云飞：活用道家智慧的经营...</b></a></p>
+                            <p class="pt5"><img src="images/img12.jpg" class="fl mr10" /> 或许是冥冥中的缘分，从2011年底接任云大附中校长工作那...</p>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="brbd pt10 mb10"></div>
+                        <div class="gzItem">
+                        	<p><a href="##"><b class="font14px color_org">高云飞：活用道家智慧的经营...</b></a></p>
+                            <p class="pt5"><img src="images/img12.jpg" class="fl mr10" /> 或许是冥冥中的缘分，从2011年底接任云大附中校长工作那...</p>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="brbd pt10 mb10"></div>
+                        <div class="gzItem">
+                        	<p><a href="##"><b class="font14px color_org">高云飞：活用道家智慧的经营...</b></a></p>
+                            <p class="pt5"><img src="images/img12.jpg" class="fl mr10" /> 或许是冥冥中的缘分，从2011年底接任云大附中校长工作那...</p>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="mt10"><img src="images/img85.jpg" class="brbs" /></div>
+            </div>
+            
+            <div class="mt20">
+            	<div class="box255 fl">
+            		<div class="tit7 mt10"><span class="text">小升初</span><a class="more_red">more ></a></div>
+                    <div class="cxt7">
+                    	<div class="gzItem">
+                            <p class="pt5"><img src="images/img86.jpg" class="fl mr10" /> 小升初：2013年新课程跟往年有哪些...学英语 so easy..家长关注的问题.</p>
+                            <div class="clear"></div>
+                            <div class="mt10">
+                                <p class="prev"><a href="##"><span class="color_org">【初升高】</span>新高一：别说我的柔情你永远...</a><span class="pos">8/25</span></p>
+                                <p class="prev"><a href="##"><span class="color_org">【初升高】</span>暑假A计划——玩转英语学习..</a><span class="pos">8/25</span></p>
+                                <p class="prev"><a href="##"><span class="color_org">【初升高】</span>英语学习 so easy...</a><span class="pos">8/25</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box240 fl ml20">
+            		<div class="tit7 mt10"><span class="text">中考</span><a class="more_red">more ></a></div>
+                    <div class="cxt7">
+                    	<div class="gzItem">
+                            <p class="pt5"><img src="images/img87.jpg" class="fl mr10" /> 小升初：2013年新课程跟往年有哪些家长关注的问题.</p>
+                            <div class="clear"></div>
+                            <div class="mt10">
+                                <p class="prev"><a href="##"><span class="color_org">【初升高】</span>新高一：别说我的柔情你永远...</a><span class="pos">8/25</span></p>
+                                <p class="prev"><a href="##"><span class="color_org">【初升高】</span>暑假A计划——玩转英语学习..</a><span class="pos">8/25</span></p>
+                                <p class="prev"><a href="##"><span class="color_org">【初升高】</span>英语学习 so easy...</a><span class="pos">8/25</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box255 fr">
+            		<div class="tit7 mt10"><span class="text">高考</span><a class="more_red">more ></a></div>
+                    <div class="cxt7">
+                    	<div class="gzItem">
+                            <p class="pt5"><img src="images/img88.jpg" class="fl mr10" /> 小升初：2013年新课程跟往年有哪些...学英语 so easy..家长关注的问题.</p>
+                            <div class="clear"></div>
+                            <div class="mt10">
+                                <p class="prev"><a href="##"><span class="color_org">【初升高】</span>新高一：别说我的柔情你永远...</a><span class="pos">8/25</span></p>
+                                <p class="prev"><a href="##"><span class="color_org">【初升高】</span>暑假A计划——玩转英语学习..</a><span class="pos">8/25</span></p>
+                                <p class="prev"><a href="##"><span class="color_org">【初升高】</span>英语学习 so easy...</a><span class="pos">8/25</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="box255 fl">
+            		<div class="tit7 mt10"><span class="text">教育新闻</span><a class="more_red">more ></a></div>
+                    <div class="cxt7">
+                    	<div class="gzItem">
+                            <p class="pt5"><img src="images/img89.jpg" class="fl mr10" /> 小升初：2013年新课程跟往年有哪些...学英语 so easy..家长关注的问题.</p>
+                            <div class="clear"></div>
+                            <div class="mt10">
+                                <p class="prev"><a href="##"><span class="color_org">【初升高】</span>新高一：别说我的柔情你永远...</a><span class="pos">8/25</span></p>
+                                <p class="prev"><a href="##"><span class="color_org">【初升高】</span>暑假A计划——玩转英语学习..</a><span class="pos">8/25</span></p>
+                                <p class="prev"><a href="##"><span class="color_org">【初升高】</span>英语学习 so easy...</a><span class="pos">8/25</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box240 fl ml20">
+            		<div class="tit7 mt10"><span class="text">校园新闻</span><a class="more_red">more ></a></div>
+                    <div class="cxt7">
+                    	<div class="gzItem">
+                            <p class="pt5"><img src="images/img90.jpg" class="fl mr10" /> 小升初：2013年新课程跟往年有哪些家长关注的问题.</p>
+                            <div class="clear"></div>
+                            <div class="mt10">
+                                <p class="prev"><a href="##"><span class="color_org">【初升高】</span>新高一：别说我的柔情你永远...</a><span class="pos">8/25</span></p>
+                                <p class="prev"><a href="##"><span class="color_org">【初升高】</span>暑假A计划——玩转英语学习..</a><span class="pos">8/25</span></p>
+                                <p class="prev"><a href="##"><span class="color_org">【初升高】</span>英语学习 so easy...</a><span class="pos">8/25</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box255 fr">
+            		<div class="tit7 mt10"><span class="text">招生开班</span><a class="more_red">more ></a></div>
+                    <div class="cxt7">
+                    	<div class="gzItem">
+                            <p class="pt5"><img src="images/img91.jpg" class="fl mr10" /> 小升初：2013年新课程跟往年有哪些...学英语 so easy..家长关注的问题.</p>
+                            <div class="clear"></div>
+                            <div class="mt10">
+                                <p class="prev"><a href="##"><span class="color_org">【初升高】</span>新高一：别说我的柔情你永远...</a><span class="pos">8/25</span></p>
+                                <p class="prev"><a href="##"><span class="color_org">【初升高】</span>暑假A计划——玩转英语学习..</a><span class="pos">8/25</span></p>
+                                <p class="prev"><a href="##"><span class="color_org">【初升高】</span>英语学习 so easy...</a><span class="pos">8/25</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        
+        
+        
+        
+        <!--学途名师团-->
+        
+        <!--资料下载-->
+        
+        <!--电子版下载-->
+        
+    </div>
+    <!--底部信息-->
+    <div class="foot">
+        <div class="footer">            
+            <div class="center">
+                <p><a href="##">关于我们</a> | <a href="##">广告合作</a> | <a href="##">联系我们</a> | <a href="##">网站声明</a></p>
+                <p>版权所有 昆明搜课网 2010-2015 滇ICP备10086523号</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

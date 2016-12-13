@@ -1,0 +1,440 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--<meta http-equiv="X-UA-Compatible" content="IE=7" />-->
+<title>授课中心</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/jjzx.css">
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script language="javascript">
+	$(function(){
+		$(".dropdown p").click(function(){
+			var ul = $(this).siblings("ul");
+			if(ul.css("display")=="none"){
+				ul.slideDown("fast");
+			}else{
+				ul.slideUp("fast");
+			}
+		});
+		$(".dropdown ul li a").click(function(){
+			var txt = $(this).text();
+			$(this).parents(".dropdown").find("span.value").text(txt);
+			$(".dropdown ul").hide();
+		});
+	})
+</script>
+<!--[if lte IE 6]>
+<script src="Js/PNG.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix('div, ul, img, li, input , a ,span');
+    </script>
+<![endif]--> 
+</head>
+
+<body class="">
+	<!--头部信息-->
+    <div class="header">
+    	<div class="head">
+        	<div class="headBanner">
+            	<span class="fr"><a href="##">登录</a> |  <a href="##">注册</a>  <a href="##">加入收藏</a>  |  <a href="##">设为首页</a>  |  <a href="##">帮助</a></span>
+            </div>
+        	<div class="logo"><a href="##"><img src="images/logo.jpg" width="207" height="78" /></a></div>
+            <div class="headNav">
+                <div class="navCenter">
+                    <li class="select"><a href="index.html"><span>HOME</span>首页</a></li>
+                    <li><a href="zxzx.html"><span>INFORMATION</span>资讯中心</a></li>
+                    <li><a href="skzx.html"><span>SEARCHING</span>搜课中心</a></li>
+                    <li><a href="jjzx.html"><span>TUTORING</span>家教中心</a></li>
+                    <li><a href="xxzx.html"><span>LEARNING</span>学习中心</a></li>
+                    <li class="last"><a href="hyzx.html"><span>MEMBER</span>会员中心</a></li>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    
+    <div class="main">
+    	<!--网站导航-->
+    	<div class="nav">
+        	<div class="navCen navCen2">
+            	<div class="dropdown fl">
+                    <p><span class="value">新闻</span></p>
+                    <ul>
+                        <li><a href="javascript:;" rel="1">新闻</a></li>
+                        <li><a href="javascript:;" rel="2">资讯</a></li>
+                    </ul>
+                </div>
+                <input type="text" class="fainput" /> <input type="button" class="fabtn" title="搜索" />
+            </div>
+            
+            <div class="tit5 mt30">查找课程</div>
+            <div class="dh2">
+            	<p><a href="##" class="color_red font14px">早教</a>|<a href="##" class="color_red font14px">小升初</a>|<a href="##">初中同步</a>|<a href="##">高中同步</a>|<a href="##">留学</a>|<a href="##" class="color_red font14px">中高考</a>|<a href="##" class="color_red font14px">英语移民</a>|<a href="##">国际高中</a>|<a href="##">美术</a>|<a href="##">书法</a></p>
+                <p><a href="##">情商</a>|<a href="##">音乐</a>|<a href="##">体育</a>|<a href="##">夏令营</a>|<a href="##" class="color_red">舞蹈</a>|<a href="##">棋类</a>|<a href="##">托管</a>|<a href="##">考研</a>|<a href="##">成人教育</a>|<a href="##" class="color_red font14px">一对一</a><a href="##">more ></a></p>
+            </div>
+        </div>
+        
+    	<div class="mt10"><img src="images/img48.jpg" /></div>
+    	<div class="mt10"><img src="images/img49.jpg" /></div>
+        <div class="jjnav mt10">
+        	<div class="tit1">授课中心导航</div>
+            <div class="cxt"><a href="##">热门课程</a><a href="##">近期开课</a><a href="##">打折课程</a><a href="##" class="select">名校风采</a></div>
+        </div>
+        
+        <!--左侧-->
+        <div class="box755 fl">
+        	<div class="tit2Box mt10">
+                <div class="tit2"><span class="text">近期开课</span><a class="more">查看 ></a></div>
+                <div class="">
+                	<div>
+                	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="hotTable">
+                    	<thead>
+                          <tr>
+                            <th width="100">课程</th>
+                            <th>学校</th>
+                            <th>时间</th>
+                            <th>地点</th>
+                            <th>电话</th>
+                            <th width="118">&nbsp;</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="cen">
+                            <td>语文</td>
+                            <td>昆明重点中学</td>
+                            <td>2013-9-1</td>
+                            <td>教学楼多功能厅</td>
+                            <td>400-63688888</td>
+                            <td><a href="##" class="inline-block"><img src="images/btn_wyst.jpg" /></a></td>
+                          </tr>
+                          <tr class="cen">
+                            <td>语文</td>
+                            <td>昆明重点中学</td>
+                            <td>2013-9-1</td>
+                            <td>教学楼多功能厅</td>
+                            <td>400-63688888</td>
+                            <td><a href="##" class="inline-block"><img src="images/btn_wyst.jpg" /></a></td>
+                          </tr>
+                          <tr class="cen">
+                            <td>语文</td>
+                            <td>昆明重点中学</td>
+                            <td>2013-9-1</td>
+                            <td>教学楼多功能厅</td>
+                            <td>400-63688888</td>
+                            <td><a href="##" class="inline-block"><img src="images/btn_wyst.jpg" /></a></td>
+                          </tr>
+                          <tr class="cen">
+                            <td>语文</td>
+                            <td>昆明重点中学</td>
+                            <td>2013-9-1</td>
+                            <td>教学楼多功能厅</td>
+                            <td>400-63688888</td>
+                            <td><a href="##" class="inline-block"><img src="images/btn_wyst.jpg" /></a></td>
+                          </tr>
+                          <tr class="cen">
+                            <td>语文</td>
+                            <td>昆明重点中学</td>
+                            <td>2013-9-1</td>
+                            <td>教学楼多功能厅</td>
+                            <td>400-63688888</td>
+                            <td><a href="##" class="inline-block"><img src="images/btn_wyst.jpg" /></a></td>
+                          </tr>
+                          <tr class="cen">
+                            <td>语文</td>
+                            <td>昆明重点中学</td>
+                            <td>2013-9-1</td>
+                            <td>教学楼多功能厅</td>
+                            <td>400-63688888</td>
+                            <td><a href="##" class="inline-block"><img src="images/btn_wyst.jpg" /></a></td>
+                          </tr>
+                          <tr class="cen">
+                            <td>语文</td>
+                            <td>昆明重点中学</td>
+                            <td>2013-9-1</td>
+                            <td>教学楼多功能厅</td>
+                            <td>400-63688888</td>
+                            <td><a href="##" class="inline-block"><img src="images/btn_wyst.jpg" /></a></td>
+                          </tr>
+                          <tr class="cen">
+                            <td>语文</td>
+                            <td>昆明重点中学</td>
+                            <td>2013-9-1</td>
+                            <td>教学楼多功能厅</td>
+                            <td>400-63688888</td>
+                            <td><a href="##" class="inline-block"><img src="images/btn_wyst.jpg" /></a></td>
+                          </tr>
+                          <tr class="cen">
+                            <td>语文</td>
+                            <td>昆明重点中学</td>
+                            <td>2013-9-1</td>
+                            <td>教学楼多功能厅</td>
+                            <td>400-63688888</td>
+                            <td><a href="##" class="inline-block"><img src="images/btn_wyst.jpg" /></a></td>
+                          </tr>
+                          <tr class="cen">
+                            <td>语文</td>
+                            <td>昆明重点中学</td>
+                            <td>2013-9-1</td>
+                            <td>教学楼多功能厅</td>
+                            <td>400-63688888</td>
+                            <td><a href="##" class="inline-block"><img src="images/btn_wyst.jpg" /></a></td>
+                          </tr>
+                          </tbody>
+                        </table>
+                </div>
+                </div>
+            </div>
+            <div class="tit2Box mt10 pt20">
+            	<div class="box348 fl ml20">
+                	<div class="tit7"><span class="text">热门课程</span><a class="more">more ></a></div>
+                    <div class="cxt7">
+                    	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="hotTable">
+                          <tr>
+                            <th class="l">课程名称</th>
+                            <th>分类</th>
+                            <th>所属学校</th>
+                            <th>联系电话</th>
+                          </tr>
+                          <tr>
+                            <td>语文语文语文</td>
+                            <td>初中同步好</td>
+                            <td>亨德森教育</td>
+                            <td>400-63688888</td>
+                          </tr>
+                          <tr>
+                            <td>数学</td>
+                            <td>一对一</td>
+                            <td>新东方教育</td>
+                            <td>400-63688888</td>
+                          </tr>
+                          <tr>
+                            <td>语文语文语文</td>
+                            <td>初中同步好</td>
+                            <td>亨德森教育</td>
+                            <td>400-63688888</td>
+                          </tr>
+                          <tr>
+                            <td>数学</td>
+                            <td>一对一</td>
+                            <td>新东方教育</td>
+                            <td>400-63688888</td>
+                          </tr>
+                          <tr>
+                            <td>语文语文语文</td>
+                            <td>初中同步好</td>
+                            <td>亨德森教育</td>
+                            <td>400-63688888</td>
+                          </tr>
+                        </table>
+						<div><img src="images/img60.jpg" /></div>
+                    </div>
+                </div>
+                <div class="box348 fr mr20">
+                	<div class="tit7"><span class="text">口碑学校</span><a class="more">more ></a></div>
+                    <div class="cxt7">
+                    	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="hotTable">
+                          <tr>
+                            <th class="l" width="22">&nbsp;</th>
+                            <th class="l" width="200">学校名称</th>
+                            <th class="l">评分（满分25分）</th>
+                          </tr>
+                          <tr>
+                            <td><span class="num">1</span></td>
+                            <td>[小秀才培训学校] </td>
+                            <td>评分：22.17</td>
+                          </tr>
+                          <tr>
+                            <td><span class="num">2</span></td>
+                            <td>[小秀才培训学校] </td>
+                            <td>评分：22.17</td>
+                          </tr>
+                          <tr>
+                            <td><span class="num">3</span></td>
+                            <td>[小秀才培训学校] </td>
+                            <td>评分：22.17</td>
+                          </tr>
+                          <tr>
+                            <td><span class="num">4</span></td>
+                            <td>[小秀才培训学校] </td>
+                            <td>评分：22.17</td>
+                          </tr>
+                          <tr>
+                            <td><span class="num">5</span></td>
+                            <td>[小秀才培训学校] </td>
+                            <td>评分：22.17</td>
+                          </tr>
+                          <tr>
+                            <td><span class="num">3</span></td>
+                            <td>[小秀才培训学校] </td>
+                            <td>评分：22.17</td>
+                          </tr>
+                          <tr>
+                            <td><span class="num">4</span></td>
+                            <td>[小秀才培训学校] </td>
+                            <td>评分：22.17</td>
+                          </tr>
+                          <tr>
+                            <td><span class="num">5</span></td>
+                            <td>[小秀才培训学校] </td>
+                            <td>评分：22.17</td>
+                          </tr>
+                          <tr>
+                            <td><span class="num">5</span></td>
+                            <td>[小秀才培训学校] </td>
+                            <td>评分：22.17</td>
+                          </tr>
+                        </table>
+
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <!--右侧-->
+        <div class="box215 fr">
+        	<div class="tit2Box mt10">
+                <div class="tit2"><span class="text">最新品牌入驻</span></div>
+                <div class="">
+                    <div class="sBox">
+                    	<ul class="sUl">
+                        	<li><p><img src="images/img46.jpg" height="60" width="85" /></p><p class="c"><a href="##">耶鲁大学</a></p></li>
+                            <li><p><img src="images/img47.jpg" height="60" width="85" /></p><p class="c"><a href="##">哈佛大学</a></p></li>
+                            <li><p><img src="images/img46.jpg" height="60" width="85" /></p><p class="c"><a href="##">耶鲁大学</a></p></li>
+                            <li><p><img src="images/img47.jpg" height="60" width="85" /></p><p class="c"><a href="##">哈佛大学</a></p></li>
+                            <li><p><img src="images/img46.jpg" height="60" width="85" /></p><p class="c"><a href="##">耶鲁大学</a></p></li>
+                            <li><p><img src="images/img47.jpg" height="60" width="85" /></p><p class="c"><a href="##">哈佛大学</a></p></li>
+                            <li><p><img src="images/img46.jpg" height="60" width="85" /></p><p class="c"><a href="##">耶鲁大学</a></p></li>
+                            <li><p><img src="images/img47.jpg" height="60" width="85" /></p><p class="c"><a href="##">哈佛大学</a></p></li>
+                            <li><p><img src="images/img46.jpg" height="60" width="85" /></p><p class="c"><a href="##">耶鲁大学</a></p></li>
+                            <li><p><img src="images/img47.jpg" height="60" width="85" /></p><p class="c"><a href="##">哈佛大学</a></p></li>
+                            <li><p><img src="images/img46.jpg" height="60" width="85" /></p><p class="c"><a href="##">耶鲁大学</a></p></li>
+                            <li><p><img src="images/img47.jpg" height="60" width="85" /></p><p class="c"><a href="##">哈佛大学</a></p></li>
+                            <li><p><img src="images/img46.jpg" height="60" width="85" /></p><p class="c"><a href="##">耶鲁大学</a></p></li>
+                            <li><p><img src="images/img47.jpg" height="60" width="85" /></p><p class="c"><a href="##">哈佛大学</a></p></li>
+                            <li><p><img src="images/img46.jpg" height="60" width="85" /></p><p class="c"><a href="##">耶鲁大学</a></p></li>
+                            <li><p><img src="images/img47.jpg" height="60" width="85" /></p><p class="c"><a href="##">哈佛大学</a></p></li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <!--打折课程-->
+        <div class="tit2Box mt10">
+            <div class="tit2"><span class="text">打折课程</span><a class="more" href="##">了解更多</a></div>
+            <div class="kBox">
+                <ul class="kUl">
+                    <li><p><img width="85" height="60" src="images/img26.jpg"></p><p class="c"><a href="##">哼德森高二会</a></p></li>
+                    <li><p><img width="85" height="60" src="images/img27.jpg"></p><p class="c"><a href="##">学大中高考</a></p></li>
+                    <li><p><img width="85" height="60" src="images/img28.jpg"></p><p class="c"><a href="##">哼德森高二会</a></p></li>
+                    <li><p><img width="85" height="60" src="images/img29.jpg"></p><p class="c"><a href="##">学大中高考</a></p></li>
+                    <li><p><img width="85" height="60" src="images/img26.jpg"></p><p class="c"><a href="##">哼德森高二会</a></p></li>
+                    <li><p><img width="85" height="60" src="images/img27.jpg"></p><p class="c"><a href="##">学大中高考</a></p></li>
+                    <li><p><img width="85" height="60" src="images/img28.jpg"></p><p class="c"><a href="##">哼德森高二会</a></p></li>
+                    <li><p><img width="85" height="60" src="images/img29.jpg"></p><p class="c"><a href="##">学大中高考</a></p></li>
+                    <li><p><img width="85" height="60" src="images/img26.jpg"></p><p class="c"><a href="##">哼德森高二会</a></p></li>
+                    <li><p><img width="85" height="60" src="images/img27.jpg"></p><p class="c"><a href="##">学大中高考</a></p></li>                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <!--名校风采-->
+        <div class="tit2Box mt10">
+            <div class="tit2"><span class="text">名校风采</span><a class="more" href="##">了解更多</a></div>
+            <div class="mxfc">
+            	<p class="icon_dot2">幼儿园</p>
+                <ul class="fUl">
+                	<li class="text">
+                		<p><a class="w" href="##">亨德森</a> <a class="w" href="##">新东方</a></p>
+                		<p><a class="w" href="##">巨人教育 </a> <a class="w" href="##">学大教育</a></p>
+                        <p><a class="w" href="##">亨德森</a> <a class="w" href="##">新东方</a></p>
+                		<p><a class="w" href="##">巨人教育 </a> <a class="w" href="##">学大教育</a></p>
+                        <p><a class="w" href="##">亨德森</a> <a class="w" href="##">新东方</a></p>
+                		<p><a class="w" href="##">巨人教育 </a> <a class="w" href="##">学大教育</a></p>
+                    </li>
+                    <li class="img"><a href="##"><img src="images/img61.jpg" /><span>昆明一中金岸中学</span></a></li>
+                    <li class="img"><a href="##"><img src="images/img61.jpg" /><span>昆明一中金岸中学</span></a></li>
+                    <li class="img"><a href="##"><img src="images/img61.jpg" /><span>昆明一中金岸中学</span></a></li>
+                    <li class="img last"><a href="##"><img src="images/img61.jpg" /><span>昆明一中金岸中学</span></a></li>
+                </ul>
+                <div class="clear"></div>
+                <p class="icon_dot2">小学</p>
+                <ul class="fUl">
+                	<li class="text">
+                		<p><a class="w" href="##">亨德森</a> <a class="w" href="##">新东方</a></p>
+                		<p><a class="w" href="##">巨人教育 </a> <a class="w" href="##">学大教育</a></p>
+                        <p><a class="w" href="##">亨德森</a> <a class="w" href="##">新东方</a></p>
+                		<p><a class="w" href="##">巨人教育 </a> <a class="w" href="##">学大教育</a></p>
+                        <p><a class="w" href="##">亨德森</a> <a class="w" href="##">新东方</a></p>
+                		<p><a class="w" href="##">巨人教育 </a> <a class="w" href="##">学大教育</a></p>
+                    </li>
+                    <li class="img"><a href="##"><img src="images/img61.jpg" /><span>昆明一中金岸中学</span></a></li>
+                    <li class="img"><a href="##"><img src="images/img61.jpg" /><span>昆明一中金岸中学</span></a></li>
+                    <li class="img"><a href="##"><img src="images/img61.jpg" /><span>昆明一中金岸中学</span></a></li>
+                    <li class="img last"><a href="##"><img src="images/img61.jpg" /><span>昆明一中金岸中学</span></a></li>
+                </ul>
+                <div class="clear"></div>
+                <p class="icon_dot2">中学</p>
+                <ul class="fUl">
+                	<li class="text">
+                		<p><a class="w" href="##">亨德森</a> <a class="w" href="##">新东方</a></p>
+                		<p><a class="w" href="##">巨人教育 </a> <a class="w" href="##">学大教育</a></p>
+                        <p><a class="w" href="##">亨德森</a> <a class="w" href="##">新东方</a></p>
+                		<p><a class="w" href="##">巨人教育 </a> <a class="w" href="##">学大教育</a></p>
+                        <p><a class="w" href="##">亨德森</a> <a class="w" href="##">新东方</a></p>
+                		<p><a class="w" href="##">巨人教育 </a> <a class="w" href="##">学大教育</a></p>
+                    </li>
+                    <li class="img"><a href="##"><img src="images/img61.jpg" /><span>昆明一中金岸中学</span></a></li>
+                    <li class="img"><a href="##"><img src="images/img61.jpg" /><span>昆明一中金岸中学</span></a></li>
+                    <li class="img"><a href="##"><img src="images/img61.jpg" /><span>昆明一中金岸中学</span></a></li>
+                    <li class="img last"><a href="##"><img src="images/img61.jpg" /><span>昆明一中金岸中学</span></a></li>
+                </ul>
+                <div class="clear"></div>
+                <p class="icon_dot2">大学</p>
+                <ul class="fUl">
+                	<li class="text">
+                		<p><a class="w" href="##">亨德森</a> <a class="w" href="##">新东方</a></p>
+                		<p><a class="w" href="##">巨人教育 </a> <a class="w" href="##">学大教育</a></p>
+                        <p><a class="w" href="##">亨德森</a> <a class="w" href="##">新东方</a></p>
+                		<p><a class="w" href="##">巨人教育 </a> <a class="w" href="##">学大教育</a></p>
+                        <p><a class="w" href="##">亨德森</a> <a class="w" href="##">新东方</a></p>
+                		<p><a class="w" href="##">巨人教育 </a> <a class="w" href="##">学大教育</a></p>
+                    </li>
+                    <li class="img"><a href="##"><img src="images/img61.jpg" /><span>昆明一中金岸中学</span></a></li>
+                    <li class="img"><a href="##"><img src="images/img61.jpg" /><span>昆明一中金岸中学</span></a></li>
+                    <li class="img"><a href="##"><img src="images/img61.jpg" /><span>昆明一中金岸中学</span></a></li>
+                    <li class="img last"><a href="##"><img src="images/img61.jpg" /><span>昆明一中金岸中学</span></a></li>
+                </ul>
+                <div class="clear"></div>
+                <p class="icon_dot2">培训机构</p>
+                <ul class="fUl">
+                	<li class="text">
+                		<p><a class="w" href="##">亨德森</a> <a class="w" href="##">新东方</a></p>
+                		<p><a class="w" href="##">巨人教育 </a> <a class="w" href="##">学大教育</a></p>
+                        <p><a class="w" href="##">亨德森</a> <a class="w" href="##">新东方</a></p>
+                		<p><a class="w" href="##">巨人教育 </a> <a class="w" href="##">学大教育</a></p>
+                        <p><a class="w" href="##">亨德森</a> <a class="w" href="##">新东方</a></p>
+                		<p><a class="w" href="##">巨人教育 </a> <a class="w" href="##">学大教育</a></p>
+                    </li>
+                    <li class="img"><a href="##"><img src="images/img61.jpg" /><span>昆明一中金岸中学</span></a></li>
+                    <li class="img"><a href="##"><img src="images/img61.jpg" /><span>昆明一中金岸中学</span></a></li>
+                    <li class="img"><a href="##"><img src="images/img61.jpg" /><span>昆明一中金岸中学</span></a></li>
+                    <li class="img last"><a href="##"><img src="images/img61.jpg" /><span>昆明一中金岸中学</span></a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="mt10"><img src="images/img56.jpg" width="980" height="72" /></div>
+    </div>
+    <!--底部信息-->
+    <div class="foot">
+        <div class="footer">            
+            <div class="center">
+                <p><a href="##">关于我们</a> | <a href="##">广告合作</a> | <a href="##">联系我们</a> | <a href="##">网站声明</a></p>
+                <p>版权所有 昆明搜课网 2010-2015 滇ICP备10086523号</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

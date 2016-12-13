@@ -1,0 +1,144 @@
+/* CSS Document */
+/*
+*首页样式 
+*/
+/**/
+.mainCxt{}
+
+/*搜索*/
+.nav{ background:#fdf7c5; padding:18px; margin:5px 0px;}
+.navCen{ background:url(images/navCenterBg.jpg) no-repeat 0px 0px; width:359px; height:26px; position:relative; margin:0px auto;}
+.dropdown{width:70px; margin:0px auto; position:relative}
+.dropdown p{width:56px; height:25px; line-height:25px; padding-left:14px; padding-right:0px; color:#807a62; cursor:pointer; position:relative;}
+.dropdown ul{width:70px; background:#e8f5fe; margin-top:2px; border:1px solid #a9c9e2; position:absolute; display:none}
+.dropdown ul li{height:24px; line-height:24px; text-indent:10px}
+.dropdown ul li a{display:block; height:24px; color:#807a62; text-decoration:none}
+.dropdown ul li a:hover{background:#c6dbfc; color:#369}
+.fainput{ border:0px solid #b8b8b8; background:none;height:25px; width:216px; padding:0px 10px; line-height:25px; float:left;font-size:12px; color:#9a9a9a;}
+.fabtn{ border:0px solid #b8b8b8; background:none; height:25px; line-height:25px; width:50px; float:left; margin:0px; cursor:pointer;}
+
+.tit5{ color:#595757; font-size:16px; padding:20px 0px 20px 0px;}
+.dh{ color:#ccc; padding-bottom:5px;}
+.dh span{ display:inline-block; padding-right:30px;}
+.dh a{ color:#595757;}
+.dh2{ color:#ccc; padding-bottom:5px;}
+.dh2 span{ display:inline-block; padding-right:30px;}
+.dh2 a{ padding:5px 25px; display:inline-block}
+.dhLine{ background:url(images/dhLine.jpg) no-repeat right center; padding:0px 20px 0px 0px; margin-right:20px;}
+
+.serviceBanner {width:678px;height:287px;position:relative;overflow:hidden;}
+.serviceBanner .slides {}
+.serviceBanner .slides_container {width:678px;height:287px;overflow:hidden;position:relative;}
+.serviceBanner .slides_control{}
+.serviceBanner .slides_control .slide{ display:block; width:678px;height:287px;}
+.serviceBanner .prev{ background:url(images/arrow_left1.jpg) no-repeat 0px 0px; width:35px; height:287px; position:absolute; top:0px; left:0px; z-index:99; display:block; opacity:0.2;filter:alpha(opacity=20);}
+.serviceBanner .next{ background:url(images/arrow_right1.jpg) no-repeat 0px 0px; width:35px; height:287px; position:absolute; top:0px; right:0px; z-index:99; display:block; opacity:0.2;filter:alpha(opacity=20);}
+.serviceBanner .prev:hover,.serviceBanner .next:hover{ opacity:1;filter:alpha(opacity=100);}
+.serviceBanner .pagination {position:absolute; bottom:0px; right:10px; z-index:9; height:18px; display:none;}
+.serviceBanner .pagination li {float:left; margin-right:5px;}
+.serviceBanner .pagination li a {display:block;padding-top:0px; text-align:center;overflow:hidden;color:#fff; width:32px; height:5px; background:#fff; color:#fff; line-height:5px; text-indent:-400px;}
+.serviceBanner .pagination li.current a { color:#fff; background:#ffa200;}
+
+.hotCxt{ float:right; height:287px; background:#fdef78; width:280px;}
+.hotCxt .title{ padding:0px 0px 0px 10px; font-size:14px; height:35px; line-height:35px; position:relative;}
+.hotCxt .title .icon_hot{ background:url(images/icon_hot.png) no-repeat 0px 0px; position:absolute; top:-5px; left:80px; height:40px; width:40px; display:block;}
+.hotCxt .text{ width:12px; display:inline-block; padding:3px 15px 0px 15px; height:75px; background:#fff; font-size:14px; line-height:18px; float:left; margin:3px 0px 0px 10px;}
+.hotCxt a{ height:78px; display:inline-block; width:70px; text-align:center; background:#fff; float:left; margin:3px 0px 0px 3px;}
+.hotCxt a img{ padding:10px 0px 0px 0px;}
+.hotCxt a span{ display:block;}
+
+/*资讯中心*/
+.box310{ width:310px;}
+.infoCen{}
+.infoCen .title{ background:#ecb7ff; text-align:center; font-size:20px; color:#fff; height:58px; line-height:58px;}
+.infoCen .cxt{ padding:10px;}
+.tit4{ border-bottom:1px solid #ecb7ff; color:#595757; position:relative; margin-bottom:15px; padding:0px 0px 5px 0px; height:100%;}
+.tit4 .text{ color:#595757; font-size:16px;}
+.tit4 .more{ position:absolute; right:0px; bottom:3px;}
+.gzItem .prev{ position:relative;}
+.gzItem .prev .pos{ position:absolute; right:0px; top:0px;}
+/*搜客中心*/
+.box340{ width:340px;}
+.box260{ width:260px;}
+.seaCen{}
+.seaCen .title{ background:#8fd5fd; text-align:center; font-size:20px; color:#fff; height:58px; line-height:58px;}
+.seaCen .cxt{ padding:10px;}
+.tit3{ border-bottom:1px solid #8fd5fd; color:#595757; position:relative; margin-bottom:15px; padding:0px 0px 5px 0px; height:100%;}
+.tit3 .text{ color:#595757; font-size:16px;}
+.tit3 .more{ position:absolute; right:0px; bottom:3px;}
+.hotTable{}
+.hotTable tr th{ font-weight:bold; text-align:center; color:#595758; font-size:14px; padding:4px 0px;}
+.hotTable tr th.l{ text-align:left;}
+.hotTable tr td{ padding:4px 0px; color:#333;}
+.num{ background:#e4e4e4; display:inline-block; width:16px; height:16px; line-height:16px; text-align:center;}
+.sBox2{ width:330px; overflow:hidden;}
+.sUl2{}
+.sUl2 li{ float:left; width:87px; text-align:center; margin:0px 20px 0px 0px;}
+.sUl2 li img{ border:1px solid #e7e7e7;}
+.sUl2 li p.c{ height:44px; line-height:22px;}
+.kBox{ width:1050px; overflow:hidden;}
+.kUl{}
+.kUl li{ float:left; width:151px; text-align:center; margin:0px 10px 0px 0px;}
+.kUl li img{ border:1px solid #e7e7e7; padding:1px; background:#fff; width:149px; height:158px;}
+.kUl li p.c{ height:44px; line-height:22px;}
+.fUl{}
+.fUl li{ width:160px; margin-right:100px;}
+.fUl li.last{ margin-right:20px; float:right;}
+.fUl li a.w{ display:inline-block; width:80px; float:left; overflow:hidden; height:22px; color:#595757;}
+
+.infiniteCarousel {width: 980px;position: relative; height:170px; margin:10px 0px 0px 0px;}
+.infiniteCarousel .wrapper {width: 900px;overflow: auto; min-height:170px;margin: 0 40px;position: absolute;top: 0;}
+.infiniteCarousel ul a img {}
+.infiniteCarousel .wrapper ul {width: 9999px;position: absolute;top: 0;}
+.infiniteCarousel ul li {display:block;float:left;padding: 0px 10px 0px 0px;height: 170px;width: 172px;}
+.infiniteCarousel ul li a img {display:block;}
+.infiniteCarousel ul li a span{ display:block; height:22px; overflow:hidden; text-align:center;}
+.infiniteCarousel .arrow {display: block;height: 143px;width: 30px;text-indent: -999px;position: absolute;top: 0px;cursor: pointer;}
+.infiniteCarousel .forward { background:url(images/arror_right.jpg) no-repeat 0px 0px; right:0px;}
+.infiniteCarousel .back {background:url(images/arror_left.jpg) no-repeat 0px 0px; left: 0px;}
+.infiniteCarousel .forward:hover { opacity:.5;filter:alpha(opacity=50);}
+.infiniteCarousel .back:hover { opacity:.5;filter:alpha(opacity=50);}
+/*家教中心*/
+.tuCen{}
+.tuCen .title{ background:#fe8383; text-align:center; font-size:20px; color:#fff; height:58px; line-height:58px;}
+.tuCen .cxt{ padding:10px;}
+.tit2{ border-bottom:1px solid #fe8383; color:#595757; position:relative; margin-bottom:15px; padding:0px 0px 5px 0px; height:100%;}
+.tit2 .text{ color:#595757; font-size:16px;}
+.tit2 .more{ position:absolute; right:0px; bottom:3px;}
+.icon_dot{ background:url(images/icon_dot.jpg) no-repeat 0px center; padding:0px 0px 0px 20px; line-height:24px; height:24px; overflow:hidden;}
+.twTextarea{ border:1px solid #9fa0a0; background:#fefce0; padding:5px; width:288px; height:78px; margin-bottom:5px; font-size:12px; color:#666; resize:none;}
+/*学习中心*/
+.learCen{}
+.learCen .title{ background:#b5b6b6; text-align:center; font-size:20px; color:#fff; height:58px; line-height:58px;}
+.learCen .cxt{ padding:10px;}
+.tit1{ border-bottom:1px solid #dcdddd; color:#595757; position:relative; margin-bottom:15px; padding:0px 0px 5px 0px; height:100%;}
+.tit1 .text{ color:#595757; font-size:16px;}
+.tit1 .more{ position:absolute; right:0px; bottom:3px;}
+.xueUl{}
+.xueUl li{ width:200px; float:left; margin:0px 30px 0px 10px;}
+.xueUl li p{ text-align:center; padding-top:5px;}
+
+.box300{ width:300px;}
+.box600{ width:600px;}
+.downUl{}
+.downUl li{}
+.downUl li a span{ display:block; text-align:center;}
+
+.downUl2{}
+.downUl2 li{ float:left; width:200px; overflow:hidden; margin:0px 0px 20px 0px;}
+.downUl2 li a span{ display:block; text-align:center;}
+.downUl2 li p.name{ padding-bottom:10px;}
+
+.tebox{ width:472px;height:220px; margin-left:5px;}
+.ylTextarea{ width:460px; border:1px solid #ccc; height:165px; margin-bottom:10px; color:#989898; padding:5px; resize:none;}
+.yyBox{ width:384px; height:220px; overflow-y:auto; position:relative;}
+.yyUl li{ position:relative; padding:0px 0px 10px 35px;}
+.yyUl li .yyImg{ position:absolute; top:0px; left:0px; width:29px; height:29px;}
+.yyUl li .c{ color:#666;}
+
+.sBox{ width:1100px; overflow:hidden;}
+.sUl{}
+.sUl li{ float:left; width:87px; text-align:center; margin:0px 37px 0px 0px;}
+.sUl li img{ border:1px solid #e7e7e7;}
+.sUl li p.c{ height:44px; line-height:22px;}
+

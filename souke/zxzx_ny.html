@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--<meta http-equiv="X-UA-Compatible" content="IE=7" />-->
+<title>资讯中心三级页面</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/jjzx.css">
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script language="javascript">
+	$(function(){
+		$(".dropdown p").click(function(){
+			var ul = $(this).siblings("ul");
+			if(ul.css("display")=="none"){
+				ul.slideDown("fast");
+			}else{
+				ul.slideUp("fast");
+			}
+		});
+		$(".dropdown ul li a").click(function(){
+			var txt = $(this).text();
+			$(this).parents(".dropdown").find("span.value").text(txt);
+			$(".dropdown ul").hide();
+		});
+	})
+</script>
+<!--[if lte IE 6]>
+<script src="Js/PNG.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix('div, ul, img, li, input , a ,span');
+    </script>
+<![endif]--> 
+</head>
+
+<body class="">
+	<!--头部信息-->
+    <div class="header">
+    	<div class="head">
+        	<div class="headBanner">
+            	<span class="fr"><a href="##">登录</a> |  <a href="##">注册</a>  <a href="##">加入收藏</a>  |  <a href="##">设为首页</a>  |  <a href="##">帮助</a></span>
+            </div>
+        	<div class="logo"><a href="##"><img src="images/logo.jpg" width="207" height="78" /></a></div>
+            <div class="headNav">
+                <div class="navCenter">
+                    <li class="select"><a href="index.html"><span>HOME</span>首页</a></li>
+                    <li><a href="zxzx.html"><span>INFORMATION</span>资讯中心</a></li>
+                    <li><a href="skzx.html"><span>SEARCHING</span>搜课中心</a></li>
+                    <li><a href="jjzx.html"><span>TUTORING</span>家教中心</a></li>
+                    <li><a href="xxzx.html"><span>LEARNING</span>学习中心</a></li>
+                    <li class="last"><a href="hyzx.html"><span>MEMBER</span>会员中心</a></li>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    
+    <div class="main">
+    	<!--网站导航-->
+    	<div class="nav">
+        	<div class="navCen navCen2">
+            	<div class="dropdown fl">
+                    <p><span class="value">新闻</span></p>
+                    <ul>
+                        <li><a href="javascript:;" rel="1">新闻</a></li>
+                        <li><a href="javascript:;" rel="2">资讯</a></li>
+                    </ul>
+                </div>
+                <input type="text" class="fainput" /> <input type="button" class="fabtn" title="搜索" />
+            </div>
+            
+        </div>
+        <div class="jjnav mt10">
+            <div class="tit1">资讯中心导航</div>
+            <div class="cxt"><a href="##" class="select">今日关注</a><a href="##">专题</a><a href="##">与校长对话</a><a href="##">小升初</a><a href="##">中考</a><a href="##">高考留学</a><a href="##">教育新闻</a><a href="##">校园新闻</a><a href="##">招生开班</a></div>
+        </div>
+        <!--教育问答-->
+        <div class="box785 fl mt10">
+        	<div class="tit4Box">
+            	<div class="tit4">当前位置：<a href="##">首页</a> > <a href="##">资讯中心</a> > <span class="color_org">中高考</span></div>
+                <div class="zxCxt">
+                	<div class="zxTitle">【高考】高考加分政策全国“瘦身”</div>
+                    <div class="center pb20"><span class="mr20">发布时间：2013-11-11 15:59:07</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="ml30">阅读数:6&nbsp;&nbsp;&nbsp;&nbsp;来源：中新网</span>    </div>
+                    <div class="pt20 pb20">
+                    	<p class="pt20">近日，有关中高考改革的热议余温未降，高考报名又近在眼前，“高考加分”话题成为大众关注的焦点。据悉，截至目前，
+北京、上海、河南等省市已先后出台高考加分调整的政策实施细则，“瘦身”后的加分新政将于2014年首次执行。</p>
+
+<p class="pt20">2010年底，教育部会同其他部门，联合发布了《关于调整部分高考加分项目和进一步加强管理工作的通知》(以下简称《通知》)，
+其中明确要求各地调整两类加分项目：学科竞赛和体育特长生，并指出调整政策从2014年高考开始实施和执行。</p>
+
+<p class="pt20">这意味着，2014年参加高考的考生将面对这次全国性的加分“瘦身”：全国中学生数学、物理、化学、生物、信息学奥林匹克竞赛
+决赛、部分科技类竞赛获奖者的保送资格被取消，加分不超过20分；全国奥赛省赛区一等奖的保送和加分资格均被取消；体育特长
+生规定项目为8项，各省(区、市)自选项目一般不超过2个，加分均不超过20分。</p>
+
+<p class="pt20">同时，《通知》还要求各省(区、市)系统清理规范地方性加分项目，所有拟享受高考加分的考生，均须经过本人申报、有关部门审
+核、省地校三级公示后方能予以认可。</p>
+
+<p class="pt20">从2011年起，多个省(区、市)招考部门陆续开始对当地高考加分项目进行改革，截至记者发稿时，尚未正式发布2014年高考加分具
+体政策的省(区、市)有8个，包括天津、重庆、陕西、江苏、山西、云南、西藏、新疆。</p>
+
+<p class="pt20">已公布当地高考加分项目的省市，有的完全执行教育部下发的《通知》，有的则在《通知》的基础上制定当地政策，规定从2014年
+高考开始执行，有的近期仍在调整。</p>
+
+<p class="pt20">比较而言，有的省份加分政策改革力度较大。如广东，加分项目从23个减至6个，加分分值统一为报考本科院校加5分、专科加10分。
+河北则取消了6类考生的加分资格，包括省授予“教师世家”称号的教师直系子女报考师范院校的考生、飞行学员早期培训基地初检
+合格的考生、全省职业学校技能比赛一等奖的对口考生等。</p>
+
+<p class="pt20">在学科竞赛方面，除个别地区，绝大多数省(区、市)均取消了全国奥赛省赛区一等奖的加分，对全国奥赛决赛、部分科技类竞赛获奖
+生的加分控制在5~20分，其中北京、浙江等地的分值下调幅度达10分，辽宁、广东等地则直接取消了此类加分。</p>
+                    </div>
+                    <div class="mt20 tit9">我要评论（已经有<b class="color_red">300</b>人参与） </div>
+                    <div class="mt10"><textarea class="xxTextarea">请输入您要评论的内容哦......</textarea></div>
+                    <div class="mt10 tar"><a class="icon_qq" href="##">&nbsp;</a> <a href="##" class="twbtn" href="##">我要提交评论</a> <a href="##" class="twbtn" href="##">我要登录评论</a></div>
+                    
+                    <div class="mt20"><b class="font14px color_666">评论用户：</b></div>
+                    <p class="color_777 pt5">格格：搜课网的课程非常的不错，好多家长都说好，一定的要大力支持哦</p>
+                    <p class="color_777 pt5">格格：搜课网的课程非常的不错，好多家长都说好，一定的要大力支持哦</p>
+                    <p class="color_777 pt5">格格：搜课网的课程非常的不错，好多家长都说好，一定的要大力支持哦</p>
+                </div>
+            </div>
+            
+            
+        </div>
+        <!--右侧-->
+        <div class="box175 fr mt10">
+            <div class="tit10">搜课程栏目</div>
+            <div class="titCxt10">
+                <p class="icon_dot4"><a href="##">早教</a> | <a href="##">小升初 </a></p> 
+                <p class="icon_dot4"><a href="##">初中同步</a> | <a href="##">高中同步 </a></p>
+                <p class="icon_dot4"><a href="##">国际高中</a> | <a href="##">留学 </a></p>
+                <p class="icon_dot4"><a href="##">美术</a> | <a href="##">书法 </a></p>
+                <p class="icon_dot4"><a href="##">情商</a> | <a href="##">音乐 </a></p>
+                <p class="icon_dot4"><a href="##">体育</a> | <a href="##">舞蹈 </a></p>
+                <p class="icon_dot4"><a href="##">棋类</a> | <a href="##">托管 </a></p>
+                <p class="icon_dot4"><a href="##">移民</a> | <a href="##">夏令营 </a></p>
+                <p class="icon_dot4"><a href="##">考研</a> | <a href="##">一对一 </a></p>
+            </div>
+            <div class="tit11 mt20"><span class="text">口碑学校</span><a class="more_red" href="##">more ></a></div>
+            <div class="titCxt11">
+                <div class="center">
+                    <a class="tca2"><img src="images/img92.jpg" /></a> 
+                    <a class="tca2"><img src="images/img92.jpg" /></a>
+                    <a class="tca2"><img src="images/img92.jpg" /></a>
+                    <a class="tca2"><img src="images/img92.jpg" /></a>
+                    <a class="tca2"><img src="images/img92.jpg" /></a>
+                    <a class="tca2"><img src="images/img92.jpg" /></a>
+                </div> 
+            </div>
+        </div>
+        <div class="clear"></div>
+        
+    </div>
+    <!--底部信息-->
+    <div class="foot">
+        <div class="footer">            
+            <div class="center">
+                <p><a href="##">关于我们</a> | <a href="##">广告合作</a> | <a href="##">联系我们</a> | <a href="##">网站声明</a></p>
+                <p>版权所有 昆明搜课网 2010-2015 滇ICP备10086523号</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
