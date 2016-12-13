@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>商品介绍页</title>
+	<meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width">-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+	<script src="js/jquery.js"></script>
+    <script src="js/slides.min.jquery.js"></script>
+    <script language="javascript">
+    	$(function(){
+			$('.spBanner .slides').slidesjs({width: 640,height: 312,start:1,navigation: true,play: {interval: 5000,auto: true}});
+			$(".icon_jian").click(function(){
+				var num=parseInt($(this).siblings(".numInput").val());
+				if(num>0){				
+					$(this).siblings(".numInput").val(num-1);
+				}
+			})
+			$(".icon_jia").click(function(){
+				var num=parseInt($(this).siblings(".numInput").val());
+				$(this).siblings(".numInput").val(num+1);
+			})
+		})
+    </script>
+</head>
+<body id="top">
+<div class="containter">
+	<div class="header">
+    	<h1><a href="##" class="icon icon_close">&nbsp;</a><a href="##" class="icon icon_menu">&nbsp;</a><span class="text">恩如氏生物国际</span></h1>
+    </div>
+    <div class="headerT">
+    	<h1><a href="##" class="icon icon_prev">&nbsp;</a><a href="##" class="icon icon_home">&nbsp;</a><span class="text">产品列表</span></h1>
+    </div>
+        
+    <div class="content">    	
+        <!--<div class="headTop2"></div>-->
+        <div class="spBanner">    	
+            <div class="slides">               	
+                <div class="slide">
+                    <a href="##"><img src="images/img1.png"/></a>
+                </div>
+                <div class="slide">
+                    <a href="##"><img src="images/img1.png"/></a>
+                </div> 
+                <div class="slide">
+                    <a href="##"><img src="images/img1.png"/></a>
+                </div>
+                <div class="slide">
+                    <a href="##"><img src="images/img1.png"/></a>
+                </div>            
+            </div>
+    	</div>
+        <div class="indexCxt"> 
+            <ul class="gwcUl">
+                <li>
+                    <div>
+                        <p><a href="##" class="title">如氏试管面膜 恩如氏美白面膜如氏试管面膜恩如氏美白面膜如氏试管面膜</a></p>
+                        <div class="mt10">
+                            <span class="price">￥195</span>
+                        </div>
+                        <div class="mt10">功效：<span class="tag">美容美白</span> <span class="tag">美容美白</span> <span class="tag">美容美白</span></div>
+                        <div class="mt10">配送方式：卖家包邮</div>
+                        <div class="mt10">
+                            <div class="fl lh48">数量：</div>
+                            <div class="slCxt fl"><a href="##" class="icon_jian">&nbsp;</a><input value="1" type="text" class="numInput" /><a class="icon_jia">&nbsp;</a></div>
+                            <a class="icon icon_share fr">&nbsp;</a>
+                            <div class="clear"></div>
+                        </div>
+                        
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--产品简介-->
+        <div class="cpjj mt20">
+        	<div class="tit4">
+            	<span class="icon text">产品简介</span>
+            </div>
+            <div class="label">
+            	<span class="text">产品规格：</span>
+                <div>5片装</div>
+            </div>
+            <div class="label">
+            	<span class="text">产品尺寸：</span>
+                <div>128mm*120mm*56mm</div>
+            </div>
+            <div class="label">
+            	<span class="text">主要成分：</span>
+                <div>玻尿酸提取原液精华、水、甘油、基己基甘油、椰油醇聚醚一7、蚕丝提取物等。</div>
+            </div>
+        </div>
+        <div class="img"><img src="images/img12.png" /></div>
+    </div>    
+    <div class="footer">
+        <div class="footerUl">
+        	<div class="flogo"><img src="images/logo2.png" /></div>
+            <p>客服QQ: 2214515292，222453293，</p>
+			<p>联系电话：159626600.0</p>
+            <p>Copyright 2014 恩如氏化妆品有限公司 All Rights Reserved</p>
+        </div>   
+    </div>
+    <div class="spFoot">
+    	<div class="pd10">
+            <div class="fl"><a class="icon icon_share">分享试试看？</a></div>
+            <a class="gwcBtn fr" href="##">加入购物车</a>
+        </div>
+    </div>
+</div> 
+</body>
+</html>

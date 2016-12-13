@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>个人中心</title>
+	<meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width">-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="js/skins/twitter.css">
+	<script src="js/jquery.js"></script>
+    <script src="js/jquery.artDialog.js"></script>
+    <script src="js/jquery.tab.js"></script>
+    <script language="javascript">
+    	$(function(){
+			$(".icon_del").click(function(){
+				$(this).parents(".li").remove();
+			});
+			$("#bpmTab").tab({dft:0,curClass: "current",act:"click",tabId: "#bpmTags",tabTag: "li",conId: "#bpmPanes",conTag: ".pane"});
+		})
+		function del(arg){
+			var dialog=art.dialog({
+					lock:true,
+					title: "删除操作提醒" ,
+					content:'<div class="font18px">您确定要删除该商品吗?</div>',
+					padding: '20px 50px 20px 50px',
+					button: [
+						{
+							name: '确定',
+							callback: function () {
+								$(arg).parents("li").remove();
+								art.dialog({content: '删除成功!', lock: false,time:2});
+							},
+							focus: true
+						},
+						{
+							name: '取消',
+							callback: function () {
+							},
+							focus: true
+						}
+					]				
+				});
+		}
+    </script>
+</head>
+<body id="top">
+<div class="containter">
+	<div class="header">
+    	<h1><a href="##" class="icon icon_close">&nbsp;</a><a href="##" class="icon icon_menu">&nbsp;</a><span class="text">恩如氏生物国际</span></h1>
+    </div>
+    <div class="headerT">
+    	<h1><a href="##" class="icon icon_prev">&nbsp;</a><a href="##" class="icon icon_home">&nbsp;</a><span class="text">购物车</span></h1>
+    </div>
+        
+    <div class="content">    	
+        <div class="headTop2"></div>
+        
+        <div class="indexCxt">        	
+            <!--全部商品-->
+            
+            <ul class="grUl">
+                <li>
+                    <a href="##" class="img fl"><img src="images/img13.png" /></a>
+                    <div>
+                        <p><a href="##" class="title">立正</a></p>
+                        <p class="text">如需设置个人信息，请在微信里设置</p>
+                        <p class="xx">开启消息推送 <a class="icon_xx">&nbsp;</a></p>
+                    </div>
+                    <div class="clear"></div>
+                </li>
+            </ul>            
+            
+        </div>
+        
+        <div>        	
+            <!--全部商品-->
+            <div class="bpmTab mt20" id="bpmTab">            	
+                <div class="bpmTit">
+                    <ul class="tags" id="bpmTags">
+                        <li class="current"><a href="javascript:;" class="tabIcon1"><span>待支付</span></a></li>
+                        <li><a href="javascript:;" class="tabIcon2"><span>待收货</span></a></li>
+                        <li><a href="javascript:;" class="tabIcon3"><span>全部订单</span></a></li>
+                    </ul>
+                </div> 
+                 
+                <div class="panes" id="bpmPanes">
+                	<div class="pane">
+                    	<ul class="grzxUl">
+                            <li>
+                                <a href="##" class="img fl"><img src="images/img9.png" /></a>
+                                <div>
+                                    <p><a href="##" class="title">如氏试管面膜 恩如氏美白面膜如氏试管面膜恩如氏美白面膜如氏试管面膜</a></p>
+                                    <div class="mt20">
+                                        <span class="price">￥158</span>
+                                        <span class="uprice">￥260</span>
+                                    </div>
+                                    <div class="mt10">
+                                        <div class="lh48">数量：5</div>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                                <div class="mt20">
+                                    <a class="icon icon_del fl" onClick="del(this)">&nbsp;</a>
+                                    <a class="dPrice fr">￥35070</a>
+                                    <div class="clear"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="##" class="img fl"><img src="images/img9.png" /></a>
+                                <div>
+                                    <p><a href="##" class="title">如氏试管面膜 恩如氏美白面膜如氏试管面膜恩如氏美白面膜如氏试管面膜</a></p>
+                                    <div class="mt20">
+                                        <span class="price">￥158</span>
+                                        <span class="uprice">￥260</span>
+                                    </div>
+                                    <div class="mt10">
+                                        <div class="lh48">数量：5</div>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                                <div class="mt20">
+                                    <a class="icon icon_del fl" onClick="del(this)">&nbsp;</a>
+                                    <a class="dPrice fr">￥35070</a>
+                                    <div class="clear"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="##" class="img fl"><img src="images/img9.png" /></a>
+                                <div>
+                                    <p><a href="##" class="title">如氏试管面膜 恩如氏美白面膜如氏试管面膜恩如氏美白面膜如氏试管面膜</a></p>
+                                    <div class="mt20">
+                                        <span class="price">￥158</span>
+                                        <span class="uprice">￥260</span>
+                                    </div>
+                                    <div class="mt10">
+                                        <div class="lh48">数量：5</div>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                                <div class="mt20">
+                                    <a class="icon icon_del fl" onClick="del(this)">&nbsp;</a>
+                                    <a class="dPrice fr">￥35070</a>
+                                    <div class="clear"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="##" class="img fl"><img src="images/img9.png" /></a>
+                                <div>
+                                    <p><a href="##" class="title">如氏试管面膜 恩如氏美白面膜如氏试管面膜恩如氏美白面膜如氏试管面膜</a></p>
+                                    <div class="mt20">
+                                        <span class="price">￥158</span>
+                                        <span class="uprice">￥260</span>
+                                    </div>
+                                    <div class="mt10">
+                                        <div class="lh48">数量：5</div>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                                <div class="mt20">
+                                    <a class="icon icon_del fl" onClick="del(this)">&nbsp;</a>
+                                    <a class="dPrice fr">￥35070</a>
+                                    <div class="clear"></div>
+                                </div>
+                            </li>
+            			</ul>
+                    </div> 
+                    <div class="pane">
+                    	2
+                    </div> 
+                    <div class="pane">
+                    	3
+                    </div>                    
+                </div>
+            </div>
+                        
+            
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footerUl">
+        	<div class="flogo"><img src="images/logo2.png" /></div>
+            <p>客服QQ: 2214515292，222453293，</p>
+			<p>联系电话：159626600.0</p>
+            <p>Copyright 2014 恩如氏化妆品有限公司 All Rights Reserved</p>
+        </div>   
+    </div>
+    <div class="gwcFoot">
+    	<div class="pd10">
+            <div class="fl">总价<b class="red ml10" id="price">￥35070</b></div>
+            <a class="gwcBtn fr" href="##">马上结算</a>
+        </div>
+    </div>
+    
+</div> 
+</body>
+</html>
