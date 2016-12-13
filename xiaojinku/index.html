@@ -1,0 +1,931 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<title>首页</title>
+	<meta charset="UTF-8" />
+    <meta content="首页" name="description" />
+    <meta content="首页" name="keywords" />
+    <!--<meta name="viewport" content="width=device-width">-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/layout.css">
+	<script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/slides.min.jquery.js"></script>
+    <script src="js/jquery.tab.js"></script>
+	<script src="js/slider.js"></script>
+    <script language="javascript">
+    	$(function(){
+			$('.slides').slides({play: 5000,pause: 5000,hoverPause: true,effect:"fade",fadeSpeed: 350,generatePagination:false});
+			$(".slide").width(document.body.clientWidth);
+			$(window).resize(function(){
+				$(".slide").width(document.body.clientWidth);
+			})
+			$(window).scroll(function(){
+				$(".slide").width(document.body.clientWidth);
+			})
+			$("#bpmTab").tab({dft:0,curClass: "current",tabId: "#bpmTags",tabTag: "li",conId: "#bpmPanes",conTag: ".pane"});
+			$("#zxTab").tab({dft:0,curClass: "current",tabId: "#zxTags",tabTag: "li",conId: "#zxPanes",conTag: ".pane"});
+			$("#tzTab").tab({dft:0,curClass: "current",tabId: "#tzTags",tabTag: "li",conId: "#tzPanes",conTag: ".pane"});
+		})
+    </script>
+</head>
+<body class="indexBody">
+<div class="containter">
+	<!---头部-->
+	<div class="header">
+    	<div class="head">
+        	<div class="headTop">
+            	<div class="fl">
+                	<span class="icon icon_tel">&nbsp;</span>
+                    客服热线：<b class="font14px color_red">400-7111-658</b>
+                </div>
+                <div class="fr">
+                	<a class="color_red" href="zhuce.html">免费注册</a> <a class="color_green" href="login.html">立即登录</a> <a href="##"><span class="icon icon_m">手机版下载</span></a> <a href="##">帮助中心</a> <a href="##">客服中心</a>
+                </div>
+            </div>
+            <div class="headerCenter">
+        		<a class="logo" href="index.html"><img src="images/logo.png" /></a>
+                <ul class="nav">
+                    <li><a href="wyzq.html">我要赚钱</a></li>
+                    <li><a href="wypz.html">我要配资</a></li>
+                    <li><a href="atpz.html">按天配资</a></li>
+                    <li><a href="wdzh.html">我的账户</a></li>
+                    <li><a href="gywm.html">关于我们</a></li>
+                </ul> 
+                <div class="clear"></div>               
+            </div>
+        </div>
+    </div>        
+    <!--主体内容-->
+    <!--五图flash-->
+    <div class="indexBanner">    	
+        <div class="slides">
+            <div class="slides_container">
+                <div class="slide" style="background:url(images/banner1.png) no-repeat center center;">&nbsp;</div>
+                <div class="slide" style="background:url(images/banner1.png) no-repeat center center;">&nbsp;</div>
+                <div class="slide" style="background:url(images/banner1.png) no-repeat center center;">&nbsp;</div>
+                <div class="slide" style="background:url(images/banner1.png) no-repeat center center;">&nbsp;</div>
+                <div class="slide" style="background:url(images/banner1.png) no-repeat center center;">&nbsp;</div>
+                <div class="slide" style="background:url(images/banner1.png) no-repeat center center;">&nbsp;</div>
+            </div>
+            <div class="inPag">
+                <ul class="pagination">
+                    <li><a><span></span>活动1</a></li>
+                    <li><a><span></span>活动2</a></li>
+                    <li><a><span></span>活动3</a></li>
+                    <li><a><span></span>活动4</a></li> 
+                    <li><a><span></span>活动5</a></li>
+                    <li><a><span></span>app下载</a></li>                
+                </ul>
+            </div>
+        </div>
+    </div>   
+    <div class="main">
+    	<h1 class="font32px color_333 lh48 center pt20 pb20 mt20">天沃科技旗下网站  股票代码:002564</h1>
+        <div class="touzi">
+            <div class="fl w25">
+                <p class="font18px color_666">累计投资金额</p>
+                <p class="lh32"><b class="font26px color_red">21.663亿元</b></p>
+            </div>
+            <div class="fl w25">
+                <p class="font18px color_666">昨日投资金额</p>
+                <p class="lh32"><b class="font26px color_red">2,528.10万元</b></p>
+            </div>
+            <div class="fl w25">
+                <p class="font18px color_666">坏账率</p>
+                <p class="lh32"><b class="font26px color_red">0.00%</b></p>
+            </div>
+            <div class="fl w25">
+                <p class="font18px color_666">贴心服务</p>
+                <p class="lh32"><b class="font26px color_red">1对1客服</b></p>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="center">
+            <img src="images/img1.png" usemap="#Map" style="border:none;" />
+            <map name="Map">
+              <area shape="rect" coords="55,356,267,404" href="wypz.html" alt="我要配资"  title="我要配资">
+              <area shape="rect" coords="395,356,605,403" href="wypz.html" alt="我要配资" title="我要配资">
+              <area shape="rect" coords="732,357,941,404" href="wypz.html" alt="我要投资"  title="我要投资">
+            </map>
+        </div>
+        <div class="box700 fl mt20">
+            <!--可投项目-->
+            <div class="cmtTab" id="bpmTab">
+                <div class="cmtTit">
+                    <ul class="tags" id="bpmTags">
+                        <li class="current"><a href="javascript:;"><span>可投项目(20)</span></a></li>
+                        <li><a href="javascript:;"><span>今日满标(6)</span></a></li>
+                    </ul>
+                 </div>
+                 <div class="panes" id="bpmPanes">                        
+                    <div class="pane">
+                        <ul class="ktUl">
+                        	<li>
+                            	<p class="mb5"><span class="font20px color_333">路先生借款30万元</span><span class="color_888"> ( 市值36万元股票做质押 )</span></p>
+                                <p class="color_888 mb5">上线3分钟</p>
+                                <div>
+                                	<div class="w20 fl">
+                                    	<p class="color_888">盈利分成</p>
+                                        <p class="lh32"><b class="color_red font20px">6.8%</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">年息收益</p>
+                                        <p class="lh32"><b class="color_red font20px">19.80%</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">借款时间</p>
+                                        <p class="lh32"><b class="color_333">1个月</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">可投</p>
+                                        <p class="lh32"><b class="color_red font20px">￥206,578</b> <span class="font16px">元</span></p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <a class="redBtn" href="##">我要赚钱</a>
+                            </li>
+                            <li>
+                            	<p class="mb5"><span class="font20px color_333">路先生借款30万元</span><span class="color_888"> ( 市值36万元股票做质押 )</span></p>
+                                <p class="color_888 mb5">上线3分钟</p>
+                                <div>
+                                	<div class="w20 fl">
+                                    	<p class="color_888">盈利分成</p>
+                                        <p class="lh32"><b class="color_red font20px">6.8%</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">年息收益</p>
+                                        <p class="lh32"><b class="color_red font20px">19.80%</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">借款时间</p>
+                                        <p class="lh32"><b class="color_333">1个月</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">可投</p>
+                                        <p class="lh32"><b class="color_red font20px">￥206,578</b> <span class="font16px">元</span></p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <a class="redBtn" href="##">我要赚钱</a>
+                            </li>
+                            <li>
+                            	<p class="mb5"><span class="font20px color_333">路先生借款30万元</span><span class="color_888"> ( 市值36万元股票做质押 )</span></p>
+                                <p class="color_888 mb5">上线3分钟</p>
+                                <div>
+                                	<div class="w20 fl">
+                                    	<p class="color_888">盈利分成</p>
+                                        <p class="lh32"><b class="color_red font20px">6.8%</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">年息收益</p>
+                                        <p class="lh32"><b class="color_red font20px">19.80%</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">借款时间</p>
+                                        <p class="lh32"><b class="color_333">1个月</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">可投</p>
+                                        <p class="lh32"><b class="color_red font20px">￥206,578</b> <span class="font16px">元</span></p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <a class="redBtn" href="##">我要赚钱</a>
+                            </li>
+                            <li>
+                            	<p class="mb5"><span class="font20px color_333">路先生借款30万元</span><span class="color_888"> ( 市值36万元股票做质押 )</span></p>
+                                <p class="color_888 mb5">上线3分钟</p>
+                                <div>
+                                	<div class="w20 fl">
+                                    	<p class="color_888">盈利分成</p>
+                                        <p class="lh32"><b class="color_red font20px">6.8%</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">年息收益</p>
+                                        <p class="lh32"><b class="color_red font20px">19.80%</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">借款时间</p>
+                                        <p class="lh32"><b class="color_333">1个月</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">可投</p>
+                                        <p class="lh32"><b class="color_red font20px">￥206,578</b> <span class="font16px">元</span></p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <a class="redBtn" href="##">我要赚钱</a>
+                            </li>
+                            <li>
+                            	<p class="mb5"><span class="font20px color_333">路先生借款30万元</span><span class="color_888"> ( 市值36万元股票做质押 )</span></p>
+                                <p class="color_888 mb5">上线3分钟</p>
+                                <div>
+                                	<div class="w20 fl">
+                                    	<p class="color_888">盈利分成</p>
+                                        <p class="lh32"><b class="color_red font20px">6.8%</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">年息收益</p>
+                                        <p class="lh32"><b class="color_red font20px">19.80%</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">借款时间</p>
+                                        <p class="lh32"><b class="color_333">1个月</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">可投</p>
+                                        <p class="lh32"><b class="color_red font20px">￥206,578</b> <span class="font16px">元</span></p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <a class="redBtn" href="##">我要赚钱</a>
+                            </li>
+                            <li>
+                            	<p class="mb5"><span class="font20px color_333">路先生借款30万元</span><span class="color_888"> ( 市值36万元股票做质押 )</span></p>
+                                <p class="color_888 mb5">上线3分钟</p>
+                                <div>
+                                	<div class="w20 fl">
+                                    	<p class="color_888">盈利分成</p>
+                                        <p class="lh32"><b class="color_red font20px">6.8%</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">年息收益</p>
+                                        <p class="lh32"><b class="color_red font20px">19.80%</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">借款时间</p>
+                                        <p class="lh32"><b class="color_333">1个月</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">可投</p>
+                                        <p class="lh32"><b class="color_red font20px">￥206,578</b> <span class="font16px">元</span></p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <a class="redBtn" href="##">我要赚钱</a>
+                            </li>
+                            <li>
+                            	<p class="mb5"><span class="font20px color_333">路先生借款30万元</span><span class="color_888"> ( 市值36万元股票做质押 )</span></p>
+                                <p class="color_888 mb5">上线3分钟</p>
+                                <div>
+                                	<div class="w20 fl">
+                                    	<p class="color_888">盈利分成</p>
+                                        <p class="lh32"><b class="color_red font20px">6.8%</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">年息收益</p>
+                                        <p class="lh32"><b class="color_red font20px">19.80%</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">借款时间</p>
+                                        <p class="lh32"><b class="color_333">1个月</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">可投</p>
+                                        <p class="lh32"><b class="color_red font20px">￥206,578</b> <span class="font16px">元</span></p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <a class="redBtn" href="##">我要赚钱</a>
+                            </li>
+                            <li>
+                            	<p class="mb5"><span class="font20px color_333">路先生借款30万元</span><span class="color_888"> ( 市值36万元股票做质押 )</span></p>
+                                <p class="color_888 mb5">上线3分钟</p>
+                                <div>
+                                	<div class="w20 fl">
+                                    	<p class="color_888">盈利分成</p>
+                                        <p class="lh32"><b class="color_red font20px">6.8%</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">年息收益</p>
+                                        <p class="lh32"><b class="color_red font20px">19.80%</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">借款时间</p>
+                                        <p class="lh32"><b class="color_333">1个月</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">可投</p>
+                                        <p class="lh32"><b class="color_red font20px">￥206,578</b> <span class="font16px">元</span></p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <a class="redBtn" href="##">我要赚钱</a>
+                            </li>
+                        </ul>
+                        <div class="center pd20">
+                        	<a class="font20px color_333">更多项目</a>
+                        </div> 
+                    </div>
+                    <div class="pane">
+                        <ul class="ktUl">
+                        	<li>
+                            	<p class="mb5"><span class="font20px color_333">今日满标今日满标今日满标30万元</span><span class="color_888"> ( 市值36万元股票做质押 )</span></p>
+                                <p class="color_888 mb5">上线3分钟</p>
+                                <div>
+                                	<div class="w20 fl">
+                                    	<p class="color_888">盈利分成</p>
+                                        <p class="lh32"><b class="color_red font20px">6.8%</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">年息收益</p>
+                                        <p class="lh32"><b class="color_red font20px">19.80%</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">借款时间</p>
+                                        <p class="lh32"><b class="color_333">1个月</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">可投</p>
+                                        <p class="lh32"><b class="color_red font20px">￥206,578</b> <span class="font16px">元</span></p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <a class="redBtn" href="##">我要赚钱</a>
+                            </li>
+                            <li>
+                            	<p class="mb5"><span class="font20px color_333">路先生借款30万元</span><span class="color_888"> ( 市值36万元股票做质押 )</span></p>
+                                <p class="color_888 mb5">上线3分钟</p>
+                                <div>
+                                	<div class="w20 fl">
+                                    	<p class="color_888">盈利分成</p>
+                                        <p class="lh32"><b class="color_red font20px">6.8%</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">年息收益</p>
+                                        <p class="lh32"><b class="color_red font20px">19.80%</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">借款时间</p>
+                                        <p class="lh32"><b class="color_333">1个月</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">可投</p>
+                                        <p class="lh32"><b class="color_red font20px">￥206,578</b> <span class="font16px">元</span></p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <a class="redBtn" href="##">我要赚钱</a>
+                            </li>
+                            <li>
+                            	<p class="mb5"><span class="font20px color_333">路先生借款30万元</span><span class="color_888"> ( 市值36万元股票做质押 )</span></p>
+                                <p class="color_888 mb5">上线3分钟</p>
+                                <div>
+                                	<div class="w20 fl">
+                                    	<p class="color_888">盈利分成</p>
+                                        <p class="lh32"><b class="color_red font20px">6.8%</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">年息收益</p>
+                                        <p class="lh32"><b class="color_red font20px">19.80%</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">借款时间</p>
+                                        <p class="lh32"><b class="color_333">1个月</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">可投</p>
+                                        <p class="lh32"><b class="color_red font20px">￥206,578</b> <span class="font16px">元</span></p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <a class="redBtn" href="##">我要赚钱</a>
+                            </li>
+                            <li>
+                            	<p class="mb5"><span class="font20px color_333">路先生借款30万元</span><span class="color_888"> ( 市值36万元股票做质押 )</span></p>
+                                <p class="color_888 mb5">上线3分钟</p>
+                                <div>
+                                	<div class="w20 fl">
+                                    	<p class="color_888">盈利分成</p>
+                                        <p class="lh32"><b class="color_red font20px">6.8%</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">年息收益</p>
+                                        <p class="lh32"><b class="color_red font20px">19.80%</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">借款时间</p>
+                                        <p class="lh32"><b class="color_333">1个月</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">可投</p>
+                                        <p class="lh32"><b class="color_red font20px">￥206,578</b> <span class="font16px">元</span></p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <a class="redBtn" href="##">我要赚钱</a>
+                            </li>
+                            <li>
+                            	<p class="mb5"><span class="font20px color_333">路先生借款30万元</span><span class="color_888"> ( 市值36万元股票做质押 )</span></p>
+                                <p class="color_888 mb5">上线3分钟</p>
+                                <div>
+                                	<div class="w20 fl">
+                                    	<p class="color_888">盈利分成</p>
+                                        <p class="lh32"><b class="color_red font20px">6.8%</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">年息收益</p>
+                                        <p class="lh32"><b class="color_red font20px">19.80%</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">借款时间</p>
+                                        <p class="lh32"><b class="color_333">1个月</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">可投</p>
+                                        <p class="lh32"><b class="color_red font20px">￥206,578</b> <span class="font16px">元</span></p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <a class="redBtn" href="##">我要赚钱</a>
+                            </li>
+                            <li>
+                            	<p class="mb5"><span class="font20px color_333">路先生借款30万元</span><span class="color_888"> ( 市值36万元股票做质押 )</span></p>
+                                <p class="color_888 mb5">上线3分钟</p>
+                                <div>
+                                	<div class="w20 fl">
+                                    	<p class="color_888">盈利分成</p>
+                                        <p class="lh32"><b class="color_red font20px">6.8%</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">年息收益</p>
+                                        <p class="lh32"><b class="color_red font20px">19.80%</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">借款时间</p>
+                                        <p class="lh32"><b class="color_333">1个月</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">可投</p>
+                                        <p class="lh32"><b class="color_red font20px">￥206,578</b> <span class="font16px">元</span></p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <a class="redBtn" href="##">我要赚钱</a>
+                            </li>
+                            <li>
+                            	<p class="mb5"><span class="font20px color_333">路先生借款30万元</span><span class="color_888"> ( 市值36万元股票做质押 )</span></p>
+                                <p class="color_888 mb5">上线3分钟</p>
+                                <div>
+                                	<div class="w20 fl">
+                                    	<p class="color_888">盈利分成</p>
+                                        <p class="lh32"><b class="color_red font20px">6.8%</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">年息收益</p>
+                                        <p class="lh32"><b class="color_red font20px">19.80%</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">借款时间</p>
+                                        <p class="lh32"><b class="color_333">1个月</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">可投</p>
+                                        <p class="lh32"><b class="color_red font20px">￥206,578</b> <span class="font16px">元</span></p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <a class="redBtn" href="##">我要赚钱</a>
+                            </li>
+                            <li>
+                            	<p class="mb5"><span class="font20px color_333">路先生借款30万元</span><span class="color_888"> ( 市值36万元股票做质押 )</span></p>
+                                <p class="color_888 mb5">上线3分钟</p>
+                                <div>
+                                	<div class="w20 fl">
+                                    	<p class="color_888">盈利分成</p>
+                                        <p class="lh32"><b class="color_red font20px">6.8%</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">年息收益</p>
+                                        <p class="lh32"><b class="color_red font20px">19.80%</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">借款时间</p>
+                                        <p class="lh32"><b class="color_333">1个月</b></p>
+                                    </div>
+                                    <div class="w20 fl">
+                                    	<p class="color_888">可投</p>
+                                        <p class="lh32"><b class="color_red font20px">￥206,578</b> <span class="font16px">元</span></p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <a class="redBtn" href="##">我要赚钱</a>
+                            </li>
+                        </ul>
+                        <div class="center pd20">
+                        	<a class="font20px color_333">更多项目</a>
+                        </div> 
+                    </div>                
+                </div>
+            </div>
+        </div>
+        <div class="box280 fr mt20">
+        	<!--官方公告-->
+            <div class="notice bk_fff">
+            	<div class="indexTit2">
+                	<span class="text">官方公告</span>
+                    <a class="more" href="##">更多>></a>
+                </div>
+                <div class="indexCxt2">
+                	<ul class="noticeUl">
+                    	<li><a href="##">【活动】向钱看，补贴收益把钱赚</a><span>05-04</span></li>
+                        <li><a href="##">【活动】向钱看，补贴收益把钱赚</a><span>05-04</span></li>
+                        <li><a href="##">【活动】向钱看，补贴收益把钱赚</a><span>05-04</span></li>
+                        <li><a href="##">【活动】向钱看，补贴收益把钱赚</a><span>05-04</span></li>
+                        <li><a href="##">【活动】向钱看，补贴收益把钱赚</a><span>05-04</span></li>
+                    </ul>
+                </div>
+            </div>
+            <!--最新咨询-->
+            <div class="zxTab mt20" id="zxTab">
+                <div class="zxTit">
+                    <ul class="tags" id="zxTags">
+                        <li class="current"><a href="javascript:;"><span>最新咨询</span></a></li>
+                        <li><a href="javascript:;"><span>最新建议</span></a></li>
+                        <li><a href="javascript:;"><span>最新投诉</span></a></li>
+                    </ul>
+                 </div>
+                 <div class="panes" id="zxPanes">                        
+                    <div class="pane">
+                    	<div class="zx"> 
+                            <p class="icon icon_q">08:00 我要先注销我之前注册的号码去…</p>
+                            <p class="icon icon_a">未回复</p>
+                        </div>
+                        <div class="zx"> 
+                            <p class="icon icon_q">08:00 我要先注销我之前注册的号码去…</p>
+                            <p class="icon icon_a">未回复</p>
+                        </div>
+                        <div class="zx"> 
+                            <p class="icon icon_q">08:00 我要先注销我之前注册的号码去…</p>
+                            <p class="icon icon_a">未回复</p>
+                        </div>
+                        <div class="zx"> 
+                            <p class="icon icon_q">08:00 我要先注销我之前注册的号码去…</p>
+                            <p class="icon icon_a">未回复</p>
+                        </div>
+                        <div class="tar pr20">
+                        	<a class="color_999" href="##">更多></a>
+                        </div>
+                        <div class="pl20 pr20 pb20 pt10">
+                        	<a class="greenBtn mr20 fl" href="##">我要咨询</a>
+                            <a class="greenBtn mr20 fl" href="##">有奖建议</a>
+                            <a class="greenBtn fr" href="##">我要投诉</a>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="pane">
+                    	<div class="zx"> 
+                            <p class="icon icon_q">08:00 建议内容…</p>
+                            <p class="icon icon_a">未回复</p>
+                        </div>
+                        <div class="zx"> 
+                            <p class="icon icon_q">08:00 我要先注销我之前注册的号码去…</p>
+                            <p class="icon icon_a">未回复</p>
+                        </div>
+                        <div class="zx"> 
+                            <p class="icon icon_q">08:00 我要先注销我之前注册的号码去…</p>
+                            <p class="icon icon_a">未回复</p>
+                        </div>
+                        <div class="zx"> 
+                            <p class="icon icon_q">08:00 我要先注销我之前注册的号码去…</p>
+                            <p class="icon icon_a">未回复</p>
+                        </div>
+                        <div class="tar pr20">
+                        	<a class="color_999" href="##">更多></a>
+                        </div>
+                        <div class="pl20 pr20 pb20 pt10">
+                        	<a class="greenBtn mr20 fl" href="##">我要咨询</a>
+                            <a class="greenBtn mr20 fl" href="##">有奖建议</a>
+                            <a class="greenBtn fr" href="##">我要投诉</a>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="pane">
+                    	<div class="zx"> 
+                            <p class="icon icon_q">08:00 我要先注销我之前注册的号码去…</p>
+                            <p class="icon icon_a">未回复</p>
+                        </div>
+                        <div class="zx"> 
+                            <p class="icon icon_q">08:00 我要先注销我之前注册的号码去…</p>
+                            <p class="icon icon_a">未回复</p>
+                        </div>
+                        <div class="zx"> 
+                            <p class="icon icon_q">08:00 我要先注销我之前注册的号码去…</p>
+                            <p class="icon icon_a">未回复</p>
+                        </div>
+                        <div class="zx"> 
+                            <p class="icon icon_q">08:00 我要先注销我之前注册的号码去…</p>
+                            <p class="icon icon_a">未回复</p>
+                        </div>
+                        <div class="tar pr20">
+                        	<a class="color_999" href="##">更多></a>
+                        </div>
+                        <div class="pl20 pr20 pb20 pt10">
+                        	<a class="greenBtn mr20 fl" href="##">我要咨询</a>
+                            <a class="greenBtn mr20 fl" href="##">有奖建议</a>
+                            <a class="greenBtn fr" href="##">我要投诉</a>
+                            <div class="clear"></div>
+                        </div>
+                    </div>               
+                </div>
+            </div>
+            <!--官方公告-->
+            <div class="bk_fff mt20">
+            	<div class="indexTit2">
+                	<span class="icon icon_wx">&nbsp;</span>
+                	<span class="text">投资人微信交流群</span>
+                    <a class="more" href="##">更多>></a>
+                </div>
+                <div class="indexCxt2">
+                	<p><img src="images/img2.png" /></p>
+                    <p class="color_red font16px center">投资爆富交流群</p>
+                </div>
+            </div>
+            <!--投资排行榜-->
+            <div class="tzTab mt20" id="tzTab">
+                <div class="tzTit">
+                    <ul class="tags" id="tzTags">
+                        <li class="current"><a href="javascript:;"><span>投资排行榜</span></a></li>
+                        <li><a href="javascript:;"><span>配资排行榜</span></a></li>
+                    </ul>
+                 </div>
+                 <div class="panes" id="tzPanes">                        
+                    <div class="pane">
+                    	<div class="phb">
+                        	<a class="current">昨日投资排行</a><a href="##">总投资排行</a><a href="##">最新投资</a>
+                        </div>
+                        <div class="pl20 pr20">
+                        <table class="tzTable" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <th><span class="color_999">投资人</span></th>
+                            <th><span class="color_999">投资金额</span></th>
+                          </tr>
+                          <tr>
+                            <td><em class="cur">1</em> <span class="color_333">138******97</span></td>
+                            <td><span class="font14px color_red">￥1,930,887</span></td>
+                          </tr>
+                          <tr>
+                            <td><em class="cur">2</em> <span class="color_333">138******97</span></td>
+                            <td><span class="font14px color_red">￥1,930,887</span></td>
+                          </tr>
+                          <tr>
+                            <td><em class="cur">3</em> <span class="color_333">138******97</span></td>
+                            <td><span class="font14px color_red">￥1,930,887</span></td>
+                          </tr>
+                          <tr>
+                            <td><em class="def">4</em> <span class="color_333">138******97</span></td>
+                            <td><span class="font14px color_red">￥1,930,887</span></td>
+                          </tr>
+                          <tr>
+                            <td><em class="def">5</em> <span class="color_333">138******97</span></td>
+                            <td><span class="font14px color_red">￥1,930,887</span></td>
+                          </tr>
+                          <tr>
+                            <td><em class="def">6</em> <span class="color_333">138******97</span></td>
+                            <td><span class="font14px color_red">￥1,930,887</span></td>
+                          </tr>
+                          <tr>
+                            <td><em class="def">7</em> <span class="color_333">138******97</span></td>
+                            <td><span class="font14px color_red">￥1,930,887</span></td>
+                          </tr>
+                          <tr class="last">
+                            <td><em class="def">8</em> <span class="color_333">138******97</span></td>
+                            <td><span class="font14px color_red">￥1,930,887</span></td>
+                          </tr>
+                        </table>
+						</div>
+                    </div>
+                    <div class="pane">
+                    	<div class="phb">
+                        	<a class="current">昨日投资排行</a><a href="##">总投资排行</a><a href="##">最新投资</a>
+                        </div>
+                        <div class="pl20 pr20">
+                        <table class="tzTable" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <th><span class="color_999">投资人</span></th>
+                            <th><span class="color_999">投资金额</span></th>
+                          </tr>
+                          <tr>
+                            <td><em class="cur">1</em> <span class="color_333">138******97</span></td>
+                            <td><span class="font14px color_red">￥1,930,887</span></td>
+                          </tr>
+                          <tr>
+                            <td><em class="cur">2</em> <span class="color_333">138******97</span></td>
+                            <td><span class="font14px color_red">￥1,930,887</span></td>
+                          </tr>
+                          <tr>
+                            <td><em class="cur">3</em> <span class="color_333">138******97</span></td>
+                            <td><span class="font14px color_red">￥1,930,887</span></td>
+                          </tr>
+                          <tr>
+                            <td><em class="def">4</em> <span class="color_333">138******97</span></td>
+                            <td><span class="font14px color_red">￥1,930,887</span></td>
+                          </tr>
+                          <tr>
+                            <td><em class="def">5</em> <span class="color_333">138******97</span></td>
+                            <td><span class="font14px color_red">￥1,930,887</span></td>
+                          </tr>
+                          <tr>
+                            <td><em class="def">6</em> <span class="color_333">138******97</span></td>
+                            <td><span class="font14px color_red">￥1,930,887</span></td>
+                          </tr>
+                          <tr>
+                            <td><em class="def">7</em> <span class="color_333">138******97</span></td>
+                            <td><span class="font14px color_red">￥1,930,887</span></td>
+                          </tr>
+                          <tr class="last">
+                            <td><em class="def">8</em> <span class="color_333">138******97</span></td>
+                            <td><span class="font14px color_red">￥1,930,887</span></td>
+                          </tr>
+                        </table>
+						</div>
+                    </div>                                   
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <!--媒体报道-->
+        <div class="bk_fff box330 mt20 mr20 fl">
+            <div class="indexTit2">
+                <span class="text">媒体报道</span>
+                <a class="more" href="##">更多></a>
+            </div>
+            <div class="indexCxt2">
+            	<div>
+                    <a href="##" class="fl mr20"><img src="images/img5.png" /></a>
+                    <p class="color_333"><a href="##">正在改变传统炒股方式</a></p>
+                    <p class="color_999">沪指在七年后重上4500点，这背后少不了一群创新者</p>
+                    <div class="clear"></div>
+                </div>
+                <div>
+                    <a href="##" class="fl mr20"><img src="images/img6.png" /></a>
+                    <p class="color_333"><a href="##">正在改变传统炒股方式</a></p>
+                    <p class="color_999">沪指在七年后重上4500点，这背后少不了一群创新者</p>
+                    <div class="clear"></div>
+                </div>
+            </div>            
+        </div>
+        <!--领导关怀-->
+        <div class="bk_fff box330 mt20 mr20 fl">
+            <div class="indexTit2">
+                <span class="text">领导关怀</span>
+                <a class="more" href="##">更多></a>
+            </div>
+            <div class="indexCxt2">
+            	<div>
+                    <a href="##" class="fl mr20"><img src="images/img4.png" /></a>
+                    <p class="color_333"><a href="##">正在改变传统炒股方式</a></p>
+                    <p class="color_999">沪指在七年后重上4500点，这背后少不了一群创新者</p>
+                    <div class="clear"></div>
+                </div>
+                <div>
+                    <a href="##" class="fl mr20"><img src="images/img4.png" /></a>
+                    <p class="color_333"><a href="##">正在改变传统炒股方式</a></p>
+                    <p class="color_999">沪指在七年后重上4500点，这背后少不了一群创新者</p>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <div class="bk_fff box280 mt20 fr cps">
+            <div class="indexTit2">
+                <span class="text">操盘软件下载</span>
+            </div>
+            <div class="indexCxt2">
+            	<div>
+                    <a class="block" href="##"><img class="brsa" src="images/img3.png" /></a>
+                </div>
+                <div class="pb5">
+                    <a href="##" class="icon icon_sc">安装手册</a>
+                    <a href="##" class="icon icon_sc">操作手册</a>
+                    <a href="##" class="icon icon_mobile">安装手册</a>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        
+        <!--投资指南-->
+        <div class="bk_fff mt20">
+        	<div class="indexTit1">
+            	<span class="text">投资指南</span>
+                <a href="##" class="more">更多></a>
+            </div>
+            <div class="indexCxt1">
+            	<div class="zhinan fl">
+                	<a class="img" href="##"><img src="images/img7.png" width="127" height="94" /></a>
+                    <p class="mb10 t"><a href="##" class="color_333">持续砸盘释重磅信号：主力调仓换股概率大</a></p>
+                    <p class="text">经历连续两日大跌后，周四大盘继续大幅下挫，虽然券商股逆市护盘，钢铁、石油、电力、煤炭等众多...</p>
+                    <p class="color_999">2015-05-04</p>
+                    <ul>
+                    	<li>
+                        	<a href="##">A股迎兴奋剂 6000亿地方社保基金将提</a>
+                            <span>2015-05-05</span>
+                        </li>
+                        <li>
+                        	<a href="##">2015年5月8日周五股票行情展望：重点</a>
+                            <span>2015-05-05</span>
+                        </li>
+                    </ul>
+                </div>                
+                <div class="zhinan fr">
+                	<a class="img" href="##"><img src="images/img7.png" width="127" height="94" /></a>
+                    <p class="mb10 t"><a href="##" class="color_333">持续砸盘释重磅信号：主力调仓换股概率大</a></p>
+                    <p class="text">经历连续两日大跌后，周四大盘继续大幅下挫，虽然券商股逆市护盘，钢铁、石油、电力、煤炭等众多...</p>
+                    <p class="color_999">2015-05-04</p>
+                    <ul>
+                    	<li>
+                        	<a href="##">A股迎兴奋剂 6000亿地方社保基金将提</a>
+                            <span>2015-05-05</span>
+                        </li>
+                        <li>
+                        	<a href="##">2015年5月8日周五股票行情展望：重点</a>
+                            <span>2015-05-05</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <!--合作伙伴-->
+        <div class="bk_fff mt20">
+        	<div class="indexTit1">
+            	<span class="text">合作伙伴</span>
+                <a href="##" class="more">更多></a>
+            </div>
+            <div class="indexCxt1">
+            	<div class="w25 fl"><a href="##"><img src="images/img8.png" /></a></div>
+                <div class="w25 fl"><a href="##"><img src="images/img9.png" /></a></div>
+                <div class="w25 fl"><a href="##"><img src="images/img10.png" /></a></div>
+                <div class="w25 fl"><a href="##"><img src="images/img11.png" /></a></div>
+                <div class="w25 fl"><a href="##"><img src="images/img12.png" /></a></div>
+                <div class="w25 fl"><a href="##"><img src="images/img13.png" /></a></div>
+                <div class="w25 fl"><a href="##"><img src="images/img14.png" /></a></div>
+                <div class="w25 fl"><a href="##"><img src="images/img15.png" /></a></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!--底部-->
+    <div class="footer">
+    	<div class="foot">
+            <ul class="footerUl">
+            	<li>
+                	<a href="##" class="t">投资赚钱</a>
+                	<a href="##">投资流程</a>
+                    <a href="##">投资安全</a>
+                    <a href="##">提现问题</a>
+                    <a href="##">投资常见问题</a>
+                </li>
+                <li>
+                	<a href="##" class="t">借款配资</a>
+                	<a href="##">配资介绍</a>
+                    <a href="##">借款流程</a>
+                    <a href="##">调整利息</a>
+                    <a href="##">配资常见问题</a>
+                </li>
+                <li>
+                	<a href="##" class="t">按天配资</a>
+                	<a href="##">按天配资是什么</a>
+                    <a href="##">操盘演示</a>
+                    <a href="##">交易软件</a>
+                    <a href="##">操盘规则</a>
+                </li>
+                <li>
+                	<a href="##" class="t">关于我们</a>
+                	<a href="##">公司介绍</a>
+                    <a href="##">发展历程</a>
+                    <a href="##">领导关怀</a>
+                    <a href="##">领导关怀</a>
+                    <a href="##">联系我们</a>
+                </li>                
+            </ul>
+            <div class="footRight fr">
+            	<span class="t">全国服务热线</span>
+                <span class="tel">400 7111 658</span>
+                <span class="hour">工作时间 8:30-24:00</span>
+                <p>
+                	<a href="##"><img src="images/img16.png" width="42" height="42" /></a>
+                    <a href="##"><img src="images/img17.png" width="42" height="42" /></a>
+                </p>
+            </div>
+            <div class="clear"></div>
+            <div class="frind">
+            	<span class="text">友情链接</span>
+                <a href="##">网贷之家</a>
+                <a href="##">网贷天眼</a>
+                <a href="##">hao123</a>
+                <a href="##">76676</a>
+            </div>          
+        </div>
+        <div class="copyright">
+            <p>版权所有 杭州恒牛信息技术有限公司 Copyright Reserved 2013-2015 浙ICP备14002269</p>
+            <p>
+            	权威机构安全认证
+            	<img src="images/img30.png" width="608" height="63" align="middle" />
+            </p>
+        </div>   
+    </div>
+</div> 
+</body>
+</html>
