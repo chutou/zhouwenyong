@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>上传新照片</title>
+	<meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width">-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="js/skins/default.css">
+    <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.css">
+    <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.3dflow.css">	
+</head>
+<body id="top">
+<div class="containter">
+	<div class="header">
+    	<h1><a href="javascript:history.back()" class="icon icon_close">返回</a><a href="javascript:;" class="icon icon_menu share">&nbsp;</a><span class="text">奥托博克· 铂乐之星</span></h1>
+    </div>
+    <div class="shareCxt">
+    	<ul class="rightMenu">
+    		<li><a href="#"><span class="icon icon-11"></span>发送给朋友</a></li>
+    		<li><a href="fx.html"><span class="icon icon-12"></span>分享到朋友圈</a></li>
+    		<li><a href="#"><span class="icon icon-13"></span>收藏</a></li>
+    		<li><a href="#"><span class="icon icon-14"></span>复制链接</a></li>
+    		<li><a href="#"><span class="icon icon-15"></span>········</a></li>
+    	</ul>    
+    </div>
+    <div class="content">
+        <div class="zhuye bg-blue pb20">
+        	<div><img src="images/white-log.png"></div>
+            <!--上传初始化-->
+            <div class="scimg">
+                <img src="images/img21.png" />
+                <div class="text">
+                	<span class="t">拍摄或者直接上传照片</span>
+                </div>                   
+            </div>
+            <!--上传中-->
+            <div class="scimg" style="display:none">
+                <img src="images/img22.png" />
+                <div class="text">
+                	<span class="t2">拍摄或者直接上传照片</span>
+                </div>                   
+            </div>
+            <!--上传失败-->
+            <div class="scimg" style="display:none">
+                <img src="images/img25.png" />                   
+            </div>
+            <div class="sczp">
+            	<div class="scBox">
+                    <input type="text" class="scinput" placeholder="温馨提示: 加一句此刻的心情,会让小伙伴更有热情的投票哦!"><a class="csButton" href="grxc.html">提交</a>
+                </div>
+                <div class="text mt50">
+                	<p><b>照片上传贴士：</b></p>
+                    <p>1-您可以选择手机相册内的照片或调用手机摄像头拍摄</p>
+                    <p>2-请尽量在Wi-Fi环境下上传照片</p>
+                    <p>3-主办方会在1个工作日内审核照片，审核合格后就可以邀请</p>
+                    <p>&nbsp;&nbsp;小伙伴来投票啦</p>
+                </div>
+            </div>
+            <div class="center mt50 pb20">
+                
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.artDialog.js"></script>
+<script src="js/idangerous.swiper-2.0.min.js"></script>
+<script src="js/main.js"></script>
+<script language="javascript">
+	$(function(){
+		$(".share").click(function(e){
+			$(".shareCxt").show();
+			e.stopPropagation();
+		});
+		$(".shareCxt").click(function(e){
+			$(".shareCxt").hide();
+			
+		})
+		$(document).click(function(e){
+			$(".shareCxt").hide();
+			e.stopPropagation();
+		})
+		$(".scinput").focus(function(){
+            $(".csButton").show();
+        })
+		
+	})
+</script> 
+</body>
+</html>

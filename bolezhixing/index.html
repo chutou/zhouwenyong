@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>引导页</title>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width">-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="js/skins/default.css">
+    <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.css">
+    <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.3dflow.css">
+</head>
+
+<body id="top" style="background: none;">
+    <div class="containter">
+        <div class="header">
+            <h1><a href="javascript:history.back()" class="icon icon_close">返回</a><a href="javascript:;" class="icon icon_menu share">&nbsp;</a><span class="text">奥托博克· 铂乐之星</span></h1>
+        </div>
+        <div class="shareCxt">
+            <ul class="rightMenu">
+                <li><a href="#"><span class="icon icon-11"></span>发送给朋友</a></li>
+                <li><a href="fx.html"><span class="icon icon-12"></span>分享到朋友圈</a></li>
+                <li><a href="#"><span class="icon icon-13"></span>收藏</a></li>
+                <li><a href="#"><span class="icon icon-14"></span>复制链接</a></li>
+                <li><a href="#"><span class="icon icon-15"></span>········</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="device">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide bg-blue">
+                            <a href="zhuye.html" class="block"><img src="images/img1.png"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="zhuye.html" class="block"><img src="images/img2.png"></a>
+                        </div>
+                        <div class="swiper-slide bg-blue">
+                            <a href="zhuye.html" class="block"><img src="images/img3.png"></a></div>
+                        <div class="swiper-slide">
+                            <a href="zhuye.html" class="block"><img src="images/img4.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.artDialog.js"></script>
+    <script src="js/idangerous.swiper-2.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script language="javascript">
+    $(function() {
+        $(".share").click(function(e) {
+            $(".shareCxt").show();
+            e.stopPropagation();
+        });
+        $(".shareCxt").click(function(e) {
+            $(".shareCxt").hide();
+
+        })
+        //alert(document.body.clientHeight)
+        var h=(document.body.clientHeight/4)-70;
+        $(".swiper-container").height(h);
+        $(document).click(function(e) {
+            $(".shareCxt").hide();
+            e.stopPropagation();
+        })
+        var mySwiper = new Swiper('.swiper-container', {
+            pagination: '.pagination',
+            paginationClickable: true
+        })
+
+    })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <title>Document</title>
+   <script type="text/javascript">
+/**
+* 获取光标所在的字符位置
+* @param obj 要处理的控件, 支持文本域和输入框
+* @author hotleave
+*/
+function getPosition(obj){
+//alert(obj.tagName);
+var result = 0;
+if(obj.selectionStart){ //非IE浏览器
+   result = obj.selectionStart
+}else{ //IE
+   var rng;
+   if(obj.tagName == "TEXTAREA"){ //如果是文本域
+    rng = event.srcElement.createTextRange();
+    rng.moveToPoint(event.x,event.y);
+   }else{ //输入框
+    rng = document.selection.createRange();    
+   }
+   rng.moveStart("character",-event.srcElement.value.length);
+   result = rng.text.length;
+}
+return result;
+}
+function getValue(obj){
+     var pos = getPosition(obj);
+//alert(pos);
+alert(obj.value.substr(0,pos)+" [这里是添加的内容] "+obj.value.substr(pos,obj.value.length));
+}
+</script>
+</head>
+<body>
+<input type="text" value="你好,Amethyst!" onmouseup="getValue(this)" style="display:block">
+<textarea rows="6" cols="60" onmouseup="getValue(this)">Amethyst, 你好.</textarea>
+ </body>
+ </html>

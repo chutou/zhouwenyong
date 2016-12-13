@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		$(function() {
+        $("#txt").click(function() {
+            var position = 0;
+            var txtFocus = document.getElementById("txt");
+            txtFocus.setSelectionRange(position, position);
+                txtFocus.focus();
+                alert(position);
+        });
+    });
+	</script>
+	<input type="inpu" value="123kkdlsajflkdjsa;lfdkjsal;kj" id="txt">
+</body>
+</html>

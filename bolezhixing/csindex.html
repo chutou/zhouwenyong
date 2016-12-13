@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>参赛输入密码</title>
+	<meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width">-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="js/skins/default.css">
+    <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.css">
+    <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.3dflow.css">	
+</head>
+<body id="top">
+<div class="containter">
+	<div class="header">
+    	<h1><a href="javascript:history.back()" class="icon icon_close">返回</a><a href="javascript:;" class="icon icon_menu share">&nbsp;</a><span class="text">奥托博克· 铂乐之星</span></h1>
+    </div>
+    <div class="shareCxt">
+    	<ul class="rightMenu">
+    		<li><a href="#"><span class="icon icon-11"></span>发送给朋友</a></li>
+    		<li><a href="fx.html"><span class="icon icon-12"></span>分享到朋友圈</a></li>
+    		<li><a href="#"><span class="icon icon-13"></span>收藏</a></li>
+    		<li><a href="#"><span class="icon icon-14"></span>复制链接</a></li>
+    		<li><a href="#"><span class="icon icon-15"></span>········</a></li>
+    	</ul>    
+    </div>
+    <div class="content">
+        <div class="zhuye bg-blue pb20">
+        	<div><img src="images/img5.png"></div>        	
+        	<div class="mt50 pb20 center">
+        		<a class="btn btn-green" href="grxx.html">个人信息</a>
+            </div>
+            <div class="pb20 center">
+        		<a class="btn btn-green" href="hdsm.html">活动说明</a>
+        	</div>
+            <div class="pb20 center">
+                <a class="btn btn-green" href="blgj.html">铂乐关节</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.artDialog.js"></script>
+<script src="js/idangerous.swiper-2.0.min.js"></script>
+<script src="js/main.js"></script>
+<script language="javascript">
+	$(function(){
+        $(".csInput").focus(function(){
+            $(".csButton").show();
+        })
+		$(".share").click(function(e){
+			$(".shareCxt").show();
+			e.stopPropagation();
+		});
+		$(".shareCxt").click(function(e){
+			$(".shareCxt").hide();
+			
+		})
+		$(document).click(function(e){
+			$(".shareCxt").hide();
+			e.stopPropagation();
+		})
+		
+	})
+</script> 
+</body>
+</html>

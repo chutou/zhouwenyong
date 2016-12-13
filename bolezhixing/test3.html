@@ -1,0 +1,43 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<title>Selection Start and End example</title>  
+    <script type="text/javascript">  
+        function SelectSomeText () {  
+            var input = document.getElementById ("Textbox");  
+                input.selectionStart = 0;  
+                input.selectionEnd = 13;                  
+        }         
+        
+    </script>  
+</head>  
+<body>  
+  
+  
+    <p><input type="text" id="Textbox" size="40" value="The text selection appears here"/></p>  
+    <p><button onclick="SelectSomeText ()">See selection</button></p>      
+     <script language="javascript">      
+function setPos(num)      
+{      
+text1.focus();      
+var e =document.getElementById("text1");      
+var r =e.createTextRange();      
+r.moveStart('character',num);      
+r.collapse(true);      
+r.select();      
+}      
+</script>      
+<input type="text" id="text1" value="1234567890">      
+<select onchange="setPos(this.selectedIndex)">      
+<option value="0">0</option>      
+<option value="1">1</option>      
+<option value="2">2</option>      
+<option value="3">3</option>      
+<option value="4">4</option>      
+<option value="5">5</option>      
+<option value="6">6</option>      
+<option value="7">7</option>      
+</select>
+      
+</body>  
+</html>

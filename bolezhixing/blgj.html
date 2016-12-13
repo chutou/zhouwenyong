@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>铂乐关节</title>
+	<meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width">-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="js/skins/default.css">
+    <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.css">
+    <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.3dflow.css">	
+</head>
+<body id="top">
+<div class="containter">
+	<div class="header">
+    	<h1><a href="javascript:history.back()" class="icon icon_close">返回</a><a href="javascript:;" class="icon icon_menu share">&nbsp;</a><span class="text">奥托博克· 铂乐之星</span></h1>
+    </div>
+    <div class="shareCxt">
+    	<ul class="rightMenu">
+    		<li><a href="#"><span class="icon icon-11"></span>发送给朋友</a></li>
+    		<li><a href="fx.html"><span class="icon icon-12"></span>分享到朋友圈</a></li>
+    		<li><a href="#"><span class="icon icon-13"></span>收藏</a></li>
+    		<li><a href="#"><span class="icon icon-14"></span>复制链接</a></li>
+    		<li><a href="#"><span class="icon icon-15"></span>········</a></li>
+    	</ul>    
+    </div>
+    <div class="content">
+        <div class="zhuye pb20">
+        	<div><img src="images/blue-log.png" /></div>
+            <div class="blgj">
+                <h1>铂乐产品-3R155<small>(大赛指定产品型号)</small></h1>
+            </div>
+            <div class="mt10"><img src="images/img7.png" /></div>
+            <div class="bjgj-text">
+                铂乐产品系列，是奥托博克健康康复集团在全球同步推出的全新一代产品。铂乐系列产品共有四个产品系列，此次超模大赛，模特将穿戴3R155高性价比多轴液压膝关节为大家展示他们的风采。它将满足大部分用户的活动需求，帮助他们尽情享受美好生活！最重要的是：铂乐系列产品是普及型高性价比的产品，大大降低用户 的经济负担，为广大用户带来更自信的生活！
+                <div class="center mt50">
+                    <a class="btn btn-green mr20" class="scxzp.html">上传新照片</a>
+                    <a class="btn btn-green" class="wttp.html">赶紧去拉票</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.artDialog.js"></script>
+<script src="js/idangerous.swiper-2.0.min.js"></script>
+<script src="js/main.js"></script>
+<script language="javascript">
+	$(function(){
+        $(".csInput").focus(function(){
+            $(".csButton").show();
+        })
+		$(".share").click(function(e){
+			$(".shareCxt").show();
+			e.stopPropagation();
+		});
+		$(".shareCxt").click(function(e){
+			$(".shareCxt").hide();
+			
+		})
+		$(document).click(function(e){
+			$(".shareCxt").hide();
+			e.stopPropagation();
+		})
+		
+	})
+</script> 
+</body>
+</html>

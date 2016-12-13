@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>投票详情</title>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width">-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="js/skins/default.css">
+    <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.css">
+    <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.3dflow.css">
+</head>
+
+<body id="top">
+    <div class="containter">
+        <div class="header">
+            <h1><a href="javascript:history.back()" class="icon icon_close">返回</a><a href="javascript:;" class="icon icon_menu share">&nbsp;</a><span class="text">奥托博克· 铂乐之星</span></h1>
+        </div>
+        <div class="shareCxt">
+            <ul class="rightMenu">
+                <li><a href="#"><span class="icon icon-11"></span>发送给朋友</a></li>
+                <li><a href="fx.html"><span class="icon icon-12"></span>分享到朋友圈</a></li>
+                <li><a href="#"><span class="icon icon-13"></span>收藏</a></li>
+                <li><a href="#"><span class="icon icon-14"></span>复制链接</a></li>
+                <li><a href="#"><span class="icon icon-15"></span>········</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="zhuye bg-blue pb20">
+                <div><img src="images/white-log.png"></div>
+                <div class="tpxq">
+                    <img src="images/img15.png" />
+                    <div class="text">
+                        <p>姓名：李XX</p>
+                        <p>选手编号：04</p>
+                        <p>装配选送单位：XX</p>
+                        <p>得票排名：XX</p>
+                    </div>                    
+                </div>
+                <div class="center mt100 pb20">
+                    <a href="##" class="btn btn-green mr20" id="tp">投他一票<span>+1</span></a>
+                    <a href="##" class="btn btn-green" id="fx" onClick="succ(this)">分享</a>
+                </div>
+                <div class="center mt100 pb20" id="more" style="display:none;">
+                	<a href="##" class="btn btn-green mr20">了解更多</a>
+                </div>
+            </div>
+            <div class="showyd">
+                <div class="line"></div>
+                <div class="text">
+                    点击分享至朋友圈<br />邀请更多小伙伴来为TA投票吧<br />TA或许就是我们找的‘铂乐之星’哦
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.artDialog.js"></script>
+        <script src="js/iframeTools.js"></script>
+        <script src="js/idangerous.swiper-2.0.min.js"></script>
+        <script src="js/main.js"></script>
+        <script language="javascript">
+        $(function() {
+            $(".csInput").focus(function() {
+                $(".csButton").show();
+            })
+            $(".share").click(function(e) {
+                $(".shareCxt").show();
+                e.stopPropagation();
+            });
+            $(".shareCxt").click(function(e) {
+                $(".shareCxt").hide();
+
+            })
+			$("#fx").click(function(){
+				$(this).parent().hide();
+				$("#more").show();
+			})
+            $("#tp").click(function(){
+                $(this).children('span').show();
+                setTimeout(function() {
+                    $("#tp").children("span").hide();
+                    $("#tp").addClass("btn-disable");
+                }, 2000);
+                
+            })
+            /*$("#fx").click(function() {
+                $(".showyd").show();
+                setTimeout(function() {
+                    $(".showyd").hide();
+                }, 5000);
+				
+            });*/
+            $(document).click(function(e) {
+                $(".shareCxt").hide();
+                e.stopPropagation();
+            })		
+
+        })
+        </script>        
+</body>
+
+</html>

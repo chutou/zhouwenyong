@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>个人信息</title>
+	<meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width">-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="js/skins/default.css">
+    <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.css">
+    <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.3dflow.css">	
+</head>
+<body id="top">
+<div class="containter">
+	<div class="header">
+    	<h1><a href="javascript:history.back()" class="icon icon_close">返回</a><a href="javascript:;" class="icon icon_menu share">&nbsp;</a><span class="text">奥托博克· 铂乐之星</span></h1>
+    </div>
+    <div class="shareCxt">
+    	<ul class="rightMenu">
+    		<li><a href="#"><span class="icon icon-11"></span>发送给朋友</a></li>
+    		<li><a href="fx.html"><span class="icon icon-12"></span>分享到朋友圈</a></li>
+    		<li><a href="#"><span class="icon icon-13"></span>收藏</a></li>
+    		<li><a href="#"><span class="icon icon-14"></span>复制链接</a></li>
+    		<li><a href="#"><span class="icon icon-15"></span>········</a></li>
+    	</ul>    
+    </div>
+    <div class="content">
+        <div class="zhuye bg-blue pb20">
+        	<div><img src="images/white-log.png"></div>
+            <div class="tpxq">
+                <img src="images/img20.png" />
+                <style type="text/css">
+                    /*20150812新增*/
+                    .tpxq img{ display: block;}
+.tpxq .text{position: absolute; bottom: 0px; right: 0px; font-size: 22pt; text-align: center; color: #fff; width: 100%; background: #fff; background: #216067; opacity: 0.8; padding: 5px 0;}
+.tpxq .text span{ margin: 0px 10px;}
+.slide-text{ position: absolute; left: -208px; bottom: -50px; width: 600px; text-align: center;}
+.swiper-slide-visible .slide-text{ display: none;}
+.swiper-slide-active .slide-text{ display: block;}
+/*结束*/
+                </style>
+                <div class="text">
+                    <span>姓名：李XX</span>
+                    <span>选手编号：04</span>
+                    <span>装配选送单位：XX</span>
+                    <span>得票排名：XX</span>
+                </div>                    
+            </div>
+            
+            <div class="swiper-container featured">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(images/big/1.png)">
+                        <a href="##"><div class="slide-text">参赛心情:每一次经历都是生活给予的宝贵经验</div></a>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(images/big/1.png)">
+                        <a href="##"><div class="slide-text">参赛心情:文字信息</div></a>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(images/big/1.png)">
+                        <a href="##"><div class="slide-text">参赛心情:每一次经历都是生活给予的宝贵经验</div></a>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(images/big/1.png)">
+                        <a href="##"><div class="slide-text">参赛心情:文字信息</div></a>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(images/big/1.png)">
+                        <a href="##"><div class="slide-text">参赛心情:每一次经历都是生活给予的宝贵经验</div></a>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(images/big/1.png)">
+                        <a href="##"><div class="slide-text">参赛心情:文字信息</div></a>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(images/big/1.png)">
+                        <a href="##"><div class="slide-text">参赛心情:每一次经历都是生活给予的宝贵经验</div></a>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(images/big/1.png)">
+                        <a href="##"><div class="slide-text">参赛心情:文字信息</div></a>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(images/big/1.png)">
+                        <a href="##"><div class="slide-text">参赛心情:每一次经历都是生活给予的宝贵经验</div></a>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(images/big/1.png)">
+                        <a href="##"><div class="slide-text">参赛心情:文字信息</div></a>
+                    </div>                    
+                </div>
+            </div>
+            
+            <div class="center mt20 pb20">                
+                <a href="scxzp.html" class="btn btn-green mr20">上传新照片<span>+1</span></a>
+                <a href="wttp.html" class="btn btn-green">赶紧去拉票</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.artDialog.js"></script>
+<script src="js/idangerous.swiper-2.0.min.js"></script>
+<script src="js/idangerous.swiper.3dflow-2.0.js"></script>
+<script src="js/main.js"></script>
+<script language="javascript">
+	$(function(){
+        $(".csInput").focus(function(){
+            $(".csButton").show();
+        })
+		$(".share").click(function(e){
+			$(".shareCxt").show();
+			e.stopPropagation();
+		});
+		$(".shareCxt").click(function(e){
+			$(".shareCxt").hide();
+			
+		})
+		$(document).click(function(e){
+			$(".shareCxt").hide();
+			e.stopPropagation();
+		})
+		var featuredSwiper = $('.featured').swiper({
+		slidesPerView:'auto',
+		centeredSlides: true,
+		initialSlide:7,
+		tdFlow: {
+			rotate : 30,
+			stretch :10,
+			depth: 150
+		}
+	})
+		
+	})
+</script> 
+</body>
+</html>

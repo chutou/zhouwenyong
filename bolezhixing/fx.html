@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>投票详情</title>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width">-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="js/skins/default.css">
+    <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.css">
+    <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.3dflow.css">
+</head>
+
+<body id="top">
+    <div class="containter">
+        <div class="header">
+            <h1><a href="javascript:history.back()" class="icon icon_close">返回</a><a href="javascript:;" class="icon icon_right share">分享</a><span class="text">奥托博克· 铂乐之星</span></h1>
+        </div>
+        <div class="shareCxt">
+            <ul class="rightMenu">
+                <li><a href="#"><span class="icon icon-11"></span>发送给朋友</a></li>
+                <li><a href="fx.html"><span class="icon icon-12"></span>分享到朋友圈</a></li>
+                <li><a href="#"><span class="icon icon-13"></span>收藏</a></li>
+                <li><a href="#"><span class="icon icon-14"></span>复制链接</a></li>
+                <li><a href="#"><span class="icon icon-15"></span>········</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="zhuye bg-gray pb20">
+                <div><img src="images/blue-log.png"></div>
+                <form>
+                    <div>
+                        <textarea class="fxTextarea" placeholder="这一刻的想法。。。"></textarea>
+                    </div>
+                    <div class="fxText">
+                        <img src="images/img-logo.png" />
+                        我为04号选手投了1票，赶紧来围观奥托博克‘铂乐之星’假肢模特选拔大赛吧
+                    </div>
+                    <div class="fxLabel">
+                        <a href="##">
+                            <span class="icon icon16">&nbsp;</span>
+                            <span>Location</span>
+                            <span class="icon18"></span>
+                        </a>
+                    </div>
+                    <div class="fxLabel">
+                        <a href="##">
+                            <span class="icon icon17">&nbsp;</span>
+                            <span>share to </span>
+                            <span class="icon18"></span>
+                        </a>
+                    </div>
+                </form>
+            </div>
+            <div class="showyd">
+                <div class="line"></div>
+                <div class="text">
+                    点击分享至朋友圈<br />邀请更多小伙伴来为TA投票吧<br />TA或许就是我们找的‘铂乐之星’哦
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.artDialog.js"></script>
+        <script src="js/iframeTools.js"></script>
+        <script src="js/idangerous.swiper-2.0.min.js"></script>
+        <script src="js/main.js"></script>
+        <script language="javascript">
+        $(function() {
+            $(".csInput").focus(function() {
+                $(".csButton").show();
+            })
+            $(".share").click(function(e) {
+                $(".shareCxt").show();
+                e.stopPropagation();
+            });
+            $(".shareCxt").click(function(e) {
+                $(".shareCxt").hide();
+
+            })
+            $("#tp").click(function(){
+                $(this).children('span').show();
+                setTimeout(function() {
+                    $("#tp").children("span").hide();
+                    $("#tp").addClass("btn-disable");
+                }, 2000);
+                
+            })
+            $("#fx").click(function() {
+                $(".showyd").show();
+                setTimeout(function() {
+                    $(".showyd").hide();
+                }, 5000);
+            });
+            $(document).click(function(e) {
+                $(".shareCxt").hide();
+                e.stopPropagation();
+            })
+
+        })
+        </script>
+</body>
+
+</html>
