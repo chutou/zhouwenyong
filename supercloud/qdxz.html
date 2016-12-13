@@ -1,0 +1,193 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<title>驱动下载</title>
+	<meta charset="UTF-8" />
+    <meta content="驱动下载" name="description" />
+    <meta content="驱动下载" name="keywords" />
+    <!--<meta name="viewport" content="width=device-width">-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/layout.css">
+	<script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/slides.min.jquery.js"></script>
+    <script language="javascript">
+    	$(function(){
+			$('.flashBanner').slides({play: 3000,pause: 3000,hoverPause: true, effect:'fade'});
+			$('.flashBanner .slide').width(document.body.clientWidth);
+			$(".firstMenu").hover(function(){
+				$(this).children("a.secondA").addClass("current");
+				$(this).children("dl.subNavUl").show();
+			},function(){
+				$(this).children("a.secondA").removeClass("current");
+				$(this).children("dl.subNavUl").hide();
+			})
+			$(".item a").click(function(){
+				$(this).siblings("a").removeClass("current");
+				$(this).addClass("current");
+			})
+		})
+    </script>
+</head>
+<body>
+<div class="containter">
+	<!---头部-->
+	<div class="header">
+    	<div class="head">
+        	<a class="logo" href="index.html"><img src="images/logo.png" /></a>            
+            <ul class="nav">
+            	<li class="firstMenu"><a href="index.html">首页</a></li>
+                <li class="firstMenu">
+                	<a href="cpjs.html">产品技术</a>
+                	<dl class="subNavUl">
+                      <dd><a class="title" href="##">云计算服务器</a></dd>
+                      <dd><a href="##">通用服务器</a></dd>
+                      <dd><a href="##">高密度服务器</a></dd>
+                      <dd><a href="##">高温节能服务器</a></dd>
+                      <dd class="line"></dd>
+                      <dd><a class="title" href="##">云计算存储</a></dd>
+                      <dd><a href="##">高性能磁盘阵列</a></dd>
+                      <dd><a href="##">虚拟化统一存储系统</a></dd>
+                      <dd><a href="##">集群统一存储系统</a></dd>
+                      <dd><a href="##">集群NAS存储系统</a></dd>
+                      <dd class="line"></dd>
+                      <dd><a class="title" href="##">HPC高性能计算服务器</a></dd>
+                      <dd><a href="##">NVIDIA GPU产品</a></dd>
+                      <dd><a href="##">Intel Phi产品</a></dd>
+                      <dd><a href="##">GPU云计算</a></dd>
+                      <dd class="line"></dd>
+                      <dd><a class="title" href="##">云计算软件</a></dd>
+                      <dd><a href="##">云计算管理平台</a></dd>
+                      <dd><a href="##">云安全管理系统</a></dd>
+                      <dd><a href="##">云基础架构管理系统</a></dd>
+                      <dd><a href="##">云计算服务器管理软件</a></dd>
+                    </dl>
+                </li>
+                <li class="firstMenu"><a href="jjfa.html">解决方案</a></li>
+                <li class="firstMenu current"><a href="fwzc.html">服务支持</a></li>
+                <li class="firstMenu"><a href="cgal.html">成功案例</a></li>
+                <li class="firstMenu"><a href="hzhb.html">合作伙伴</a></li>
+                <li class="firstMenu"><a href="gycy.html">关于超云</a></li>
+            </ul>
+            <div class="searchBox">
+                <input type="text" class="sinput" value="搜索" onfocus="if(value=='搜索') {value=''}" onblur="if(value=='') {value='搜索'}" /><input type="button" class="sbtn" value="" />
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!--banner-->
+    <div class="cyBanner">
+        <div class="cyCxt"><img src="images/banner5.png" ></div>
+    </div>
+    <div class="navgitor">
+    	<div class="navgitorCxt">
+        	<a href="index.html">首页</a>： <a href="jszc.html">技术支持</a>
+        </div>
+    </div>        
+    <!--主体内容-->    
+    <div class="main">
+        <div class="sideLeft">
+            <h1 class="title">技术支持</h1>
+            <ul class="sideMenu">
+                <li><a href="##">售后服务体系</a></li>
+                <li><a href="##">安装指导</a></li>
+                <li><a class="current" href="##">驱动下载</a></li>
+            </ul>
+        </div>
+        <div class="sideRight">
+            <div class="title"></div>
+            <div class="cyContent">
+            	<div class="downCxt">
+                	<table width="100%" border="0" class="downTable" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <th>选择系列</th>
+                        <th>选择型号</th>
+                        <th>选择平台</th>
+                        <th>选择系统</th>
+                        <th>选择芯片</th>
+                      </tr>
+                      <tr>
+                        <td>
+                        	<div class="item">
+                            	<a href="##">X9系列</a>
+								<a class="current" href="##">X10系列</a>
+                            </div>
+                        </td>
+                        <td>
+                        	<div class="item">
+                            	<a href="##">R5110 G10</a>
+								<a class="current" href="##">R5110 G10</a>
+                                <a href="##">R5110 G10</a>
+                                <a href="##">R5110 G10</a>
+                                <a href="##">R5110 G10</a>
+                                <a href="##">R5110 G10</a>
+                                <a href="##">R5110 G10</a>
+                                <a href="##">R5110 G10</a>
+                                <a href="##">R5110 G10</a>
+                                <a href="##">R5110 G10</a>
+                            </div>
+                        </td>
+                        <td>
+                        	<div class="item">
+                            	<a href="##">Linux</a>
+								<a class="current" href="##">Windows</a>
+                            </div>
+                        </td>
+                        <td>
+                        	<div class="item">
+                                <a href="##">Windows 7</a>
+                                <a href="##">Windows 8</a>
+                                <a class="current" href="##">Windows Server 2003</a>
+                                <a href="##">Windows Server 2008 R2</a>
+                                <a href="##">Windows Server 2012</a>
+                            </div>
+                        </td>
+                        <td>
+                        	<div class="item">
+                                <a href="##">Chipset</a>
+                                <a href="##">Graphics</a>
+                                <a class="current" href="##">MegaSAS 3108</a>
+                                <a href="##">NIC</a>
+                            </div>
+                        </td>
+                      </tr>
+                    </table>
+
+                </div>
+                <div class="mt20 nav"><a href="##">X10系列</a> > <a href="##">R5110 G10</a> > <a href="##">Windows Server 2012</a> > <a href="##">MegaSAS 3108</a></div>
+                <table width="100%" border="0" cellpadding="0" cellspacing="0" class="grayTable mt20">
+                  <tr>
+                    <th colspan="2">文件名称</th>
+                  </tr>
+                  <tr>
+                    <td>x64_rel.zip</td>
+                    <td width="80"><a href="##" class="downBtn"><i class="icon icon-down"></i>下载</a></td>
+                  </tr>
+                  <tr>
+                    <td>x64_rel.zip</td>
+                    <td width="80"><a href="##" class="downBtn"><i class="icon icon-down"></i>下载</a></td>
+                  </tr>
+                </table>
+ 
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    
+    <!--底部-->
+    <div class="footer">
+    	<div class="foot">    	
+            <div class="copyright">
+                <p>版权所有 &copy; 2010-2015 北京天地超云科技有限公司 保留一切权利</p>
+                <p>京ICP备12001495号-6</p>
+            </div>
+            <div class="footRight">
+                <div class="tel"><i class="icon icon-tel"></i>4006-330-360</div>
+                <div class="wx"><i class="icon icon-mobile"></i> 扫一扫关注<br /> 超云微信</div>
+                <img src="images/ewm.png" class="wwm" width="81" height="78" />
+            </div>
+        </div>   
+    </div>
+</div> 
+</body>
+</html>
