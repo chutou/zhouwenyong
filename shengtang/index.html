@@ -1,0 +1,514 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<title>首页</title>
+	<meta charset="UTF-8" />
+    <meta content="首页" name="description" />
+    <meta content="首页" name="keywords" />
+    <!--<meta name="viewport" content="width=device-width">-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/layout.css">
+	<script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/slides.min.jquery.js"></script>
+    <script src="js/jquery.tab.js"></script>
+    <script language="javascript">
+    	$(function(){
+			$('.slides').slides({play: 5000,pause: 5000,hoverPause: true,generatePagination:false});
+			$(".slide").width(document.body.clientWidth);
+			$(window).resize(function(){
+				$(".slide").width(document.body.clientWidth);
+			})
+			$(window).scroll(function(){
+				$(".slide").width(document.body.clientWidth);
+			})
+			$("#bpmTab").tab({dft:0,curClass: "current",tabId: "#bpmTags",tabTag: "li",conId: "#bpmPanes",conTag: ".pane"});
+			$("#hqTab").tab({dft:0,curClass: "current",tabId: "#hqTags",tabTag: "li",conId: "#hqPanes",conTag: ".pane"});
+			$("#pmTab").tab({dft:0,curClass: "current",tabId: "#pmTags",tabTag: "li",conId: "#pmPanes",conTag: ".pane"});
+			/*$("#zxTab").tab({dft:0,curClass: "current",tabId: "#zxTags",tabTag: "li",conId: "#zxPanes",conTag: ".pane"});
+			$("#tzTab").tab({dft:0,curClass: "current",tabId: "#tzTags",tabTag: "li",conId: "#tzPanes",conTag: ".pane"});*/
+		})
+    </script>
+</head>
+<body class="indexBody">
+<div class="containter">
+	<!---头部-->
+	<div class="header">
+    	<div class="head">
+        	<div class="headTop">
+                <a class="" href="##">总经理信箱</a> | <a class="" href="##">加入收藏</a>
+            </div>
+            <div class="headerCenter">
+        		<a class="logo" href="index.html"><img src="images/logo.png" /></a>
+                <ul class="nav">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="news.html">港股资讯</a></li>
+                    <li><a href="hgt.html">沪港通</a></li>
+                    <li><a href="##">港股通</a></li>
+                    <li><a href="##">制度与公告</a></li>
+                    <li><a href="##">风险揭示</a></li>
+                    <li><a href="##">上市公司公告</a></li>
+                </ul> 
+                <div class="clear"></div>               
+            </div>
+        </div>
+    </div>        
+    <!--主体内容-->
+    <!--五图flash-->
+    <div class="indexBanner">    	
+        <div class="slides">
+            <div class="slides_container">
+                <div class="slide" style="background:url(images/banner1.png) no-repeat center center;">&nbsp;</div>
+                <div class="slide" style="background:url(images/banner1.png) no-repeat center center;">&nbsp;</div>
+                <div class="slide" style="background:url(images/banner1.png) no-repeat center center;">&nbsp;</div>
+                <div class="slide" style="background:url(images/banner1.png) no-repeat center center;">&nbsp;</div>
+                <div class="slide" style="background:url(images/banner1.png) no-repeat center center;">&nbsp;</div>
+                <div class="slide" style="background:url(images/banner1.png) no-repeat center center;">&nbsp;</div>
+            </div>
+        </div>
+    </div> 
+    <div class="main">
+    	<div class="box420 fl">
+        	<div class="cmtTab mt20" id="bpmTab">
+                <div class="cmtTit">
+                    <ul class="tags" id="bpmTags">
+                        <li class="current"><a href="javascript:;"><span>港股动态</span></a></li>
+                        <li><a href="javascript:;"><span>港股评论</span></a></li>
+                        <li><a href="javascript:;"><span>公司报道</span></a></li>
+                    </ul>
+                 </div>
+                 <div class="panes" id="bpmPanes">                        
+                    <div class="pane"> 
+                    	<ul class="dtUl">
+                        	<li><a href="##">香港结算可作名义持有人行使股东权利</a></li>
+                            <li><a href="##">港股升１．９６％ 深港通或重现沪港通爆炒之风 </a></li>
+                            <li><a href="##">天鸽互动阿里健康等成为种子队 </a></li>
+                            <li><a href="##">MSCI中国指数纳入广发证券万达</a></li>
+                            <li><a href="##">剔出华南城 深港通紧锣密鼓 </a></li>
+                            <li><a href="##">要修一条新路 </a></li>
+                            <li><a href="##">剔出华南城 深港通紧锣密鼓</a></li> 
+                            <li><a href="##">要修一条新路</a></li>
+                        </ul>
+                    </div>
+                    <div class="pane">
+                    	<ul class="dtUl">
+                        	<li><a href="##">港股评论</a></li>
+                            <li><a href="##">港股升１．９６％ 深港通或重现沪港通爆炒之风 </a></li>
+                            <li><a href="##">天鸽互动阿里健康等成为种子队 </a></li>
+                            <li><a href="##">MSCI中国指数纳入广发证券万达</a></li>
+                            <li><a href="##">剔出华南城 深港通紧锣密鼓 </a></li>
+                            <li><a href="##">要修一条新路 </a></li>
+                            <li><a href="##">剔出华南城 深港通紧锣密鼓</a></li> 
+                            <li><a href="##">要修一条新路</a></li>
+                        </ul> 
+                    </div>
+                    <div class="pane">
+                    	<ul class="dtUl">
+                        	<li><a href="##">公司报道</a></li>
+                            <li><a href="##">港股升１．９６％ 深港通或重现沪港通爆炒之风 </a></li>
+                            <li><a href="##">天鸽互动阿里健康等成为种子队 </a></li>
+                            <li><a href="##">MSCI中国指数纳入广发证券万达</a></li>
+                            <li><a href="##">剔出华南城 深港通紧锣密鼓 </a></li>
+                            <li><a href="##">要修一条新路 </a></li>
+                            <li><a href="##">剔出华南城 深港通紧锣密鼓</a></li> 
+                            <li><a href="##">要修一条新路</a></li>
+                        </ul> 
+                    </div>                
+                </div>
+            </div>
+            <div class="cmtTab mt20" id="hqTab">
+                <div class="cmtTit">
+                    <ul class="tags" id="hqTags">
+                        <li class="current"><a href="javascript:;"><span>环球市场</span></a></li>
+                        <li><a href="javascript:;"><span>港股权证</span></a></li>
+                        <li><a href="javascript:;"><span>新股资讯</span></a></li>
+                    </ul>
+                 </div>
+                 <div class="panes" id="hqPanes">                        
+                    <div class="pane"> 
+                    	<ul class="dtUl">
+                        	<li><a href="##">香港结算可作名义持有人行使股东权利</a></li>
+                            <li><a href="##">港股升１．９６％ 深港通或重现沪港通爆炒之风 </a></li>
+                            <li><a href="##">天鸽互动阿里健康等成为种子队 </a></li>
+                            <li><a href="##">MSCI中国指数纳入广发证券万达</a></li>
+                            <li><a href="##">剔出华南城 深港通紧锣密鼓 </a></li>
+                            <li><a href="##">要修一条新路 </a></li>
+                            <li><a href="##">剔出华南城 深港通紧锣密鼓</a></li> 
+                            <li><a href="##">要修一条新路</a></li>
+                        </ul>
+                    </div>
+                    <div class="pane">
+                    	<ul class="dtUl">
+                        	<li><a href="##">港股评论</a></li>
+                            <li><a href="##">港股升１．９６％ 深港通或重现沪港通爆炒之风 </a></li>
+                            <li><a href="##">天鸽互动阿里健康等成为种子队 </a></li>
+                            <li><a href="##">MSCI中国指数纳入广发证券万达</a></li>
+                            <li><a href="##">剔出华南城 深港通紧锣密鼓 </a></li>
+                            <li><a href="##">要修一条新路 </a></li>
+                            <li><a href="##">剔出华南城 深港通紧锣密鼓</a></li> 
+                            <li><a href="##">要修一条新路</a></li>
+                        </ul> 
+                    </div>
+                    <div class="pane">
+                    	<ul class="dtUl">
+                        	<li><a href="##">公司报道</a></li>
+                            <li><a href="##">港股升１．９６％ 深港通或重现沪港通爆炒之风 </a></li>
+                            <li><a href="##">天鸽互动阿里健康等成为种子队 </a></li>
+                            <li><a href="##">MSCI中国指数纳入广发证券万达</a></li>
+                            <li><a href="##">剔出华南城 深港通紧锣密鼓 </a></li>
+                            <li><a href="##">要修一条新路 </a></li>
+                            <li><a href="##">剔出华南城 深港通紧锣密鼓</a></li> 
+                            <li><a href="##">要修一条新路</a></li>
+                        </ul> 
+                    </div>                
+                </div>
+            </div>
+        </div>
+        <div class="box560 fr">
+        	<div class="indexCxt mt20">
+            	<div class="indexTit1">
+                	<span class="text">A/H股价对比</span>
+                </div>
+                <div class="indexC">
+                	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="gjTable">
+                      <tr>
+                        <th>股票简称</th>
+                        <th>A股代码</th>
+                        <th>H股代码</th>
+                        <th>A股价格</th>
+                        <th>H股价格(港元)</th>
+                        <th>比价(A/H)</th>
+                      </tr>
+                      <tr>
+                        <td>紫金矿业</td>
+                        <td>601899</td>
+                        <td>02899</td>
+                        <td>18.04</td>
+                        <td>32.75</td>
+                        <td>--</td>
+                      </tr>
+                      <tr>
+                        <td>紫金矿业</td>
+                        <td>601899</td>
+                        <td>02899</td>
+                        <td>18.04</td>
+                        <td>32.75</td>
+                        <td>--</td>
+                      </tr>
+                      <tr>
+                        <td>紫金矿业</td>
+                        <td>601899</td>
+                        <td>02899</td>
+                        <td>18.04</td>
+                        <td>32.75</td>
+                        <td>--</td>
+                      </tr>
+                      <tr>
+                        <td>紫金矿业</td>
+                        <td>601899</td>
+                        <td>02899</td>
+                        <td>18.04</td>
+                        <td>32.75</td>
+                        <td>--</td>
+                      </tr>
+                      <tr>
+                        <td>紫金矿业</td>
+                        <td>601899</td>
+                        <td>02899</td>
+                        <td>18.04</td>
+                        <td>32.75</td>
+                        <td>--</td>
+                      </tr>
+                      <tr>
+                        <td>紫金矿业</td>
+                        <td>601899</td>
+                        <td>02899</td>
+                        <td>18.04</td>
+                        <td>32.75</td>
+                        <td>--</td>
+                      </tr>
+                      <tr>
+                        <td>紫金矿业</td>
+                        <td>601899</td>
+                        <td>02899</td>
+                        <td>18.04</td>
+                        <td>32.75</td>
+                        <td>--</td>
+                      </tr>
+                    </table>
+
+                </div>
+            </div>
+            <div class="indexCxt mt20" id="pmTab">
+            	<div class="indexTit1">
+                	<span class="text">A/H股价对比</span>
+                    <div class="pmTit">
+                        <ul class="tags" id="pmTags">
+                            <li class="current"><a href="javascript:;"><span>港股涨幅排名</span></a></li>
+                            <li><a href="javascript:;"><span>港股跌幅排名</span></a></li>
+                            <li><a href="javascript:;"><span>港股成交额排名</span></a></li>
+                            <li><a href="javascript:;"><span>港股委比排名</span></a></li>
+                        </ul>
+                     </div>
+                </div>
+                <div  class="panes" id="pmPanes">
+                    <div class="pane">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="gjTable">
+                          <tr>
+                            <th>排名</th>
+                            <th>名称</th>
+                            <th>代码</th>
+                            <th>现价</th>
+                            <th>涨幅</th>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>中国网络资本</td>
+                            <td>00642</td>
+                            <td>2.75</td>
+                            <td>787.1%</td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>中国网络资本</td>
+                            <td>00642</td>
+                            <td>2.75</td>
+                            <td>787.1%</td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>中国网络资本</td>
+                            <td>00642</td>
+                            <td>2.75</td>
+                            <td>787.1%</td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>中国网络资本</td>
+                            <td>00642</td>
+                            <td>2.75</td>
+                            <td>787.1%</td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>中国网络资本</td>
+                            <td>00642</td>
+                            <td>2.75</td>
+                            <td>787.1%</td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>中国网络资本</td>
+                            <td>00642</td>
+                            <td>2.75</td>
+                            <td>787.1%</td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>中国网络资本</td>
+                            <td>00642</td>
+                            <td>2.75</td>
+                            <td>787.1%</td>
+                          </tr>
+                        </table>
+    
+                    </div>
+                    <div class="pane">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="gjTable">
+                          <tr>
+                            <th>排名</th>
+                            <th>名称</th>
+                            <th>代码</th>
+                            <th>现价</th>
+                            <th>涨幅</th>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>中国网络资本</td>
+                            <td>00642</td>
+                            <td>2.75</td>
+                            <td>787.1%</td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>中国网络资本</td>
+                            <td>00642</td>
+                            <td>2.75</td>
+                            <td>787.1%</td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>中国网络资本</td>
+                            <td>00642</td>
+                            <td>2.75</td>
+                            <td>787.1%</td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>中国网络资本</td>
+                            <td>00642</td>
+                            <td>2.75</td>
+                            <td>787.1%</td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>中国网络资本</td>
+                            <td>00642</td>
+                            <td>2.75</td>
+                            <td>787.1%</td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>中国网络资本</td>
+                            <td>00642</td>
+                            <td>2.75</td>
+                            <td>787.1%</td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>中国网络资本</td>
+                            <td>00642</td>
+                            <td>2.75</td>
+                            <td>787.1%</td>
+                          </tr>
+                        </table>
+    
+                    </div>
+                    <div class="pane">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="gjTable">
+                          <tr>
+                            <th>排名</th>
+                            <th>名称</th>
+                            <th>代码</th>
+                            <th>现价</th>
+                            <th>涨幅</th>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>中国网络资本</td>
+                            <td>00642</td>
+                            <td>2.75</td>
+                            <td>787.1%</td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>中国网络资本</td>
+                            <td>00642</td>
+                            <td>2.75</td>
+                            <td>787.1%</td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>中国网络资本</td>
+                            <td>00642</td>
+                            <td>2.75</td>
+                            <td>787.1%</td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>中国网络资本</td>
+                            <td>00642</td>
+                            <td>2.75</td>
+                            <td>787.1%</td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>中国网络资本</td>
+                            <td>00642</td>
+                            <td>2.75</td>
+                            <td>787.1%</td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>中国网络资本</td>
+                            <td>00642</td>
+                            <td>2.75</td>
+                            <td>787.1%</td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>中国网络资本</td>
+                            <td>00642</td>
+                            <td>2.75</td>
+                            <td>787.1%</td>
+                          </tr>
+                        </table>
+    
+                    </div>
+                    <div class="pane">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="gjTable">
+                          <tr>
+                            <th>排名</th>
+                            <th>名称</th>
+                            <th>代码</th>
+                            <th>现价</th>
+                            <th>涨幅</th>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td>中国网络资本</td>
+                            <td>00642</td>
+                            <td>2.75</td>
+                            <td>787.1%</td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>中国网络资本</td>
+                            <td>00642</td>
+                            <td>2.75</td>
+                            <td>787.1%</td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>中国网络资本</td>
+                            <td>00642</td>
+                            <td>2.75</td>
+                            <td>787.1%</td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>中国网络资本</td>
+                            <td>00642</td>
+                            <td>2.75</td>
+                            <td>787.1%</td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>中国网络资本</td>
+                            <td>00642</td>
+                            <td>2.75</td>
+                            <td>787.1%</td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>中国网络资本</td>
+                            <td>00642</td>
+                            <td>2.75</td>
+                            <td>787.1%</td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>中国网络资本</td>
+                            <td>00642</td>
+                            <td>2.75</td>
+                            <td>787.1%</td>
+                          </tr>
+                        </table>
+    
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    
+    <!--底部-->
+    <div class="footer">
+        <div class="copyright">
+            <p>盛唐投资有限公司页面版权所有  豫ICP备45613214号   地址：上海新区CBD国际会展中心区—商务外环格拉姆A座  邮箱： 123456789@qq.com</p>                
+			<p>联系电话：0759-88888888  传真：0759-88888888  技术支持：创翼视觉</p>
+        </div>   
+    </div>
+</div> 
+</body>
+</html>
