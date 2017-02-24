@@ -255,7 +255,7 @@ template {
 }
 
 body {
-  background: url(../images/sign_bg.png) no-repeat 0 0;
+  background: url(../images/sign_bg.jpg) no-repeat 0 0;
   background-size: 100% auto;
   padding: 0;
   margin: 0;
@@ -299,6 +299,7 @@ body {
   font-size: 16px;
   text-align: center;
   color: #261c19;
+  max-width: 400px;
 }
 
 
